@@ -109,10 +109,10 @@ class GoodsController extends CheckLoginController {
         //展示要编辑的商品内容
         if( $act == 'edit' ){
             $model = M('goods');
-            $data = $model->find($id);  //商品信息
-            $data1 = M("goods_specify")->where("goods_id={$id}")->select(); //规格1
-            $data2 = M("goods_type2")->where("goods_id={$id}")->select();   //规格2
-            $this->assign("data1",$data1);
+            $data = $model->find($id);  //商品通用信息
+            $data1 = M("goods_specify")->where("goods_id={$id}")->select(); //规格1信息
+            $data2 = M("goods_type2")->where("goods_id={$id}")->select();   //规格2信息
+            $this->assign("data1",$data1);  
             $this->assign("data2",$data2);
             
             $this->assign('data',$data);
@@ -127,50 +127,48 @@ class GoodsController extends CheckLoginController {
             }
             /*echo "<pre>";
             print_r($_data);*/
-            /*for($i=0;$i<count($_data['goods_sn']);$i++){
-                var_dump($_data['old_sn'][$i]);
-            }*/
-            /*$_data['goods_type'] = serialize($_data['goods_type']);
-            $_data['goods_package'] = serialize($_data['goods_package']);*/
-            $model = M('goods');
-            $result = $model->where("goods_id={$id}")->save($_data);    //更新goods表数据
+            
+            $result = M('goods')->where("goods_id={$id}")->save($_data);    //更新goods表数据
+            var_dump($result);
             // $des_ret = M('attr')->where("goods_id={$id}")->setField("picture_description",htmlspecialchars_decode($_data['goods_description']));    //更新attr数据
-            //对specify表进行处理
-            for($i=0;$i<count($_data['goods_sn']);$i++){
+            
+            /* 对specify进行处理 */
+            $old_spe_length = count($_data['specify_id']);  //原本数据长度 
+            $new_spe_length = count($_data['goods_sn']);    //修改后的数据长度
+            for($i=0;$i<count($_data['specify_id']);$i++){    //对原来的goods_specify进行数据更新
                 $specify['goods_sn'] = $_data['goods_sn'][$i];
                 $specify['goods_type'] = $_data['type1_name'][$i];
                 $specify['goods_price'] = $_data['goods_price'][$i];
-                $specify['goods_discount']= $_data['goods_discount'][$i];
+                $specify['goods_discount'] = $_data['goods_discount'][$i];
+                $specify['goods_num'] = $_data['goods_num'][$i];
+                M("goods_specify")->where("id=".$_data['specify_id'][$i])->save($specify);
+            }
+            for( $i=$old_spe_length;$i<$new_spe_length;$i++){   //对新添的goods_specify进行数据添加
+                $specify['goods_sn'] = $_data['goods_sn'][$i];
+                $specify['goods_type'] = $_data['type1_name'][$i];
+                $specify['goods_price'] = $_data['goods_price'][$i];
+                $specify['goods_discount'] = $_data['goods_discount'][$i];
                 $specify['goods_num'] = $_data['goods_num'][$i];
                 $specify['goods_id'] = $id;
-
-                //先寻找是否存在该sn货号的商品
-                //存在该sn时，或者改动原来sn
-                if( $_data['old_sn'][$i] != null ){
-                    $specify_ret = M('goods_specify')->where("goods_id={$id} AND goods_sn={$_data['old_sn'][$i]}")->save($specify);    //直接更新
-                }else{  //不存在该sn时,直接新添数据
-                    $specify_ret = M('goods_specify')->where("1=1")->add($specify);   //增加一条specify
-                }
-                // var_dump($specify_ret);
+                M("goods_specify")->add($specify);
             }
 
-
-            //对goods_type2表进行处理
-            for($i=0;$i<count($_data['type2_name']);$i++){
+            /* 对goods_type2进行处理 */
+            $old_length = count($_data['type2_id']);    //原本数据记录长度
+            $new_length = count($_data['type2_name']);  //修改后的数据长度
+            for($i=0;$i<$old_length;$i++){  //对原来的goods_type2进行数据更新
                 $type2['type2_name'] = $_data['type2_name'][$i];
-                $type2['goods_id'] = $id;
-                //然后寻找该商品的type2是否存在
-                
-                if( $_data['old_type2'][$i] != null ){  
-                    $type2_ret = M('goods_type2')->where("goods_id={$id} AND type2_name='".$_data['old_type2'][$i]."'")->save($type2);
-                }else{  //不存在该type2时，直接新添数据
-                    $type2_ret = M('goods_type2')->where("1=1")->add($type2);
-                }
-                // var_dump($type2_ret);
+                M("goods_type2")->where("id=".$_data['type2_id'][$i])->save($type2);
             }
+            for( $i=$old_length;$i<$new_length;$i++ ){  //对新添的goods_type2进行数据添加
+                $type2['type2_name']  = $_data['type2_name'][$i];
+                $type2['goods_id'] = $id;
+                M("goods_type2")->add($type2);
+            }
+
 
             $errno = null;
-            if( $result != false &&  $specify_ret != false && $type2_ret != false ){
+            if( $result == 0 || $result == 1){
                 $errno = array('style'=>'success','str'=>'商品编辑成功！');
             }else{
                 $errno = array('style'=>'error','str'=>'商品编辑失败！');
@@ -189,4 +187,14 @@ class GoodsController extends CheckLoginController {
         $this->assign('cat',$cat);
         $this->display('edit');
     }
+
+    /**
+     * 删除商品sku
+     */
+    public function delSku(){
+        $id = I('post.id'); //数据表的唯一主键id
+        $model = I('post.model');
+        M($model)->where("id={$id}")->delete();
+    }
+
 }

@@ -76,22 +76,6 @@ a.title_text {
                     <td class="left_td">商品名称：</td>
                     <td class="right_td"><input type="text" name="goods_name" class="input" value="<?php echo ($data["goods_name"]); ?>" id="title"/></td>
                 </tr>
-                <!-- <tr>
-                    <td class="left_td">商品原价：</td>
-                    <td class="right_td"><input type="text" name="goods_price" class="input" value="<?php echo ($data["goods_price"]); ?>" /></td>
-                </tr>
-                <tr>
-                    <td class="left_td">商品促销价：</td>
-                    <td class="right_td"><input type="text" name="goods_discount" class="input" value="<?php echo ($data["goods_discount"]); ?>"/></td>
-                </tr>
-                <tr>
-                    <td class="left_td">商品系列号：</td>
-                    <td class="right_td"><input type="text" name="goods_sn" class="input" value="<?php echo ($data["goods_sn"]); ?>" /></td>
-                </tr>
-                <tr>
-                    <td class="left_td">商品库存：</td>
-                    <td class="right_td"><input type="text" name="goods_nums" class="input" value="<?php echo ($data["goods_nums"]); ?>" /></td>
-                </tr> -->
                 <tr>
                     <td class="left_td">商品月销量：</td>
                     <td class="right_td"><input type="text" name="month_sales" class="input" value="<?php echo ($data["month_sales"]); ?>" /></td>
@@ -116,9 +100,9 @@ a.title_text {
                             <input style="width:80px;float:left;" type="text" name="goods_price[]" placeholder="商品原价" class="input" value="<?php echo ($vo["goods_price"]); ?>" />
                             <input style="width:80px;float:left;" type="text" name="goods_discount[]" placeholder="商品折扣价" class="input" value="<?php echo ($vo["goods_discount"]); ?>" />
                             <input style="width:80px;float:left;" type="text" name="goods_num[]" class="input" placeholder="库存数量" value="<?php echo ($vo["goods_num"]); ?>" />
-                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)"/>
-                        </div>
-                        <input type="hidden" name="old_sn[]" value="<?php echo ($vo["goods_sn"]); ?>"/><?php endforeach; endif; ?>
+                            <input type="hidden" name="specify_id[]" value="<?php echo ($vo["id"]); ?>"/>
+                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delSku(this)"/>
+                        </div><?php endforeach; endif; ?>
                     </td>
                     <td>
                         <img src="/Public/images/add.jpg" style="width:20px;height:20px;cursor:pointer;float:right;" id="type1_add" />
@@ -132,9 +116,9 @@ a.title_text {
                     <td class="right_td" id="goods_package">
                     <?php if(is_array($data2)): foreach($data2 as $key=>$vo): ?><div class="type_content">
                         <input type="text" name="type2_name[]" class="input" value="<?php echo ($vo["type2_name"]); ?>" />
-                        <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" />
-                    </div>
-                    <input type="hidden" name="old_type2[]" value="<?php echo ($vo["type2_name"]); ?>"/><?php endforeach; endif; ?>
+                        <input type="hidden" name="type2_id[]" value="<?php echo ($vo["id"]); ?>"/>
+                        <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delSku2(this)" />
+                    </div><?php endforeach; endif; ?>
                         
                     </td>
                     <td>
@@ -229,9 +213,41 @@ $(document).ready(function(){
     });
 })
 
+//删除包含sku的div
 function delType(obj){
     var bool = window.confirm("确定要删除吗？");
     if(bool != true) return;
+    $(obj).parents(".type_content").remove();
+}
+
+//删除包含sku的div，对应数据内容亦删
+function delSku(obj){
+    var bool = window.confirm("此操作会删除数据库相应数据，确定吗？");
+    if( bool != true ) return;
+    var id = $(obj).siblings("input[name='specify_id[]']").val();
+    var model = "goods_specify";    //要删除的内容的数据表
+    $.post(
+        '/Admin/Goods/delSku',
+        {id:id,model:model},
+        function(ret){
+
+        }
+    );
+    $(obj).parents(".type_content").remove();
+}
+//删除包含sku2的div，对应数据内容亦删
+function delSku2(obj){
+    var bool = window.confirm("此操作会删除数据库相应数据，确定吗？");
+    if(bool!=true) return;
+    var id = $(obj).siblings("input[name='type2_id[]']").val();
+    var model = "goods_type2";  //要删除的内容的数据表
+    $.post(
+        '/Admin/Goods/delSku',
+        {id:id,model:model},
+        function(ret){
+
+        }
+    );
     $(obj).parents(".type_content").remove();
 }
 </script>
