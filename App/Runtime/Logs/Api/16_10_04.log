@@ -1,0 +1,42 @@
+[ 2016-10-04T10:16:26+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0063s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2016-10-04T10:16:27+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0050s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000161s ]
+
+[ 2016-10-04T10:16:29+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0009s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0051s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+

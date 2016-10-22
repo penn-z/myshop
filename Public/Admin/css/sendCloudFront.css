@@ -1,0 +1,177 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+	margin:0;
+	padding:0
+}
+body,button,input,select,textarea {
+	font:12px/1.2 tahoma,arial;
+	color:#4c4a4a
+}
+html,body {
+	width:100%;
+	height:100%
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%
+}
+ul,ol {
+	list-style:none outside none
+}
+a {
+	text-decoration:none
+}
+a:hover {
+	text-decoration:none
+}
+legend {
+	color:#000
+}
+fieldset,img {
+	border:0 none
+}
+button,input,select,textarea {
+	font-size:100%
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+
+body {
+	background-color:#fcfcfc
+}
+
+.scr-header .logo {
+	display:block;
+	margin:113px auto 20px;
+	width:388px;
+	height:71px;
+	background:url("../imgs/login-log.png") no-repeat
+}
+.scr-body {
+	width:388px;
+	margin:0 auto;
+	color:#4c4a4a
+}
+.scr-wrapper {
+	background:url("../imgs/scrBody-y.png") repeat-y
+}
+.scr-wrapper-top {
+	background:url("../imgs/scrWrapperBgTop.png") no-repeat
+}
+.scr-wrapper-inner {
+	position:relative;
+	background:url("../imgs/scrWrapperBgBottom.png") no-repeat left bottom;
+	min-height:343px;
+	_height:343px;
+	padding-bottom:50px
+}
+.scr-wrapper .msg,.scr-wrapper .msg2 {
+	display:none;
+	position:absolute;
+	font-size:14px;
+	width:100%;
+	text-align:center;
+	left:0;
+	top:17px
+}
+.scr-wrapper .msg2 {
+	top:9px
+}
+.scr-wrapper .error {
+	color:#f00
+}
+.scr-wrapper .ipt,.scr-wrapper .pwd2,.scr-wrapper .pwd {
+	display:block;
+	outline:0;
+	font-family:'Microsoft YaHei',"微软雅黑",SimSun,tahoma,arial;
+	color:#4c4a4a;
+	padding:4px 6px;
+	height:20px;
+	line-height:20px;
+	width:298px;
+	border:1px solid #ccc;
+	transition:all linear .2s;
+	-moz-transition:all linear .2s;
+	-webkit-transition:all linear .2s;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background:0
+}
+.scr-wrapper .ipt:focus,.scr-wrapper .pwd2:focus,.scr-wrapper .pwd:focus {
+	border-color:#52a8ec;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow:0 0 8px rgba(82,168,236,0.6);
+	-moz-box-shadow:0 0 8px rgba(82,168,236,0.6);
+	-webkit-box-shadow:0 0 8px rgba(82,168,236,0.6)
+}
+.scr-wrapper .remPwd {
+	vertical-align:middle;
+	margin-right:10px
+}
+.scr-wrapper .remPwdLabel {
+	display:inline-block;
+	margin-bottom:0;
+	vertical-align:middle;
+}
+.scr-wrapper .pwd2 {
+	display:inline-block;
+	width:100px;
+	margin-right:5px
+}
+.scr-wrapper .ver-code {
+	vertical-align:middle
+}
+.scr-advice {
+	line-height:1.8;
+	margin-top:8px;
+	margin-left:120px
+}
+.scr-advice a {
+	color:#4183c4
+}
+.scr-advice a:hover {
+	text-decoration:underline
+}
+.scr-log-form-list {
+	margin-left:42px;
+	padding-top:70px
+}
+.scr-log-form-list .scr-form-item {
+	margin-bottom:32px;
+	position:relative
+}
+.scr-log-form-list .prefix {
+	color:#4c4a4a;
+	display:inline-block;
+	font:normal 14px/1.2 'Microsoft YaHei',"微软雅黑",SimSun,tahoma,arial;
+	margin-bottom:8px
+}
+.scr-log-form-list .pwd {
+	margin-bottom:8px
+}
+.scr-log-form-list .scr-log-item {
+	position:relative;
+	padding-top:15px
+}
+.log-btn,.log-ing-btn,.reg-btn,.reg-ing-btn,.forget-btn,.forget-ing-btn,.confirm-pwd-btn {
+	display:inline-block;
+	width:300px;
+	height:40px;
+	background:url("../imgs/scrBody.png") no-repeat 0 -70px
+}
+.log-btn:active {
+	background-position:0 -125px
+}
+.log-ing-btn {
+	display:none;
+	position:absolute;
+	left:0;
+	top:15px;
+	background-position:-320px -70px
+}

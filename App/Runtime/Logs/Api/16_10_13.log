@@ -1,0 +1,754 @@
+[ 2016-10-13T09:46:15+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0005s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0029s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-10-13T09:46:16+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0022s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=17 ) [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000148s ]
+
+[ 2016-10-13T09:46:18+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0013s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0051s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-13T09:46:19+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0010s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0026s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000139s ]
+
+[ 2016-10-13T09:54:43+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0010s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0027s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_address` SET `is_default`='1' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_address` SET `is_default`='1' WHERE ( id= )
+
+[ 2016-10-13T09:54:47+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0011s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0099s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_address` SET `is_default`='1' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_address` SET `is_default`='1' WHERE ( id= )
+
+[ 2016-10-13T09:55:05+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0009s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0085s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_address` SET `is_default`='1' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_address` SET `is_default`='1' WHERE ( id= )
+
+[ 2016-10-13T10:07:13+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0052s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-10-13T10:07:18+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0009s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0054s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000149s ]
+
+[ 2016-10-13T10:07:23+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0011s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0038s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=17 ) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2016-10-13T10:07:32+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0055s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2016-10-13T10:07:38+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0008s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0033s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=17 ) [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000171s ]
+
+[ 2016-10-13T10:08:07+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0008s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0041s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000148s ]
+
+[ 2016-10-13T10:10:23+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0055s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-10-13T10:10:25+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0005s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0023s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000149s ]
+
+[ 2016-10-13T10:17:56+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumChange
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`='1' WHERE ( cart_id=13 ) [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000150s ]
+
+[ 2016-10-13T10:17:58+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumChange
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`='1' WHERE ( cart_id=28 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-10-13T10:51:06+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0048s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000151s ]
+
+[ 2016-10-13T14:26:17+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0008s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0044s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000281s ]
+
+[ 2016-10-13T14:26:19+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0052s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2016-10-13T14:26:21+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0079s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-10-13T14:27:41+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0008s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0042s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-10-13T14:27:47+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0041s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2016-10-13T14:30:09+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0009s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0070s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000135s ]
+
+[ 2016-10-13T14:30:14+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0071s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-10-13T14:30:27+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0043s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-10-13T15:18:21+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0055s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000169s ]
+
+[ 2016-10-13T15:18:23+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0009s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0067s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+
+[ 2016-10-13T15:18:23+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0008s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0068s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-13T15:18:34+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0068s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2016-10-13T15:18:35+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0071s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=17 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000153s ]
+
+[ 2016-10-13T15:19:30+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0054s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000145s ]
+
+[ 2016-10-13T15:19:34+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0005s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0070s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=32 ) [ RunTime:0.0046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-10-13T15:19:35+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0010s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0070s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2016-10-13T15:19:38+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0055s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000152s ]
+
+[ 2016-10-13T15:19:39+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0042s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-10-13T15:34:04+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0071s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-10-13T15:34:05+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0069s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-10-13T15:34:10+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0072s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=17 ) [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2016-10-13T15:34:18+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0069s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2016-10-13T15:45:20+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0013s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0057s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-10-13T15:45:27+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0005s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0096s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000133s ]
+
+[ 2016-10-13T15:45:29+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0240s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000232s ]
+
+[ 2016-10-13T15:47:57+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0070s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2016-10-13T17:37:21+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0052s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=37 ) [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000163s ]
+
+[ 2016-10-13T17:37:31+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0068s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000171s ]
+
+[ 2016-10-13T19:24:27+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0043s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=15 ) [ RunTime:0.0035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2016-10-13T19:24:28+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0070s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000143s ]
+
+[ 2016-10-13T20:14:30+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0088s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=33 ) [ RunTime:0.0044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-10-13T20:14:33+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0011s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0088s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000167s ]
+
+[ 2016-10-13T23:45:26+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0005s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0060s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=17 ) [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000138s ]
+
+[ 2016-10-13T23:45:29+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0070s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000156s ]
+
+[ 2016-10-13T23:45:33+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0025s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=36 ) [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2016-10-13T23:45:36+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0006s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0067s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=10 ) [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+

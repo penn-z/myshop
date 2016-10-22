@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>个人资料</title>
+
+		<link href="/Public/AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="/Public/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="/Public/css/personal.css" rel="stylesheet" type="text/css">
+		<link href="/Public/css/infstyle.css" rel="stylesheet" type="text/css">
+		<script src="/Public/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="/Public/AmazeUI-2.4.2/assets/js/amazeui.js"></script>			
+	</head>
+
+	<body>
+		<!--头 -->
+		<include file="Person/common/header" />
+		<!-- 头 -->
+            
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap">
+
+					<div class="user-info">
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">个人资料</strong> / <small>Personal&nbsp;information</small></div>
+						</div>
+						<hr/>
+
+						<!--头像 -->
+						<form class="am-form am-form-horizontal" action="/home/information/information" method="post" id="user_form" enctype="multipart/form-data">
+						<div class="user-infoPic">
+
+							<div class="filePic">
+								<input type="file" class="inputPic" name="header_img" />
+								<img class="am-circle am-img-thumbnail" src="{$data.header_img|default='/Public/images/getAvatar.do.jpg'}" alt="" style="width:100%;height:100%;"/>
+								<input type="hidden" name="old" value="{$data.header_img}" />
+								<input type="hidden" name="act" value="edit" />
+
+							</div>
+
+							<p class="am-form-help">头像</p>
+
+							<div class="info-m">
+								<div><b>用户名：<i>{$Think.session.username}</i></b></div>
+								<div class="vip">
+                                      <span></span><a href="#">会员专享</a>
+								</div>
+							</div>
+						</div>
+
+						<!--个人信息 -->
+						<div class="info-main">
+							
+
+								<div class="am-form-group">
+									<label for="user-name2" class="am-form-label">昵称</label>
+									<div class="am-form-content">
+										<input type="text" id="user-name2" name="user[nickname]" placeholder="nickname" value="{$data.nickname|default=''}">
+                                          <small>昵称长度不能超过20个汉字</small>
+									</div>
+								</div>
+
+								<div class="am-form-group">
+									<label for="user-name1" class="am-form-label">姓名</label>
+									<div class="am-form-content">
+										<input type="text" id="user-name1" name="user[username]" placeholder="name" value="{$data.username|default=''}" >
+                                         
+									</div>
+								</div>
+
+								<div class="am-form-group">
+									<label class="am-form-label">性别</label>
+									<div class="am-form-content sex">
+										<label class="am-radio-inline">
+											<input type="radio" name="user[sexy]" value="male" data-am-ucheck    <eq name="data.sexy" value="male"> checked</eq> > 男
+										</label>
+										<label class="am-radio-inline">
+											<input type="radio" name="user[sexy]" value="female" data-am-ucheck <eq name="data.sexy" value="female"> checked</eq> > 女
+										</label>
+										<label class="am-radio-inline">
+											<input type="radio" name="user[sexy]" value="secret" data-am-ucheck <eq name="data.sexy" value="secret"> checked</eq> > 保密
+										</label>
+									</div>
+								</div>
+
+								<div class="am-form-group">
+									 <label for="user-birth" class="am-form-label">生日</label>
+									<div class="am-form-content birth">
+									<input type="date" name="user[birth]" id="mybirth" value='{$data.birth|date="Y-m-d",###}' onchange="showBirth()" />
+									</div>
+								</div>
+								<div class="am-form-group">
+									<label for="user-phone" class="am-form-label">电话</label>
+									<div class="am-form-content">
+										<input id="user-phone" name="user[iphone]" placeholder="telephonenumber" type="tel" value="{$data.iphone|default=''}">
+
+									</div>
+								</div>
+								<div class="am-form-group">
+									<label for="user-email" class="am-form-label">电子邮件</label>
+									<div class="am-form-content">
+										<input id="user-email" name="user[iemail]" placeholder="Email" type="email" value="{$data.iemail|default=''}">
+
+									</div>
+								</div>
+								<div class="am-form-group address">
+									<label for="user-address" class="am-form-label">收货地址</label>
+									<div class="am-form-content address">
+										<a href="address.html">
+											<p class="new-mu_l2cw">
+												<span class="province">湖北</span>省
+												<span class="city">武汉</span>市
+												<span class="dist">洪山</span>区
+												<span class="street">雄楚大道666号(中南财经政法大学)</span>
+												<span class="am-icon-angle-right"></span>
+											</p>
+										</a>
+
+									</div>
+								</div>
+								<div class="am-form-group safety">
+									<label for="user-safety" class="am-form-label">账号安全</label>
+									<div class="am-form-content safety">
+										<a href="safety.html">
+
+											<span class="am-icon-angle-right"></span>
+
+										</a>
+
+									</div>
+								</div>
+								<div class="info-btn">
+									<div class="am-btn am-btn-danger" onclick="save()" >保存修改</div>
+								</div>
+
+
+						</form>
+						</div>
+
+					</div>
+
+				</div>
+				<!--底部-->
+				<include file="Person/common/footer" />
+				<!-- 底部 -->
+			</div>
+			<!-- 左边 -->
+			<include file="Person/common/left" />
+			<!-- 左边 -->
+		</div>
+<script>
+//个人资料正则匹配
+function save(){
+	var email = document.getElementById("user-email").value;
+	var phone = document.getElementById("user-phone").value;
+	var nickname = document.getElementById("user-name2").value;
+
+	//用户名判定,4-20个字符，中文、字母数字、下划线
+    if( !nickname.match(/^[\u4e00-\u9fa5\w]{0,4}$/) ){
+        alert('用户昵称超过最大长度限制');
+        return;
+    }
+
+    //若有输入邮箱时，进行邮箱正则匹配
+   	if( email != '' ){
+   		if( !email.match( /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/ ) ){
+	        alert('请输入正确的邮箱');
+	        return;
+	    }
+   	}
+	    
+    //若有输入手机时，进行正则匹配
+    if( phone != '' ){
+		if(!phone.match( /^1\d{10}$/ )){
+			alert('请输入正确的手机号码');
+			return;
+		}
+	}
+
+	document.getElementById("user_form").submit();
+}
+</script>
+	</body>
+
+</html>

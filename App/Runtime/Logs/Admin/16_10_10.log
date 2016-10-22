@@ -1,0 +1,2238 @@
+[ 2016-10-10T09:18:51+08:00 ] 127.0.0.1 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-10-10T09:18:51+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-10-10T19:32:02+08:00 ] 127.0.0.1 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2016-10-10T19:32:02+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-10-10T21:38:51+08:00 ] 127.0.0.1 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-10T21:38:51+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2016-10-10T21:38:55+08:00 ] 127.0.0.1 /admin/login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_admin` WHERE ( account='penn' ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000153s ]
+
+[ 2016-10-10T21:38:56+08:00 ] 127.0.0.1 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-10T21:38:56+08:00 ] 127.0.0.1 /Admin/Admin/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-10-10T21:38:56+08:00 ] 127.0.0.1 /Admin/Admin/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-10-10T21:38:56+08:00 ] 127.0.0.1 /Admin/Admin/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-10-10T21:38:56+08:00 ] 127.0.0.1 /Admin/Admin/foot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-10-10T21:38:59+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-10-10T21:39:02+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-10-10T21:39:03+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-10-10T21:39:29+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000148s ]
+
+[ 2016-10-10T21:39:30+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-10-10T21:39:36+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-10T21:40:29+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000129s ]
+
+[ 2016-10-10T21:40:38+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-10T21:40:55+08:00 ] 127.0.0.1 /admin/img/add?act=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn='1000002' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_thumb` (`goods_name`,`goods_sn`,`goods_id`,`addtime`) VALUES ('良品铺子 手剥松子218g 坚果炒货 巴西松子','1000002','7','1476106855') [ RunTime:0.0083s ]
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+
+[ 2016-10-10T21:40:57+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-10-10T21:41:12+08:00 ] 127.0.0.1 /admin/img/add?act=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn='1000003' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_thumb` (`goods_name`,`goods_sn`,`goods_id`,`addtime`) VALUES ('良品铺子 手剥松子218g 坚果炒货 巴西松子','1000003','7','1476106872') [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-10T21:41:33+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000195s ]
+
+[ 2016-10-10T21:41:40+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000189s ]
+
+[ 2016-10-10T21:41:56+08:00 ] 127.0.0.1 /admin/img/add?act=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn='1000004' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_thumb` (`goods_name`,`goods_sn`,`goods_id`,`addtime`) VALUES ('良品铺子 手剥松子218g 坚果炒货 巴西松子','1000004','7','1476106916') [ RunTime:0.0069s ]
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-10-10T21:41:57+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-10-10T21:42:54+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-10-10T21:43:02+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-10-10T21:43:30+08:00 ] 127.0.0.1 /admin/img/add?act=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn='1011' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_thumb` (`goods_name`,`goods_sn`,`goods_id`,`addtime`) VALUES ('测试006','1011','20','1476107010') [ RunTime:0.0055s ]
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-10-10T21:43:48+08:00 ] 127.0.0.1 /admin/img/add?act=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn='1012' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_thumb` (`goods_name`,`goods_sn`,`goods_id`,`addtime`) VALUES ('测试006','1012','20','1476107028') [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-10T21:43:50+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-10-10T21:43:52+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-10-10T21:43:54+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-10-10T21:45:14+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-10-10T21:45:20+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-10-10T21:45:22+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-10-10T21:45:25+08:00 ] 127.0.0.1 /admin/img/showList?act=del&id=9&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: DELETE FROM `think_thumb` WHERE ( id='9' ) [ RunTime:0.0067s ]
+ERR: 1146:Table 'shop.think_img' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_img`
+ERR: 1146:Table 'shop.think_img' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_img`
+
+[ 2016-10-10T21:45:27+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-10-10T21:45:32+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-10-10T21:45:34+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2016-10-10T21:45:42+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000194s ]
+
+[ 2016-10-10T21:45:57+08:00 ] 127.0.0.1 /admin/img/add?act=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn='1010' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_thumb` (`goods_name`,`goods_sn`,`goods_id`,`addtime`) VALUES ('测试006','1010','20','1476107157') [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+NOTIC: [8] Undefined index: name /var/www/shop/App/Admin/Controller/ImgController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-10T21:45:59+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2016-10-10T21:46:00+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-10-10T21:46:02+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-10-10T21:46:03+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-10T21:46:04+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-10T21:46:05+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-10-10T21:46:06+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-10T21:46:07+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-10-10T21:46:40+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-10-10T21:46:42+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-10-10T21:46:47+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000167s ]
+
+[ 2016-10-10T21:46:56+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1010
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000173s ]
+
+[ 2016-10-10T21:47:04+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1010
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-10-10T21:47:19+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:47:22+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:47:25+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:47:27+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: UPDATE `think_thumb` SET `big`='a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1010/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1010/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1010/003_big.jpg\";}',`mid`='a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1010/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1010/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1010/003_mid.jpg\";}',`small`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1010/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1010/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1010/003_small.jpg\";}' WHERE ( goods_sn=1010 ) [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-10-10T21:47:35+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-10T21:48:11+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-10-10T21:48:13+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2016-10-10T21:48:16+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:48:18+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:48:20+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:48:21+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: UPDATE `think_thumb` SET `big`='a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1011/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1011/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1011/003_big.jpg\";}',`mid`='a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1011/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1011/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1011/003_mid.jpg\";}',`small`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1011/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1011/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1011/003_small.jpg\";}' WHERE ( goods_sn=1011 ) [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-10T21:48:22+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-10-10T21:48:27+08:00 ] 127.0.0.1 /Admin/Img/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/dfc76be786dc01e56bae42905ad1fdd4.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-10-10T21:48:28+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000118s ]
+
+[ 2016-10-10T21:48:30+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-10-10T21:48:32+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-10T21:48:35+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:48:37+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:48:38+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:48:39+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: UPDATE `think_thumb` SET `big`='a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1012/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1012/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1012/003_big.jpg\";}',`mid`='a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1012/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1012/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1012/003_mid.jpg\";}',`small`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1012/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1012/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1012/003_small.jpg\";}' WHERE ( goods_sn=1012 ) [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-10-10T21:48:40+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-10-10T21:48:42+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-10-10T21:48:45+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1000002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-10-10T21:48:59+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:02+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:04+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:05+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0010s ]
+SQL: UPDATE `think_thumb` SET `big`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000002/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000002/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000002/03_big.jpg\";}',`mid`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000002/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000002/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000002/03_mid.jpg\";}',`small`='a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000002/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000002/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000002/03_small.jpg\";}' WHERE ( goods_sn=1000002 ) [ RunTime:0.0056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2016-10-10T21:49:06+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1000002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-10-10T21:49:06+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2016-10-10T21:49:09+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1000003
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
+[ 2016-10-10T21:49:12+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000190s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:15+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:17+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:28+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000199s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:30+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:32+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:49:33+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: UPDATE `think_thumb` SET `big`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000003/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000003/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000003/03_big.jpg\";}',`mid`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000003/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000003/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000003/03_mid.jpg\";}',`small`='a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000003/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000003/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000003/03_small.jpg\";}' WHERE ( goods_sn=1000003 ) [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-10-10T21:49:34+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1000003
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-10-10T21:49:35+08:00 ] 127.0.0.1 /Admin/Img/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+NOTIC: [8] Undefined index: p /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-10-10T21:49:56+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 5,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2016-10-10T21:49:57+08:00 ] 127.0.0.1 /index.php/Admin/Img/showList/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_thumb` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( 1=1 ) ORDER BY id LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: errno /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 90 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+NOTIC: [8] Undefined variable: val /var/www/shop/App/Runtime/Cache/Admin/e37382270089a8483f3b76373e56a7eb.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-10-10T21:49:59+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1000004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000123s ]
+
+[ 2016-10-10T21:50:03+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:50:06+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:50:09+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/shop/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-10-10T21:50:10+08:00 ] 127.0.0.1 /admin/img/accept
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0011s ]
+SQL: UPDATE `think_thumb` SET `big`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000004/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000004/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000004/03_big.jpg\";}',`mid`='a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000004/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000004/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000004/03_mid.jpg\";}',`small`='a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000004/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000004/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000004/03_small.jpg\";}' WHERE ( goods_sn=1000004 ) [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-10-10T21:50:11+08:00 ] 127.0.0.1 /admin/img/upload?act=upload&sn=1000004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-10-10T21:50:12+08:00 ] 127.0.0.1 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-10-10T21:50:12+08:00 ] 127.0.0.1 /Admin/Admin/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2016-10-10T21:50:12+08:00 ] 127.0.0.1 /Admin/Admin/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-10-10T21:50:12+08:00 ] 127.0.0.1 /Admin/Admin/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-10-10T21:50:12+08:00 ] 127.0.0.1 /Admin/Admin/foot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+

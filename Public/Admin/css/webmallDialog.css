@@ -1,0 +1,25 @@
+.hoverWindowBox {position:absolute;display:none;height:auto;width:300px;top:0px;left:0px;background-color:#EEEEEE;z-index: 6;}
+.hoverWindowTitleBox {overflow:hidden;zoom: 1;background-color:#EEEEEE;height:32px;line-height:32px;cursor:move;border-bottom:1px solid #CCC;}
+.hoverWindowTileContent {float:left;cursor:move;height:32px;line-height:32px;background-color:#EEEEEE;color:#666666;margin-left:10px;}	
+.titleCloseButton {float:right;width:40px;text-align:center;cursor:pointer;color:#666666;font-weight:bold;}
+.titleCloseButton:hover {color:#F00;}
+.hoverWindowContent {background-color:#FFFFFF;height:auto;}
+	
+.tips_box {position:absolute; display:none; overflow:hidden; zoom: 1; z-index:6;background: #FFF;}
+.tips_left {float:left; background-image:url(../imgs/gb_tips.png); background-repeat:no-repeat; height:51px; width:44px;}
+.tips_center {float:left; background-image:url(../imgs/gb_tips.png); background-repeat:repeat-x; height:51px; line-height:51px; background-position:-4px -161px; text-align:center; color:#666; font-size:14px; font-weight:600;}
+.tips_right {float:left; background-image:url(../imgs/gb_tips.png); background-repeat:no-repeat; height:51px; width:4px; background-position:0px 0px}
+
+.webssky_lock_div {position:absolute; left:0px; top:0px; z-index:4;}
+
+/*tip widget*/
+p.tip {position:relative;text-align: left;
+    padding: 10px 10px 10px 40px;font-size: 13px;}
+p.tip span {position:absolute;padding: 5px;right: 7px; top: 5px;font-size: 12px;font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;display:block;cursor: pointer;}
+p.notice {color: #74655f;background: #fffcd3 url(../imgs/p-icon.gif) no-repeat 11px 10px;border: 1px solid #c2beb1;}
+p.success {color: #688006; background: #e5f993 url(../imgs/p-icon.gif) no-repeat 11px -16px;border: 1px solid #9bac55;}
+p.info {color: #4b6bab;background: #d4ebfa url(../imgs/p-icon.gif) no-repeat 11px -43px;border: 1px solid #90b1c7;}
+p.error {color: #c32727;background: #f6b9b9 url(../imgs/p-icon.gif) no-repeat 11px -70px;border: 1px solid #e18484;}
+div.b-space {height: 20px;}
+div.s-space {height:10px;}

@@ -1,0 +1,1284 @@
+[ 2016-10-06T10:16:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000501s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-10-06T10:16:52+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-10-06T10:17:29+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-10-06T11:00:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-10-06T11:02:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-10-06T16:32:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000503s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2016-10-06T16:32:08+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-10-06T16:32:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-10-06T21:04:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-06T21:04:11+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2016-10-06T21:07:24+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-10-06T21:08:30+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-10-06T21:11:59+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-10-06T21:12:46+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-10-06T21:14:35+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-10-06T21:14:39+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-06T21:21:52+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-10-06T21:22:03+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-10-06T21:22:05+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2016-10-06T21:22:37+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-10-06T21:22:54+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-10-06T21:23:03+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000147s ]
+
+[ 2016-10-06T21:30:34+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000136s ]
+
+[ 2016-10-06T21:31:55+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=$i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=$i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=$i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name=$i value="0"
+
+[ 2016-10-06T21:32:04+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name=i value="0"
+
+[ 2016-10-06T21:32:05+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name=i value="0"
+
+[ 2016-10-06T21:32:05+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name=i value="0"
+
+[ 2016-10-06T21:32:11+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-10-06T21:32:16+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-10-06T21:32:16+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-10-06T21:32:16+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-10-06T21:33:09+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=$i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=$i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=$i value=&quot;0&quot; /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name=$i value="0"
+
+[ 2016-10-06T21:33:21+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-10-06T21:33:27+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=&quot;$i&quot; value=0 /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                           ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=&quot;$i&quot; value=0 /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                           ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=&quot;$i&quot; value=0 /&gt;&lt;/tpl&gt; /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                           ^ /var/www/shop/ThinkPHP/Library/Think/Template/TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name="$i" value=0
+
+[ 2016-10-06T21:33:34+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-10-06T21:33:55+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+
+[ 2016-10-06T21:35:02+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: 0 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined variable: 1 /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 146 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-10-06T21:35:50+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-10-06T21:36:46+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-10-06T21:38:26+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-10-06T21:39:02+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 148 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+NOTIC: [8] Undefined index: i /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2016-10-06T21:39:21+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-10-06T21:40:11+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-10-06T21:41:42+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-10-06T21:42:41+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-10-06T21:44:09+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-10-06T21:51:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-06T21:51:31+08:00 ] 127.0.0.1 /home/introduction?id=8&sn=1000011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 6 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000011 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+

@@ -1,0 +1,69 @@
+@charset "utf-8";
+.search {float:right;width:260px;height:28px;margin:10px 20px 0px 0px;background:url(../imgs/search_bg.jpg) no-repeat left center;}
+.search input{height:22px;line-height:22px;width:200px;background:none;border:none;font-size:12px;color:#555;padding:2px 4px;}
+.search .buttun {height:24px;line-height:24px;width:50px;background:none;}
+.keywords_show {float:left;height:22px;width:600px;margin-top:20px;margin-left:10px;padding-left:40px;border-bottom:1px dashed #CCC;}
+.form_buttun:hover {font-size:12px;color:#333;background-color:#FC3;}
+	
+.real_c {width:98%;float:left;height:auto;margin-top:10px;padding-left:10px;padding-right:10px;}
+.table_content {border: 1px dashed #E3E3E3;width:100%;margin-top:10px;}
+.table_content a {font-size:13px;color:#666;text-decoration:none;}
+.table_content a:hover {font-size:13px;color:#06C;text-decoration:underline;}
+
+/*标题css*/	
+.tr_top {font-weight:bold;border:1px solid #FFF;background-color:#E8E8E8;height:25px;}
+.tr_top td {text-align:center;}
+	
+	/*内容tdcss*/
+.tr_list {font-size:12px;height:24px;background-color:#FFF;border: 1px solid #FFF;}
+.tr_list td {text-align:center;height:24px;}
+.tr_list_page {font-weight:12px;height:24px;background-color:#EBEBEB;border: 1px solid #FFF;}
+.tr_list_page:hover, .tr_list:hover {background-color: #dbdbdb;}
+.tr_list_page td {text-align:center;height:24px;}
+	
+.td_menu div {float:left;margin-left:40px;height:24px;}
+.div_input input {float:left;margin-left:20px;height:20px;font-weight:bold;}
+.div_input input:hover {background-color:#F93;font-weight:bold;}
+
+	
+/*添加页面的样式*/
+.input {font-size:12px;color:#666;border:1px solid #CCC;background:#FFF;height:24px;line-height:24px;width:220px;
+	border-radius:3px;-moz-border-radius:3px;padding:0px 3px;margin-left:10px;}
+.textarea {font-size:12px;color:#666;border:1px solid #CCC;width:600px;height:60px;background:#FFF;
+	border-radius:3px;-moz-border-radius:3px;padding:2px 3px;}
+.select {border:1px solid #CCC;width:120px;font-size:12px;color:#666;background:#FFF;}
+.file {border:1px solid #CCC;width:220px;background:#FFF;}
+
+
+/*tip widget*/
+p.tip {position:relative;text-align: left;
+    padding: 10px 10px 10px 40px;font-size: 13px;}
+p.tip span {position:absolute;padding: 5px;right: 7px; top: 5px;font-size: 12px;font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;display:block;cursor: pointer;}
+p.notice {color: #74655f;background: #fffcd3 url(../images/p-icon.gif) no-repeat 11px 10px;border: 1px solid #c2beb1;}
+p.success {color: #688006; background: #e5f993 url(../images/p-icon.gif) no-repeat 11px -16px;border: 1px solid #9bac55;}
+p.info {color: #4b6bab;background: #d4ebfa url(../images/p-icon.gif) no-repeat 11px -43px;border: 1px solid #90b1c7;}
+p.error {color: #c32727;background: #f6b9b9 url(../images/p-icon.gif) no-repeat 11px -70px;border: 1px solid #e18484;}
+div.b-space {height: 20px;}
+div.s-space {height:10px;}
+
+#add_table td { height:30px; line-height:30px;font-size:12px; color:#555;
+    border-bottom:1px solid #DDD;}
+.left_td { width:90px; height:30px; line-height:30px; text-align:right;padding-right:20px}
+.right_td { text-align:left; height:30px; line-height:30px;}
+.link_a { color:#00F; text-decoration:none; font-size:12px;}
+.link_a:hover { text-decoration:underline;}
+
+.float-td {overflow:hidden;zoom:1;padding-top:3px;}
+#src_link {float: left;height:24px;line-height:24px;}
+#extra-link {float:left;margin-left:20px;height:24px;line-height:24px;width:100px;text-align:center;
+	background:#4869E1;color:#FFF;font-weight:bold;text-decoration:none;border-radius:3px;-moz-border-radius:3px;}
+
+/*edit and add */
+.right_td .advance-link {display:inline-block;vertical-align:middle;width:80px;height:24px;line-height:24px;
+	text-align:center;border-radius:3px;-moz-border-radius:3px;margin-right:10px;}
+.right_td .advance-close {background:#E7DDDD;color:#555;}
+.right_td .advance-open {background:#09B02A;color:#FFF;}
+.goods-type input {cursor: pointer;}
+.goods-type label {cursor: pointer;margin-right: 20px;}
+.select-text {border: 1px solid #CCC;background: #FFF;padding: 0px 5px;}

@@ -1,0 +1,45 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class LoginController extends Controller {
+    public function index(){
+        session('is_login',null);   //进入登陆页面即注销登陆状态
+    	$this->display('login');
+    }
+
+    public function login(){
+
+        $user = I('post.user');
+        $table = M('user');
+        //定义查询条件
+        $condition['email'] = "{$user['str']}";
+        $condition['account'] = "{$user['str']}";
+        $condition['_logic'] = 'OR';
+        $data = $table->where($condition)->find();
+
+        if( $data != false){
+            if( $data['password'] == md5($user['password']) ){
+                session('is_login',1);  //储存一个登陆状态session
+                session('id',$data['id']);  //储存一个唯一id 
+                session('username',$data['account']);   //储存用户账户名session
+                $is_rem = I('post.is_rem'); //获取是否记住密码状态
+                if( $is_rem == 'on' ){      //记住密码时
+                    cookie('login_account',$user['str'],3600*24); // 指定账号cookie保存时间
+                    cookie('login_password',$user['password'],3600*24); // 指定密码cookie保存时间
+                    cookie('checked','checked',3600*24); // 指定密码的勾选cookie保存时间
+                }else{      //不记住密码时
+                    cookie('login_password',null);   //删除密码cookie
+                    cookie('checked',null);
+                }
+                redirect("/home/",1,"正在跳转中...");
+            } 
+            else{
+                redirect('/home/login',2,'密码有误！正在跳回登陆页面...');
+            } 
+        }else{
+            redirect('/home/login',2,'用户不存在！正在跳回登陆页面...');
+        }
+    }
+
+    
+}
