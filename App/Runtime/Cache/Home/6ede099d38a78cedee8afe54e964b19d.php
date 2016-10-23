@@ -323,8 +323,8 @@
 												</li>
 												<li class="td td-info">
 													<div class="item-props">
-														<span class="sku-line">口味：<?php echo ($vo["goods_type"]); ?></span>
-														<span class="sku-line">包装：<?php echo ($vo["goods_package"]); ?></span>
+														<span class="sku-line"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?></span>
+														<span class="sku-line"><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?></span>
 													</div>
 												</li>
 												<li class="td td-price">

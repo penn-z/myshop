@@ -120,11 +120,7 @@ class ImgController extends CheckLoginController {
      * 加载上传图片的页面
      */
     public function upload(){
-        /*  原本的upload11  
-        $goods_sn = I('get.sn');  //获取相应相册id
-        $this->assign('goods_sn',$goods_sn);    //把相册id注入上传图片的模板中
-        $this->display('upload11');
-        */
+        
         $spe_id = I('get.spe_id');
         $goods_sn = I('get.goods_sn');
         $goods_id = I('get.goods_id');

@@ -139,7 +139,7 @@
 					<section class="slider">
 						<div class="flexslider">
 							<ul class="slides">
-							<?php $__FOR_START_973033845__=0;$__FOR_END_973033845__=3;for($i=$__FOR_START_973033845__;$i < $__FOR_END_973033845__;$i+=1){ if(($i) == "0"): ?><li>
+							<?php $__FOR_START_1421713994__=0;$__FOR_END_1421713994__=3;for($i=$__FOR_START_1421713994__;$i < $__FOR_END_1421713994__;$i+=1){ if(($i) == "0"): ?><li>
 									<img src="<?php echo ($thumb["big"]["$i"]); ?>" title="pic" />
 								</li>
 								<?php else: ?>
@@ -172,7 +172,7 @@
 								<a href="<?php echo ($thumb["big"]["0"]); ?>"><img src="<?php echo ($thumb["big"]["0"]); ?>" alt="细节展示放大镜特效" rel="<?php echo ($thumb["big"]["0"]); ?>" class="jqzoom" /></a>
 							</div>
 							<ul class="tb-thumb" id="thumblist">
-							<?php $__FOR_START_2042394062__=0;$__FOR_END_2042394062__=3;for($i=$__FOR_START_2042394062__;$i < $__FOR_END_2042394062__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
+							<?php $__FOR_START_1752674839__=0;$__FOR_END_1752674839__=3;for($i=$__FOR_START_1752674839__;$i < $__FOR_END_1752674839__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
 									<div class="tb-pic tb-s40">
 										<a href="#"><img id="add_shopcart" src="<?php echo ($thumb["small"]["$i"]); ?>" mid="<?php echo ($thumb["mid"]["$i"]); ?>" big="<?php echo ($thumb["big"]["$i"]); ?>"></a>
 									</div>
@@ -407,9 +407,11 @@
 							var goods_id = <?php echo ($_GET['id']); ?>;	//获取该商品id
 							var goods_name = "<?php echo ($goods["goods_name"]); ?>";	//获取该商品名称
 							var goods_price = $(".sys_item_price").text();
+							var goods_type1 = $(".theme-popover").find(".cart-title").eq(0).text();//规格1名称
+							var goods_type2 = $(".theme-popover").find(".cart-title").eq(1).text();//规格2名称
 							$.post(
 								'/Api/Goods/shopCart',
-								{"goods_type":type,"goods_package":package,"goods_num":num,"goods_id":goods_id,"goods_name":goods_name,"goods_cost":goods_price},
+								{"goods_type":type,"goods_package":package,"goods_num":num,"goods_id":goods_id,"goods_name":goods_name,"goods_cost":goods_price,"goods_type1":goods_type1,"goods_type2":goods_type2},
 								function(ret){
 									//未登陆无法加入购物车
 									if( ret == 1){
@@ -454,10 +456,12 @@
 						var goods_id = <?php echo ($_GET['id']); ?>;	//获取该商品id
 						var goods_name = "<?php echo ($goods["goods_name"]); ?>";	//获取该商品名称
 						var goods_price = $(".sys_item_price").text();
+						var goods_type1 = $(".theme-popover").find(".cart-title").eq(0).text();//规格1名称
+						var goods_type2 = $(".theme-popover").find(".cart-title").eq(1).text();//规格2名称
 						var is_order = 1;
 						$.post(
 							'/Api/Goods/buyNow',
-							{"goods_type":type,"goods_package":package,"goods_num":num,"goods_id":goods_id,"goods_name":goods_name,"goods_cost":goods_price,"is_order":is_order},
+							{"goods_type":type,"goods_package":package,"goods_num":num,"goods_id":goods_id,"goods_name":goods_name,"goods_cost":goods_price,"is_order":is_order,"goods_type1":goods_type1,"goods_type2":goods_type2},
 							function(ret){
 								//未登陆无法加入立即购买
 								if( ret == 1){

@@ -181,7 +181,7 @@ class GoodsController extends Controller {
 		//订单表
 		$data['order_id'] = $order_id;
 		$data['user_id'] = $user_id;
-		$data['status'] = 1;	//状态1为待发货状态
+		$data['status'] = 0;	//状态0为待付款状态
 		$data['message'] = $message;
 		$data['addtime'] = time();
 		$datas = array_merge($data,$express);
@@ -189,14 +189,16 @@ class GoodsController extends Controller {
 		M("order")->add($datas);	
 
 		//生成订单商品详细表
-		foreach($cart_array as $key=>$cart_id){
+		foreach($cart_array as $cart_id){
 			$fetch = M('shopcart')->where("cart_id={$cart_id}")->select();
 
 			$detail['order_id'] = $order_id;	//订单号
 			$detail['goods_id'] = $fetch[0]['goods_id'];
 			$detail['goods_sn'] = $fetch[0]['goods_sn'];
 			$detail['goods_name'] = $fetch[0]['goods_name'];
+			$detail['goods_type1'] = $fetch[0]['goods_type1'];
 			$detail['goods_type'] = $fetch[0]['goods_type'];
+			$detail['goods_type2'] = $fetch[0]['goods_type2'];
 			$detail['goods_package'] = $fetch[0]['goods_package'];
 			$detail['goods_num'] = $fetch[0]['goods_num'];
 			$detail['goods_price'] = $fetch[0]['goods_cost'];

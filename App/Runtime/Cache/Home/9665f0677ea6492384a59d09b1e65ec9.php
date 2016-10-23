@@ -151,8 +151,8 @@
 									</li>
 									<li class="td td-info">
 										<div class="item-props item-props-can">
-											<span class="sku-line"><?php echo ($vo["type1"]); ?>：<?php echo ($vo["goods_type"]); ?></span>
-											<span class="sku-line"><?php echo ($vo["type2"]); ?>：<?php echo ($vo["goods_package"]); ?></span>
+											<span class="sku-line"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?></span>
+											<span class="sku-line"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_package"]); ?></span>
 											<span tabindex="0" class="btn-edit-sku" onclick="changeGoods(this)">修改</span>
 											<i class="theme-login am-icon-sort-desc"></i>
 										</div>
@@ -211,7 +211,7 @@
 											<div class="theme-signin-left">
 
 												<li class="theme-options">
-													<div class="cart-title"><?php echo ($vo["type1"]); ?>：</div>
+													<div class="cart-title"><?php echo ($vo["goods_type1"]); ?>：</div>
 													<ul id="change_type">
 													<?php if(is_array($vo["type1_name"])): foreach($vo["type1_name"] as $key=>$type): if(($key) == "0"): ?><li class="sku-line selected" onclick="change_attr(this)"><?php echo ($type); ?><i></i></li>
 														<?php else: ?>
@@ -220,7 +220,7 @@
 													</ul>
 												</li>
 												<li class="theme-options">
-													<div class="cart-title"><?php echo ($vo["type2"]); ?>：</div>
+													<div class="cart-title"><?php echo ($vo["goods_type2"]); ?>：</div>
 													<ul id="change_package">
 													<?php if(is_array($vo["type2_name"])): foreach($vo["type2_name"] as $key=>$type2_name): if(($key) == "0"): ?><li class="sku-line selected"><?php echo ($type2_name); ?><i></i></li>
 														<?php else: ?>

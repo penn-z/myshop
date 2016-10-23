@@ -131,22 +131,35 @@ class GoodsController extends CheckLoginController {
             foreach( I('post.') as $key => $value ){
                 $_data[$key] = $value;
             }
-            /*echo "<pre>";
-            print_r($_data);*/
-            
+            $rules = array( //动态验证规则
+                array('goods_name','require','商品名称必须！'),
+            );
+            $goods = M('goods');
+            if( !$goods->validate($rules)->create() ){
+                $this->error($goods->getError());   //未通过验证
+            }
             $result = M('goods')->where("goods_id={$id}")->save($_data);    //更新goods表数据
             // $des_ret = M('attr')->where("goods_id={$id}")->setField("picture_description",htmlspecialchars_decode($_data['goods_description']));    //更新attr数据
             
             /* 对specify进行处理 */
             $old_spe_length = count($_data['specify_id']);  //原本数据长度 
             $new_spe_length = count($_data['goods_sn']);    //修改后的数据长度
+            
             for($i=0;$i<count($_data['specify_id']);$i++){    //对原来的goods_specify进行数据更新
                 $specify['goods_sn'] = $_data['goods_sn'][$i];
                 $specify['goods_type'] = $_data['type1_name'][$i];
                 $specify['goods_price'] = $_data['goods_price'][$i];
                 $specify['goods_discount'] = $_data['goods_discount'][$i];
                 $specify['goods_num'] = $_data['goods_num'][$i];
+                
                 M("goods_specify")->where("id=".$_data['specify_id'][$i])->save($specify);
+
+                /*以防sn修改，故而也对thumb数据表的sn进行更新*/
+                //先获取原本goods_sn
+                $old_sn = M("goods_specify")->where("id=".$_data['specify_id'][$i])->getField("goods_sn");
+                $thumb['goods_sn'] = $_data['goods_sn'][$i];
+                $thumb['goods_name'] = $_data['goods_name'];
+                M("thumb")->where("goods_sn={$old_sn}")->save($thumb);
             }
             for( $i=$old_spe_length;$i<$new_spe_length;$i++){   //对新添的goods_specify进行数据添加
                 $specify['goods_sn'] = $_data['goods_sn'][$i];
@@ -156,6 +169,12 @@ class GoodsController extends CheckLoginController {
                 $specify['goods_num'] = $_data['goods_num'][$i];
                 $specify['goods_id'] = $id;
                 M("goods_specify")->add($specify);
+                /*添加新的type1后，也须新添对应的thumb*/
+                $thumb['goods_sn'] = $_data['goods_sn'][$i];    //新添的sn
+                $thumb['goods_name'] = $_data['goods_name'];    //商品名称
+                $thumb['goods_id'] = $id;   //商品id
+                $thumb['addtime'] = time();
+                M("thumb")->add($thumb);
             }
 
             /* 对goods_type2进行处理 */
@@ -202,7 +221,15 @@ class GoodsController extends CheckLoginController {
     public function delSku(){
         $id = I('post.id'); //数据表的唯一主键id
         $model = I('post.model');
+        if( $model == 'goods_specify' ){
+            $goods_sn = M($model)->where("id={$id}")->getField("goods_sn");
+            M("thumb")->where("goods_sn={$goods_sn}")->delete();    //删除对应sn的缩略图
+            $delDir = new ImgController();  //跨模板调用方法
+            $thumb_path = '/var/www/shop/Public/Uploads/goods/sn'.$goods_sn;    //缩略图的绝对路径
+            $delDir->delDir($thumb_path);  //删除对应文件夹及子文件
+        }
         M($model)->where("id={$id}")->delete();
+            
     }
 
 }

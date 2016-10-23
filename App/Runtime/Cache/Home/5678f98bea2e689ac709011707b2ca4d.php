@@ -185,8 +185,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?> </p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>
@@ -386,8 +386,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?> </p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>
@@ -454,8 +454,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?> </p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>
@@ -554,8 +554,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?> </p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>
@@ -652,8 +652,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?></p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?></p>
 																		</a>
 																	</div>
 																</div>
@@ -748,8 +748,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?> </p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>
@@ -846,8 +846,8 @@
 																	<div class="item-basic-info">
 																		<a href="#">
 																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little">口味：<?php echo ($vo["goods_type"]); ?>
-																				<br/>包装：<?php echo ($vo["goods_package"]); ?> </p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>

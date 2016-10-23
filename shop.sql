@@ -204,14 +204,14 @@ DROP TABLE IF EXISTS `think_goods_specify`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `think_goods_specify` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增主键',
-  `goods_id` int(11) NOT NULL COMMENT '商品ID',
+  `goods_id` int(11) DEFAULT NULL COMMENT '商品ID',
   `goods_sn` varchar(24) COLLATE utf8_unicode_ci NOT NULL COMMENT '此规格序列号',
   `goods_type` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品规格',
-  `goods_price` float(8,2) NOT NULL COMMENT '原价钱',
-  `goods_discount` float(8,2) NOT NULL COMMENT '折扣价',
-  `goods_num` int(10) NOT NULL COMMENT '库存数量',
+  `goods_price` float(8,2) DEFAULT NULL COMMENT '原价钱',
+  `goods_discount` float(8,2) DEFAULT NULL COMMENT '折扣价',
+  `goods_num` int(10) DEFAULT NULL COMMENT '库存数量',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -220,7 +220,7 @@ CREATE TABLE `think_goods_specify` (
 
 LOCK TABLES `think_goods_specify` WRITE;
 /*!40000 ALTER TABLE `think_goods_specify` DISABLE KEYS */;
-INSERT INTO `think_goods_specify` VALUES (1,19,'101','原味',100.00,1000.00,5000),(2,19,'102','奶油',99.00,999.00,4999),(3,20,'1010','大号',78.00,66.00,66660),(4,20,'1011','中号',76.00,55.00,77773),(5,20,'1012','小号',80.00,45.00,88883),(6,7,'1000001','原味',98.00,56.90,250),(7,7,'1000002','奶油',99.00,54.50,249),(8,7,'1000003','炭烧',100.00,60.50,248),(9,7,'1000004','咸香',96.00,57.50,246),(14,23,'200000101','黑色',6000.10,5800.00,199),(28,23,'200000102','黄色',5900.00,5888.00,120),(27,23,'200000103','金色',5777.00,5700.00,145),(25,23,'200000104','粉色',5666.00,5555.00,140),(29,23,'200000105','绿色',5700.00,5666.00,200),(37,27,'200000203','日剧',3000.00,2000.00,1000),(36,27,'200000202','英剧',4000.00,3000.00,1000),(35,27,'200000201','美剧',5000.00,4000.00,1000);
+INSERT INTO `think_goods_specify` VALUES (1,19,'101','原味',100.00,1000.00,5000),(2,19,'102','奶油',99.00,999.00,4999),(3,20,'1010','大号',78.00,66.00,66660),(4,20,'1011','中号',76.00,55.00,77773),(5,20,'1012','小号',80.00,45.00,88883),(6,7,'1000001','原味',98.00,56.90,250),(7,7,'1000002','奶油',99.00,54.50,248),(8,7,'1000003','炭烧',100.00,60.50,248),(9,7,'1000004','咸香',96.00,57.50,246),(14,23,'200000101','黑色',6000.10,5800.00,199),(28,23,'200000102','黄色',5900.00,5888.00,120),(27,23,'200000103','金色',5777.00,5700.00,145),(25,23,'200000104','粉色',5666.00,5555.00,140),(29,23,'200000105','绿色',5700.00,5666.00,200),(37,27,'200000203','日剧',3000.00,2000.00,1000),(36,27,'200000202','英剧',4000.00,3000.00,1000),(35,27,'200000201','美剧',5000.00,4000.00,1000);
 /*!40000 ALTER TABLE `think_goods_specify` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -273,7 +273,7 @@ CREATE TABLE `think_order` (
   `status` int(2) NOT NULL COMMENT '订单状态(0待付款，1待发货，2待收货，3待评价，4已评价）',
   `addtime` int(11) NOT NULL COMMENT '生成时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -282,7 +282,7 @@ CREATE TABLE `think_order` (
 
 LOCK TABLES `think_order` WRITE;
 /*!40000 ALTER TABLE `think_order` DISABLE KEYS */;
-INSERT INTO `think_order` VALUES (25,'147675667400041619',4,'又要留言，～要不是为了测试，我才不写留言呢～～！',833.00,'申通',10,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476756674),(24,'147675661700047651',4,'只是买个果子而已，不算什么的～～！～',152.00,'顺丰',20,'liujing ','2147483647','广东省','深圳市','南山区','大新xx街道xx坊xx号',1,1476756617),(28,'147677373800044612',4,'留言个球捏～！～',679.00,'顺丰',20,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',2,1476773738),(23,'147675658400046624',4,'无留言～～～～～～～！！！！！！！！！我真的不知道写些什么好',309.00,'韵达',12,'皮城女警       ','13422222222','天津市','天津市市辖区','西青区','皮城戒备19区',2,1476756584),(22,'147675653100047323',4,'',265.00,'顺丰',20,'爱萝莉真是太好了 ','12345678901','福建省','福州市','鼓楼区','鸟不拉屎的地方～～～～',3,1476756531),(21,'147670340800040188',4,'忘记留言了～！～',110.00,'圆通',10,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',4,1476703408),(29,'147677946000042462',4,'忘记设置支付方式了，下次补上吧～！',380.50,'韵达',12,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1476779460),(30,'147686834100044939',4,'又是留言，留，留，留～～～！',208.00,'圆通',10,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476868341);
+INSERT INTO `think_order` VALUES (25,'147675667400041619',4,'又要留言，～要不是为了测试，我才不写留言呢～～！',833.00,'申通',10,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476756674),(24,'147675661700047651',4,'只是买个果子而已，不算什么的～～！～',152.00,'顺丰',20,'liujing ','2147483647','广东省','深圳市','南山区','大新xx街道xx坊xx号',1,1476756617),(28,'147677373800044612',4,'留言个球捏～！～',679.00,'顺丰',20,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',2,1476773738),(23,'147675658400046624',4,'无留言～～～～～～～！！！！！！！！！我真的不知道写些什么好',309.00,'韵达',12,'皮城女警       ','13422222222','天津市','天津市市辖区','西青区','皮城戒备19区',2,1476756584),(22,'147675653100047323',4,'',265.00,'顺丰',20,'爱萝莉真是太好了 ','12345678901','福建省','福州市','鼓楼区','鸟不拉屎的地方～～～～',3,1476756531),(21,'147670340800040188',4,'忘记留言了～！～',110.00,'圆通',10,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',4,1476703408),(29,'147677946000042462',4,'忘记设置支付方式了，下次补上吧～！',380.50,'韵达',12,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1476779460),(30,'147686834100044939',4,'又是留言，留，留，留～～～！',208.00,'圆通',10,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476868341),(31,'147723015800046984',4,'',64.50,'圆通',10,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1477230158);
 /*!40000 ALTER TABLE `think_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -299,14 +299,16 @@ CREATE TABLE `think_order_detail` (
   `goods_id` int(16) NOT NULL COMMENT '商品id',
   `goods_sn` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品序列号',
   `goods_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品名称',
+  `goods_type1` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格1名称',
   `goods_type` varchar(10) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品规格（口味、尺寸、颜色等）',
+  `goods_type2` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格2名称',
   `goods_package` varchar(10) COLLATE utf8_unicode_ci NOT NULL COMMENT '包装',
   `goods_price` float(8,2) NOT NULL COMMENT '单价',
   `goods_num` varchar(8) COLLATE utf8_unicode_ci NOT NULL COMMENT '购买数量',
   `goods_thumb` varchar(200) COLLATE utf8_unicode_ci NOT NULL COMMENT '缩略图地址',
   `addtime` int(11) NOT NULL COMMENT '生成时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -315,7 +317,7 @@ CREATE TABLE `think_order_detail` (
 
 LOCK TABLES `think_order_detail` WRITE;
 /*!40000 ALTER TABLE `think_order_detail` DISABLE KEYS */;
-INSERT INTO `think_order_detail` VALUES (9,'147670340800040188',20,'1012','测试006','小号','双人',45.00,'1','/Public/Uploads/goods/sn1012/001_mid.jpg',1476703408),(10,'147675653100047323',20,'1011','测试006','中号','全家桶',55.00,'2','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756531),(8,'147670340800040188',20,'1011','测试006','中号','全家桶',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476703408),(11,'147675653100047323',20,'1012','测试006','小号','双人',45.00,'3','/Public/Uploads/goods/sn1012/001_mid.jpg',1476756531),(12,'147675658400046624',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','炭烧','全家福礼包',60.50,'4','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756584),(13,'147675658400046624',20,'1011','测试006','中号','单人',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756584),(14,'147675661700047651',20,'1010','测试006','大号','单人',66.00,'2','/Public/Uploads/goods/sn1010/001_mid.jpg',1476756617),(15,'147675667400041619',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','炭烧','礼盒双人份',60.50,'10','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756674),(16,'147675667400041619',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','奶油','手袋单人份',54.50,'4','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476756674),(17,'147677373800044612',20,'1011','测试006','中号','全家桶',55.00,'10','/Public/Uploads/goods/sn1011/001_mid.jpg',1476773738),(18,'147677373800044612',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','奶油','全家福礼包',54.50,'2','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476773738),(19,'147677946000042462',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','炭烧','手袋单人份',60.50,'5','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476779460),(20,'147677946000042462',20,'1010','测试006','大号','单人',66.00,'1','/Public/Uploads/goods/sn1010/001_mid.jpg',1476779460),(21,'147686834100044939',20,'1010','测试006','大号','单人',66.00,'3','/Public/Uploads/goods/sn1010/001_mid.jpg',1476868341);
+INSERT INTO `think_order_detail` VALUES (9,'147670340800040188',20,'1012','测试006','尺寸','小号','包装','双人',45.00,'1','/Public/Uploads/goods/sn1012/001_mid.jpg',1476703408),(10,'147675653100047323',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'2','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756531),(8,'147670340800040188',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476703408),(11,'147675653100047323',20,'1012','测试006','尺寸','小号','包装','双人',45.00,'3','/Public/Uploads/goods/sn1012/001_mid.jpg',1476756531),(12,'147675658400046624',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','全家福礼包',60.50,'4','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756584),(13,'147675658400046624',20,'1011','测试006','尺寸','中号','包装','单人',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756584),(14,'147675661700047651',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'2','/Public/Uploads/goods/sn1010/001_mid.jpg',1476756617),(15,'147675667400041619',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','礼盒双人份',60.50,'10','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756674),(16,'147675667400041619',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','手袋单人份',54.50,'4','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476756674),(17,'147677373800044612',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'10','/Public/Uploads/goods/sn1011/001_mid.jpg',1476773738),(18,'147677373800044612',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','全家福礼包',54.50,'2','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476773738),(19,'147677946000042462',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','手袋单人份',60.50,'5','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476779460),(20,'147677946000042462',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'1','/Public/Uploads/goods/sn1010/001_mid.jpg',1476779460),(21,'147686834100044939',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'3','/Public/Uploads/goods/sn1010/001_mid.jpg',1476868341),(22,'147723015800046984',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','手袋单人份',54.50,'1','/Public/Uploads/goods/sn1000002/01_mid.jpg',1477230158);
 /*!40000 ALTER TABLE `think_order_detail` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -361,7 +363,9 @@ CREATE TABLE `think_shopcart` (
   `goods_id` int(11) NOT NULL COMMENT '商品ID',
   `goods_name` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品名称',
   `goods_sn` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品序列号',
+  `goods_type1` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格1名称',
   `goods_type` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品规格',
+  `goods_type2` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格2名称',
   `goods_package` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品包装',
   `goods_num` int(8) NOT NULL COMMENT '此规格数量',
   `goods_cost` float(8,2) NOT NULL COMMENT '单件费用',
@@ -369,7 +373,7 @@ CREATE TABLE `think_shopcart` (
   `addtime` int(11) NOT NULL COMMENT '添加时间',
   PRIMARY KEY (`cart_id`),
   KEY `goods_cost` (`goods_cost`)
-) ENGINE=MyISAM AUTO_INCREMENT=90 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=109 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -378,7 +382,7 @@ CREATE TABLE `think_shopcart` (
 
 LOCK TABLES `think_shopcart` WRITE;
 /*!40000 ALTER TABLE `think_shopcart` DISABLE KEYS */;
-INSERT INTO `think_shopcart` VALUES (86,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000004','咸香','手袋单人份',1,57.50,0,1476931593),(85,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000004','咸香','全家福礼包',1,57.50,0,1476870538),(87,4,20,'测试006','1012','小号','全家桶',1,45.00,0,1476931601),(88,4,20,'测试006','1011','中号','单人',12,55.00,0,1476931603);
+INSERT INTO `think_shopcart` VALUES (108,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000003','口味','炭烧','包装','手袋单人份',1,60.50,0,1477229024),(106,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000001','口味','原味','包装','手袋单人份',1,56.90,0,1477229018);
 /*!40000 ALTER TABLE `think_shopcart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -395,7 +399,7 @@ CREATE TABLE `think_temporary_order` (
   `cart_id` int(8) NOT NULL COMMENT '购物车商品id',
   `addtime` int(11) NOT NULL COMMENT '生成时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=115 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -404,7 +408,6 @@ CREATE TABLE `think_temporary_order` (
 
 LOCK TABLES `think_temporary_order` WRITE;
 /*!40000 ALTER TABLE `think_temporary_order` DISABLE KEYS */;
-INSERT INTO `think_temporary_order` VALUES (100,4,89,1476981047);
 /*!40000 ALTER TABLE `think_temporary_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -425,7 +428,7 @@ CREATE TABLE `think_thumb` (
   `goods_id` int(11) NOT NULL COMMENT '商品id',
   `addtime` int(13) NOT NULL COMMENT '相册添加时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -434,7 +437,7 @@ CREATE TABLE `think_thumb` (
 
 LOCK TABLES `think_thumb` WRITE;
 /*!40000 ALTER TABLE `think_thumb` DISABLE KEYS */;
-INSERT INTO `think_thumb` VALUES (3,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000001/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000001/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000001/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000001/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000001/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000001/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000001/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000001/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000001/03_small.jpg\";}',1000001,7,1475633329),(8,'三只松鼠 炭烧腰果185g坚果零食特产干果碳烧腰果仁','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn1000011/001_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn1000011/002_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn1000011/003_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn1000011/001_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn1000011/002_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn1000011/003_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn1000011/001_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn1000011/002_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn1000011/003_small.jpg\";}',1000011,8,1475672758),(10,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000002/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000002/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000002/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000002/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000002/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000002/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000002/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000002/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000002/03_small.jpg\";}',1000002,7,1476106855),(11,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000003/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000003/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000003/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000003/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000003/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000003/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000003/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000003/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000003/03_small.jpg\";}',1000003,7,1476106872),(12,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000004/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000004/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000004/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000004/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000004/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000004/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000004/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000004/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000004/03_small.jpg\";}',1000004,7,1476106916),(13,'测试006','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1011/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1011/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1011/003_big.jpg\";}','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1011/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1011/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1011/003_mid.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1011/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1011/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1011/003_small.jpg\";}',1011,20,1476107010),(14,'测试006','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1012/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1012/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1012/003_big.jpg\";}','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1012/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1012/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1012/003_mid.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1012/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1012/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1012/003_small.jpg\";}',1012,20,1476107028),(15,'测试006','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1010/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1010/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1010/003_big.jpg\";}','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1010/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1010/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1010/003_mid.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1010/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1010/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1010/003_small.jpg\";}',1010,20,1476107157),(16,'字幕组','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000201/2_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000201/3_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000201/4_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000201/2_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000201/3_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000201/4_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn200000201/2_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn200000201/3_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn200000201/4_small.jpg\";}',200000201,27,1477199453),(17,'字幕组','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000202/1_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000202/2_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000202/3_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000202/1_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000202/2_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000202/3_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn200000202/1_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn200000202/2_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn200000202/3_small.jpg\";}',200000202,27,1477199453),(18,'字幕组','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000203/2_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000203/3_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000203/4_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000203/2_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000203/3_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000203/4_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn200000203/2_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn200000203/3_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn200000203/4_small.jpg\";}',200000203,27,1477199453);
+INSERT INTO `think_thumb` VALUES (3,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000001/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000001/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000001/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000001/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000001/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000001/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000001/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000001/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000001/03_small.jpg\";}',1000001,7,1475633329),(8,'三只松鼠 炭烧腰果185g坚果零食特产干果碳烧腰果仁','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn1000011/001_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn1000011/002_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn1000011/003_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn1000011/001_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn1000011/002_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn1000011/003_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn1000011/001_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn1000011/002_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn1000011/003_small.jpg\";}',1000011,8,1475672758),(10,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000002/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000002/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000002/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000002/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000002/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000002/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000002/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000002/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000002/03_small.jpg\";}',1000002,7,1476106855),(11,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000003/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000003/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000003/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000003/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000003/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000003/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000003/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000003/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000003/03_small.jpg\";}',1000003,7,1476106872),(12,'良品铺子 手剥松子218g 坚果炒货 巴西松子','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000004/01_big.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000004/02_big.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000004/03_big.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1000004/01_mid.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1000004/02_mid.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1000004/03_mid.jpg\";}','a:3:{i:0;s:44:\"/Public/Uploads/goods/sn1000004/01_small.jpg\";i:1;s:44:\"/Public/Uploads/goods/sn1000004/02_small.jpg\";i:2;s:44:\"/Public/Uploads/goods/sn1000004/03_small.jpg\";}',1000004,7,1476106916),(13,'测试006','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1011/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1011/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1011/003_big.jpg\";}','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1011/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1011/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1011/003_mid.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1011/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1011/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1011/003_small.jpg\";}',1011,20,1476107010),(14,'测试006','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1012/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1012/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1012/003_big.jpg\";}','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1012/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1012/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1012/003_mid.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1012/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1012/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1012/003_small.jpg\";}',1012,20,1476107028),(15,'测试006','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1010/001_big.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1010/002_big.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1010/003_big.jpg\";}','a:3:{i:0;s:40:\"/Public/Uploads/goods/sn1010/001_mid.jpg\";i:1;s:40:\"/Public/Uploads/goods/sn1010/002_mid.jpg\";i:2;s:40:\"/Public/Uploads/goods/sn1010/003_mid.jpg\";}','a:3:{i:0;s:42:\"/Public/Uploads/goods/sn1010/001_small.jpg\";i:1;s:42:\"/Public/Uploads/goods/sn1010/002_small.jpg\";i:2;s:42:\"/Public/Uploads/goods/sn1010/003_small.jpg\";}',1010,20,1476107157),(16,'字幕组','a:3:{i:0;s:52:\"/Public/Uploads/goods/sn200000201/West world_big.jpg\";i:1;s:58:\"/Public/Uploads/goods/sn200000201/The walking dead_big.jpg\";i:2;s:51:\"/Public/Uploads/goods/sn200000201/灵异镇_big.jpg\";}','a:3:{i:0;s:52:\"/Public/Uploads/goods/sn200000201/West world_mid.jpg\";i:1;s:58:\"/Public/Uploads/goods/sn200000201/The walking dead_mid.jpg\";i:2;s:51:\"/Public/Uploads/goods/sn200000201/灵异镇_mid.jpg\";}','a:3:{i:0;s:54:\"/Public/Uploads/goods/sn200000201/West world_small.jpg\";i:1;s:60:\"/Public/Uploads/goods/sn200000201/The walking dead_small.jpg\";i:2;s:53:\"/Public/Uploads/goods/sn200000201/灵异镇_small.jpg\";}',200000201,27,1477199453),(17,'字幕组','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000202/1_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000202/2_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000202/3_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000202/1_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000202/2_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000202/3_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn200000202/1_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn200000202/2_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn200000202/3_small.jpg\";}',200000202,27,1477199453),(18,'字幕组','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000203/2_big.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000203/3_big.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000203/4_big.jpg\";}','a:3:{i:0;s:43:\"/Public/Uploads/goods/sn200000203/2_mid.jpg\";i:1;s:43:\"/Public/Uploads/goods/sn200000203/3_mid.jpg\";i:2;s:43:\"/Public/Uploads/goods/sn200000203/4_mid.jpg\";}','a:3:{i:0;s:45:\"/Public/Uploads/goods/sn200000203/2_small.jpg\";i:1;s:45:\"/Public/Uploads/goods/sn200000203/3_small.jpg\";i:2;s:45:\"/Public/Uploads/goods/sn200000203/4_small.jpg\";}',200000203,27,1477199453);
 /*!40000 ALTER TABLE `think_thumb` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -482,4 +485,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-23 15:50:57
+-- Dump completed on 2016-10-23 21:52:31

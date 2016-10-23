@@ -103,11 +103,8 @@ class PayController extends Controller {
             $cart[$key]['discount'] = $discount[$key];  //此商品所有的折扣价
             $cart[$key]['num'] = $num[$key];            //此商品所有类型的库存
             $cart[$key]['type2_name'] = M("goods_type2")->where("goods_id={$goods_id}")->getField("type2_name",true);   //type2子类名数组
-            $cart[$key]['type1'] = M("goods")->where("goods_id={$goods_id}")->getField("goods_type");    //获取sku1规格名
-            $cart[$key]['type2'] = M("goods")->where("goods_id={$goods_id}")->getField("goods_type2");   //获取sku2规格名
-
         }
-       
+               
         $this->assign('cart',$cart);
     	$this->display();
     }
