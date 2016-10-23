@@ -87,8 +87,8 @@
 									</li>
 									<li class="td td-info">
 										<div class="item-props item-props-can">
-											<span class="sku-line">口味：{$vo.goods_type}</span>
-											<span class="sku-line">包装：{$vo.goods_package}</span>
+											<span class="sku-line">{$vo.type1}：{$vo.goods_type}</span>
+											<span class="sku-line">{$vo.type2}：{$vo.goods_package}</span>
 											<span tabindex="0" class="btn-edit-sku" onclick="changeGoods(this)">修改</span>
 											<i class="theme-login am-icon-sort-desc"></i>
 										</div>
@@ -147,9 +147,9 @@
 											<div class="theme-signin-left">
 
 												<li class="theme-options">
-													<div class="cart-title">口味：</div>
+													<div class="cart-title">{$vo.type1}：</div>
 													<ul id="change_type">
-													<foreach name="vo.type" item="type">
+													<foreach name="vo.type1_name" item="type">
 														<eq name="key" value="0">
 														<li class="sku-line selected" onclick="change_attr(this)">{$type}<i></i></li>
 														<else/>
@@ -160,13 +160,13 @@
 													</ul>
 												</li>
 												<li class="theme-options">
-													<div class="cart-title">包装：</div>
+													<div class="cart-title">{$vo.type2}：</div>
 													<ul id="change_package">
-													<foreach name="vo.package" item="package">
+													<foreach name="vo.type2_name" item="type2_name">
 														<eq name="key" value="0">
-														<li class="sku-line selected">{$package}<i></i></li>
+														<li class="sku-line selected">{$type2_name}<i></i></li>
 														<else/>
-														<li class="sku-line">{$package}<i></i></li>
+														<li class="sku-line">{$type2_name}<i></i></li>
 														</eq>
 													</foreach>
 													</ul>

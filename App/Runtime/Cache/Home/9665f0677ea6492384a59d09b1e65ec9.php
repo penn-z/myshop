@@ -151,8 +151,8 @@
 									</li>
 									<li class="td td-info">
 										<div class="item-props item-props-can">
-											<span class="sku-line">口味：<?php echo ($vo["goods_type"]); ?></span>
-											<span class="sku-line">包装：<?php echo ($vo["goods_package"]); ?></span>
+											<span class="sku-line"><?php echo ($vo["type1"]); ?>：<?php echo ($vo["goods_type"]); ?></span>
+											<span class="sku-line"><?php echo ($vo["type2"]); ?>：<?php echo ($vo["goods_package"]); ?></span>
 											<span tabindex="0" class="btn-edit-sku" onclick="changeGoods(this)">修改</span>
 											<i class="theme-login am-icon-sort-desc"></i>
 										</div>
@@ -211,20 +211,20 @@
 											<div class="theme-signin-left">
 
 												<li class="theme-options">
-													<div class="cart-title">口味：</div>
+													<div class="cart-title"><?php echo ($vo["type1"]); ?>：</div>
 													<ul id="change_type">
-													<?php if(is_array($vo["type"])): foreach($vo["type"] as $key=>$type): if(($key) == "0"): ?><li class="sku-line selected" onclick="change_attr(this)"><?php echo ($type); ?><i></i></li>
+													<?php if(is_array($vo["type1_name"])): foreach($vo["type1_name"] as $key=>$type): if(($key) == "0"): ?><li class="sku-line selected" onclick="change_attr(this)"><?php echo ($type); ?><i></i></li>
 														<?php else: ?>
 														<li class="sku-line" onclick="change_attr(this)"><?php echo ($type); ?><i></i></li><?php endif; endforeach; endif; ?>
 														<input type="hidden" value="<?php echo ($vo["goods_id"]); ?>" id="goods_id" />
 													</ul>
 												</li>
 												<li class="theme-options">
-													<div class="cart-title">包装：</div>
+													<div class="cart-title"><?php echo ($vo["type2"]); ?>：</div>
 													<ul id="change_package">
-													<?php if(is_array($vo["package"])): foreach($vo["package"] as $key=>$package): if(($key) == "0"): ?><li class="sku-line selected"><?php echo ($package); ?><i></i></li>
+													<?php if(is_array($vo["type2_name"])): foreach($vo["type2_name"] as $key=>$type2_name): if(($key) == "0"): ?><li class="sku-line selected"><?php echo ($type2_name); ?><i></i></li>
 														<?php else: ?>
-														<li class="sku-line"><?php echo ($package); ?><i></i></li><?php endif; endforeach; endif; ?>
+														<li class="sku-line"><?php echo ($type2_name); ?><i></i></li><?php endif; endforeach; endif; ?>
 													</ul>
 												</li>
 												

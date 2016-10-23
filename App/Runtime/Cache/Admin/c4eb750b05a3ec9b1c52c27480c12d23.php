@@ -273,7 +273,7 @@ function form_submit ()
 			JWin.tip.work(prevNode.innerHTML.replace('：','')+'不能为空。','warn',200,1000);
 			return;
 		}
-	}  */ 
+	}   */
 
 	document.goods_add.submit();
 }

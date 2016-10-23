@@ -43,8 +43,7 @@ class GoodsController extends CheckLoginController {
             foreach( I('post.') as $key => $value ){
                 $data[$key] = $value;
             }
-            /*echo "<pre>";
-            print_r($data);*/
+            
             $Form =  D('goods');
             if($Form->create()){ 
                 $goods_description = $Form->goods_description = htmlspecialchars_decode($Form->goods_description);   //反转义商品内容,并用变量储存
@@ -77,10 +76,17 @@ class GoodsController extends CheckLoginController {
                     $type2['goods_id'] = $goods_id;
                     $type2['type2_name'] = $data['type2_name'][$i];
                     $type2_ret = M("goods_type2")->add($type2);  //成功添加后返回新创的id
+
+                    //新建thumb数据表,创建各自sn的相册
+                    $thumb['goods_id'] = $goods_id;
+                    $thumb['goods_name'] = $data['goods_name'];
+                    $thumb['goods_sn'] = $data['goods_sn'][$i];
+                    $thumb['addtime'] = time();
+                    $thumb_ret = M('thumb')->add($thumb);
                 }
 
                 $errno = null;
-                if( $attr_ret != false && $spe_ret != false && $type2_ret != false) $errno = array('style'=>'success','str'=>'商品添加成功！');
+                if( $attr_ret != false && $spe_ret != false && $type2_ret != false  && $thumb_ret != fasle ) $errno = array('style'=>'success','str'=>'商品添加成功！');
                 else $errno = array('style'=>'error','str'=>'商品添加失败！');
                 $this->assign('errno',$errno);
             }else{
@@ -129,7 +135,6 @@ class GoodsController extends CheckLoginController {
             print_r($_data);*/
             
             $result = M('goods')->where("goods_id={$id}")->save($_data);    //更新goods表数据
-            var_dump($result);
             // $des_ret = M('attr')->where("goods_id={$id}")->setField("picture_description",htmlspecialchars_decode($_data['goods_description']));    //更新attr数据
             
             /* 对specify进行处理 */
@@ -168,10 +173,13 @@ class GoodsController extends CheckLoginController {
 
 
             $errno = null;
-            if( $result == 0 || $result == 1){
-                $errno = array('style'=>'success','str'=>'商品编辑成功！');
-            }else{
+            /*下面要用===符号，因为save()方法返回值为影响行数，如果数据没更新，返回0，用==会被自动转换成false
+            ，造成误判
+            */
+            if( $result === false){ 
                 $errno = array('style'=>'error','str'=>'商品编辑失败！');
+            }else{
+                $errno = array('style'=>'success','str'=>'商品编辑成功！');
             }
             $this->assign('errno',$errno);
         }

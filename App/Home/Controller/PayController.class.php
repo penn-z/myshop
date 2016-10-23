@@ -81,7 +81,7 @@ class PayController extends Controller {
 
         $user_id = session('id');
         $cart = M('shopcart')->where("user_id={$user_id}")->select();   //取出当前用户的购物车商品
-        
+
         foreach($cart as $key=>$val){
             $goods_sn = $val['goods_sn'];
             $thumb = unserialize( M('thumb')->where("goods_sn={$goods_sn}")->getField("mid") );
@@ -90,7 +90,6 @@ class PayController extends Controller {
             $ori_price = M('goods_specify')->where("goods_sn={$goods_sn}")->getField("goods_price");
             $cart[$key]['ori_price'] = $ori_price;
             $cart[$key]['single_cost'] = number_format($cart[$key]['goods_num']*$cart[$key]['goods_cost'],2,'.', '');    //单条记录总费用,number_format()使其保留2位小数
-            // $cart[$key]['single_cost'] = $cart[$key]['goods_num']*$cart[$key]['goods_cost'];    //单条记录总费用
 
             //获取此id商品的所有种类
             $goods_id = $val['goods_id'];
@@ -100,16 +99,15 @@ class PayController extends Controller {
                 $discount[$key][] = $ret['goods_discount'];
                 $num[$key][] = $ret['goods_num'];
             }
-            $cart[$key]['type'] = $type[$key];
-            $cart[$key]['discount'] = $discount[$key];
-            $cart[$key]['num'] = $num[$key];
-
-            //获取此id商品的所有包装
-            $package = M("goods")->where("goods_id={$goods_id}")->getField("goods_package");
-            $cart[$key]['package'] = unserialize($package);
-
+            $cart[$key]['type1_name'] = $type[$key];    //type1所有子类名数组
+            $cart[$key]['discount'] = $discount[$key];  //此商品所有的折扣价
+            $cart[$key]['num'] = $num[$key];            //此商品所有类型的库存
+            $cart[$key]['type2_name'] = M("goods_type2")->where("goods_id={$goods_id}")->getField("type2_name",true);   //type2子类名数组
+            $cart[$key]['type1'] = M("goods")->where("goods_id={$goods_id}")->getField("goods_type");    //获取sku1规格名
+            $cart[$key]['type2'] = M("goods")->where("goods_id={$goods_id}")->getField("goods_type2");   //获取sku2规格名
 
         }
+       
         $this->assign('cart',$cart);
     	$this->display();
     }

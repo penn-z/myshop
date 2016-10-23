@@ -132,7 +132,7 @@ a.title_text {
                     <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>
                       
                     <td style="text-align:center;">
-                    <a href="/admin/img/upload?act=upload&sn=<?php echo ($vo["goods_sn"]); ?>" >上传图片</a> |
+                    <a href="/admin/img/upload?spe_id=<?php echo ($vo["id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_id=<?php echo ($vo["goods_id"]); ?>" >上传图片</a> |
                     <!-- <a style="cursor:pointer;" >上传图片</a> | -->
                     <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
                     <a href="/admin/img/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>

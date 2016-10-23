@@ -55,7 +55,15 @@
 				<td class="right_td" id="upload-td">
 					<input type="file" id="img_src" style="display:block;width: 200px;" /> 
 					<form id="upload_thumb" method="post" action="/admin/img/accept">
-						<div id="img-box"></div>
+						<div id="img-box">
+						<?php if(is_array($big)): foreach($big as $key=>$vo): ?><div class="add" style="float:left;">
+								<a onclick="delPic(this)">X</a>
+								<img src="<?php echo ($vo); ?>" width="80px" />
+								<input type="hidden" name="big[]" value="<?php echo ($vo); ?>">
+								<input type="hidden" name="mid[]" value="<?php echo ($mid["$key"]); ?>">
+								<input type="hidden" name="small[]" value="<?php echo ($small["$key"]); ?>">
+							</div><?php endforeach; endif; ?>
+						</div>
 						<input type="hidden" name="upload" value="add" />
 						<input type="hidden" name="goods_sn" value="<?php echo ($goods_sn); ?>"/>
 					</form>
@@ -96,15 +104,15 @@ XHRUploader.init({
 	complete: function(ret){
 		//alert('wangcheng');
 		
-		var html = '<div id="add" style="float:left;"><a onclick="delPic(this)">X</a><img src="'+ret.big_path+'" width="80px" /><input type="hidden" name="big[]" value="'+ret.big_path+'" /><input type="hidden" name="mid[]" value="'+ret.mid_path+'" /><input type="hidden" name="small[]" value="'+ret.small_path+'" /></div>';
+		var html = '<div class="add" style="float:left;"><a onclick="delPic(this)">X</a><img src="'+ret.big_path+'" width="80px" /><input type="hidden" name="big[]" value="'+ret.big_path+'" /><input type="hidden" name="mid[]" value="'+ret.mid_path+'" /><input type="hidden" name="small[]" value="'+ret.small_path+'" /></div>';
 		$('#img-box').append(html);
 	}
 });
 
 function delPic(data){
 	var bool = confirm('要删除吗？');
-	if( bool!=true ) return; 
-	$(data).parents("#add").empty();
+	if( bool!=true ) return;
+	$(data).parents(".add").remove();
 }
 
 function sub(){

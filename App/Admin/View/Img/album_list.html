@@ -135,7 +135,7 @@ a.title_text {
                     <td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>
                       
                     <td style="text-align:center;">
-                    <a href="/admin/img/upload?act=upload&sn={$vo.goods_sn}" >上传图片</a> |
+                    <a href="/admin/img/upload?spe_id={$vo.id}&goods_sn={$vo.goods_sn}&goods_id={$vo.goods_id}" >上传图片</a> |
                     <!-- <a style="cursor:pointer;" >上传图片</a> | -->
                     <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
                     <a href="/admin/img/showList?act=del&id={$vo.id}&p={$Think.get.p}" id="a_del" onclick="return delAlert()">删除</a>

@@ -120,8 +120,26 @@ class ImgController extends CheckLoginController {
      * 加载上传图片的页面
      */
     public function upload(){
+        /*  原本的upload11  
         $goods_sn = I('get.sn');  //获取相应相册id
         $this->assign('goods_sn',$goods_sn);    //把相册id注入上传图片的模板中
+        $this->display('upload11');
+        */
+        $spe_id = I('get.spe_id');
+        $goods_sn = I('get.goods_sn');
+        $goods_id = I('get.goods_id');
+        $big = M('thumb')->where("goods_sn={$goods_sn}")->getField("big");
+        $mid = M('thumb')->where("goods_sn={$goods_sn}")->getField("mid");
+        $small = M('thumb')->where("goods_sn={$goods_sn}")->getField("small");
+
+        $big = unserialize($big);   //反序列化图片数组
+        $mid = unserialize($mid);
+        $small = unserialize($small);
+        $this->assign("big",$big);
+        $this->assign("mid",$mid);
+        $this->assign("small",$small);
+        $this->assign("sep_id",$spe_id);
+        $this->assign("goods_sn",$goods_sn);
         $this->display('upload11');
     }
 
@@ -144,8 +162,8 @@ class ImgController extends CheckLoginController {
             );
             $model = M('thumb');  //创建数据表模型
             $result = $model->where("goods_sn={$goods_sn}")->save($data);
-            if($result) $this->success('缩略图添加成功！');
-            else $this->error('上传略缩图失败！');
+            if($result === false) $this->error('上传略缩图失败！');
+            else $this->success('缩略图添加成功！');
         }else{  //点击上传文件时，ajax异步上传处理图片
             $_uploadDir ="Public/Uploads/goods/";
             
@@ -206,9 +224,6 @@ class ImgController extends CheckLoginController {
                 $this->ajaxReturn($data);
             }
         }
-        
-            
-       
     }
 
     /** 

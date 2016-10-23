@@ -48,10 +48,23 @@ a.title_text {
 #img-view img {width: 60px;height:32px;}
 #add_file {width: 70px;}
 .type_content{
-    width:530px;
+    width:600px;
     height:30px;
     display:block;
     margin-top:4px;
+}
+.type_content .input_style{width:80px;float:left;}
+.type_content .sign{width:20px;height:20px;margin:4px 0 0 20px;cursor:pointer;float:left;}
+.thumb{
+    color:#fff;
+    background-color:pink;
+    border-radius:10px;
+    margin-left:20px;
+    cursor:pointer;
+    float:left;
+}
+.thumb a:hover{
+    color:#000;
 }
 </style>
 </head>
@@ -95,13 +108,14 @@ a.title_text {
                     <td class="left_td">商品<input style="width:40px;margin-left:1px;" type="text" name="goods_type" class="input" placeholder="规格名1" value="<?php echo ($data["goods_type"]); ?>">及信息：</td>
                     <td class="right_td" id="goods_type">
                     <?php if(is_array($data1)): foreach($data1 as $key=>$vo): ?><div class="type_content">
-                            <input style="width:80px;float:left;" type="text" name="goods_sn[]" placeholder="商品货号" class="input" value="<?php echo ($vo["goods_sn"]); ?>" />
-                            <input style="width:80px;float:left;" type="text" name="type1_name[]" placeholder="商品规格1" class="input" value="<?php echo ($vo["goods_type"]); ?>" />
-                            <input style="width:80px;float:left;" type="text" name="goods_price[]" placeholder="商品原价" class="input" value="<?php echo ($vo["goods_price"]); ?>" />
-                            <input style="width:80px;float:left;" type="text" name="goods_discount[]" placeholder="商品折扣价" class="input" value="<?php echo ($vo["goods_discount"]); ?>" />
-                            <input style="width:80px;float:left;" type="text" name="goods_num[]" class="input" placeholder="库存数量" value="<?php echo ($vo["goods_num"]); ?>" />
+                            <input class="input_style input" type="text" name="goods_sn[]" placeholder="商品货号" value="<?php echo ($vo["goods_sn"]); ?>" />
+                            <input class="input_style input" type="text" name="type1_name[]" placeholder="商品规格1" value="<?php echo ($vo["goods_type"]); ?>" />
+                            <input class="input_style input" type="text" name="goods_price[]" placeholder="商品原价" value="<?php echo ($vo["goods_price"]); ?>" />
+                            <input class="input_style input" type="text" name="goods_discount[]" placeholder="商品折扣价" value="<?php echo ($vo["goods_discount"]); ?>" />
+                            <input class="input_style input" type="text" name="goods_num[]" placeholder="库存数量" value="<?php echo ($vo["goods_num"]); ?>" />
                             <input type="hidden" name="specify_id[]" value="<?php echo ($vo["id"]); ?>"/>
-                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delSku(this)"/>
+                            <div class="thumb"><a href="/Admin/img/upload?spe_id=<?php echo ($vo["id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_id=<?php echo ($vo["goods_id"]); ?>" target="_blank" title="点击编辑缩略图">缩略图</a></div>
+                            <img src="/Public/images/minus sign.jpg" class="sign" title="删除该条属性" onclick="delSku(this)"/>
                         </div><?php endforeach; endif; ?>
                     </td>
                     <td>
@@ -115,9 +129,9 @@ a.title_text {
                     <td class="left_td">商品<input style="width:40px;margin-left:1px;" type="text" name="goods_type2" class="input" placeholder="规格名2" value="<?php echo ($data["goods_type2"]); ?>">：</td>
                     <td class="right_td" id="goods_package">
                     <?php if(is_array($data2)): foreach($data2 as $key=>$vo): ?><div class="type_content">
-                        <input type="text" name="type2_name[]" class="input" value="<?php echo ($vo["type2_name"]); ?>" />
+                        <input type="text" name="type2_name[]" class="input_style input" value="<?php echo ($vo["type2_name"]); ?>" />
                         <input type="hidden" name="type2_id[]" value="<?php echo ($vo["id"]); ?>"/>
-                        <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delSku2(this)" />
+                        <img src="/Public/images/minus sign.jpg" title="删除该条属性" class="sign" onclick="delSku2(this)" />
                     </div><?php endforeach; endif; ?>
                         
                     </td>
@@ -202,14 +216,14 @@ function form_submit ()
 //动态添加商品种类
 $(document).ready(function(){
     $("#type1_add").click(function(){
-        $("#goods_type").append('<div class="type_content"><input style="width:80px;" type="text" name="goods_sn[]" placeholder="商品货号" class="input"  /><input style="width:80px;" type="text" name="type1_name[]" class="input" placeholder="规格子类名"  /><input style="width:80px;" type="text" name="goods_price[]" placeholder="商品原价" class="input"  /><input style="width:80px;" type="text" name="goods_discount[]" placeholder="商品折扣价" class="input"  /><input style="width:80px;" type="text" name="goods_num[]" class="input" placeholder="库存数量" /><img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" /></div>');
+        $("#goods_type").append('<div class="type_content"><input class="input_style input" type="text" name="goods_sn[]" placeholder="商品货号" /><input class="input_style input" type="text" name="type1_name[]" placeholder="规格子类名"  /><input class="input_style input" type="text" name="goods_price[]" placeholder="商品原价" /><input class="input_style input" type="text" name="goods_discount[]" placeholder="商品折扣价" /><input class="input_style input" type="text" name="goods_num[]" placeholder="库存数量" /><img src="/Public/images/minus sign.jpg" class="sign" onclick="delType(this)" /></div>');
     });
 })
 
 //动态添加商品包装种类
 $(document).ready(function(){
     $("#type2_add").click(function(){
-        $("#goods_package").append('<div class="type_content"><input type="text" name="type2_name[]" class="input" /><img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" /></div>');
+        $("#goods_package").append('<div class="type_content"><input type="text" name="type2_name[]" class="input_style input" /><img src="/Public/images/minus sign.jpg" class="sign" onclick="delType(this)" /></div>');
     });
 })
 
