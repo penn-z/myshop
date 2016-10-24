@@ -20,12 +20,7 @@
 
 	<body>
 		<!--头 -->
-		<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-		<header>
+				<header>
 			<article>
 				<div class="mt-logo">
 					<!--顶部导航条 -->
@@ -109,10 +104,6 @@
 			<b class="line"></b>
 		<!-- 导航条 -->
 
-		
-	</body>
-
-</html>
 		<!-- 头 -->
 		<div class="center">
 			<div class="col-main">
@@ -165,16 +156,16 @@
 									<div class="order-main">
 										<div class="order-list">
 											
-											<!--交易成功-->
-											<div class="order-status5">
-											<?php if(is_array($evaluated_details)): foreach($evaluated_details as $index=>$evaluated_detail): ?><div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Evaluated["$index"]["order_id"]); ?></a></div>
-													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Evaluated["$index"]["addtime"])); ?></span>
+											<!-- 待付款 -->
+											<div class="order-status1">
+											<?php if(is_array($nopay_details)): foreach($nopay_details as $index=>$nopay_detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Nopay["$index"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Nopay["$index"]["addtime"])); ?></span>
 													<!--    <em>店铺：小桔灯</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
-													<?php if(is_array($evaluated_detail)): foreach($evaluated_detail as $key=>$vo): ?><ul class="item-list">
+													<?php if(is_array($nopay_detail)): foreach($nopay_detail as $key=>$vo): ?><ul class="item-list">
 															<li class="td td-item">
 																<div class="item-pic">
 																	<a href="#" class="J_MakePoint">
@@ -203,7 +194,147 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	
+
+																</div>
+															</li>
+														</ul><?php endforeach; endif; ?>
+														
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：<?php echo ($Nopay["$index"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($Nopay["$index"]["express_fee"]); ?></span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">等待买家付款</p>
+																	<p class="order-info"><a order="<?php echo ($Nopay["$index"]["order_id"]); ?>" style="text-decoration:none;color:#000;cursor:pointer;" onclick="cancelOrder(this)">取消订单</a></p>
+
+																</div>
+															</li>
+															<li class="td td-change">
+																<a href="/home/pay/payment.html?order_id=<?php echo ($Nopay["$index"]["order_id"]); ?>">
+																<div class="am-btn am-btn-danger anniu">
+																	一键支付</div></a>
+															</li>
+														</div>
+													</div>
+
+												</div><?php endforeach; endif; ?>
+											</div>
+											
+																						
+											
+											<!--待发货-->
+											<div class="order-status2">
+											<?php if(is_array($details)): foreach($details as $index=>$detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Nosent["$index"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Nosent["$index"]["addtime"])); ?></span>
+													<!--    <em>店铺：小桔灯</em>-->
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+													<?php if(is_array($detail)): foreach($detail as $key=>$vo): ?><ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p><?php echo ($vo["goods_name"]); ?></p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	<?php echo ($vo["goods_price"]); ?>
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span><?php echo ($vo["goods_num"]); ?>
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	<a href="/home/MyDeal/refund.html">退款</a>
+																</div>
+															</li>
+														</ul><?php endforeach; endif; ?>
+														
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：<?php echo ($Nosent["$index"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($Nosent["$index"]["express_fee"]); ?></span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">买家已付款</p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?<?php echo ($Nosent["$index"]["order_id"]); ?>&status=<?php echo ($Nosent["$index"]["status"]); ?>">订单详情</a></p>
+																</div>
+															</li>
+															<li class="td td-change">
+																<div class="am-btn am-btn-danger anniu">
+																	提醒发货</div>
+															</li>
+														</div>
+													</div>
+												</div><?php endforeach; endif; ?>
+											</div>
+
+
+											<!--待收货-->
+											<div class="order-status3">
+											<?php if(is_array($senting_details)): foreach($senting_details as $index=>$senting_detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Senting["$index"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Senting["$index"]["addtime"])); ?></span>
+													<!--    <em>店铺：小桔灯</em>-->
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+													<?php if(is_array($senting_detail)): foreach($senting_detail as $key=>$vo): ?><ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p><?php echo ($vo["goods_name"]); ?></p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	<?php echo ($vo["goods_price"]); ?>
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span><?php echo ($vo["goods_num"]); ?>
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	<a href="refund.html">退款/退货</a>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -211,21 +342,22 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																合计：<?php echo ($Evaluated["$index"]["total_money"]); ?>
-																<p>含运费：<span><?php echo ($Evaluated["$index"]["express_fee"]); ?></span></p>
+																合计：<?php echo ($Senting["$index"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($Senting["$index"]["express_fee"]); ?></span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">交易成功</p>
+																	<p class="Mystatus">卖家已发货</p>
 																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
 																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
+																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	删除订单</div>
+																	确认收货</div>
 															</li>
 														</div>
 													</div>
@@ -233,6 +365,76 @@
 											</div>
 											
 											
+											<!--待评价-->
+											<div class="order-status4">
+											<?php if(is_array($evaluate_details)): foreach($evaluate_details as $key=>$evaluate_detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Evaluate["$key"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Evaluate["$key"]["addtime"])); ?></span>
+
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+														<?php if(is_array($evaluate_detail)): foreach($evaluate_detail as $inKey=>$vo): ?><ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p><?php echo ($vo["goods_name"]); ?></p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	<?php echo ($vo["goods_price"]); ?>
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span><?php echo ($vo["goods_num"]); ?>
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	<a href="refund.html">退款/退货</a>
+																</div>
+															</li>
+														</ul><?php endforeach; endif; ?>
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：<?php echo ($Evaluate["$key"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($Evaluate["$key"]["express_fee"]); ?></span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">交易成功</p>
+																	<p class="order-info"><a href="orderinfo.html?order_id=<?php echo ($Evaluate["$key"]["order_id"]); ?>&status=<?php echo ($Evaluate["$key"]["status"]); ?>">订单详情</a></p>
+																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
+																</div>
+															</li>
+															<li class="td td-change">
+																<a href="commentlist.html">
+																	<div class="am-btn am-btn-danger anniu">
+																		评价商品</div>
+																</a>
+															</li>
+														</div>
+													</div>
+												</div><?php endforeach; endif; ?>
+											</div>
+
+
 											<!--交易失败-->
 											<div class="order-status0">
 												<div class="order-title">
@@ -364,18 +566,18 @@
 														</div>
 													</div>
 												</div>
-											</div>											
-											
-											<!--待发货-->
-											<div class="order-status2">
-											<?php if(is_array($details)): foreach($details as $index=>$detail): ?><div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Nosent["$index"]["order_id"]); ?></a></div>
-													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Nosent["$index"]["addtime"])); ?></span>
+											</div>
+
+											<!--交易成功-->
+											<div class="order-status5">
+											<?php if(is_array($evaluated_details)): foreach($evaluated_details as $index=>$evaluated_detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Evaluated["$index"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Evaluated["$index"]["addtime"])); ?></span>
 													<!--    <em>店铺：小桔灯</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
-													<?php if(is_array($detail)): foreach($detail as $key=>$vo): ?><ul class="item-list">
+													<?php if(is_array($evaluated_detail)): foreach($evaluated_detail as $key=>$vo): ?><ul class="item-list">
 															<li class="td td-item">
 																<div class="item-pic">
 																	<a href="#" class="J_MakePoint">
@@ -404,75 +606,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款</a>
-																</div>
-															</li>
-														</ul><?php endforeach; endif; ?>
-														
-													</div>
-													<div class="order-right">
-														<li class="td td-amount">
-															<div class="item-amount">
-																合计：<?php echo ($Nosent["$index"]["total_money"]); ?>
-																<p>含运费：<span><?php echo ($Nosent["$index"]["express_fee"]); ?></span></p>
-															</div>
-														</li>
-														<div class="move-right">
-															<li class="td td-status">
-																<div class="item-status">
-																	<p class="Mystatus">买家已付款</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
-																</div>
-															</li>
-															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	提醒发货</div>
-															</li>
-														</div>
-													</div>
-												</div><?php endforeach; endif; ?>
-											</div>
-
-
-											<!--待收货-->
-											<div class="order-status3">
-											<?php if(is_array($senting_details)): foreach($senting_details as $index=>$senting_detail): ?><div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Senting["$index"]["order_id"]); ?></a></div>
-													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Senting["$index"]["addtime"])); ?></span>
-													<!--    <em>店铺：小桔灯</em>-->
-												</div>
-												<div class="order-content">
-													<div class="order-left">
-													<?php if(is_array($senting_detail)): foreach($senting_detail as $key=>$vo): ?><ul class="item-list">
-															<li class="td td-item">
-																<div class="item-pic">
-																	<a href="#" class="J_MakePoint">
-																		<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic J_ItemImg">
-																	</a>
-																</div>
-																<div class="item-info">
-																	<div class="item-basic-info">
-																		<a href="#">
-																			<p><?php echo ($vo["goods_name"]); ?></p>
-																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
-																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
-																		</a>
-																	</div>
-																</div>
-															</li>
-															<li class="td td-price">
-																<div class="item-price">
-																	<?php echo ($vo["goods_price"]); ?>
-																</div>
-															</li>
-															<li class="td td-number">
-																<div class="item-number">
-																	<span>×</span><?php echo ($vo["goods_num"]); ?>
-																</div>
-															</li>
-															<li class="td td-operation">
-																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -480,28 +614,26 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																合计：<?php echo ($Senting["$index"]["total_money"]); ?>
-																<p>含运费：<span><?php echo ($Senting["$index"]["express_fee"]); ?></span></p>
+																合计：<?php echo ($Evaluated["$index"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($Evaluated["$index"]["express_fee"]); ?></span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">卖家已发货</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
-																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
-																	<p class="order-info"><a href="#">延长收货</a></p>
+																	<p class="Mystatus">交易成功</p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($Evaluated["$index"]["order_id"]); ?>&status=<?php echo ($Evaluated["$index"]["status"]); ?>">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	确认收货</div>
+																<div class="am-btn am-btn-success anniu">
+																	删除订单</div>
 															</li>
 														</div>
 													</div>
 												</div><?php endforeach; endif; ?>
 											</div>
-
 										</div>
 
 									</div>
@@ -717,6 +849,8 @@
 										</div>
 									</div><?php endforeach; endif; ?>
 								</div>
+
+								<!-- 待收货 -->
 								<div class="am-tab-panel am-fade" id="tab4">
 									<div class="order-top">
 										<div class="th th-item">
@@ -797,7 +931,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">卖家已发货</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($Senting["$key"]["order_id"]); ?>&status=<?php echo ($Senting["$key"]["status"]); ?>">订单详情</a></p>
 																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
 																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
@@ -841,8 +975,8 @@
 									
 									<?php if(is_array($evaluate_details)): foreach($evaluate_details as $key=>$evaluate_detail): ?><div class="order-main">
 										<div class="order-list">
-											<!--不同状态的订单	-->
-										<div class="order-status4">
+											<!--待评价-->
+											<div class="order-status4">
 												<div class="order-title">
 													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Evaluate["$key"]["order_id"]); ?></a></div>
 													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Evaluate["$key"]["addtime"])); ?></span>
@@ -895,7 +1029,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">交易成功</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="orderinfo.html?order_id=<?php echo ($Evaluate["$key"]["order_id"]); ?>&status=<?php echo ($Evaluate["$key"]["status"]); ?>">订单详情</a></p>
 																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
 																</div>
 															</li>
@@ -918,13 +1052,7 @@
 					</div>
 				</div>
 				<!--底部-->
-				<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
-		<div class="footer">
+						<div class="footer">
 			<div class="footer-hd">
 				<p>
 					<a href="#">恒望科技</a>
@@ -947,19 +1075,11 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 				<!-- 底部 -->
 			</div>
 			<!-- 左边 -->
-			<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-
-	<body>
-		<aside class="menu">
+					<aside class="menu">
 			<ul>
 				<li class="person active">
 					<a href="/home/person"><i class="am-icon-user"></i>个人中心</a>
@@ -1011,9 +1131,7 @@
 				</li>
 			</ul>
 		</aside>
-	</body>
 
-</html>
 			<!-- 左边 -->
 		</div>
 

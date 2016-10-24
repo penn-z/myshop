@@ -73,17 +73,17 @@
 									<div class="order-main">
 										<div class="order-list">
 											
-											<!--交易成功-->
-											<div class="order-status5">
-											<foreach name="evaluated_details" item="evaluated_detail" key="index">
+											<!-- 待付款 -->
+											<div class="order-status1">
+											<foreach name="nopay_details" item="nopay_detail" key="index">
 												<div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;">{$Evaluated.$index.order_id}</a></div>
-													<span>成交时间：{$Evaluated.$index.addtime|date="Y-m-d H:i:s",###}</span>
+													<div class="dd-num">订单编号：<a href="javascript:;">{$Nopay.$index.order_id}</a></div>
+													<span>成交时间：{$Nopay.$index.addtime|date="Y-m-d H:i:s",###}</span>
 													<!--    <em>店铺：小桔灯</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
-													<foreach name="evaluated_detail" item="vo">
+													<foreach name="nopay_detail" item="vo">
 														<ul class="item-list">
 															<li class="td td-item">
 																<div class="item-pic">
@@ -113,30 +113,179 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	
+
 																</div>
 															</li>
 														</ul>
 													</foreach>
+														
 													</div>
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																合计：{$Evaluated.$index.total_money}
-																<p>含运费：<span>{$Evaluated.$index.express_fee}</span></p>
+																合计：{$Nopay.$index.total_money}
+																<p>含运费：<span>{$Nopay.$index.express_fee}</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">交易成功</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
-																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
+																	<p class="Mystatus">等待买家付款</p>
+																	<p class="order-info"><a order="{$Nopay.$index.order_id}" style="text-decoration:none;color:#000;cursor:pointer;" onclick="cancelOrder(this)">取消订单</a></p>
+
+																</div>
+															</li>
+															<li class="td td-change">
+																<a href="/home/pay/payment.html?order_id={$Nopay.$index.order_id}">
+																<div class="am-btn am-btn-danger anniu">
+																	一键支付</div></a>
+															</li>
+														</div>
+													</div>
+
+												</div>
+											</foreach>
+											</div>
+											
+																						
+											
+											<!--待发货-->
+											<div class="order-status2">
+											<foreach name="details" item="detail" key="index">
+												<div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;">{$Nosent.$index.order_id}</a></div>
+													<span>成交时间：{$Nosent.$index.addtime|date="Y-m-d H:i:s",###}</span>
+													<!--    <em>店铺：小桔灯</em>-->
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+													<foreach name="detail" item="vo">
+														<ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="{$vo.goods_thumb}" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p>{$vo.goods_name}</p>
+																			<p class="info-little">{$vo.goods_type1}：{$vo.goods_type}
+																				<br/>{$vo.goods_type2}：{$vo.goods_package} </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	{$vo.goods_price}
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span>{$vo.goods_num}
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	<a href="/home/MyDeal/refund.html">退款</a>
+																</div>
+															</li>
+														</ul>
+														</foreach>
+														
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：{$Nosent.$index.total_money}
+																<p>含运费：<span>{$Nosent.$index.express_fee}</span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">买家已付款</p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?{$Nosent.$index.order_id}&status={$Nosent.$index.status}">订单详情</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	删除订单</div>
+																	提醒发货</div>
+															</li>
+														</div>
+													</div>
+												</div>
+											</foreach>
+											</div>
+
+
+											<!--待收货-->
+											<div class="order-status3">
+											<foreach name="senting_details" item="senting_detail" key="index">
+												<div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;">{$Senting.$index.order_id}</a></div>
+													<span>成交时间：{$Senting.$index.addtime|date="Y-m-d H:i:s",###}</span>
+													<!--    <em>店铺：小桔灯</em>-->
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+													<foreach name="senting_detail" item="vo">
+														<ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="{$vo.goods_thumb}" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p>{$vo.goods_name}</p>
+																			<p class="info-little">{$vo.goods_type1}：{$vo.goods_type}
+																				<br/>{$vo.goods_type2}：{$vo.goods_package} </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	{$vo.goods_price}
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span>{$vo.goods_num}
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																</div>
+															</li>
+														</ul>
+														</foreach>
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：{$Senting.$index.total_money}
+																<p>含运费：<span>{$Senting.$index.express_fee}</span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">卖家已发货</p>
+																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/logistics.html?order_id={$Senting.$index.order_id}&status={$Senting.$index.status}">查看物流</a></p>
+																	<p class="order-info"><a href="#">延长收货</a></p>
+																</div>
+															</li>
+															<li class="td td-change">
+																<div class="am-btn am-btn-danger anniu">
+																	确认收货</div>
 															</li>
 														</div>
 													</div>
@@ -145,6 +294,80 @@
 											</div>
 											
 											
+											<!--待评价-->
+											<div class="order-status4">
+											<foreach name="evaluate_details" item="evaluate_detail">
+												<div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;">{$Evaluate.$key.order_id}</a></div>
+													<span>成交时间：{$Evaluate.$key.addtime|date="Y-m-d H:i:s",###}</span>
+
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+														<foreach name="evaluate_detail" item="vo" key="inKey">
+														<ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="{$vo.goods_thumb}" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p>{$vo.goods_name}</p>
+																			<p class="info-little">{$vo.goods_type1}：{$vo.goods_type}
+																				<br/>{$vo.goods_type2}：{$vo.goods_package} </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	{$vo.goods_price}
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span>{$vo.goods_num}
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	<a href="refund.html">退款/退货</a>
+																</div>
+															</li>
+														</ul>
+														</foreach>
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：{$Evaluate.$key.total_money}
+																<p>含运费：<span>{$Evaluate.$key.express_fee}</span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">交易成功</p>
+																	<p class="order-info"><a href="orderinfo.html?order_id={$Evaluate.$key.order_id}&status={$Evaluate.$key.status}">订单详情</a></p>
+																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
+																</div>
+															</li>
+															<li class="td td-change">
+																<a href="commentlist.html">
+																	<div class="am-btn am-btn-danger anniu">
+																		评价商品</div>
+																</a>
+															</li>
+														</div>
+													</div>
+												</div>
+											</foreach>
+											</div>
+
+
 											<!--交易失败-->
 											<div class="order-status0">
 												<div class="order-title">
@@ -276,19 +499,19 @@
 														</div>
 													</div>
 												</div>
-											</div>											
-											
-											<!--待发货-->
-											<div class="order-status2">
-											<foreach name="details" item="detail" key="index">
+											</div>
+
+											<!--交易成功-->
+											<div class="order-status5">
+											<foreach name="evaluated_details" item="evaluated_detail" key="index">
 												<div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;">{$Nosent.$index.order_id}</a></div>
-													<span>成交时间：{$Nosent.$index.addtime|date="Y-m-d H:i:s",###}</span>
+													<div class="dd-num">订单编号：<a href="javascript:;">{$Evaluated.$index.order_id}</a></div>
+													<span>成交时间：{$Evaluated.$index.addtime|date="Y-m-d H:i:s",###}</span>
 													<!--    <em>店铺：小桔灯</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
-													<foreach name="detail" item="vo">
+													<foreach name="evaluated_detail" item="vo">
 														<ul class="item-list">
 															<li class="td td-item">
 																<div class="item-pic">
@@ -318,110 +541,36 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款</a>
+																	
 																</div>
 															</li>
 														</ul>
-														</foreach>
-														
+													</foreach>
 													</div>
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																合计：{$Nosent.$index.total_money}
-																<p>含运费：<span>{$Nosent.$index.express_fee}</span></p>
+																合计：{$Evaluated.$index.total_money}
+																<p>含运费：<span>{$Evaluated.$index.express_fee}</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">买家已付款</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="Mystatus">交易成功</p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id={$Evaluated.$index.order_id}&status={$Evaluated.$index.status}">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	提醒发货</div>
+																<div class="am-btn am-btn-success anniu">
+																	删除订单</div>
 															</li>
 														</div>
 													</div>
 												</div>
 											</foreach>
 											</div>
-
-
-											<!--待收货-->
-											<div class="order-status3">
-											<foreach name="senting_details" item="senting_detail" key="index">
-												<div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;">{$Senting.$index.order_id}</a></div>
-													<span>成交时间：{$Senting.$index.addtime|date="Y-m-d H:i:s",###}</span>
-													<!--    <em>店铺：小桔灯</em>-->
-												</div>
-												<div class="order-content">
-													<div class="order-left">
-													<foreach name="senting_detail" item="vo">
-														<ul class="item-list">
-															<li class="td td-item">
-																<div class="item-pic">
-																	<a href="#" class="J_MakePoint">
-																		<img src="{$vo.goods_thumb}" class="itempic J_ItemImg">
-																	</a>
-																</div>
-																<div class="item-info">
-																	<div class="item-basic-info">
-																		<a href="#">
-																			<p>{$vo.goods_name}</p>
-																			<p class="info-little">{$vo.goods_type1}：{$vo.goods_type}
-																				<br/>{$vo.goods_type2}：{$vo.goods_package} </p>
-																		</a>
-																	</div>
-																</div>
-															</li>
-															<li class="td td-price">
-																<div class="item-price">
-																	{$vo.goods_price}
-																</div>
-															</li>
-															<li class="td td-number">
-																<div class="item-number">
-																	<span>×</span>{$vo.goods_num}
-																</div>
-															</li>
-															<li class="td td-operation">
-																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
-																</div>
-															</li>
-														</ul>
-														</foreach>
-													</div>
-													<div class="order-right">
-														<li class="td td-amount">
-															<div class="item-amount">
-																合计：{$Senting.$index.total_money}
-																<p>含运费：<span>{$Senting.$index.express_fee}</span></p>
-															</div>
-														</li>
-														<div class="move-right">
-															<li class="td td-status">
-																<div class="item-status">
-																	<p class="Mystatus">卖家已发货</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
-																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
-																	<p class="order-info"><a href="#">延长收货</a></p>
-																</div>
-															</li>
-															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	确认收货</div>
-															</li>
-														</div>
-													</div>
-												</div>
-											</foreach>
-											</div>
-
 										</div>
 
 									</div>
@@ -645,6 +794,8 @@
 									</div>
 									</foreach>
 								</div>
+
+								<!-- 待收货 -->
 								<div class="am-tab-panel am-fade" id="tab4">
 									<div class="order-top">
 										<div class="th th-item">
@@ -728,7 +879,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">卖家已发货</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id={$Senting.$key.order_id}&status={$Senting.$key.status}">订单详情</a></p>
 																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
 																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
@@ -774,8 +925,8 @@
 									<foreach name="evaluate_details" item="evaluate_detail">
 									<div class="order-main">
 										<div class="order-list">
-											<!--不同状态的订单	-->
-										<div class="order-status4">
+											<!--待评价-->
+											<div class="order-status4">
 												<div class="order-title">
 													<div class="dd-num">订单编号：<a href="javascript:;">{$Evaluate.$key.order_id}</a></div>
 													<span>成交时间：{$Evaluate.$key.addtime|date="Y-m-d H:i:s",###}</span>
@@ -830,7 +981,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">交易成功</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="orderinfo.html?order_id={$Evaluate.$key.order_id}&status={$Evaluate.$key.status}">订单详情</a></p>
 																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
 																</div>
 															</li>

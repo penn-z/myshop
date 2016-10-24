@@ -85,4 +85,18 @@ class MyDealController extends CheckLoginController {
 
         $this->display("Person/orderinfo");
     }
+
+    /**
+     * 退款退货
+     */
+    public function refund(){
+        $this->display("Person/refund");
+    }
+
+    /**
+     * 物流信息
+     */
+    public function logistics(){
+        $this->display("Person/logistics");
+    }
 }

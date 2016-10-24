@@ -21,12 +21,7 @@
 
 	<body>
 		<!--头 -->
-		<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-		<header>
+				<header>
 			<article>
 				<div class="mt-logo">
 					<!--顶部导航条 -->
@@ -110,10 +105,6 @@
 			<b class="line"></b>
 		<!-- 导航条 -->
 
-		
-	</body>
-
-</html>
 		<!-- 头 -->
 		<div class="center">
 			<div class="col-main">
@@ -345,17 +336,44 @@
 													<div class="am-btn am-btn-danger anniu">
 														确认收货</div>
 												</li>
+											<!-- status=1 为待发货状态 -->
 											<?php elseif($common["status"] == 1): ?>
 												<li class="td td-status">
-																<div class="item-status">
-																	<p class="Mystatus">买家已付款</p>
-																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($Nosent["$key"]["order_id"]); ?>&status=<?php echo ($Nosent["$key"]["status"]); ?>">取消订单</a></p>
-																</div>
-															</li>
-															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	提醒发货</div>
-															</li><?php endif; ?>
+													<div class="item-status">
+														<p class="Mystatus">买家已付款</p>
+														<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($Nosent["$key"]["order_id"]); ?>&status=<?php echo ($Nosent["$key"]["status"]); ?>">取消订单</a></p>
+													</div>
+												</li>
+												<li class="td td-change">
+													<div class="am-btn am-btn-danger anniu">
+														提醒发货</div>
+												</li>
+											<!-- status=3 为已收到货待评价状态 -->	
+											<?php elseif($common["status"] == 3): ?>
+												<li class="td td-status">
+													<div class="item-status">
+														<p class="Mystatus">卖家已发货</p>
+														<p class="order-info"><a href="orderinfo.html">退货/退款</a></p>
+														<p class="order-info"><a href="logistics.html">查看物流</a></p>
+														<p class="order-info"><a href="#">延长收货</a></p>
+													</div>
+												</li>
+												<li class="td td-change">
+													<div class="am-btn am-btn-danger anniu">
+														确认收货</div>
+												</li>
+											<!-- status=4 为已评价状态 -->
+											<?php elseif($common["status"] == 4): ?>
+												<li class="td td-status">
+													<div class="item-status">
+														<p class="Mystatus">交易成功</p>
+														<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
+													</div>
+												</li>
+												<li class="td td-change">
+													<div class="am-btn am-btn-danger anniu">
+														删除订单</div>
+												</li><?php endif; ?>
 											</div>
 										</div>
 									</div>
@@ -367,13 +385,7 @@
 
 				</div>
 				<!--底部-->
-				<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
-		<div class="footer">
+						<div class="footer">
 			<div class="footer-hd">
 				<p>
 					<a href="#">恒望科技</a>
@@ -396,20 +408,12 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 				<!-- 底部 -->
 
 			</div>
 			<!-- 左边 -->
-			<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-
-	<body>
-		<aside class="menu">
+					<aside class="menu">
 			<ul>
 				<li class="person active">
 					<a href="/home/person"><i class="am-icon-user"></i>个人中心</a>
@@ -461,9 +465,7 @@
 				</li>
 			</ul>
 		</aside>
-	</body>
 
-</html>
 			<!-- 左边 -->
 		</div>
 
