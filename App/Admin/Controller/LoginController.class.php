@@ -4,7 +4,11 @@ use Think\Controller;
 class LoginController extends Controller {
     
     public function index(){
-        session(null);  //只要进入登陆界面，便清除登陆状态
+        //只要进入登陆界面，便清除登陆状态
+        session('UID',null);  
+        session('UACCOUNT',null);
+        session('UNAME',null);
+        session('LOGINTIME',null);
         $this->display('auth');
     }
 

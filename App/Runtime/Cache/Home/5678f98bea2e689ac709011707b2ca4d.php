@@ -589,12 +589,12 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">等待买家付款</p>
-																	<p class="order-info"><a href="#">取消订单</a></p>
+																	<p class="order-info"><a order="<?php echo ($Nopay["$index"]["order_id"]); ?>" style="text-decoration:none;color:#000;cursor:pointer;" onclick="cancelOrder(this)">取消订单</a></p>
 
 																</div>
 															</li>
 															<li class="td td-change">
-																<a href="pay.html">
+																<a href="/home/pay/payment.html?order_id=<?php echo ($Nopay["$index"]["order_id"]); ?>">
 																<div class="am-btn am-btn-danger anniu">
 																	一键支付</div></a>
 															</li>
@@ -606,6 +606,21 @@
 										</div>
 									</div><?php endforeach; endif; ?>
 								</div>
+								<script>
+									function cancelOrder(obj){
+										var bool = window.confirm("确定要取消订单吗？");
+										if(bool!=true) return;
+										var order_id = $(obj).attr("order");
+										$.get(
+											'/Api/Order/cancelOrder',
+											{order_id:order_id},
+											function(ret){
+												alert("订单已取消");
+												window.location.href="/home/MyDeal/order";
+											}
+										);
+									}
+								</script>
 								<div class="am-tab-panel am-fade" id="tab3">
 									<div class="order-top">
 										<div class="th th-item">
@@ -687,7 +702,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">买家已付款</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($Nosent["$key"]["order_id"]); ?>&status=<?php echo ($Nosent["$key"]["status"]); ?>">订单详情</a></p>
 																</div>
 															</li>
 															<li class="td td-change">

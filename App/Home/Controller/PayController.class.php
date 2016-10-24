@@ -110,6 +110,17 @@ class PayController extends Controller {
     }
 
     /**
+     * 支付页面
+     */
+    public function payment(){
+        $order_id = I('get.order_id');
+        $information = M("order")->where("order_id={$order_id}")->select();
+        $data = $information[0];
+        $this->assign("data",$data);
+        $this->display();
+    }
+
+    /**
      *  支付成功
      */
     public function success(){

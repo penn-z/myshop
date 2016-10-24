@@ -63,9 +63,26 @@ class MyDealController extends CheckLoginController {
     }
 
     /**
-     *  订单详情
+     *  不同状态下订单详情
      */
     public function orderinfo(){
+        $order_id = I('get.order_id');
+        $user_id = session('id');
+        $common = M('order')->where("order_id={$order_id}")->find();    //订单共同信息
+        $order_detail = M('order_detail')->where("order_id={$order_id}")->select(); //订单详细信息
+        /*echo "<pre>";
+        print_r($common);
+        print_r($order_detail);*/
+        $this->assign('common',$common);
+        $this->assign('order_detail',$order_detail);
+        /*foreach($Nosent as $Nosent_single){
+            $order_id = $Nosent_single['order_id'];
+            $nosent_detail = M("order_detail")->where("order_id={$order_id}")->select();
+            $nosent_details[] = $nosent_detail;
+        }
+        $this->assign("nosent_details",$nosent_details);  //$details为三维数组
+        $this->assign("Nosent",$Nosent);*/
+
         $this->display("Person/orderinfo");
     }
 }

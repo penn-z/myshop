@@ -620,7 +620,7 @@
 								'/Api/Goods/makeOrder',
 								{express:express,cart_array:cart_array,message:message},
 								function(ret){
-									window.location.href="/home/pay/success?order_id="+ret;
+									window.location.href="/home/pay/payment?order_id="+ret;
 								}
 							);
 							

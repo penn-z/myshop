@@ -49,12 +49,24 @@
 								<div class="menu-hd MyShangcheng"><a href="/home/person" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h" style="color:orange;">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
 								<div class="menu-hd"><a href="/index.php/Home/Information/collection" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
 						</ul>
 						</div>
+						<script>
+							$(function(){
+								$.post(
+									'/Api/Goods/differentCart',
+									null,
+									function(ret){
+										$("#J_MiniCartNum").text(ret);
+									}
+								);
+								
+							});
+						</script>
 
 						<!--悬浮搜索框-->
 
@@ -216,7 +228,7 @@
 				<li class="person">
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
-						<li><a href="/index.php/Home/Information/order">订单管理</a></li>
+						<li><a href="/home/MyDeal/order">订单管理</a></li>
 						<li> <a href="/index.php/Home/Information/change">退款售后</a></li>
 						<li> <a href="/index.php/Home/Information/comment">评价商品</a></li>
 					</ul>

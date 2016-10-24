@@ -42,19 +42,24 @@
                                    <i class="u-stage-icon-inner">1<em class="bg"></em></i>
                                    <p class="stage-name">拍下商品</p>
                                 </span>
-								<span class="step-2 step">
+                                <span class="step-2 step">
                                    <em class="u-progress-stage-bg"></em>
                                    <i class="u-stage-icon-inner">2<em class="bg"></em></i>
-                                   <p class="stage-name">卖家发货</p>
+                                   <p class="stage-name">付款</p>
                                 </span>
 								<span class="step-3 step">
                                    <em class="u-progress-stage-bg"></em>
                                    <i class="u-stage-icon-inner">3<em class="bg"></em></i>
-                                   <p class="stage-name">确认收货</p>
+                                   <p class="stage-name">卖家发货</p>
                                 </span>
 								<span class="step-4 step">
                                    <em class="u-progress-stage-bg"></em>
                                    <i class="u-stage-icon-inner">4<em class="bg"></em></i>
+                                   <p class="stage-name">确认收货</p>
+                                </span>
+								<span class="step-5 step">
+                                   <em class="u-progress-stage-bg"></em>
+                                   <i class="u-stage-icon-inner">5<em class="bg"></em></i>
                                    <p class="stage-name">交易完成</p>
                                 </span>
 								<span class="u-progress-placeholder"></span>
@@ -63,6 +68,59 @@
 								<div class="u-progress-bar-inner"></div>
 							</div>
 						</div>
+						<script>
+							/**
+							 * 进度条变化情况
+							 */
+							function programList(){
+								var status = {$Think.get.status};
+								switch( status ){
+									case 1:  	//待发货状态
+										$(".u-progress-bar-inner").css("width","23%");
+										setTimeout(function(){
+											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
+										},1500);
+										break;
+									case 2:
+										$(".u-progress-bar-inner").css("width","49%");
+										setTimeout(function(){
+											setTimeout(function(){
+												$(".step-3 .u-stage-icon-inner .bg").animate({opacity:1});
+											},500);
+											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
+										},850);
+										break;
+									case 3:
+										$(".u-progress-bar-inner").css("width","75%");
+										setTimeout(function(){
+											setTimeout(function(){
+												setTimeout(function(){
+													$(".step-4 .u-stage-icon-inner .bg").animate({opacity:1});
+												},250)
+												$(".step-3 .u-stage-icon-inner .bg").animate({opacity:1});
+											},500);
+											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
+										},650);
+										break;
+									case 4:
+										$(".u-progress-bar-inner").css("width","101%");
+										setTimeout(function(){
+											setTimeout(function(){
+												setTimeout(function(){
+													setTimeout(function(){
+														$(".step-5 .u-stage-icon-inner .bg").animate({opacity:1});
+													},100)
+													$(".step-4 .u-stage-icon-inner .bg").animate({opacity:1});
+												},250)
+												$(".step-3 .u-stage-icon-inner .bg").animate({opacity:1});
+											},400);
+											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
+										},650);
+										break;
+								}
+							}
+							document.onload = programList();
+						</script>
 						<div class="order-infoaside">
 							<div class="order-logistics">
 								<a href="logistics.html">
@@ -90,16 +148,16 @@
 									<div class="icon-add">
 									</div>
 									<p class="new-tit new-p-re">
-										<span class="new-txt">小叮当</span>
-										<span class="new-txt-rd2">159****1622</span>
+										<span class="new-txt">{$common.receiver}</span>
+										<span class="new-txt-rd2">{$common.phone}</span>
 									</p>
 									<div class="new-mu_l2a new-p-re">
 										<p class="new-mu_l2cw">
 											<span class="title">收货地址：</span>
-											<span class="province">湖北</span>省
-											<span class="city">武汉</span>市
-											<span class="dist">洪山</span>区
-											<span class="street">雄楚大道666号(中南财经政法大学)</span></p>
+											<span class="province">{$common.province}</span>
+											<span class="city">{$common.city}</span>
+											<span class="dist">{$common.district}</span>
+											<span class="street">{$common.street}</span></p>
 									</div>
 								</div>
 							</div>
@@ -134,37 +192,39 @@
 
 								<div class="order-status3">
 									<div class="order-title">
-										<div class="dd-num">订单编号：<a href="javascript:;">1601430</a></div>
-										<span>成交时间：2015-12-20</span>
+										<div class="dd-num">订单编号：<a href="javascript:;">{$common.order_id}</a></div>
+										<span>成交时间：{$common.addtime|date="Y-m-d H:i:s",###}</span>
 										<!--    <em>店铺：小桔灯</em>-->
 									</div>
+									
 									<div class="order-content">
 										<div class="order-left">
+											<foreach name="order_detail" item="vo">
 											<ul class="item-list">
 												<li class="td td-item">
 													<div class="item-pic">
 														<a href="#" class="J_MakePoint">
-															<img src="/Public/images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg">
+															<img src="{$vo.goods_thumb}" class="itempic J_ItemImg">
 														</a>
 													</div>
 													<div class="item-info">
 														<div class="item-basic-info">
 															<a href="#">
-																<p>美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
-																<p class="info-little">颜色：12#川南玛瑙
-																	<br/>包装：裸装 </p>
+																<p>{$vo.goods_name}</p>
+																<p class="info-little">{$vo.goods_type1}：{$vo.goods_type}
+																	<br/>{$vo.goods_type2}：{$vo.goods_package} </p>
 															</a>
 														</div>
 													</div>
 												</li>
 												<li class="td td-price">
 													<div class="item-price">
-														333.00
+														{$vo.goods_price}
 													</div>
 												</li>
 												<li class="td td-number">
 													<div class="item-number">
-														<span>×</span>2
+														<span>×</span>{$vo.goods_num}
 													</div>
 												</li>
 												<li class="td td-operation">
@@ -173,54 +233,22 @@
 													</div>
 												</li>
 											</ul>
-
-											<ul class="item-list">
-												<li class="td td-item">
-													<div class="item-pic">
-														<a href="#" class="J_MakePoint">
-															<img src="/Public/images/62988.jpg_80x80.jpg" class="itempic J_ItemImg">
-														</a>
-													</div>
-													<div class="item-info">
-														<div class="item-basic-info">
-															<a href="#">
-																<p>礼盒袜子女秋冬 纯棉袜加厚 韩国可爱 </p>
-																<p class="info-little">颜色分类：李清照
-																	<br/>尺码：均码</p>
-															</a>
-														</div>
-													</div>
-												</li>
-												<li class="td td-price">
-													<div class="item-price">
-														333.00
-													</div>
-												</li>
-												<li class="td td-number">
-													<div class="item-number">
-														<span>×</span>2
-													</div>
-												</li>
-												<li class="td td-operation">
-													<div class="item-operation">
-														退款/退货
-													</div>
-												</li>
-											</ul>
-
+											</foreach>
 										</div>
 										<div class="order-right">
 											<li class="td td-amount">
 												<div class="item-amount">
-													合计：676.00
-													<p>含运费：<span>10.00</span></p>
+													合计：{$common.total_money}
+													<p>含运费：<span>{$common.express_fee}</span></p>
 												</div>
 											</li>
 											<div class="move-right">
+											<!-- status=2 为待收货状态 -->
+											<if condition="$common.status eq 2">
 												<li class="td td-status">
 													<div class="item-status">
 														<p class="Mystatus">卖家已发货</p>
-														<p class="order-info"><a href="logistics.html">查看物流</a></p>
+														<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 														<p class="order-info"><a href="#">延长收货</a></p>
 													</div>
 												</li>
@@ -228,10 +256,23 @@
 													<div class="am-btn am-btn-danger anniu">
 														确认收货</div>
 												</li>
+											<!-- status=1 为待发货状态 -->
+											<elseif condition="$common.status eq 1" />
+												<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus">买家已付款</p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id={$Nosent.$key.order_id}&status={$Nosent.$key.status}">取消订单</a></p>
+																</div>
+															</li>
+															<li class="td td-change">
+																<div class="am-btn am-btn-danger anniu">
+																	提醒发货</div>
+															</li>
+											</if>
 											</div>
 										</div>
 									</div>
-
+									
 								</div>
 							</div>
 						</div>
