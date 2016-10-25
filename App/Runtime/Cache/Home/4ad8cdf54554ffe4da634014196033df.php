@@ -15,7 +15,6 @@
 
 		<script src="/Public/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
 		<script src="/Public/AmazeUI-2.4.2/assets/js/amazeui.js"></script>
-
 	</head>
 
 	<body>
@@ -126,8 +125,7 @@
 
 							<div class="am-tabs-bd">
 								<div class="am-tab-panel am-fade am-in am-active" id="tab1">
-
-									<div class="comment-main">
+								<?php if(is_array($pic_comment)): foreach($pic_comment as $key=>$vo): ?><div class="comment-main">
 										<div class="comment-list">
 											<ul class="item-list">
 
@@ -143,7 +141,7 @@
 												<li class="td td-item">
 													<div class="item-pic">
 														<a href="#" class="J_MakePoint">
-															<img src="/Public/images/kouhong.jpg_80x80.jpg" class="itempic">
+															<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic">
 														</a>
 													</div>
 												</li>
@@ -153,18 +151,18 @@
 														<div class="item-opinion">好评</div>
 														<div class="item-name">
 															<a href="#">
-																<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+																<p class="item-basic-info"><?php echo ($vo["goods_name"]); ?></p>
 															</a>
 														</div>
 													</div>
 													<div class="item-comment">
-														宝贝非常漂亮，超级喜欢！！！ 口红颜色很正呐，还有第两支半价，买三支免单一支的活动，下次还要来买。就是物流太慢了，还要我自己去取快递，店家不考虑换个物流么？
+														<?php echo ($vo["comment"]); ?>
 													</div>
 
 													<div class="item-info">
 														<div>
-															<p class="info-little"><span>颜色：12#玛瑙</span> <span>包装：裸装</span> </p>
-															<p class="info-time">2015-12-24</p>
+															<p class="info-little"><span><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["type1_name"]); ?></span> <span><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["type2_name"]); ?></span> </p>
+															<p class="info-time"><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></p>
 
 														</div>
 													</div>
@@ -173,12 +171,10 @@
 											</ul>
 
 										</div>
-									</div>
-
+									</div><?php endforeach; endif; ?>
 								</div>
 								<div class="am-tab-panel am-fade" id="tab2">
-									
-									<div class="comment-main">
+								<?php if(is_array($nopic_comment)): foreach($nopic_comment as $key=>$vo): ?><div class="comment-main">
 										<div class="comment-list">
 											<ul class="item-list">
 												
@@ -194,7 +190,7 @@
 												<li class="td td-item">
 													<div class="item-pic">
 														<a href="#" class="J_MakePoint">
-															<img src="/Public/images/kouhong.jpg_80x80.jpg" class="itempic">
+															<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic">
 														</a>
 													</div>
 												</li>											
@@ -204,19 +200,23 @@
 														<div class="item-opinion">好评</div>
 														<div class="item-name">
 															<a href="#">
-																<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+																<p class="item-basic-info"><?php echo ($vo["goods_name"]); ?></p>
 															</a>
 														</div>
 													</div>
 													<div class="item-comment">
-														宝贝非常漂亮，超级喜欢！！！ 口红颜色很正呐，还有第两支半价，买三支免单一支的活动，下次还要来买。就是物流太慢了，还要我自己去取快递，店家不考虑换个物流么？
-													<div class="filePic"><img src="/Public/images/image.jpg" alt=""></div>	
+														<div style="width:auto;height:100px;">
+														<?php echo ($vo["comment"]); ?>
+														</div>
+														<div class="filePic" style="width:auto;height:100px;">
+														<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$val): ?><img src="<?php echo ($val); ?>" alt="图片失效" style="width:100px;height:100px;float:left;"><?php endforeach; endif; ?>
+														</div>	
 													</div>
 
 													<div class="item-info">
 														<div>
-															<p class="info-little"><span>颜色：12#玛瑙</span> <span>包装：裸装</span> </p>
-															<p class="info-time">2015-12-24</p>
+															<p class="info-little"><span><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["type1_name"]); ?></span> <span><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["type2_name"]); ?></span> </p>
+															<p class="info-time"><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></p>
 
 														</div>
 													</div>
@@ -225,8 +225,7 @@
 											</ul>
 
 										</div>
-									</div>									
-									
+									</div><?php endforeach; endif; ?>	
 								</div>
 							</div>
 						</div>

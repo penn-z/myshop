@@ -139,7 +139,7 @@
 					<section class="slider">
 						<div class="flexslider">
 							<ul class="slides">
-							<?php $__FOR_START_1948765205__=0;$__FOR_END_1948765205__=3;for($i=$__FOR_START_1948765205__;$i < $__FOR_END_1948765205__;$i+=1){ if(($i) == "0"): ?><li>
+							<?php $__FOR_START_1600871297__=0;$__FOR_END_1600871297__=3;for($i=$__FOR_START_1600871297__;$i < $__FOR_END_1600871297__;$i+=1){ if(($i) == "0"): ?><li>
 									<img src="<?php echo ($thumb["big"]["$i"]); ?>" title="pic" />
 								</li>
 								<?php else: ?>
@@ -172,7 +172,7 @@
 								<a href="<?php echo ($thumb["big"]["0"]); ?>"><img src="<?php echo ($thumb["big"]["0"]); ?>" alt="细节展示放大镜特效" rel="<?php echo ($thumb["big"]["0"]); ?>" class="jqzoom" /></a>
 							</div>
 							<ul class="tb-thumb" id="thumblist">
-							<?php $__FOR_START_1283576617__=0;$__FOR_END_1283576617__=3;for($i=$__FOR_START_1283576617__;$i < $__FOR_END_1283576617__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
+							<?php $__FOR_START_904867584__=0;$__FOR_END_904867584__=3;for($i=$__FOR_START_904867584__;$i < $__FOR_END_904867584__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
 									<div class="tb-pic tb-s40">
 										<a href="#"><img id="add_shopcart" src="<?php echo ($thumb["small"]["$i"]); ?>" mid="<?php echo ($thumb["mid"]["$i"]); ?>" big="<?php echo ($thumb["big"]["$i"]); ?>"></a>
 									</div>

@@ -104,6 +104,21 @@ class MyDealController extends CheckLoginController {
      * 评价管理
      */
     public function comment(){
+        $user_id = session('id');
+
+        $pic_comment = M('person_comment')->where("user_id={$user_id}")->select();
+        foreach($pic_comment as $key => $val){
+            $pic_comment[$key]['picture'] = unserialize($val['picture']);
+        }
+        $this->assign("pic_comment",$pic_comment);
+
+        $nopic_comment = M('person_comment')->where("user_id={$user_id} AND picture!='N;'")->select();
+        foreach($nopic_comment as $key => $val){
+            $nopic_comment[$key]['picture'] = unserialize($val['picture']);
+        }
+        $this->assign("nopic_comment",$nopic_comment);
+        /*echo "<pre>";
+        print_r($nopic_comment);*/
         $this->display("Person/comment");
     }
 

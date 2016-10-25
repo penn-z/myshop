@@ -350,7 +350,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">卖家已发货</p>
-																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($Senting["$index"]["order_id"]); ?>&status=<?php echo ($Senting["$index"]["status"]); ?>">订单详情</a></p>
 																	<p class="order-info"><a href="/home/MyDeal/logistics.html?order_id=<?php echo ($Senting["$index"]["order_id"]); ?>&status=<?php echo ($Senting["$index"]["status"]); ?>">查看物流</a></p>
 																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
@@ -403,7 +403,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="/home/MyDeal/refund.html">退款/退货</a>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -420,7 +420,7 @@
 																<div class="item-status">
 																	<p class="Mystatus">交易成功</p>
 																	<p class="order-info"><a href="orderinfo.html?order_id=<?php echo ($Evaluate["$key"]["order_id"]); ?>&status=<?php echo ($Evaluate["$key"]["status"]); ?>">订单详情</a></p>
-																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
@@ -915,7 +915,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="/home/MyDeal/refund.html">退款/退货</a>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
