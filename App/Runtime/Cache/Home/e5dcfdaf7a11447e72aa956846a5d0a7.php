@@ -358,7 +358,7 @@
 													</div>
 												</li>
 												<li class="td td-change">
-													<a href="commentlist.html">
+													<a href="/home/MyDeal/commentlist.html?order_id=<?php echo ($common["order_id"]); ?>">
 														<div class="am-btn am-btn-danger anniu">
 															评价商品</div>
 													</a>

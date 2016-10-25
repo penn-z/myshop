@@ -200,17 +200,18 @@
 				     			information.comment_type = comment_type;
 				     			information.comment = comment;
 				     			information.order_id = '<?php echo ($_GET['order_id']); ?>';
-				     			information.path_array = path_array;
+				     			information.picture = path_array;
 				     			$.post(
 				     				'/Api/Order/uploadComment',
 				     				{information:information},
 				     				function(ret){
-				     					alert(ret);
+				     					if( ret == 1){
+				     						alert("评价成功！");
+				     						window.location.href="/home/MyDeal/order.html";
+				     					}
 				     				}
 				     			);
-				     			
 				     		}
-
 				     	}
 
 				     	/**
@@ -219,7 +220,7 @@
 				     	function upload(sn,obj){
 				     		var goods_sn = $(obj).attr("sn");
 				     		XHRUploader.init({
-								handlerUrl: '/home/MyDeal/uploadPic',
+								handlerUrl: '/Api/Order/uploadPic',
 								input: '_imgs[]'
 							}).uploadFile(sn, {
 								'partition'	: 'date',
@@ -241,6 +242,13 @@
 											$(obj).parents(".filePic").find(".img-box").append(html);
 											num++;	//已存在的图片数量自增
 											$(obj).siblings("span").find(".picnum").text(num);
+										}else{	//晒图数量大于5张时，删除多余添加的第6张
+											var path = "/var/www/shop"+ret.path;
+											$.get(
+												'/Api/Order/delCommentPic',
+												{full_path:path},
+												function(ret){}
+											);
 										}
 									}
 								}
@@ -255,7 +263,12 @@
 				     		if( bool != true) return;
 				     		var pic_num = $(obj).parents(".filePic").find(".picnum").text();
 				     		var path = $(obj).siblings("input").val();
-				     		alert(path);
+				     		var full_path = "/var/www/shop"+path;	//拼接成完全路径名
+				     		$.get(
+				     			'/Api/Order/delCommentPic',
+				     			{full_path:full_path},
+				     			function(ret){}
+				     		);
 				     		pic_num--;
 				     		$(obj).parents(".filePic").find(".picnum").text(pic_num);
 				     		$(obj).parent().remove();
