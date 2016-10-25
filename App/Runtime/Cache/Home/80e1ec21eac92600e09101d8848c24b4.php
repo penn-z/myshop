@@ -16,12 +16,7 @@
 
 	<body>
 		<!--头 -->
-		<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-		<header>
+				<header>
 			<article>
 				<div class="mt-logo">
 					<!--顶部导航条 -->
@@ -105,10 +100,6 @@
 			<b class="line"></b>
 		<!-- 导航条 -->
 
-		
-	</body>
-
-</html>
 		<!-- 头 -->
 		<div class="center">
 			<div class="col-main">
@@ -219,13 +210,7 @@
 					</div>
 				</div>
 				<!--底部-->
-				<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
-		<div class="footer">
+						<div class="footer">
 			<div class="footer-hd">
 				<p>
 					<a href="#">恒望科技</a>
@@ -248,19 +233,11 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 				<!-- 底部 -->
 			</div>
 			<!-- 左边 -->
-			<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-
-	<body>
-		<aside class="menu">
+					<aside class="menu">
 			<ul>
 				<li class="person active">
 					<a href="/home/person"><i class="am-icon-user"></i>个人中心</a>
@@ -312,9 +289,7 @@
 				</li>
 			</ul>
 		</aside>
-	</body>
 
-</html>
 			<!-- 左边 -->
 		</div>
 

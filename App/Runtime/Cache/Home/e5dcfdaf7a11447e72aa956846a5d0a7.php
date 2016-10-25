@@ -328,6 +328,7 @@
 											<?php if($common["status"] == 2): ?><li class="td td-status">
 													<div class="item-status">
 														<p class="Mystatus">卖家已发货</p>
+														<p class="order-info"><a href="/home/MyDeal/refund.html">退货/退款</a></p>
 														<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 														<p class="order-info"><a href="#">延长收货</a></p>
 													</div>
@@ -352,15 +353,15 @@
 											<?php elseif($common["status"] == 3): ?>
 												<li class="td td-status">
 													<div class="item-status">
-														<p class="Mystatus">卖家已发货</p>
-														<p class="order-info"><a href="orderinfo.html">退货/退款</a></p>
-														<p class="order-info"><a href="logistics.html">查看物流</a></p>
-														<p class="order-info"><a href="#">延长收货</a></p>
+														<p class="Mystatus">交易成功</p>
+														<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 													</div>
 												</li>
 												<li class="td td-change">
-													<div class="am-btn am-btn-danger anniu">
-														确认收货</div>
+													<a href="commentlist.html">
+														<div class="am-btn am-btn-danger anniu">
+															评价商品</div>
+													</a>
 												</li>
 											<!-- status=4 为已评价状态 -->
 											<?php elseif($common["status"] == 4): ?>
@@ -371,7 +372,7 @@
 													</div>
 												</li>
 												<li class="td td-change">
-													<div class="am-btn am-btn-danger anniu">
+													<div class="am-btn am-btn-success anniu">
 														删除订单</div>
 												</li><?php endif; ?>
 											</div>

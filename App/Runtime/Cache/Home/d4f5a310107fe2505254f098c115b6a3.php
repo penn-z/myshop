@@ -113,12 +113,6 @@
 
 
 <!--底部-->
-<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
 		<div class="footer">
 			<div class="footer-hd">
 				<p>
@@ -142,9 +136,7 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 <!-- 底部 -->
 
 

@@ -17,7 +17,7 @@
 
 	<body>
 		<!--头 -->
-		<header>
+				<header>
 			<article>
 				<div class="mt-logo">
 					<!--顶部导航条 -->
@@ -25,25 +25,40 @@
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="#" target="_top" class="h">亲，请登录</a>
-									<a href="#" target="_top">免费注册</a>
+									<?php if(($_SESSION['is_login']) == "1"): ?><a href="#" target="_top" class="h">你好，<?php echo (session('username')); ?></a>
+										<a href="/home/login" target="_top" onclick="return confirm('确定注销吗？')"><span style="color:red">注销登陆</span></a>
+									<?php else: ?>
+										<a href="/home/login" target="_top" class="h">亲，请<span style="color:blue">登录<span></a>
+										<a href="#" target="_top">免费<span style="color:blue">注册</a><?php endif; ?>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
+								<div class="menu-hd"><a href="/home" target="_top" class="h">商城首页</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
+								<div class="menu-hd MyShangcheng"><a href="/home/person" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h" style="color:orange;">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
+								<div class="menu-hd"><a href="/index.php/Home/MyDeal/collection" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
 						</ul>
 						</div>
+						<script>
+							$(function(){
+								$.post(
+									'/Api/Goods/differentCart',
+									null,
+									function(ret){
+										$("#J_MiniCartNum").text(ret);
+									}
+								);
+								
+							});
+						</script>
 
 						<!--悬浮搜索框-->
 
@@ -66,7 +81,8 @@
 				</div>
 			</article>
 		</header>
-            <div class="nav-table">
+		<!-- 导航条 -->
+		<div class="nav-table">
 					   <div class="long-title"><span class="all-goods">全部分类</span></div>
 					   <div class="nav-cont">
 							<ul>
@@ -83,6 +99,9 @@
 						</div>
 			</div>
 			<b class="line"></b>
+		<!-- 导航条 -->
+
+		<!-- 头 -->
 		<div class="center">
 			<div class="col-main">
 				<div class="main-wrap">
@@ -95,10 +114,11 @@
 						<hr/>
 
 						<div class="comment-main">
+						<?php if(is_array($detail)): foreach($detail as $key=>$vo): ?><!-- 商品评价 -->
 							<div class="comment-list">
 								<div class="item-pic">
 									<a href="#" class="J_MakePoint">
-										<img src="/Public/images/comment.jpg_400x400.jpg" class="itempic">
+										<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic">
 									</a>
 								</div>
 
@@ -106,16 +126,17 @@
 
 									<div class="item-name">
 										<a href="#">
-											<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+											<p class="item-basic-info"><?php echo ($vo["goods_name"]); ?></p>
 										</a>
 									</div>
 									<div class="item-info">
 										<div class="info-little">
-											<span>颜色：洛阳牡丹</span>
-											<span>包装：裸装</span>
+											<input type="hidden" value="<?php echo ($vo["goods_sn"]); ?>" name="goods_sn" />
+											<span><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?></span>
+											<span><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?></span>
 										</div>
 										<div class="item-price">
-											价格：<strong>19.88元</strong>
+											价格：<strong><?php echo ($vo["goods_price"]); ?>元</strong>
 										</div>										
 									</div>
 								</div>
@@ -124,99 +145,18 @@
 									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！"></textarea>
 								</div>
 								<div class="filePic">
-									<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*" >
+									<input type="file" class="inputPic" id="img_src">
 									<span>晒照片(0/5)</span>
-									<img src="/Public/images/image.jpg" alt="">
+									<img src="/Public/images/image.jpg" alt="图片失效">
 								</div>
 								<div class="item-opinion">
 									<li><i class="op1"></i>好评</li>
 									<li><i class="op2"></i>中评</li>
 									<li><i class="op3"></i>差评</li>
 								</div>
-							</div>
-							
-							<!--多个商品评论-->
-							<div class="comment-list">
-								<div class="item-pic">
-									<a href="#" class="J_MakePoint">
-										<img src="/Public/images/comment.jpg_400x400.jpg" class="itempic">
-									</a>
-								</div>
-
-								<div class="item-title">
-
-									<div class="item-name">
-										<a href="#">
-											<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
-										</a>
-									</div>
-									<div class="item-info">
-										<div class="info-little">
-											<span>颜色：洛阳牡丹</span>
-											<span>包装：裸装</span>
-										</div>
-										<div class="item-price">
-											价格：<strong>19.88元</strong>
-										</div>
-									</div>
-								</div>
-								<div class="clear"></div>
-								<div class="item-comment">
-									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！"></textarea>
-								</div>
-								<div class="filePic">
-									<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*" >
-									<span>晒照片(0/5)</span>
-									<img src="/Public/images/image.jpg" alt="">
-								</div>
-								<div class="item-opinion">
-									<li><i class="op1"></i>好评</li>
-									<li><i class="op2"></i>中评</li>
-									<li><i class="op3"></i>差评</li>
-								</div>
-							</div>
-							
-							<div class="comment-list">
-								<div class="item-pic">
-									<a href="#" class="J_MakePoint">
-										<img src="/Public/images/comment.jpg_400x400.jpg" class="itempic">
-									</a>
-								</div>
-
-								<div class="item-title">
-
-									<div class="item-name">
-										<a href="#">
-											<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
-										</a>
-									</div>
-									<div class="item-info">
-										<div class="info-little">
-											<span>颜色：洛阳牡丹</span>
-											<span>包装：裸装</span>
-										</div>
-										<div class="item-price">
-											价格：<strong>19.88元</strong>
-										</div>
-									</div>
-								</div>
-								<div class="clear"></div>
-								<div class="item-comment">
-									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！"></textarea>
-								</div>
-								<div class="filePic">
-									<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*" >
-									<span>晒照片(0/5)</span>
-									<img src="/Public/images/image.jpg" alt="">
-								</div>
-								<div class="item-opinion">
-									<li><i class="op1"></i>好评</li>
-									<li><i class="op2"></i>中评</li>
-									<li><i class="op3"></i>差评</li>
-								</div>
-							</div>							
+							</div><?php endforeach; endif; ?>							
 								<div class="info-btn">
-									<div class="am-btn am-btn-danger">发表评论</div>
+									<div class="am-btn am-btn-danger" onclick="subComment()">发表评论</div>
 								</div>							
 					<script type="text/javascript">
 						$(document).ready(function() {
@@ -226,7 +166,23 @@
 								$(this).children('i').addClass("active");
 								
 							});
-				     })
+				     	})
+				     	
+				     	/**
+				     	 * 发表评论
+				     	 */
+				     	function subComment(){
+				     		var num = $("input[name='goods_sn']").length;	//先取需要评论的商品个数
+				     		//用for遍历长度，分别对每个评论内容进行数据库写入
+				     		for(var i=0;i<num;i++){
+				     			var obj = $("input[name='goods_sn']").eq(i);
+				     			var goods_sn = obj.val();	//获取该条被评论的商品sn
+				     			var comment_type = obj.parents(".comment-list").find(".item-opinion").find(".active").parent("li").text();	//获取评论的好坏
+				     			var comment = obj.parents(".item-title").siblings(".item-comment").find("textarea").val();	//获取评论内容
+				     			
+				     		}
+
+				     	}
 					</script>					
 					
 												
@@ -237,83 +193,88 @@
 
 				</div>
 				<!--底部-->
-				<div class="footer">
-					<div class="footer-hd">
-						<p>
-							<a href="#">恒望科技</a>
-							<b>|</b>
-							<a href="#">商城首页</a>
-							<b>|</b>
-							<a href="#">支付宝</a>
-							<b>|</b>
-							<a href="#">物流</a>
-						</p>
-					</div>
-					<div class="footer-bd">
-						<p>
-							<a href="#">关于恒望</a>
-							<a href="#">合作伙伴</a>
-							<a href="#">联系我们</a>
-							<a href="#">网站地图</a>
-							<em>© 2015-2025 Hengwang.com 版权所有</em>
-						</p>
-					</div>
-				</div>
+						<div class="footer">
+			<div class="footer-hd">
+				<p>
+					<a href="#">恒望科技</a>
+					<b>|</b>
+					<a href="/home">商城首页</a>
+					<b>|</b>
+					<a href="#">支付宝</a>
+					<b>|</b>
+					<a href="#">物流</a>
+				</p>
+			</div>
+			<div class="footer-bd">
+				<p>
+					<a href="#">关于恒望</a>
+					<a href="#">合作伙伴</a>
+					<a href="#">联系我们</a>
+					<a href="#">网站地图</a>
+					<em>© 2015-2025 Hengwang.com 版权所有</em>
+				</p>
+			</div>
+		</div>
+		
+	
+				<!-- 底部 -->
 			</div>
 
-			<aside class="menu">
-				<ul>
-					<li class="person active">
-						<a href="index.html"><i class="am-icon-user"></i>个人中心</a>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-newspaper-o"></i>个人资料</p>
-						<ul>
-							<li> <a href="information.html">个人信息</a></li>
-							<li> <a href="safety.html">安全设置</a></li>
-							<li> <a href="address.html">地址管理</a></li>
-							<li> <a href="cardlist.html">快捷支付</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-balance-scale"></i>我的交易</p>
-						<ul>
-							<li><a href="order.html">订单管理</a></li>
-							<li> <a href="change.html">退款售后</a></li>
-							<li> <a href="comment.html">评价商品</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-dollar"></i>我的资产</p>
-						<ul>
-							<li> <a href="points.html">我的积分</a></li>
-							<li> <a href="coupon.html">优惠券 </a></li>
-							<li> <a href="bonus.html">红包</a></li>
-							<li> <a href="walletlist.html">账户余额</a></li>
-							<li> <a href="bill.html">账单明细</a></li>
-						</ul>
-					</li>
+			<!-- 左边 -->
+					<aside class="menu">
+			<ul>
+				<li class="person active">
+					<a href="/home/person"><i class="am-icon-user"></i>个人中心</a>
+				</li>
+				<li class="person">
+					<p><i class="am-icon-newspaper-o"></i>个人资料</p>
+					<ul>
+						<li> <a href="/home/information/information.html">个人信息</a></li>
+						<li> <a href="/home/information/safety.html">安全设置</a></li>
+						<li> <a href="/home/information/address.html">地址管理</a></li>
+						<li> <a href="/home/information/cardlist.html">快捷支付</a></li>
+					</ul>
+				</li>
+				<li class="person">
+					<p><i class="am-icon-balance-scale"></i>我的交易</p>
+					<ul>
+						<li><a href="/home/MyDeal/order">订单管理</a></li>
+						<li> <a href="/index.php/Home/MyDeal/change">退款售后</a></li>
+						<li> <a href="/index.php/Home/MyDeal/comment">评价商品</a></li>
+					</ul>
+				</li>
+				<li class="person">
+					<p><i class="am-icon-dollar"></i>我的资产</p>
+					<ul>
+						<li> <a href="/index.php/Home/MyDeal/points">我的积分</a></li>
+						<li> <a href="/index.php/Home/MyDeal/coupon">优惠券 </a></li>
+						<li> <a href="/index.php/Home/MyDeal/bonus">红包</a></li>
+						<li> <a href="/index.php/Home/MyDeal/walletlist">账户余额</a></li>
+						<li> <a href="/index.php/Home/MyDeal/bill">账单明细</a></li>
+					</ul>
+				</li>
 
-					<li class="person">
-						<p><i class="am-icon-tags"></i>我的收藏</p>
-						<ul>
-							<li> <a href="collection.html">收藏</a></li>
-							<li> <a href="foot.html">足迹</a></li>	
-						</ul>
-					</li>
+				<li class="person">
+					<p><i class="am-icon-tags"></i>我的收藏</p>
+					<ul>
+						<li> <a href="/index.php/Home/MyDeal/collection">收藏</a></li>
+						<li> <a href="/index.php/Home/MyDeal/foot">足迹</a></li>														
+					</ul>
+				</li>
 
-					<li class="person">
-						<p><i class="am-icon-qq"></i>在线客服</p>
-						<ul>
-							<li> <a href="consultation.html">商品咨询</a></li>
-							<li> <a href="suggest.html">意见反馈</a></li>							
-							
-							<li> <a href="news.html">我的消息</a></li>
-						</ul>
-					</li>
-				</ul>
+				<li class="person">
+					<p><i class="am-icon-qq"></i>在线客服</p>
+					<ul>
+						<li> <a href="/index.php/Home/MyDeal/consultation">商品咨询</a></li>
+						<li> <a href="/index.php/Home/MyDeal/suggest">意见反馈</a></li>							
+						
+						<li> <a href="/index.php/Home/MyDeal/news">我的消息</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
 
-			</aside>
+			<!-- 左边 -->
 		</div>
 
 	</body>

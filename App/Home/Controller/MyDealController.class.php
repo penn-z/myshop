@@ -99,4 +99,21 @@ class MyDealController extends CheckLoginController {
     public function logistics(){
         $this->display("Person/logistics");
     }
+
+    /**
+     * 评价管理
+     */
+    public function comment(){
+        $this->display("Person/comment");
+    }
+
+    /**
+     *  评价商品
+     */
+    public function commentlist(){
+        $order_id = I("get.order_id");
+        $detail  = M('order_detail')->where("order_id={$order_id}")->select();
+        $this->assign("detail",$detail);
+        $this->display("Person/commentlist");
+    }
 }

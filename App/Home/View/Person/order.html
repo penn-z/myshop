@@ -207,7 +207,7 @@
 															<li class="td td-status">
 																<div class="item-status">
 																	<p class="Mystatus">买家已付款</p>
-																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?{$Nosent.$index.order_id}&status={$Nosent.$index.status}">订单详情</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/orderinfo.html?order_id={$Nosent.$index.order_id}&status={$Nosent.$index.status}">订单详情</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
@@ -356,7 +356,7 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<a href="commentlist.html">
+																<a href="/home/MyDeal/commentlist.html?order_id={$Evaluate.$key.order_id}">
 																	<div class="am-btn am-btn-danger anniu">
 																		评价商品</div>
 																</a>
@@ -982,11 +982,11 @@
 																<div class="item-status">
 																	<p class="Mystatus">交易成功</p>
 																	<p class="order-info"><a href="orderinfo.html?order_id={$Evaluate.$key.order_id}&status={$Evaluate.$key.status}">订单详情</a></p>
-																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
+																	<p class="order-info"><a href="/home/MyDeal/logistics.html">查看物流</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
-																<a href="commentlist.html">
+																<a href="/home/MyDeal/commentlist.html?order_id={$Evaluate.$key.order_id}">
 																	<div class="am-btn am-btn-danger anniu">
 																		评价商品</div>
 																</a>

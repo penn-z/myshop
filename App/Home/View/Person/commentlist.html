@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>发表评论</title>
+
+		<link href="/Public/AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="/Public/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="/Public/css/personal.css" rel="stylesheet" type="text/css">
+		<link href="/Public/css/appstyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/Public/js/jquery-1.7.2.min.js"></script>
+	</head>
+
+	<body>
+		<!--头 -->
+		<include file="Person/common/header" />
+		<!-- 头 -->
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap">
+
+					<div class="user-comment">
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">发表评论</strong> / <small>Make&nbsp;Comments</small></div>
+						</div>
+						<hr/>
+
+						<div class="comment-main">
+						<foreach name="detail" item="vo">
+							<!-- 商品评价 -->
+							<div class="comment-list">
+								<div class="item-pic">
+									<a href="#" class="J_MakePoint">
+										<img src="{$vo.goods_thumb}" class="itempic">
+									</a>
+								</div>
+
+								<div class="item-title">
+
+									<div class="item-name">
+										<a href="#">
+											<p class="item-basic-info">{$vo.goods_name}</p>
+										</a>
+									</div>
+									<div class="item-info">
+										<div class="info-little">
+											<input type="hidden" value="{$vo.goods_sn}" name="goods_sn" />
+											<span>{$vo.goods_type1}：{$vo.goods_type}</span>
+											<span>{$vo.goods_type2}：{$vo.goods_package}</span>
+										</div>
+										<div class="item-price">
+											价格：<strong>{$vo.goods_price}元</strong>
+										</div>										
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="item-comment">
+									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！"></textarea>
+								</div>
+								<div class="filePic">
+									<input type="file" class="inputPic" id="img_src">
+									<span>晒照片(0/5)</span>
+									<img src="/Public/images/image.jpg" alt="图片失效">
+								</div>
+								<div class="item-opinion">
+									<li><i class="op1"></i>好评</li>
+									<li><i class="op2"></i>中评</li>
+									<li><i class="op3"></i>差评</li>
+								</div>
+							</div>
+						</foreach>							
+								<div class="info-btn">
+									<div class="am-btn am-btn-danger" onclick="subComment()">发表评论</div>
+								</div>							
+					<script type="text/javascript">
+						$(document).ready(function() {
+							$(".comment-list .item-opinion li").click(function() {	
+								$(this).prevAll().children('i').removeClass("active");
+								$(this).nextAll().children('i').removeClass("active");
+								$(this).children('i').addClass("active");
+								
+							});
+				     	})
+				     	
+				     	/**
+				     	 * 发表评论
+				     	 */
+				     	function subComment(){
+				     		var num = $("input[name='goods_sn']").length;	//先取需要评论的商品个数
+				     		//用for遍历长度，分别对每个评论内容进行数据库写入
+				     		for(var i=0;i<num;i++){
+				     			var obj = $("input[name='goods_sn']").eq(i);
+				     			var goods_sn = obj.val();	//获取该条被评论的商品sn
+				     			var comment_type = obj.parents(".comment-list").find(".item-opinion").find(".active").parent("li").text();	//获取评论的好坏
+				     			var comment = obj.parents(".item-title").siblings(".item-comment").find("textarea").val();	//获取评论内容
+				     			
+				     		}
+
+				     	}
+					</script>					
+					
+												
+							
+						</div>
+
+					</div>
+
+				</div>
+				<!--底部-->
+				<include file="Person/common/footer" />
+				<!-- 底部 -->
+			</div>
+
+			<!-- 左边 -->
+			<include file="Person/common/left" />
+			<!-- 左边 -->
+		</div>
+
+	</body>
+
+</html>

@@ -679,7 +679,7 @@
 								'/Api/Goods/makeOrder',
 								{express:express,cart_array:cart_array,message:message},
 								function(ret){
-									window.location.href="/home/pay/success?order_id="+ret;
+									window.location.href="/home/pay/payment?order_id="+ret;
 								}
 							);
 							
@@ -687,13 +687,7 @@
 					</script>
 				</div>
 				<!--底部-->
-				<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
-		<div class="footer">
+						<div class="footer">
 			<div class="footer-hd">
 				<p>
 					<a href="#">恒望科技</a>
@@ -716,9 +710,7 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 				<!-- 底部 -->
 			</div>
 

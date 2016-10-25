@@ -599,13 +599,7 @@
 					}
 				</script>
 				<!--底部-->
-				<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
-		<div class="footer">
+						<div class="footer">
 			<div class="footer-hd">
 				<p>
 					<a href="#">恒望科技</a>
@@ -628,9 +622,7 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 				<!-- 底部 -->
 
 			</div>

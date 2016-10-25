@@ -43,7 +43,7 @@ CREATE TABLE `think_address` (
 
 LOCK TABLES `think_address` WRITE;
 /*!40000 ALTER TABLE `think_address` DISABLE KEYS */;
-INSERT INTO `think_address` VALUES (10,4,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',1,1475047649),(15,4,'liujing  ','12345678901','广东省','深圳市','南山区','大新xx街道xx坊xx号',0,1475062529),(17,4,'爱萝莉真是太好了 ','12345678901','福建省','福州市','仓山区','鸟不拉屎的地方～～～～',0,1475079413),(33,4,'山治','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',0,1476344863),(36,4,'皮城女警       ','13422222222','上海市','上海市市辖区','静安区','皮城戒备19区',0,1476347685);
+INSERT INTO `think_address` VALUES (10,4,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1475047649),(15,4,'liujing  ','12345678901','广东省','深圳市','南山区','大新xx街道xx坊xx号',0,1475062529),(17,4,'爱萝莉真是太好了 ','12345678901','福建省','福州市','仓山区','鸟不拉屎的地方～～～～',0,1475079413),(33,4,'山治','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',0,1476344863),(36,4,'皮城女警        ','13422222222','上海市','上海市市辖区','静安区','皮城戒备19',1,1476347685);
 /*!40000 ALTER TABLE `think_address` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,13 +103,13 @@ INSERT INTO `think_attr` VALUES (1,7,1000001,'',' &nbsp; &nbsp; &nbsp; &nbsp; &n
 UNLOCK TABLES;
 
 --
--- Table structure for table `think_eveumalte`
+-- Table structure for table `think_comment`
 --
 
-DROP TABLE IF EXISTS `think_eveumalte`;
+DROP TABLE IF EXISTS `think_comment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `think_eveumalte` (
+CREATE TABLE `think_comment` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增主键',
   `good_nums` int(8) NOT NULL COMMENT '好评数量',
   `common_nums` int(8) NOT NULL COMMENT '中评数量',
@@ -126,12 +126,12 @@ CREATE TABLE `think_eveumalte` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `think_eveumalte`
+-- Dumping data for table `think_comment`
 --
 
-LOCK TABLES `think_eveumalte` WRITE;
-/*!40000 ALTER TABLE `think_eveumalte` DISABLE KEYS */;
-/*!40000 ALTER TABLE `think_eveumalte` ENABLE KEYS */;
+LOCK TABLES `think_comment` WRITE;
+/*!40000 ALTER TABLE `think_comment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `think_comment` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -220,7 +220,7 @@ CREATE TABLE `think_goods_specify` (
 
 LOCK TABLES `think_goods_specify` WRITE;
 /*!40000 ALTER TABLE `think_goods_specify` DISABLE KEYS */;
-INSERT INTO `think_goods_specify` VALUES (1,19,'101','原味',100.00,1000.00,5000),(2,19,'102','奶油',99.00,999.00,4999),(3,20,'1010','大号',78.00,66.00,66660),(4,20,'1011','中号',76.00,55.00,77773),(5,20,'1012','小号',80.00,45.00,88883),(6,7,'1000001','原味',98.00,56.90,250),(7,7,'1000002','奶油',99.00,54.50,248),(8,7,'1000003','炭烧',100.00,60.50,248),(9,7,'1000004','咸香',96.00,57.50,246),(14,23,'200000101','黑色',6000.10,5800.00,199),(28,23,'200000102','黄色',5900.00,5888.00,120),(27,23,'200000103','金色',5777.00,5700.00,145),(25,23,'200000104','粉色',5666.00,5555.00,140),(29,23,'200000105','绿色',5700.00,5666.00,200),(37,27,'200000203','日剧',3000.00,2000.00,1000),(36,27,'200000202','英剧',4000.00,3000.00,900),(35,27,'200000201','美剧',5000.00,4000.00,799);
+INSERT INTO `think_goods_specify` VALUES (1,19,'101','原味',100.00,1000.00,5000),(2,19,'102','奶油',99.00,999.00,4999),(3,20,'1010','大号',78.00,66.00,66660),(4,20,'1011','中号',76.00,55.00,77773),(5,20,'1012','小号',80.00,45.00,88883),(6,7,'1000001','原味',98.00,56.90,248),(7,7,'1000002','奶油',99.00,54.50,248),(8,7,'1000003','炭烧',100.00,60.50,248),(9,7,'1000004','咸香',96.00,57.50,246),(14,23,'200000101','黑色',6000.10,5800.00,199),(28,23,'200000102','黄色',5900.00,5888.00,120),(27,23,'200000103','金色',5777.00,5700.00,145),(25,23,'200000104','粉色',5666.00,5555.00,140),(29,23,'200000105','绿色',5700.00,5666.00,200),(37,27,'200000203','日剧',3000.00,2000.00,1000),(36,27,'200000202','英剧',4000.00,3000.00,900),(35,27,'200000201','美剧',5000.00,4000.00,791);
 /*!40000 ALTER TABLE `think_goods_specify` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -273,7 +273,7 @@ CREATE TABLE `think_order` (
   `status` int(2) NOT NULL COMMENT '订单状态(0待付款，1待发货，2待收货，3待评价，4已评价，9为取消订单）',
   `addtime` int(11) NOT NULL COMMENT '生成时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -282,7 +282,7 @@ CREATE TABLE `think_order` (
 
 LOCK TABLES `think_order` WRITE;
 /*!40000 ALTER TABLE `think_order` DISABLE KEYS */;
-INSERT INTO `think_order` VALUES (25,'147675667400041619',4,'又要留言，～要不是为了测试，我才不写留言呢～～！',833.00,'申通',10.00,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476756674),(24,'147675661700047651',4,'只是买个果子而已，不算什么的～～！～',152.00,'顺丰',20.00,'liujing ','2147483647','广东省','深圳市','南山区','大新xx街道xx坊xx号',1,1476756617),(28,'147677373800044612',4,'留言个球捏～！～',679.00,'顺丰',20.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',2,1476773738),(23,'147675658400046624',4,'无留言～～～～～～～！！！！！！！！！我真的不知道写些什么好',309.00,'韵达',12.00,'皮城女警       ','13422222222','天津市','天津市市辖区','西青区','皮城戒备19区',2,1476756584),(22,'147675653100047323',4,'',265.00,'顺丰',20.00,'爱萝莉真是太好了 ','12345678901','福建省','福州市','鼓楼区','鸟不拉屎的地方～～～～',3,1476756531),(21,'147670340800040188',4,'忘记留言了～！～',110.00,'圆通',10.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',4,1476703408),(29,'147677946000042462',4,'忘记设置支付方式了，下次补上吧～！',380.50,'韵达',12.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1476779460),(30,'147686834100044939',4,'又是留言，留，留，留～～～！',208.00,'圆通',10.00,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476868341),(31,'147723015800046984',4,'',64.50,'圆通',10.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1477230158),(32,'147727269300042380',4,'',4010.00,'圆通',10.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1477272693);
+INSERT INTO `think_order` VALUES (25,'147675667400041619',4,'又要留言，～要不是为了测试，我才不写留言呢～～！',833.00,'申通',10.00,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476756674),(24,'147675661700047651',4,'只是买个果子而已，不算什么的～～！～',152.00,'顺丰',20.00,'liujing ','2147483647','广东省','深圳市','南山区','大新xx街道xx坊xx号',1,1476756617),(28,'147677373800044612',4,'留言个球捏～！～',679.00,'顺丰',20.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',2,1476773738),(23,'147675658400046624',4,'无留言～～～～～～～！！！！！！！！！我真的不知道写些什么好',309.00,'韵达',12.00,'皮城女警       ','13422222222','天津市','天津市市辖区','西青区','皮城戒备19区',2,1476756584),(22,'147675653100047323',4,'',265.00,'顺丰',20.00,'爱萝莉真是太好了 ','12345678901','福建省','福州市','鼓楼区','鸟不拉屎的地方～～～～',3,1476756531),(21,'147670340800040188',4,'忘记留言了～！～',110.00,'圆通',10.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',4,1476703408),(29,'147677946000042462',4,'忘记设置支付方式了，下次补上吧～！',380.50,'韵达',12.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1476779460),(30,'147686834100044939',4,'又是留言，留，留，留～～～！',208.00,'圆通',10.00,'山治 ','13333333333','香港特别行政区','深水埗区','','暂时不知道在哪里~~!- -',1,1476868341),(31,'147723015800046984',4,'',64.50,'圆通',10.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1477230158),(32,'147727269300042380',4,'',4010.00,'圆通',10.00,'penn','15818263192','广东省','东莞市','松山湖','大学路1号东莞理工学院7栋宿舍',0,1477272693),(33,'147735985800041151',4,'abvdsadas',32133.80,'顺丰',20.00,'皮城女警        ','13422222222','上海市','上海市市辖区','静安区','皮城戒备19',1,1477359858);
 /*!40000 ALTER TABLE `think_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -308,7 +308,7 @@ CREATE TABLE `think_order_detail` (
   `goods_thumb` varchar(200) COLLATE utf8_unicode_ci NOT NULL COMMENT '缩略图地址',
   `addtime` int(11) NOT NULL COMMENT '生成时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,8 +317,44 @@ CREATE TABLE `think_order_detail` (
 
 LOCK TABLES `think_order_detail` WRITE;
 /*!40000 ALTER TABLE `think_order_detail` DISABLE KEYS */;
-INSERT INTO `think_order_detail` VALUES (9,'147670340800040188',20,'1012','测试006','尺寸','小号','包装','双人',45.00,'1','/Public/Uploads/goods/sn1012/001_mid.jpg',1476703408),(10,'147675653100047323',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'2','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756531),(8,'147670340800040188',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476703408),(11,'147675653100047323',20,'1012','测试006','尺寸','小号','包装','双人',45.00,'3','/Public/Uploads/goods/sn1012/001_mid.jpg',1476756531),(12,'147675658400046624',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','全家福礼包',60.50,'4','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756584),(13,'147675658400046624',20,'1011','测试006','尺寸','中号','包装','单人',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756584),(14,'147675661700047651',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'2','/Public/Uploads/goods/sn1010/001_mid.jpg',1476756617),(15,'147675667400041619',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','礼盒双人份',60.50,'10','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756674),(16,'147675667400041619',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','手袋单人份',54.50,'4','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476756674),(17,'147677373800044612',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'10','/Public/Uploads/goods/sn1011/001_mid.jpg',1476773738),(18,'147677373800044612',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','全家福礼包',54.50,'2','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476773738),(19,'147677946000042462',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','手袋单人份',60.50,'5','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476779460),(20,'147677946000042462',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'1','/Public/Uploads/goods/sn1010/001_mid.jpg',1476779460),(21,'147686834100044939',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'3','/Public/Uploads/goods/sn1010/001_mid.jpg',1476868341),(22,'147723015800046984',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','手袋单人份',54.50,'1','/Public/Uploads/goods/sn1000002/01_mid.jpg',1477230158),(23,'147727269300042380',27,'200000201','字幕组','剧种','美剧','剧型','悬疑',4000.00,'1','/Public/Uploads/goods/sn200000201/West world_mid.jpg',1477272693);
+INSERT INTO `think_order_detail` VALUES (9,'147670340800040188',20,'1012','测试006','尺寸','小号','包装','双人',45.00,'1','/Public/Uploads/goods/sn1012/001_mid.jpg',1476703408),(10,'147675653100047323',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'2','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756531),(8,'147670340800040188',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476703408),(11,'147675653100047323',20,'1012','测试006','尺寸','小号','包装','双人',45.00,'3','/Public/Uploads/goods/sn1012/001_mid.jpg',1476756531),(12,'147675658400046624',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','全家福礼包',60.50,'4','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756584),(13,'147675658400046624',20,'1011','测试006','尺寸','中号','包装','单人',55.00,'1','/Public/Uploads/goods/sn1011/001_mid.jpg',1476756584),(14,'147675661700047651',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'2','/Public/Uploads/goods/sn1010/001_mid.jpg',1476756617),(15,'147675667400041619',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','礼盒双人份',60.50,'10','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476756674),(16,'147675667400041619',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','手袋单人份',54.50,'4','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476756674),(17,'147677373800044612',20,'1011','测试006','尺寸','中号','包装','全家桶',55.00,'10','/Public/Uploads/goods/sn1011/001_mid.jpg',1476773738),(18,'147677373800044612',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','全家福礼包',54.50,'2','/Public/Uploads/goods/sn1000002/01_mid.jpg',1476773738),(19,'147677946000042462',7,'1000003','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','炭烧','包装','手袋单人份',60.50,'5','/Public/Uploads/goods/sn1000003/01_mid.jpg',1476779460),(20,'147677946000042462',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'1','/Public/Uploads/goods/sn1010/001_mid.jpg',1476779460),(21,'147686834100044939',20,'1010','测试006','尺寸','大号','包装','单人',66.00,'3','/Public/Uploads/goods/sn1010/001_mid.jpg',1476868341),(22,'147723015800046984',7,'1000002','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','奶油','包装','手袋单人份',54.50,'1','/Public/Uploads/goods/sn1000002/01_mid.jpg',1477230158),(23,'147727269300042380',27,'200000201','字幕组','剧种','美剧','剧型','悬疑',4000.00,'1','/Public/Uploads/goods/sn200000201/West world_mid.jpg',1477272693),(24,'147735985800041151',7,'1000001','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','原味','包装','手袋单人份',56.90,'2','/Public/Uploads/goods/sn1000001/01_mid.jpg',1477359858),(25,'147735985800041151',27,'200000201','字幕组','剧种','美剧','剧型','爱情',4000.00,'8','/Public/Uploads/goods/sn200000201/West world_mid.jpg',1477359858);
 /*!40000 ALTER TABLE `think_order_detail` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `think_person_comment`
+--
+
+DROP TABLE IF EXISTS `think_person_comment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `think_person_comment` (
+  `id` int(8) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增主键',
+  `user_id` int(8) NOT NULL COMMENT '用户id',
+  `goods_id` int(8) NOT NULL COMMENT '商品id',
+  `goods_name` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品名称',
+  `goods_thumb` varchar(200) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品缩略图',
+  `goods_sn` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '商品序列号',
+  `goods_type1` varchar(8) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格1名称',
+  `type1_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格1子类名',
+  `goods_type2` varchar(8) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格2名称',
+  `type2_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '规格2子类名',
+  `comment_type` varchar(8) COLLATE utf8_unicode_ci NOT NULL COMMENT '评价好坏',
+  `comment` text COLLATE utf8_unicode_ci NOT NULL COMMENT '评价内容',
+  `picture` text COLLATE utf8_unicode_ci NOT NULL COMMENT '商品评价图片',
+  `order_id` varchar(32) COLLATE utf8_unicode_ci NOT NULL COMMENT '订单号',
+  `addtime` int(11) NOT NULL COMMENT '评价时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `think_person_comment`
+--
+
+LOCK TABLES `think_person_comment` WRITE;
+/*!40000 ALTER TABLE `think_person_comment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `think_person_comment` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -373,7 +409,7 @@ CREATE TABLE `think_shopcart` (
   `addtime` int(11) NOT NULL COMMENT '添加时间',
   PRIMARY KEY (`cart_id`),
   KEY `goods_cost` (`goods_cost`)
-) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=112 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -382,7 +418,7 @@ CREATE TABLE `think_shopcart` (
 
 LOCK TABLES `think_shopcart` WRITE;
 /*!40000 ALTER TABLE `think_shopcart` DISABLE KEYS */;
-INSERT INTO `think_shopcart` VALUES (108,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000003','口味','炭烧','包装','手袋单人份',1,60.50,0,1477229024),(106,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000001','口味','原味','包装','手袋单人份',1,56.90,0,1477229018);
+INSERT INTO `think_shopcart` VALUES (108,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000003','口味','炭烧','包装','手袋单人份',1,60.50,0,1477229024);
 /*!40000 ALTER TABLE `think_shopcart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -399,7 +435,7 @@ CREATE TABLE `think_temporary_order` (
   `cart_id` int(8) NOT NULL COMMENT '购物车商品id',
   `addtime` int(11) NOT NULL COMMENT '生成时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=116 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=119 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -485,4 +521,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-24 20:58:29
+-- Dump completed on 2016-10-25 11:36:29

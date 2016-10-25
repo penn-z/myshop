@@ -1,0 +1,2475 @@
+[ 2016-10-25T09:26:00+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-25T09:26:11+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-10-25T09:26:14+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-10-25T09:28:15+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T09:28:47+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000134s ]
+
+[ 2016-10-25T09:29:02+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T09:29:03+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2016-10-25T09:29:18+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T09:29:24+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-25T09:29:27+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2016-10-25T09:29:31+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T09:29:39+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-10-25T09:29:48+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T09:33:41+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000165s ]
+
+[ 2016-10-25T09:33:44+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-10-25T09:35:39+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-25T09:35:44+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-10-25T09:35:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2016-10-25T09:36:01+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T09:36:07+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T09:36:10+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2016-10-25T09:36:21+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2016-10-25T09:36:26+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-25T09:36:28+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T09:36:39+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-25T09:36:44+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000115s ]
+
+[ 2016-10-25T09:37:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-25T09:37:32+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-25T09:37:33+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-10-25T09:37:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-25T09:37:43+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T09:37:55+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T09:38:03+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T09:40:10+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000158s ]
+
+[ 2016-10-25T09:40:12+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-10-25T09:42:32+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T09:42:40+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-10-25T09:42:45+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='英剧' AND goods_id ='27' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-25T09:42:46+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='美剧' AND goods_id ='27' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-25T09:42:53+08:00 ] 127.0.0.1 /Api/Goods/buyNow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( goods_type ='美剧' AND goods_package ='爱情' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT `goods_sn` FROM `think_goods_specify` WHERE ( goods_type ='美剧' AND goods_id =27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `think_shopcart` (`goods_type`,`goods_package`,`goods_num`,`goods_id`,`goods_name`,`goods_cost`,`is_order`,`goods_type1`,`goods_type2`,`addtime`,`user_id`,`goods_sn`) VALUES ('美剧','爱情','2','27','字幕组','4000','1','剧种','剧型','1477359773','4','200000201') [ RunTime:0.0004s ]
+SQL: UPDATE `think_shopcart` SET `is_order`='0' WHERE ( cart_id!=110 ) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_temporary_order` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_temporary_order` WHERE ( user_id=4 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_temporary_order` (`user_id`,`cart_id`,`addtime`) VALUES ('4','110','1477359773') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000228s ]
+
+[ 2016-10-25T09:42:53+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2016-10-25T09:42:54+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-10-25T09:42:58+08:00 ] 127.0.0.1 /Api/Goods/shopCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( goods_type ='日剧' AND goods_package ='战争' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0009s ]
+SQL: SELECT `goods_sn` FROM `think_goods_specify` WHERE ( goods_type ='日剧' AND goods_id =27 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `think_shopcart` (`goods_type`,`goods_package`,`goods_num`,`goods_id`,`goods_name`,`goods_cost`,`goods_type1`,`goods_type2`,`addtime`,`user_id`,`goods_sn`) VALUES ('日剧','战争','2','27','字幕组','2000','剧种','剧型','1477359778','4','200000203') [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000144s ]
+
+[ 2016-10-25T09:43:02+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-10-25T09:43:07+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumDec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`=goods_num-1 WHERE ( cart_id=110 ) [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000161s ]
+
+[ 2016-10-25T09:43:08+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumInc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0013s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`=goods_num+1 WHERE ( cart_id=110 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2016-10-25T09:43:09+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumInc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`=goods_num+1 WHERE ( cart_id=110 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000139s ]
+
+[ 2016-10-25T09:43:13+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='英剧' AND goods_id ='27' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-10-25T09:43:27+08:00 ] 127.0.0.1 /Api/Goods/changeCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0009s ]
+SQL: SELECT `goods_sn` FROM `think_goods_specify` WHERE ( goods_id=27 AND goods_type='英剧' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( goods_sn=200000202 AND goods_package='爱情' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`='5',`goods_type`='英剧',`goods_package`='爱情',`goods_cost`='3000',`goods_id`='27',`cart_id`='111',`goods_sn`='200000202' WHERE ( cart_id=111 ) [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000127s ]
+
+[ 2016-10-25T09:43:27+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-10-25T09:43:33+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='美剧' AND goods_id ='27' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-10-25T09:43:37+08:00 ] 127.0.0.1 /Api/Goods/changeCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0008s ]
+SQL: SELECT `goods_sn` FROM `think_goods_specify` WHERE ( goods_id=27 AND goods_type='美剧' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( goods_sn=200000201 AND goods_package='爱情' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`=goods_num+5 WHERE ( goods_sn=200000201 AND goods_package='爱情' ) [ RunTime:0.0003s ]
+SQL: DELETE FROM `think_shopcart` WHERE ( cart_id=111 ) [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-25T09:43:38+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-10-25T09:43:40+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumChange
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`='8' WHERE ( cart_id=110 ) [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000150s ]
+
+[ 2016-10-25T09:43:45+08:00 ] 127.0.0.1 /Api/Goods/makeTempOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `think_temporary_order` [ RunTime:0.0006s ]
+SQL: DELETE FROM `think_temporary_order` WHERE ( user_id=4 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: UPDATE `think_shopcart` SET `is_order`='0' WHERE ( 1=1 ) [ RunTime:0.0002s ]
+SQL: UPDATE `think_shopcart` SET `is_order`='1' WHERE ( cart_id=106 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_temporary_order` (`user_id`,`cart_id`,`addtime`) VALUES ('4','106','1477359825') [ RunTime:0.0002s ]
+SQL: UPDATE `think_shopcart` SET `is_order`='1' WHERE ( cart_id=110 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_temporary_order` (`user_id`,`cart_id`,`addtime`) VALUES ('4','110','1477359825') [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-10-25T09:43:45+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-10-25T09:43:56+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-10-25T09:43:59+08:00 ] 127.0.0.1 /Api/AddressDefault
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0005s ]
+SQL: UPDATE `think_address` SET `is_default`='0' WHERE ( user_id='4' ) [ RunTime:0.0042s ]
+SQL: UPDATE `think_address` SET `is_default`='1' WHERE ( id=36 ) [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000151s ]
+
+[ 2016-10-25T09:44:06+08:00 ] 127.0.0.1 /Api/Goods/GoodsNumInc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0012s ]
+SQL: UPDATE `think_shopcart` SET `goods_num`=goods_num+1 WHERE ( cart_id=106 ) [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000119s ]
+
+[ 2016-10-25T09:44:18+08:00 ] 127.0.0.1 /Api/Goods/makeOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0011s ]
+SQL: INSERT INTO `think_order` (`order_id`,`user_id`,`status`,`message`,`addtime`,`receiver`,`phone`,`province`,`city`,`district`,`street`,`express_style`,`express_fee`,`total_money`) VALUES ('147735985800041151','4','0','abvdsadas','1477359858','皮城女警         ','13422222222','上海市','上海市市辖区','静安区','皮城戒备19','顺丰','20','32133.8') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( cart_id=106 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0009s ]
+SQL: INSERT INTO `think_order_detail` (`order_id`,`goods_id`,`goods_sn`,`goods_name`,`goods_type1`,`goods_type`,`goods_type2`,`goods_package`,`goods_num`,`goods_price`,`goods_thumb`,`addtime`) VALUES ('147735985800041151','7','1000001','良品铺子 手剥松子218g 坚果炒货 巴西松子','口味','原味','包装','手袋单人份','2','56.9','/Public/Uploads/goods/sn1000001/01_mid.jpg','1477359858') [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant fasle - assumed 'fasle' /var/www/shop/App/Api/Controller/GoodsController.class.php 第 209 行.
+SQL: DELETE FROM `think_shopcart` WHERE ( cart_id=106 ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0009s ]
+SQL: UPDATE `think_goods_specify` SET `goods_num`=goods_num-2 WHERE ( goods_sn=1000001 ) [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( cart_id=110 )  [ RunTime:0.0004s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000201 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `think_order_detail` (`order_id`,`goods_id`,`goods_sn`,`goods_name`,`goods_type1`,`goods_type`,`goods_type2`,`goods_package`,`goods_num`,`goods_price`,`goods_thumb`,`addtime`) VALUES ('147735985800041151','27','200000201','字幕组','剧种','美剧','剧型','爱情','8','4000','/Public/Uploads/goods/sn200000201/West world_mid.jpg','1477359858') [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant fasle - assumed 'fasle' /var/www/shop/App/Api/Controller/GoodsController.class.php 第 209 行.
+SQL: DELETE FROM `think_shopcart` WHERE ( cart_id=110 ) [ RunTime:0.0004s ]
+SQL: UPDATE `think_goods_specify` SET `goods_num`=goods_num-8 WHERE ( goods_sn=200000201 ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_temporary_order` [ RunTime:0.0007s ]
+SQL: DELETE FROM `think_temporary_order` WHERE ( 1=1 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000143s ]
+
+[ 2016-10-25T09:44:18+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-25T09:44:28+08:00 ] 127.0.0.1 /Api/Order/payment?order_id=147735985800041151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0014s ]
+SQL: UPDATE `think_order` SET `status`='1' WHERE ( order_id=147735985800041151 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-10-25T09:44:28+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-10-25T09:44:37+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-25T09:44:43+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2016-10-25T09:44:44+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2016-10-25T09:44:59+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-10-25T09:45:23+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-10-25T09:45:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2016-10-25T09:45:42+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-10-25T09:46:22+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-10-25T09:47:32+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-10-25T09:53:20+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-10-25T09:53:21+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-10-25T09:54:12+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T09:54:13+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-10-25T09:54:16+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-25T09:54:16+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T09:54:18+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T09:54:18+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T09:54:19+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T09:54:22+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T09:54:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T09:54:33+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-10-25T09:54:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2016-10-25T09:54:58+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T09:57:09+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000170s ]
+
+[ 2016-10-25T09:57:11+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T10:02:26+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2016-10-25T10:02:27+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-25T10:02:28+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-10-25T10:02:45+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-25T10:02:48+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-10-25T10:02:58+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-10-25T10:03:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2016-10-25T10:04:47+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2016-10-25T10:04:49+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T10:04:51+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-10-25T10:05:03+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T10:05:28+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-10-25T10:06:12+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T10:10:16+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2016-10-25T10:10:18+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
+[ 2016-10-25T10:14:43+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-25T10:26:44+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-25T10:26:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2016-10-25T10:26:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T10:26:48+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-10-25T10:28:37+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2016-10-25T10:28:40+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-10-25T10:28:43+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T10:28:50+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000147s ]
+
+[ 2016-10-25T10:29:27+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-10-25T10:29:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-10-25T10:31:45+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T10:32:01+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-10-25T10:32:37+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-25T10:33:24+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2016-10-25T10:33:38+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-10-25T10:35:25+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-10-25T10:35:26+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T10:35:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-10-25T10:35:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+
+[ 2016-10-25T10:35:30+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-10-25T10:35:30+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-25T10:35:30+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-10-25T10:35:31+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-10-25T10:35:31+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T10:35:31+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T10:35:32+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2016-10-25T10:35:32+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-25T10:35:33+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-25T10:35:33+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2016-10-25T10:35:34+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2016-10-25T10:35:34+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-10-25T10:35:34+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2016-10-25T10:35:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-10-25T10:35:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T10:35:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-10-25T10:35:36+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
+[ 2016-10-25T10:35:36+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2016-10-25T10:35:36+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-10-25T10:35:36+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2016-10-25T10:35:39+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-10-25T10:35:39+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T10:35:39+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
+[ 2016-10-25T10:38:24+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-25T10:39:20+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T10:39:41+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T10:40:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-25T10:40:47+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T10:40:48+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2016-10-25T10:40:49+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2016-10-25T10:40:49+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2016-10-25T10:40:49+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2016-10-25T10:40:49+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-25T10:45:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T10:49:26+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-10-25T10:50:20+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2016-10-25T10:54:08+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-10-25T10:54:14+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-10-25T10:56:56+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-25T10:57:10+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T10:57:48+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-10-25T10:57:53+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T10:58:00+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T10:58:04+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T10:59:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2016-10-25T10:59:37+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-10-25T10:59:46+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-10-25T11:04:23+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
+
+[ 2016-10-25T11:04:32+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-10-25T11:05:10+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T11:05:27+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-10-25T11:06:26+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-10-25T11:06:51+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T11:09:45+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2016-10-25T11:11:25+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-10-25T11:14:10+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-10-25T11:14:22+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2016-10-25T11:15:30+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-10-25T11:20:02+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-10-25T11:21:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2016-10-25T11:21:47+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-10-25T11:21:55+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2016-10-25T11:23:29+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2016-10-25T11:23:35+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-10-25T11:31:19+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
