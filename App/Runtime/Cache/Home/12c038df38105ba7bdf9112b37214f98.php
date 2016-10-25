@@ -13,6 +13,11 @@
 		<link href="/Public/css/personal.css" rel="stylesheet" type="text/css">
 		<link href="/Public/css/appstyle.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="/Public/js/jquery-1.7.2.min.js"></script>
+		<script language="javascript" src="/Public/js/XHRUploader.class.js"></script>
+		<script language="javascript" src="/Public/js/Ajax.class.js"></script>
+	<style>
+		.filePic img{display:block;}
+	</style>
 	</head>
 
 	<body>
@@ -144,10 +149,16 @@
 								<div class="item-comment">
 									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！"></textarea>
 								</div>
-								<div class="filePic">
-									<input type="file" class="inputPic" id="img_src">
-									<span>晒照片(0/5)</span>
-									<img src="/Public/images/image.jpg" alt="图片失效">
+								<div class="filePic" style="width:100%;height:80px;">
+									<div style="height:70px;width:80px;float:left;">
+									<input type="file" class="inputPic" id="sn<?php echo ($vo["goods_sn"]); ?>" sn="<?php echo ($vo["goods_sn"]); ?>" onclick="upload('sn<?php echo ($vo["goods_sn"]); ?>',this)" style="display:inline-block;width:80px;height:40px;">
+									<span style="cursor:pointer;color:green;">晒图片(<i class="picnum">0</i>/5)</span>
+									</div>
+									<!-- 此处放置添加后的晒图 -->
+									<div style="width:auto;height:70px;float:left;" class="img-box">
+
+									</div>
+									
 								</div>
 								<div class="item-opinion">
 									<li><i class="op1"></i>好评</li>
@@ -179,10 +190,77 @@
 				     			var goods_sn = obj.val();	//获取该条被评论的商品sn
 				     			var comment_type = obj.parents(".comment-list").find(".item-opinion").find(".active").parent("li").text();	//获取评论的好坏
 				     			var comment = obj.parents(".item-title").siblings(".item-comment").find("textarea").val();	//获取评论内容
+				     			var path_array = [];	//创建数组存储每个图片地址
+				     			obj.parents(".item-title").siblings(".filePic").find(".img-box").find("input[name='path']").each(function(){
+				     				var path = $(this).val();
+				     				path_array.push(path);
+				     			});
+				     			var information  = {};	//创建对象，放置每个商品的评价信息
+				     			information.goods_sn = goods_sn;
+				     			information.comment_type = comment_type;
+				     			information.comment = comment;
+				     			information.order_id = '<?php echo ($_GET['order_id']); ?>';
+				     			information.path_array = path_array;
+				     			$.post(
+				     				'/Api/Order/uploadComment',
+				     				{information:information},
+				     				function(ret){
+				     					alert(ret);
+				     				}
+				     			);
 				     			
 				     		}
 
 				     	}
+
+				     	/**
+				     	 * 图片异步上传
+				     	 */
+				     	function upload(sn,obj){
+				     		var goods_sn = $(obj).attr("sn");
+				     		XHRUploader.init({
+								handlerUrl: '/home/MyDeal/uploadPic',
+								input: '_imgs[]'
+							}).uploadFile(sn, {
+								'partition'	: 'date',
+								'space'		: 'article.image',
+								'thumb'     : 2,
+								'goods_sn'  : goods_sn,
+								'order_id'	: '<?php echo ($_GET['order_id']); ?>',
+							},{
+								ready: function(ret){
+									// alert('zhengzai');
+								},
+								complete: function(ret){
+									//alert('wangcheng');
+									if( ret.status == true){
+										//此次上传前的图片数量
+										var num = $(obj).siblings("span").find('.picnum').text();
+										if( num < 5){
+											var html = '<div class="add" style="float:left;width:80px;height:70px;margin-left:10px;"><a style="position:absolute;display:block;width:20px;z-index:200;cursor:pointer;" onclick="delPic(this)">X</a><img src="'+ret.path+'" style="width:100%;height:100%;" /><input type="hidden" name="path" value="'+ret.path+'" /></div>';
+											$(obj).parents(".filePic").find(".img-box").append(html);
+											num++;	//已存在的图片数量自增
+											$(obj).siblings("span").find(".picnum").text(num);
+										}
+									}
+								}
+							});
+				     	}
+
+				     	/**
+				     	 * 移除晒图的div
+				     	 */
+				     	function delPic(obj){
+				     		var bool = window.confirm("确定要删除吗？");
+				     		if( bool != true) return;
+				     		var pic_num = $(obj).parents(".filePic").find(".picnum").text();
+				     		var path = $(obj).siblings("input").val();
+				     		alert(path);
+				     		pic_num--;
+				     		$(obj).parents(".filePic").find(".picnum").text(pic_num);
+				     		$(obj).parent().remove();
+				     	}
+					     	
 					</script>					
 					
 												

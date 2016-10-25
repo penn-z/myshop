@@ -10,8 +10,16 @@ class OrderController extends Controller {
 		M('order')->where("order_id={$order_id}")->setField("status",1);	//改为已付款状态
 	}
 
+	/**
+	 * 取消订单
+	 */
 	public function cancelOrder(){
 		$order_id = I('get.order_id');
 		M('order')->where("order_id={$order_id}")->setField("status",9);	//改为取消订单状态
+	}
+
+	public function uploadComment(){
+		$data = I("post.information");
+		var_dump($data);
 	}
 }

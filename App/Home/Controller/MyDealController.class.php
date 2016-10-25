@@ -116,4 +116,55 @@ class MyDealController extends CheckLoginController {
         $this->assign("detail",$detail);
         $this->display("Person/commentlist");
     }
+
+    /**
+     * 上传评价
+     */
+
+    /**
+     * 上传图片
+     */
+    public function uploadPic(){
+        $goods_sn = I('post.goods_sn');
+        $user_id = session('id');   //获取用户id
+        $order_id = I('post.order_id'); //订单号
+        $_uploadDir ="Public/Uploads/comment/person/";
+            
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =     $_uploadDir; // 设置附件上传根目录
+        $upload->savePath  =     'user_id'.$user_id.'/order_id'.$order_id.'/sn'.$goods_sn.'/'; // 设置附件上传（子）目录
+        $upload->saveName  = array('uniqid','');
+        $upload->autoSub = false;
+        // 上传文件 
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+            $data = array(
+                'status'    => false,
+                'info'      => "3",
+                'data'      => "上传错误"
+            );
+            $this->ajaxReturn($data);
+        }else{// 上传成功
+
+            //图片上传的路径
+            $path = '/Public/Uploads/comment/person/'.$info[0]['savepath'].$info[0]['savename'];
+            $data = array(
+                'status'    => true,
+                'info'      => "上传成功",
+                'path'      => $path,
+                
+            );
+            $this->ajaxReturn($data);
+        }
+
+    }
+
+    /**
+     * 删除晒图
+     */
+    public function delCommentPic(){
+        
+    }
 }
