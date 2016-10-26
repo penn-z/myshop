@@ -15,6 +15,8 @@
 
 		<script src="/Public/AmazeUI-2.4.2/assets/js/jquery.min.js" type="text/javascript"></script>
 		<script src="/Public/AmazeUI-2.4.2/assets/js/amazeui.js" type="text/javascript"></script>
+		<script language="javascript" src="/Public/js/XHRUploader.class.js"></script>
+		<script language="javascript" src="/Public/js/Ajax.class.js"></script>
 
 	</head>
 
@@ -143,7 +145,7 @@
 						<div class="refund-aside">
 							<div class="item-pic">
 								<a href="#" class="J_MakePoint">
-									<img src="/Public/images/comment.jpg_400x400.jpg" class="itempic">
+									<img src="<?php echo ($detail["goods_thumb"]); ?>" class="itempic">
 								</a>
 							</div>
 
@@ -151,60 +153,64 @@
 
 								<div class="item-name">
 									<a href="#">
-										<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+										<p class="item-basic-info"><?php echo ($detail["goods_name"]); ?></p>
 									</a>
 								</div>
 								<div class="info-little">
-									<span>颜色：洛阳牡丹</span>
-									<span>包装：裸装</span>
+									<span><?php echo ($detail["goods_type1"]); ?>：<?php echo ($detail["type1_name"]); ?></span>
+									<span><?php echo ($detail["goods_type2"]); ?>：<?php echo ($detail["type2_name"]); ?></span>
 								</div>
 							</div>
 							<div class="item-info">
 								<div class="item-ordernumber">
-									<span class="info-title">订单编号：</span><a>1474784641639947</a>
+									<span class="info-title">订单编号：</span><a><?php echo ($detail["order_id"]); ?></a>
 								</div>
 								<div class="item-price">
-									<span class="info-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span><span class="price">19.88元</span>
-									<span class="number">×1</span><span class="item-title">(数量)</span>
+									<span class="info-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span><span class="price"><?php echo ($detail["goods_price"]); ?></span>
+									<span class="number">×<?php echo ($detail["goods_num"]); ?></span><span class="item-title">(数量)</span>
 								</div>
 								<div class="item-amount">
-									<span class="info-title">小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amount">19.88元</span>
+									<span class="info-title">小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amount"><?php echo ($detail["goods_this_cost"]); ?>元</span>
 								</div>
 								<div class="item-pay-logis">
-									<span class="info-title">运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span><span class="price">10.00元</span>
+									<span class="info-title">运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span><span class="price"><?php echo ($detail["express_fee"]); ?>元</span>
 								</div>
 								<div class="item-amountall">
-									<span class="info-title">总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amountall">29.88元</span>
+									<span class="info-title">总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amountall"><?php echo ($detail["goods_this_total"]); ?>元</span>
 								</div>
 								<div class="item-time">
-									<span class="info-title">成交时间：</span><span class="time">2015-12-12&nbsp;17:07</span>
+									<span class="info-title">成交时间：</span><span class="time"><?php echo (date("Y-m-d H:i:s",$detail["addtime"])); ?></span>
 								</div>
 
 							</div>
 							<div class="clear"></div>
 						</div>
-
+						
 						<div class="refund-main">
 							<div class="item-comment">
 								<div class="am-form-group">
 									<label for="refund-type" class="am-form-label">退款类型</label>
 									<div class="am-form-content">
-										<select data-am-selected="">
-											<option value="a" selected>仅退款</option>
-											<option value="b">退款/退货</option>
+									<?php if($_GET['status']== 1): ?><select data-am-selected="">
+											<option value="仅退款" selected>仅退款</option>
 										</select>
+									<?php else: ?>
+										<select data-am-selected="">
+											<option value="仅退款" selected>仅退款</option>
+											<option value="退款/退货">退款/退货</option>
+										</select><?php endif; ?>
 									</div>
 								</div>
 								
 								<div class="am-form-group">
-									<label for="refund-reason" class="am-form-label">退款原因</label>
+									<label for="refund-reason" class="am-form-label" >退款原因</label>
 									<div class="am-form-content">
 										<select data-am-selected="">
-											<option value="a" selected>请选择退款原因</option>
-											<option value="b">不想要了</option>
-											<option value="c">买错了</option>
-											<option value="d">没收到货</option>											
-											<option value="e">与说明不符</option>
+											<option value="未选择原因" selected>请选择退款原因</option>
+											<option value="不想要了">不想要了</option>
+											<option value="买错了">买错了</option>
+											<option value="没收到货">没收到货</option>							
+											<option value="与说明不符">与说明不符</option>
 										</select>
 									</div>
 								</div>
@@ -212,32 +218,153 @@
 								<div class="am-form-group">
 									<label for="refund-money" class="am-form-label">退款金额<span>（不可修改）</span></label>
 									<div class="am-form-content">
-										<input type="text" id="refund-money" readonly="readonly" placeholder="19.88">
+										<input type="text" id="refund-money" readonly="readonly" placeholder="<?php echo ($detail["goods_this_cost"]); ?>">
 									</div>
 								</div>
 								<div class="am-form-group">
 									<label for="refund-info" class="am-form-label">退款说明<span>（可不填）</span></label>
 									<div class="am-form-content">
-										<textarea placeholder="请输入退款说明"></textarea>
+										<textarea placeholder="请输入退款说明"><?php echo ($refund_info["refund_info"]); ?></textarea>
 									</div>
 								</div>
 
 							</div>
 							<div class="refund-tip">
-								<div class="filePic">
-									<input type="file" class="inputPic" value="选择凭证图片" name="file" max="5" maxsize="5120" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
-									<img src="/Public/images/image.jpg" alt="">
+								<div class="filePic" style="float:left;width:auto;" >
+									<input type="file" class="inputPic"  id="one" onclick="upload(this)" >
+									<img src="/Public/images/image.jpg" style="display:block;width:80px;height:80px;float:left;">
+									
 								</div>
-								<span class="desc">上传凭证&nbsp;最多三张</span>
+								<div class="filePic" style="float:left;width:auto">
+									<input type="file" class="inputPic"  id="two" onclick="upload(this)">
+									<img src="/Public/images/image.jpg" style="display:block;width:80px;height:80px;float:left;">
+								</div>
+								<div class="filePic" style="float:left;width:auto">
+									<input type="file" class="inputPic"  id="three" onclick="upload(this)">
+									<img src="/Public/images/image.jpg" style="display:block;width:80px;height:80px;float:left;">
+								</div>
+								<!-- <div class="img-box">
+									<img src="/Public/images/image.jpg" >
+								</div> -->
+								<span class="desc" style="margin-top:50px;">上传凭证&nbsp;最多三张</span>
 							</div>
 							<div class="info-btn">
-								<div class="am-btn am-btn-danger">提交申请</div>
+								<div class="am-btn am-btn-danger" style="float:right;" onclick="sub(this)">提交申请</div>
 							</div>
 						</div>
+						<script>
+							/**
+							 * 进度条
+							 */
+							function programList(){
+								var status = <?php echo ($_GET['goods_status']); ?>;
+								switch(status){
+									case 1:  	//待发货状态时进行退款
+										$("input").attr("disabled",true);	//禁止上传图片
+										$("#one").siblings("img").attr('src','<?php echo ($refund_info["path"]["0"]); ?>');
+										$("#two").siblings("img").attr('src','<?php echo ($refund_info["path"]["1"]); ?>');
+										$("#three").siblings("img").attr('src','<?php echo ($refund_info["path"]["2"]); ?>');
+										$(".u-progress-bar-inner").css("width","49%");
+										$(".info-btn").find(".am-btn").attr("disabled",true);	//商家退款中，退款申请按钮不能活动
+										setTimeout(function(){
+											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
+										},1500);
+										break;
+								}
+							}
+							document.onload = programList();	//页面加载完成后执行动作
+
+							/**
+							 * 异步上传退款凭证图片
+							 */
+							function upload(obj){
+								var goods_sn = '<?php echo ($_GET['goods_sn']); ?>';
+								var id = $(obj).attr("id");
+					     		XHRUploader.init({
+								handlerUrl: '/Api/Order/uploadPic',
+								input: '_imgs[]'
+								}).uploadFile(id, {
+									'partition'	: 'date',
+									'thumb'     : 2,
+									'goods_sn'  : goods_sn,
+									'order_id'	: '<?php echo ($_GET['order_id']); ?>',
+									'type' 		: '退款凭证',
+								},{
+									ready: function(ret){
+										// alert('zhengzai');
+									},
+									complete: function(ret){
+										//alert('wangcheng');
+										if( ret.status == true){
+											// 此次上传前的图片数量
+											$(obj).siblings("img").attr("src",ret.path);
+											var html = '<a style="position:absolute;display:block;width:20px;z-index:200;cursor:pointer;" onclick="delPic(this)">X</a><input type="hidden" name="pic_path[]" value="'+ret.path+'"/>';
+											$(obj).parent().append(html);
+											$(obj).attr("disabled",true);	//使file不能活动
+										}
+									}
+								});
+							}
+
+							/**
+							 *	移除凭证图片
+							 */
+							function delPic(obj){
+								var bool = window.confirm("确定要删除吗？");
+								if(bool!=true) return;
+								var src = $(obj).parent().find("img").attr("src");
+								var full_path = "/var/www/shop"+src;
+								$.get(	//异步删除已经上传的图片
+									'/Api/Order/delCommentPic',
+									{full_path:full_path},
+									function(ret){
+									}
+								);
+								$(obj).prev().prev().attr("disabled",false);	//使file重新活动
+								$(obj).parent().find("img").attr("src","/Public/images/image.jpg");
+								$(obj).remove();	//移除"x"符号
+							}
+
+							/**
+							 * 提交申请
+							 */
+							function sub(obj){
+								var father = $(obj).parents(".refund-main");	//父级div
+								var refund_type = father.find(".am-form-group").eq(0).find("select").val();	//退款类型
+								var refund_reason = father.find(".am-form-group").eq(1).find("select").val();//退款原因
+								var refund_money = father.find(".am-form-group").eq(2).find("input").attr("placeholder");	//退款金额
+								var refund_info = father.find(".am-form-group").eq(3).find("textarea").val();	//退款说明
+								var path = [];	//定义数组存储图片地址
+								father.find(".refund-tip").find("img").each(function(){
+									var src = $(this).attr("src");
+									if( src != "/Public/images/image.jpg" ){	//地址不为默认图片时
+										path.push(src);
+									}
+								});
+								var info = {};
+								info.order_id = '<?php echo ($_GET['order_id']); ?>';
+								info.goods_sn = '<?php echo ($_GET['goods_sn']); ?>';
+								info.refund_type = refund_type;
+								info.refund_reason = refund_reason;
+								info.refund_money = refund_money;
+								info.refund_info = refund_info;
+								info.path = path;
+								$.post(
+									'/Api/Order/refund',
+									{info:info},
+									function(ret){
+										if( ret == 'ok' ){
+											alert("退款申请提交成功，请等待商家确认");
+											window.location.href="/home/MyDeal/order.html";
+										}
+									}
+								);
+							}
+						</script>
 					</div>
 					<div class="clear"></div>
 				</div>
-
+				
 				<!--底部-->
 						<div class="footer">
 			<div class="footer-hd">
@@ -285,7 +412,7 @@
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
 						<li><a href="/home/MyDeal/order.html">订单管理</a></li>
-						<li> <a href="/home/MyDeal/change/html">退款售后</a></li>
+						<li> <a href="/home/MyDeal/change.html">退款售后</a></li>
 						<li> <a href="/home/MyDeal/comment.html">评价商品</a></li>
 					</ul>
 				</li>

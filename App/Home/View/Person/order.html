@@ -188,9 +188,15 @@
 																</div>
 															</li>
 															<li class="td td-operation">
+															<if condition="$vo.status eq 0">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款</a>
+																	<a href="/home/MyDeal/refund.html?order_id={$Nosent.$index.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Nosent.$index.status}">退款</a>
 																</div>
+															<else/>
+																<div class="item-operation">
+																	<a href="javascript:void(0);">等待商家退款中</a>
+																</div>
+															</if>
 															</li>
 														</ul>
 														</foreach>
@@ -222,8 +228,8 @@
 
 
 											<!--待收货-->
-											<div class="order-status3">
 											<foreach name="senting_details" item="senting_detail" key="index">
+											<div class="order-status3">
 												<div class="order-title">
 													<div class="dd-num">订单编号：<a href="javascript:;">{$Senting.$index.order_id}</a></div>
 													<span>成交时间：{$Senting.$index.addtime|date="Y-m-d H:i:s",###}</span>
@@ -261,7 +267,11 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																<if condition="$vo.status eq 0">
+																	<a href="/home/MyDeal/refund.html?order_id={$Senting.$index.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Senting.$index.status}">退款/退货</a>
+																<else/>
+																	<a href="javascript:void(0);">等待商家退货退款中</a>
+																</if>
 																</div>
 															</li>
 														</ul>
@@ -284,14 +294,14 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+																<div class="am-btn am-btn-danger anniu" onclick="sureGoods(this)">
 																	确认收货</div>
 															</li>
 														</div>
 													</div>
 												</div>
-											</foreach>
 											</div>
+											</foreach>
 											
 											
 											<!--待评价-->
@@ -334,7 +344,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																	<a href="/home/MyDeal/commentlist.html?order_id={$Evaluate.$key.order_id}">请评价商品</a>
 																</div>
 															</li>
 														</ul>
@@ -760,7 +770,11 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款</a>
+																<if condition="$vo.status eq 0">
+																	<a href="/home/MyDeal/refund.html?order_id={$Nosent.$key.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Nosent.$key.status}">退款</a>
+																<else/>
+																	<a href="javascript:void(0);">等待商家退款中</a>
+																</if>
 																</div>
 															</li>
 														</ul>
@@ -862,7 +876,11 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																<if condition="$vo.status eq 0">
+																	<a href="/home/MyDeal/refund.html?order_id={$Senting.$key.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Senting.$key.status}">退款/退货</a>
+																<else/>
+																	<a href="javascript:void(0);">等待商家退货退款中</a>
+																</if>
 																</div>
 															</li>
 														</ul>
@@ -885,7 +903,7 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+																<div class="am-btn am-btn-danger anniu" onclick="sureGoods(this)">
 																	确认收货</div>
 															</li>
 														</div>
@@ -964,7 +982,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="/home/MyDeal/commentlist.html?order_id={$Evaluate.$key.order_id}">请评价商品</a>
 																</div>
 															</li>
 														</ul>
@@ -1004,6 +1022,27 @@
 						</div>
 					</div>
 				</div>
+				<script>
+				/**
+				 * 确认收货
+				 * @param 对象
+				 */
+				function sureGoods(obj){
+					var bool = window.confirm("确定要确认收货吗？您的货款将打入商家账户。");
+					if(bool!=true) return;
+					var order_id = $(obj).parents(".order-content").siblings(".order-title").find(".dd-num").find("a").text();
+					$.get(
+						'/Api/Order/sureGoods',
+						{order_id:order_id},
+						function(ret){
+							if( ret == 1){
+								alert("确认收货成功");
+								window.location.href="/home/MyDeal/order.html";
+							}
+						}
+					);
+				}
+				</script>
 				<!--底部-->
 				<include file="Person/common/footer" />
 				<!-- 底部 -->

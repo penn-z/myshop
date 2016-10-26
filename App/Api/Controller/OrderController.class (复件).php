@@ -3,7 +3,7 @@ namespace Api\Controller;
 use Think\Controller;
 class OrderController extends Controller {
 	/**
-	 *	一键支付
+	 *	订单改为已付款状态
 	 */
 	public function payment(){
 		$order_id = I('get.order_id');
@@ -16,15 +16,6 @@ class OrderController extends Controller {
 	public function cancelOrder(){
 		$order_id = I('get.order_id');
 		M('order')->where("order_id={$order_id}")->setField("status",9);	//改为取消订单状态
-	}
-
-	/**
-	 * 确认收货
-	 */
-	public function sureGoods(){
-		$order_id = I('get.order_id');
-		$ret = M('order')->where("order_id={$order_id}")->setField("status",3);	//改为待评价状态
-		echo $ret;
 	}
 
 	/**
@@ -72,17 +63,14 @@ class OrderController extends Controller {
     }
 
     /**
-     * 上传评价或退款凭证图片
+     * 上传评价图片
      */
     public function uploadPic(){
         $goods_sn = I('post.goods_sn');
         $user_id = session('id');   //获取用户id
         $order_id = I('post.order_id'); //订单号
-        if( I('post.type') == "评价" ){
-			$_uploadDir ="Public/Uploads/comment/person/";
-        }else if( I('post.type') == "退款凭证" ){
-        	$_uploadDir ="Public/Uploads/refund/";
-        }
+        $_uploadDir ="Public/Uploads/comment/person/";
+            
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小
         $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -101,7 +89,7 @@ class OrderController extends Controller {
             $this->ajaxReturn($data);
         }else{// 上传成功
             //图片上传的路径
-            $path = '/'.$_uploadDir.$info[0]['savepath'].$info[0]['savename'];
+            $path = '/Public/Uploads/comment/person/'.$info[0]['savepath'].$info[0]['savename'];
             $data = array(
                 'status'    => true,
                 'info'      => "上传成功",
@@ -109,20 +97,5 @@ class OrderController extends Controller {
             );
             $this->ajaxReturn($data);
         }
-    }
-
-    /**
-     * 提交退货退款申请
-     */
-    public function refund(){
-    	$info = I('post.info');
-    	// var_dump($info);
-    	$info['addtime'] = time();
-    	$info['user_id'] = session('id');
-    	$info['status'] = 1;	//status=1为等待商家退款状态
-    	$info['path'] = serialize($info['path']);	//把图片地址序列化
-    	$ret1 = M('refund')->add($info);	//添加退款数据
-    	$ret2 = M('order_detail')->where("order_id=".$info['order_id']." AND goods_sn=".$info['goods_sn'])->setField("status",1);	//status=1为等待商家退款状态
-    	if( $ret1 != false && $ret2 != fasle ) echo "ok";
     }
 }

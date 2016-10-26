@@ -90,7 +90,35 @@ class MyDealController extends CheckLoginController {
      * 退款退货
      */
     public function refund(){
+        $order_id = I('get.order_id');
+        $goods_sn = I('get.goods_sn');
+        //取当前被退货商品详细信息
+        $detail = M('order_detail')->where("order_id={$order_id} AND goods_sn={$goods_sn}")->find();
+        //取运费
+        $detail['express_fee'] = M("order")->where("order_id={$order_id}")->getField("express_fee");    //运费
+        $goods_this_cost = $detail['goods_price'] * $detail['goods_num'];
+        $detail['goods_this_cost'] = number_format($goods_this_cost,2,'.','');  //小计
+        $goods_this_total = $detail['goods_this_cost'] + $detail['express_fee'];
+        $detail['goods_this_total'] = number_format($goods_this_total,2,'.','');    //总计
+        $this->assign("detail",$detail);
+
+        //如果是正在退款状态进入
+        $refund_info = M("refund")->where("order_id={$order_id} AND goods_sn={$goods_sn}")->find();
+        $refund_info['path'] = unserialize($refund_info['path']);   //反序列化凭证图片地址
+        $this->assign("refund_info",$refund_info);
+
         $this->display("Person/refund");
+    }
+
+    /**
+     * 取消退款
+     */
+    public function refundCancel(){
+        $order_id = I('get.order_id');
+        $goods_sn = I('get.goods_sn');
+        M("order_detail")->where("order_id=".$order_id." AND goods_sn=".$goods_sn)->setField("status",0);   //订单商品status=0为正常状态
+        $ret = M("refund")->where("order_id=".$order_id." AND goods_sn=".$goods_sn)->delete(); //删除对应的退款数据
+        if( $ret != false ) echo "1";
     }
 
     /**
@@ -136,8 +164,18 @@ class MyDealController extends CheckLoginController {
      * 退款售后
      */
     public function change(){
+        $user_id = session('id');
+        $refund = M("refund")->where("user_id={$user_id}")->select();
+        foreach($refund as $key => $val){
+            $info = M("order_detail")->where("order_id=".$val['order_id']." AND goods_sn=".$val['goods_sn'])->find();   //获取退款商品的详细信息
+            $refund[$key]['goods_name'] = $info['goods_name'];
+            $refund[$key]['goods_type1'] = $info['goods_type1'];
+            $refund[$key]['type1_name'] = $info['goods_type'];
+            $refund[$key]['goods_type2'] = $info['goods_type2'];
+            $refund[$key]['type2_name'] = $info['goods_package'];
+            $refund[$key]['goods_thumb'] = $info['goods_thumb'];
+        }
+        $this->assign("refund",$refund);
         $this->display("Person/change");
     }
-
-
 }

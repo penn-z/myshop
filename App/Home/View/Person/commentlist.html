@@ -143,10 +143,10 @@
 								input: '_imgs[]'
 							}).uploadFile(sn, {
 								'partition'	: 'date',
-								'space'		: 'article.image',
 								'thumb'     : 2,
 								'goods_sn'  : goods_sn,
 								'order_id'	: '{$Think.get.order_id}',
+								'type' 		: '评价',
 							},{
 								ready: function(ret){
 									// alert('zhengzai');

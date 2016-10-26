@@ -265,9 +265,13 @@
 																</div>
 															</li>
 															<li class="td td-operation">
-																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款</a>
+															<?php if($vo["status"] == 0): ?><div class="item-operation">
+																	<a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$index"]["status"]); ?>">退款</a>
 																</div>
+															<?php else: ?>
+																<div class="item-operation">
+																	<a href="javascript:void(0);">等待商家退款中</a>
+																</div><?php endif; ?>
 															</li>
 														</ul><?php endforeach; endif; ?>
 														
@@ -297,8 +301,8 @@
 
 
 											<!--待收货-->
-											<div class="order-status3">
-											<?php if(is_array($senting_details)): foreach($senting_details as $index=>$senting_detail): ?><div class="order-title">
+											<?php if(is_array($senting_details)): foreach($senting_details as $index=>$senting_detail): ?><div class="order-status3">
+												<div class="order-title">
 													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Senting["$index"]["order_id"]); ?></a></div>
 													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$Senting["$index"]["addtime"])); ?></span>
 													<!--    <em>店铺：小桔灯</em>-->
@@ -334,7 +338,9 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Senting["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$index"]["status"]); ?>">退款/退货</a>
+																<?php else: ?>
+																	<a href="javascript:void(0);">等待商家退货退款中</a><?php endif; ?>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -356,13 +362,13 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+																<div class="am-btn am-btn-danger anniu" onclick="sureGoods(this)">
 																	确认收货</div>
 															</li>
 														</div>
 													</div>
-												</div><?php endforeach; endif; ?>
-											</div>
+												</div>
+											</div><?php endforeach; endif; ?>
 											
 											
 											<!--待评价-->
@@ -403,7 +409,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																	<a href="/home/MyDeal/commentlist.html?order_id=<?php echo ($Evaluate["$key"]["order_id"]); ?>">请评价商品</a>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -817,7 +823,9 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款</a>
+																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$key"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$key"]["status"]); ?>">退款</a>
+																<?php else: ?>
+																	<a href="javascript:void(0);">等待商家退款中</a><?php endif; ?>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -915,7 +923,9 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="/home/MyDeal/refund.html">退款/退货</a>
+																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Senting["$key"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$key"]["status"]); ?>">退款/退货</a>
+																<?php else: ?>
+																	<a href="javascript:void(0);">等待商家退货退款中</a><?php endif; ?>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -937,7 +947,7 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+																<div class="am-btn am-btn-danger anniu" onclick="sureGoods(this)">
 																	确认收货</div>
 															</li>
 														</div>
@@ -1013,7 +1023,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="/home/MyDeal/commentlist.html?order_id=<?php echo ($Evaluate["$key"]["order_id"]); ?>">请评价商品</a>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -1051,6 +1061,27 @@
 						</div>
 					</div>
 				</div>
+				<script>
+				/**
+				 * 确认收货
+				 * @param 对象
+				 */
+				function sureGoods(obj){
+					var bool = window.confirm("确定要确认收货吗？您的货款将打入商家账户。");
+					if(bool!=true) return;
+					var order_id = $(obj).parents(".order-content").siblings(".order-title").find(".dd-num").find("a").text();
+					$.get(
+						'/Api/Order/sureGoods',
+						{order_id:order_id},
+						function(ret){
+							if( ret == 1){
+								alert("确认收货成功");
+								window.location.href="/home/MyDeal/order.html";
+							}
+						}
+					);
+				}
+				</script>
 				<!--底部-->
 						<div class="footer">
 			<div class="footer-hd">
@@ -1097,7 +1128,7 @@
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
 						<li><a href="/home/MyDeal/order.html">订单管理</a></li>
-						<li> <a href="/home/MyDeal/change/html">退款售后</a></li>
+						<li> <a href="/home/MyDeal/change.html">退款售后</a></li>
 						<li> <a href="/home/MyDeal/comment.html">评价商品</a></li>
 					</ul>
 				</li>

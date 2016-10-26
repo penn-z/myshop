@@ -125,11 +125,9 @@
 
 							<div class="am-tabs-bd">
 								<div class="am-tab-panel am-fade am-in am-active" id="tab1">
-								<?php if(is_array($pic_comment)): foreach($pic_comment as $key=>$vo): ?><div class="comment-main">
+									<div class="comment-main">
 										<div class="comment-list">
 											<ul class="item-list">
-
-												
 												<div class="comment-top">
 													<div class="th th-price">
 														<td class="td-inner">评价</td>
@@ -138,6 +136,7 @@
 														<td class="td-inner">商品</td>
 													</div>													
 												</div>
+												<?php if(is_array($pic_comment)): foreach($pic_comment as $key=>$vo): ?><div style="border-top:#9C9C9C 1px solid;">
 												<li class="td td-item">
 													<div class="item-pic">
 														<a href="#" class="J_MakePoint">
@@ -146,9 +145,9 @@
 													</div>
 												</li>
 
-												<li class="td td-comment">
+												<li class="td td-comment" style="height:110px;">
 													<div class="item-title">
-														<div class="item-opinion">好评</div>
+														<div class="item-opinion" style="display:block;"><?php echo ($vo["comment_type"]); ?></div>
 														<div class="item-name">
 															<a href="#">
 																<p class="item-basic-info"><?php echo ($vo["goods_name"]); ?></p>
@@ -167,18 +166,16 @@
 														</div>
 													</div>
 												</li>
-
+												</div><?php endforeach; endif; ?>
 											</ul>
-
 										</div>
-									</div><?php endforeach; endif; ?>
+									</div>
 								</div>
 								<div class="am-tab-panel am-fade" id="tab2">
-								<?php if(is_array($nopic_comment)): foreach($nopic_comment as $key=>$vo): ?><div class="comment-main">
+								
+									<div class="comment-main">
 										<div class="comment-list">
 											<ul class="item-list">
-												
-												
 												<div class="comment-top">
 													<div class="th th-price">
 														<td class="td-inner">评价</td>
@@ -187,6 +184,7 @@
 														<td class="td-inner">商品</td>
 													</div>													
 												</div>
+												<?php if(is_array($nopic_comment)): foreach($nopic_comment as $key=>$vo): ?><div style="border-top:#9C9C9C 1px solid;">
 												<li class="td td-item">
 													<div class="item-pic">
 														<a href="#" class="J_MakePoint">
@@ -195,9 +193,9 @@
 													</div>
 												</li>											
 												
-												<li class="td td-comment">
+												<li class="td td-comment" style="height:260px;">
 													<div class="item-title">
-														<div class="item-opinion">好评</div>
+														<div class="item-opinion" style="display:block;"><?php echo ($vo["comment_type"]); ?></div>
 														<div class="item-name">
 															<a href="#">
 																<p class="item-basic-info"><?php echo ($vo["goods_name"]); ?></p>
@@ -221,11 +219,10 @@
 														</div>
 													</div>
 												</li>
-
+												</div><?php endforeach; endif; ?>	
 											</ul>
-
 										</div>
-									</div><?php endforeach; endif; ?>	
+									</div>									
 								</div>
 							</div>
 						</div>
@@ -280,7 +277,7 @@
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
 						<li><a href="/home/MyDeal/order.html">订单管理</a></li>
-						<li> <a href="/home/MyDeal/change/html">退款售后</a></li>
+						<li> <a href="/home/MyDeal/change.html">退款售后</a></li>
 						<li> <a href="/home/MyDeal/comment.html">评价商品</a></li>
 					</ul>
 				</li>

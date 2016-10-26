@@ -38,6 +38,12 @@ class IntroductionController extends Controller {
         $this->assign("different_goods",$different_goods);
         $this->assign('description',$description);
     	$this->assign('goods',$goods);
+
+
+        $comment = M("comment")->where("goods_id={$goods_id}")->select();
+        // $comment = M("user")->where("user_id")
+        // echo "<pre>";
+        // print_r($goods);
     	$this->display('introduction');
     }
 

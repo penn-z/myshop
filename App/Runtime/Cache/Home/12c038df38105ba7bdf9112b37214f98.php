@@ -224,10 +224,10 @@
 								input: '_imgs[]'
 							}).uploadFile(sn, {
 								'partition'	: 'date',
-								'space'		: 'article.image',
 								'thumb'     : 2,
 								'goods_sn'  : goods_sn,
 								'order_id'	: '<?php echo ($_GET['order_id']); ?>',
+								'type' 		: '评价',
 							},{
 								ready: function(ret){
 									// alert('zhengzai');
@@ -330,7 +330,7 @@
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
 						<li><a href="/home/MyDeal/order.html">订单管理</a></li>
-						<li> <a href="/home/MyDeal/change/html">退款售后</a></li>
+						<li> <a href="/home/MyDeal/change.html">退款售后</a></li>
 						<li> <a href="/home/MyDeal/comment.html">评价商品</a></li>
 					</ul>
 				</li>
