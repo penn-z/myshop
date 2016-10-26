@@ -117,6 +117,12 @@ class MyDealController extends CheckLoginController {
         $order_id = I('get.order_id');
         $goods_sn = I('get.goods_sn');
         M("order_detail")->where("order_id=".$order_id." AND goods_sn=".$goods_sn)->setField("status",0);   //订单商品status=0为正常状态
+        $path = M("refund")->where("order_id=".$order_id." AND goods_sn=".$goods_sn)->getField("path");
+        $path = unserialize($path); //反序列化上传凭证图
+        $prev_path = explode('sn',$path[0])[0];
+        $full_path = "/var/www/shop".$prev_path."sn".$goods_sn; //拼接成完整目录路径，便于删除
+        $del = A('Api/File');  //跨Admin模块实例化Img类
+        $del->delDir($full_path);      //删除所在目录及目录下所有子文件  
         $ret = M("refund")->where("order_id=".$order_id." AND goods_sn=".$goods_sn)->delete(); //删除对应的退款数据
         if( $ret != false ) echo "1";
     }
@@ -145,8 +151,7 @@ class MyDealController extends CheckLoginController {
             $nopic_comment[$key]['picture'] = unserialize($val['picture']);
         }
         $this->assign("nopic_comment",$nopic_comment);
-        /*echo "<pre>";
-        print_r($nopic_comment);*/
+       
         $this->display("Person/comment");
     }
 

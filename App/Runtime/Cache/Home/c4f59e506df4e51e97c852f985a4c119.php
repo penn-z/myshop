@@ -308,6 +308,7 @@
 													alert("退款已取消");
 													 window.location.reload();
 												}
+												
 											}
 										);
 									}

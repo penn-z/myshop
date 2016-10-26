@@ -410,7 +410,7 @@ CREATE TABLE `think_refund` (
   `status` int(2) NOT NULL COMMENT '退款状态(0为正常，1为等待商家退款，2为退款成功)',
   `addtime` int(11) NOT NULL COMMENT '退款申请时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -557,4 +557,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-26 20:53:57
+-- Dump completed on 2016-10-27  0:52:52
