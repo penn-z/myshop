@@ -50,7 +50,7 @@ class OrderController extends Controller {
 
 		//以下是插入商家商品评价表
 		$data['user_name'] = session('username');
-		$data['user_pic'] = M('user')->where("id={$data['user_id']}")->getField("header_img");
+		$data['user_id'] = session('id');
 		$ret2_id = M("comment")->add($data);
 
 		//评价数据插入成功后，更改此订单的状态

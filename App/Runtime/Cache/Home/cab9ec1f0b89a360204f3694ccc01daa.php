@@ -20,52 +20,69 @@
 
 	<body>
 		<div class="hmtop">
-			<!--顶部导航条 -->
-			<div class="am-container header">
-				<ul class="message-l">
-					<div class="topMessage">
-						<div class="menu-hd">
+			<!-- 头部 -->
+					<!--顶部导航条 -->
+		<div class="am-container header">
+			<ul class="message-l">
+				<div class="topMessage">
+					<div class="menu-hd">
 						<?php if(($_SESSION['is_login']) == "1"): ?><a href="#" target="_top" class="h">你好，<?php echo (session('username')); ?></a>
 							<a href="/home/login" target="_top" onclick="return confirm('确定注销吗？')"><span style="color:red">注销登陆</span></a>
 						<?php else: ?>
 							<a href="/home/login.html" target="_top" class="h">亲，请<span style="color:blue">登录<span></a>
 							<a href="/home/register.html" target="_top">免费<span style="color:blue">注册</a><?php endif; ?>
-
-							
-						</div>
-					</div>
-				</ul>
-				<ul class="message-r">
-					<div class="topMessage home">
-						<div class="menu-hd"><a href="/home" target="_top" class="h">商城首页</a></div>
-					</div>
-					<div class="topMessage my-shangcheng">
-						<div class="menu-hd MyShangcheng"><a href="/home/person" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
-					</div>
-					<div class="topMessage mini-cart">
-						<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
-					</div>
-					<div class="topMessage favorite">
-						<div class="menu-hd"><a href="/home/person/collection" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
-				</ul>
-				</div>
-
-				<!--悬浮搜索框-->
-
-				<div class="nav white">
-					<div class="logo"><img src="/Public/images/logo.png" /></div>
-					<div class="logoBig">
-						<li><img src="/Public/images/logobig.png" /></li>
-					</div>
-
-					<div class="search-bar pr">
-						<a name="index_none_header_sysc" href="#"></a>
-						<form>
-							<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
-							<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
-						</form>
 					</div>
 				</div>
+			</ul>
+			<ul class="message-r">
+				<div class="topMessage home">
+					<div class="menu-hd"><a href="/home" target="_top" class="h">商城首页</a></div>
+				</div>
+				<div class="topMessage my-shangcheng">
+					<div class="menu-hd MyShangcheng"><a href="/home/person" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
+				</div>
+				<div class="topMessage mini-cart">
+					<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h" style="color:orange;"></strong></a></div>
+				</div>
+				<div class="topMessage favorite">
+					<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
+			</ul>
+			</div>
+			<script>
+				$(function(){
+					if( <?php echo (session('is_login')); ?> == 1 ){
+						$.post(
+							'/Api/Goods/differentCart',
+							null,
+							function(ret){
+								$("#J_MiniCartNum").text(ret);
+							}
+						);
+					}
+					
+				})
+			</script>
+
+			<!--悬浮搜索框-->
+
+			<div class="nav white">
+				<div class="logo"><img src="/Public/images/logo.png" /></div>
+				<div class="logoBig">
+					<li><img src="/Public/images/logobig.png" /></li>
+				</div>
+				<div class="search-bar pr">
+					<a name="key_word" href="/home/search.html"></a>
+					<form action="/home/search.html" method="get">
+						<input id="searchInput" name="key_word" type="text" placeholder="搜索" autocomplete="off">
+						<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
+					</form>
+				</div>
+			</div>
+			<script>
+				
+			</script>
+	
+			<!-- 头部 -->
 
 				<div class="clear"></div>
 			</div>
@@ -95,7 +112,7 @@
 								<li class="banner1"><a href="/home/introduction?id=7&sn=1000001"><img src="/Public/images/ad5.jpg" /></a></li>
 								<li class="banner2"><a href="/home/introduction?id=27&sn=200000201"><img src="/Public/images/ad6.jpg" /></a></li>
 								<li class="banner3"><a href="/home/introduction?id=20&sn=1010"><img src="/Public/images/ad7.jpg" /></a></li>
-								<li class="banner4"><a><img src="/Public/images/ad8.jpg" /></a></li>
+								<li class="banner4"><a href="/home/introduction?id=29&sn=200000301"><img src="/Public/images/ad8.jpg" /></a></li>
 							</ul>
 						</div>
 						<div class="clear"></div>	
@@ -1003,7 +1020,7 @@
 					
 				<!--各类活动-->
 				<div class="row">
-					<li><a><img src="/Public/images/row1.jpg"/></a></li>
+					<li><a href="/home/introduction.html?id=30&sn=200000401"><img src="/Public/images/row1.jpg"/></a></li>
 					<li><a><img src="/Public/images/row2.jpg"/></a></li>
 					<li><a><img src="/Public/images/row3.jpg"/></a></li>
 					<li><a><img src="/Public/images/row4.jpg"/></a></li>

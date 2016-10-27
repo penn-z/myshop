@@ -4,6 +4,8 @@ use Think\Controller;
 class LoginController extends Controller {
     public function index(){
         session('is_login',null);   //进入登陆页面即注销登陆状态
+        session('id',null);
+        session('usernam',null);
     	$this->display('login');
     }
 

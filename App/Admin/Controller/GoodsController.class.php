@@ -46,8 +46,8 @@ class GoodsController extends CheckLoginController {
             
             $Form =  D('goods');
             if($Form->create()){ 
-                $goods_description = $Form->goods_description = htmlspecialchars_decode($Form->goods_description);   //反转义商品内容,并用变量储存
-                
+                $Form->goods_description = htmlspecialchars_decode($Form->goods_description);   //反转义商品内容,并用变量储存
+                $goods_description = $Form->goods_description;
                 // $Form->goods_package = serialize($data['goods_package']);   //把包装类型序列化
                 // $Form->goods_type = serialize($data['goods_type']); 
                 
@@ -138,6 +138,7 @@ class GoodsController extends CheckLoginController {
             if( !$goods->validate($rules)->create() ){
                 $this->error($goods->getError());   //未通过验证
             }
+            $_data['goods_description'] = htmlspecialchars_decode($_data['goods_description']);
             $result = M('goods')->where("goods_id={$id}")->save($_data);    //更新goods表数据
             // $des_ret = M('attr')->where("goods_id={$id}")->setField("picture_description",htmlspecialchars_decode($_data['goods_description']));    //更新attr数据
             

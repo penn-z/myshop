@@ -25,21 +25,15 @@
 		<style>
 		.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
 		#success_msg{position:fixed; top:300px; right:35px; z-index:10000; width:1px; height:52px; line-height:52px; font-size:20px; text-align:center; color:#fff; background:#360; display:none}
+		.to_hidden{display:none;}
+		.comment-pic img{display:block;width:80px;height:80px;background:blue;float:left;margin-left:10px;}
 		</style>
 	</head>
 
 	<body>
 
-
-		<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-	<head>
-	</head>
-	<body>
-
-
-		<!--顶部导航条 -->
+		<!-- 头部 -->
+				<!--顶部导航条 -->
 		<div class="am-container header">
 			<ul class="message-l">
 				<div class="topMessage">
@@ -68,13 +62,15 @@
 			</div>
 			<script>
 				$(function(){
-					$.post(
-						'/Api/Goods/differentCart',
-						null,
-						function(ret){
-							$("#J_MiniCartNum").text(ret);
-						}
-					);
+					if( <?php echo (session('is_login')); ?> == 1 ){
+						$.post(
+							'/Api/Goods/differentCart',
+							null,
+							function(ret){
+								$("#J_MiniCartNum").text(ret);
+							}
+						);
+					}
 					
 				})
 			</script>
@@ -87,17 +83,18 @@
 					<li><img src="/Public/images/logobig.png" /></li>
 				</div>
 				<div class="search-bar pr">
-					<a name="index_none_header_sysc" href="#"></a>
-					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+					<a name="key_word" href="/home/search.html"></a>
+					<form action="/home/search.html" method="get">
+						<input id="searchInput" name="key_word" type="text" placeholder="搜索" autocomplete="off">
 						<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
 					</form>
 				</div>
 			</div>
-	</body>
-
-</html>
-
+			<script>
+				
+			</script>
+	
+		<!-- 头部 -->
 			<div class="clear"></div>
 
             <b class="line"></b>
@@ -139,7 +136,7 @@
 					<section class="slider">
 						<div class="flexslider">
 							<ul class="slides">
-							<?php $__FOR_START_267663576__=0;$__FOR_END_267663576__=3;for($i=$__FOR_START_267663576__;$i < $__FOR_END_267663576__;$i+=1){ if(($i) == "0"): ?><li>
+							<?php $__FOR_START_1268779294__=0;$__FOR_END_1268779294__=3;for($i=$__FOR_START_1268779294__;$i < $__FOR_END_1268779294__;$i+=1){ if(($i) == "0"): ?><li>
 									<img src="<?php echo ($thumb["big"]["$i"]); ?>" title="pic" />
 								</li>
 								<?php else: ?>
@@ -172,7 +169,7 @@
 								<a href="<?php echo ($thumb["big"]["0"]); ?>"><img src="<?php echo ($thumb["big"]["0"]); ?>" alt="细节展示放大镜特效" rel="<?php echo ($thumb["big"]["0"]); ?>" class="jqzoom" /></a>
 							</div>
 							<ul class="tb-thumb" id="thumblist">
-							<?php $__FOR_START_1841918117__=0;$__FOR_END_1841918117__=3;for($i=$__FOR_START_1841918117__;$i < $__FOR_END_1841918117__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
+							<?php $__FOR_START_151534953__=0;$__FOR_END_151534953__=3;for($i=$__FOR_START_151534953__;$i < $__FOR_END_151534953__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
 									<div class="tb-pic tb-s40">
 										<a href="#"><img id="add_shopcart" src="<?php echo ($thumb["small"]["$i"]); ?>" mid="<?php echo ($thumb["mid"]["$i"]); ?>" big="<?php echo ($thumb["big"]["$i"]); ?>"></a>
 									</div>
@@ -638,11 +635,11 @@
 								
 								</div>
 
-								<div class="am-tab-panel am-fade">
+								<div class="am-tab-panel am-fade" >
 									
                                     <div class="actor-new">
                                     	<div class="rate">                
-                                    		<strong>100<span>%</span></strong><br> <span>好评度</span>            
+                                    		<strong><?php echo (round($good_num/$total_num*100,2)); ?><span>%</span></strong><br> <span>好评度</span>            
                                     	</div>
                                         <dl>                    
                                             <dt>买家印象</dt>                    
@@ -664,40 +661,42 @@
 										<ul class=" tb-taglist am-avg-sm-4">
 											<li class="tb-taglist-li tb-taglist-li-current">
 												<div class="comment-info">
-													<span>全部评价</span>
-													<span class="tb-tbcr-num">(32)</span>
+													<span style="cursor:pointer;" onclick="showTab(this,'cTab')">全部评价</span>
+													<span class="tb-tbcr-num"><?php echo ($total_num); ?></span>
 												</div>
 											</li>
 
 											<li class="tb-taglist-li tb-taglist-li-1">
 												<div class="comment-info">
-													<span>好评</span>
-													<span class="tb-tbcr-num">(32)</span>
+													<span style="cursor:pointer;" onclick="showTab(this,'cTab')">好评</span>
+													<span class="tb-tbcr-num"><?php echo ($good_num); ?></span>
 												</div>
 											</li>
 
 											<li class="tb-taglist-li tb-taglist-li-0">
 												<div class="comment-info">
-													<span>中评</span>
-													<span class="tb-tbcr-num">(32)</span>
+													<span style="cursor:pointer;" onclick="showTab(this,'cTab')">中评</span>
+													<span class="tb-tbcr-num"><?php echo ($mid_num); ?></span>
 												</div>
 											</li>
 
 											<li class="tb-taglist-li tb-taglist-li--1">
 												<div class="comment-info">
-													<span>差评</span>
-													<span class="tb-tbcr-num">(32)</span>
+													<span style="cursor:pointer;" onclick="showTab(this,'cTab')">差评</span>
+													<span class="tb-tbcr-num"><?php echo ($bad_num); ?></span>
 												</div>
 											</li>
 										</ul>
 									</div>
 									<div class="clear"></div>
-
+									
+									<div id="cTab">
+									<!-- 全部评价 -->
 									<ul class="am-comments-list am-comments-list-flip">
-										<li class="am-comment">
+									<?php if(is_array($comment)): foreach($comment as $key=>$vo): ?><li class="am-comment">
 											<!-- 评论容器 -->
 											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
+												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
 
@@ -707,31 +706,42 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (匿名)</a>
+														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
-														<time datetime="">2015年11月02日 17:46</time>
+														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
+														<?php if($vo["comment_type"] == '好评'): ?><span style="display:block;float:right;color:green;"><?php echo ($vo["comment_type"]); ?></span>
+														<?php elseif($vo["comment_type"] == '中评'): ?>
+														<span style="display:block;float:right;color:blue;"><?php echo ($vo["comment_type"]); ?></span>
+														<?php else: ?>
+														<span style="display:block;float:right;color:red;"><?php echo ($vo["comment_type"]); ?></span><?php endif; ?>
+														</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															摸起来丝滑柔软，不厚，没色差，颜色好看！买这个衣服还接到诈骗电话，我很好奇他们是怎么知道我买了这件衣服，并且还知道我的电话的！
+															<?php echo ($vo["comment"]); ?>
 														</div>
 														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：S
+															<?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["type1_name"]); ?>&nbsp;&nbsp;<?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["type2_name"]); ?>
 														</div>
 													</div>
-
+													<div class="comment-pic">
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													</div>
 												</div>
 												<!-- 评论内容 -->
 											</div>
-										</li>
-										<li class="am-comment">
+										</li><?php endforeach; endif; ?>
+									</ul>
+									<!-- 好评 -->
+									<ul class="am-comments-list am-comments-list-flip to_hidden">
+									<?php if(is_array($comment)): foreach($comment as $key=>$vo): if($vo["comment_type"] == '好评'): ?><li class="am-comment">
 											<!-- 评论容器 -->
 											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
+												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
 
@@ -741,65 +751,38 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">l***4 (匿名)</a>
+														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
-														<time datetime="">2015年10月28日 11:33</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255095758792">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															没有色差，很暖和……美美的
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：蓝调灰&nbsp;&nbsp;尺码：2XL
-														</div>
-													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月02日 17:46</time>
+														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
+														<span style="display:block;float:right;color:green;"><?php echo ($vo["comment_type"]); ?></span>
+														</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															摸起来丝滑柔软，不厚，没色差，颜色好看！买这个衣服还接到诈骗电话，我很好奇他们是怎么知道我买了这件衣服，并且还知道我的电话的！
+															<?php echo ($vo["comment"]); ?>
 														</div>
 														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：S
+															<?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["type1_name"]); ?>&nbsp;&nbsp;<?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["type2_name"]); ?>
 														</div>
 													</div>
-
+													<div class="comment-pic">
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													</div>
 												</div>
 												<!-- 评论内容 -->
 											</div>
-										</li>
-										<li class="am-comment">
+										</li><?php endif; endforeach; endif; ?>
+									</ul>
+									<!-- 中评 -->
+									<ul class="am-comments-list am-comments-list-flip to_hidden" >
+									<?php if(is_array($comment)): foreach($comment as $key=>$vo): if($vo["comment_type"] == '中评'): ?><li class="am-comment">
 											<!-- 评论容器 -->
 											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
+												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
 
@@ -809,300 +792,75 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">h***n (匿名)</a>
+														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
-														<time datetime="">2015年11月25日 12:48</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="258040417670">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															式样不错，初冬穿
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：L
-														</div>
-													</div>
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月02日 17:46</time>
+														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
+														<span style="display:block;float:right;color:blue;"><?php echo ($vo["comment_type"]); ?></span>
+														</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															摸起来丝滑柔软，不厚，没色差，颜色好看！买这个衣服还接到诈骗电话，我很好奇他们是怎么知道我买了这件衣服，并且还知道我的电话的！
+															<?php echo ($vo["comment"]); ?>
 														</div>
 														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：S
+															<?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["type1_name"]); ?>&nbsp;&nbsp;<?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["type2_name"]); ?>
 														</div>
 													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">l***4 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年10月28日 11:33</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255095758792">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															没有色差，很暖和……美美的
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：蓝调灰&nbsp;&nbsp;尺码：2XL
-														</div>
-													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月02日 17:46</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															摸起来丝滑柔软，不厚，没色差，颜色好看！买这个衣服还接到诈骗电话，我很好奇他们是怎么知道我买了这件衣服，并且还知道我的电话的！
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：S
-														</div>
-													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">h***n (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月25日 12:48</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="258040417670">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															式样不错，初冬穿
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：L
-														</div>
+													<div class="comment-pic">
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
 													</div>
 												</div>
 												<!-- 评论内容 -->
 											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月02日 17:46</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															摸起来丝滑柔软，不厚，没色差，颜色好看！买这个衣服还接到诈骗电话，我很好奇他们是怎么知道我买了这件衣服，并且还知道我的电话的！
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：S
-														</div>
-													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">l***4 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年10月28日 11:33</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255095758792">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															没有色差，很暖和……美美的
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：蓝调灰&nbsp;&nbsp;尺码：2XL
-														</div>
-													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月02日 17:46</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															摸起来丝滑柔软，不厚，没色差，颜色好看！买这个衣服还接到诈骗电话，我很好奇他们是怎么知道我买了这件衣服，并且还知道我的电话的！
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：S
-														</div>
-													</div>
-
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-										<li class="am-comment">
-											<!-- 评论容器 -->
-											<a href="">
-												<img class="am-comment-avatar" src="/Public/images/hwbn40x40.jpg" />
-												<!-- 评论者头像 -->
-											</a>
-
-											<div class="am-comment-main">
-												<!-- 评论内容容器 -->
-												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">评论标题</h3>-->
-													<div class="am-comment-meta">
-														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">h***n (匿名)</a>
-														<!-- 评论者 -->
-														评论于
-														<time datetime="">2015年11月25日 12:48</time>
-													</div>
-												</header>
-
-												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="258040417670">
-														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															式样不错，初冬穿
-														</div>
-														<div class="tb-r-act-bar">
-															颜色分类：柠檬黄&nbsp;&nbsp;尺码：L
-														</div>
-													</div>
-												</div>
-												<!-- 评论内容 -->
-											</div>
-										</li>
-
+										</li><?php endif; endforeach; endif; ?>
 									</ul>
 
+									<!-- 差评 -->
+									<ul class="am-comments-list am-comments-list-flip to_hidden">
+									<?php if(is_array($comment)): foreach($comment as $key=>$vo): if($vo["comment_type"] == '差评'): ?><li class="am-comment">
+											<!-- 评论容器 -->
+											<a href="">
+												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
+												<!-- 评论者头像 -->
+											</a>
+
+											<div class="am-comment-main">
+												<!-- 评论内容容器 -->
+												<header class="am-comment-hd">
+													<!--<h3 class="am-comment-title">评论标题</h3>-->
+													<div class="am-comment-meta">
+														<!-- 评论元数据 -->
+														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
+														<!-- 评论者 -->
+														评论于
+														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
+														<span style="display:block;float:right;color:red;"><?php echo ($vo["comment_type"]); ?></span>
+														</time>
+													</div>
+												</header>
+
+												<div class="am-comment-bd">
+													<div class="tb-rev-item " data-id="255776406962">
+														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
+															<?php echo ($vo["comment"]); ?>
+														</div>
+														<div class="tb-r-act-bar">
+															<?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["type1_name"]); ?>&nbsp;&nbsp;<?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["type2_name"]); ?>
+														</div>
+													</div>
+													<div class="comment-pic">
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													</div>
+												</div>
+												<!-- 评论内容 -->
+											</div>
+										</li><?php endif; endforeach; endif; ?>
+									</ul>
+									</div>
 									<div class="clear"></div>
 
 									<!--分页 -->
@@ -1122,6 +880,25 @@
 									</div>
 
 								</div>
+								<script>
+									/**
+									 * 评价选项卡
+									 */
+									function showTab(obj,id){
+										var arrayli=$(obj).parents("ul").find("li");	//获取在本对象中父节点的li数组
+										var clickLi = $(obj).parents("li");	//当前点击的所在的li
+										var arrayul=document.getElementById(id).getElementsByTagName('ul');	//获取在传入的class类中的ul数组
+										
+										//可知，需要根据指定的列表li来隐藏或者显示相应的tab，它们之间的关系一一对应即可
+										for(var i=0;i<arrayli.length;i++){
+											if(clickLi.html()==arrayli[i].innerHTML){
+												arrayul[i].className='am-comments-list am-comments-list-flip';
+											}else{
+												arrayul[i].className='am-comments-list am-comments-list-flip to_hidden';
+											}
+										}
+									}
+								</script>
 
 								<div class="am-tab-panel am-fade">
 									<div class="like">
@@ -1343,7 +1120,10 @@
 							<p>
 								购物车
 							</p>
-							<p class="cart_num"><?php echo ($different_goods); ?></p>
+							<?php if($different_goods != ''): ?><p class="cart_num"><?php echo ($different_goods); ?></p>
+							<?php else: ?>
+								<p class="cart_num">0</p><?php endif; ?>
+							
 						</div>
 						
 						<div id="asset" class="item">

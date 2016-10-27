@@ -57,13 +57,15 @@
 			</div>
 			<script>
 				$(function(){
-					$.post(
-						'/Api/Goods/differentCart',
-						null,
-						function(ret){
-							$("#J_MiniCartNum").text(ret);
-						}
-					);
+					if( <?php echo (session('is_login')); ?> == 1 ){
+						$.post(
+							'/Api/Goods/differentCart',
+							null,
+							function(ret){
+								$("#J_MiniCartNum").text(ret);
+							}
+						);
+					}
 					
 				})
 			</script>
