@@ -124,6 +124,21 @@
 								<div class="clear"></div>
 	
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
+								<eq name="error" value="1">
+									<li>
+										<div class="i-pic limit">
+											<img src="/Public/images/notfound.gif"/>
+											<p class="title fl"></p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>0</strong>
+											</p>
+											<p class="number fl">
+												销量<span>0</span>
+											</p>
+										</div>
+									</li>
+								<else/>
 								<foreach name="goods_info" item="goods">
 									<li>
 										<div class="i-pic limit">
@@ -139,6 +154,7 @@
 										</div>
 									</li>
 								</foreach>
+								</eq>
 								</ul>
 							</div>
 							<div class="search-side">

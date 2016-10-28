@@ -184,6 +184,20 @@
 								<div class="clear"></div>
 	
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
+								<?php if(($error) == "1"): ?><li>
+										<div class="i-pic limit">
+											<img src="/Public/images/notfound.gif"/>
+											<p class="title fl"></p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>0</strong>
+											</p>
+											<p class="number fl">
+												销量<span>0</span>
+											</p>
+										</div>
+									</li>
+								<?php else: ?>
 								<?php if(is_array($goods_info)): foreach($goods_info as $key=>$goods): ?><li>
 										<div class="i-pic limit">
 											<img src="<?php echo ($goods["thumb"]); ?>" />											
@@ -196,7 +210,7 @@
 												销量<span><?php echo ($goods["cumulative_sales"]); ?></span>
 											</p>
 										</div>
-									</li><?php endforeach; endif; ?>
+									</li><?php endforeach; endif; endif; ?>
 								</ul>
 							</div>
 							<div class="search-side">
