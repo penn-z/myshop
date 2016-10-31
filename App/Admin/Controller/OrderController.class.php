@@ -36,76 +36,31 @@ class OrderController extends CheckLoginController {
     }
 
     /**
-     * 商品添加
+     * 更改订单费用
      */
-    public function add(){
-        $act = I('post.act');
-        if($act == 'add'){
-            //接受数据
-            foreach( I('post.') as $key => $value ){
-                $data[$key] = $value;
-            }
-            
-            $Form =  D('goods');
-            if($Form->create()){ 
-                $Form->goods_description = htmlspecialchars_decode($Form->goods_description);   //反转义商品内容,并用变量储存
-                $goods_description = $Form->goods_description;
-                // $Form->goods_package = serialize($data['goods_package']);   //把包装类型序列化
-                // $Form->goods_type = serialize($data['goods_type']); 
-                
-                $Form->goods_type = $data['type1'];     //规格1名称
-                $Form->goods_type2 = $data['type2'];    //规格2名称
-
-                $goods_id =   $Form->add();   //返回新建商品的ID
-
-                for( $i=0;$i<count($data['goods_sn']);$i++ ){
-                    //数据插入attr表
-                    $attr['goods_id'] = $goods_id;
-                    $attr['goods_sn'] = $data['goods_sn'][$i];
-                    $attr['picture_description'] = $goods_description;
-                    $attr_ret = M('attr')->add($attr);  //成功添加后返回新创的id
-
-                    //数据插入specify表
-                    $specify['goods_id'] = $goods_id;
-                    $specify['goods_sn'] = $data['goods_sn'][$i];
-                    $specify['goods_type'] = $data['goods_type'][$i];
-                    $specify['goods_price'] = $data['goods_price'][$i];
-                    $specify['goods_discount'] = $data['goods_discount'][$i];
-                    $specify['goods_num'] = $data['goods_num'][$i];
-                    $spe_ret = M('goods_specify')->add($specify);   //成功添加后返回新创的id
-
-                    //数据插入type2表
-                    $type2['goods_id'] = $goods_id;
-                    $type2['type2_name'] = $data['type2_name'][$i];
-                    $type2_ret = M("goods_type2")->add($type2);  //成功添加后返回新创的id
-
-                    //新建thumb数据表,创建各自sn的相册
-                    $thumb['goods_id'] = $goods_id;
-                    $thumb['goods_name'] = $data['goods_name'];
-                    $thumb['goods_sn'] = $data['goods_sn'][$i];
-                    $thumb['addtime'] = time();
-                    $thumb_ret = M('thumb')->add($thumb);
-                }
-
-                $errno = null;
-                if( $attr_ret != false && $spe_ret != false && $type2_ret != false  && $thumb_ret != fasle ) $errno = array('style'=>'success','str'=>'商品添加成功！');
-                else $errno = array('style'=>'error','str'=>'商品添加失败！');
-                $this->assign('errno',$errno);
-            }else{
-                $this->error($Form->getError());
-            }
-        }
-
-        $data_category = M('goods_category')->select(); //取出所有的分类范畴
-
-        $cat = array();
-        // 得到分类范畴的数组，索引值从1开始
-        foreach( $data_category as $val ){
-            $cat["{$val['id']}"] = $val['category'];
-        }
-        $this->assign('cat',$cat);
-        $this->display('add');
+    public function fee_change(){
+    	$order_id = I("get.order_id");
+    	$order_info = M("order")->where("order_id={$order_id}")->find();
+    	// echo "<pre>";
+    	// print_r($order_info);
+    	$this->assign("order_info",$order_info);
+    	$this->display("fee_change");
     }
+
+    /** 
+     * 订单详情
+     */
+    public function order_info(){
+    	$order_id = I("get.order_id");
+    	$order_info = M("order")->where("order_id={$order_id}")->find();
+    	$order_detail = M("order_detail")->where("order_id={$order_id}")->select();
+
+    	
+    	$this->assign("order_info",$order_info);
+    	$this->assign("order_detail",$order_detail);
+    	$this->display("order_info");
+    }
+
 
     /**
      * 商品编辑

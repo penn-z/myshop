@@ -15,7 +15,7 @@
 .sel{ height: 30px; width: 80px; margin-left:10px; background:#d7d7d7}
 .tr_list_page{  font-size: 12px; height: 24px; background-color: #EBEBEB; border: 1px solid #FFF;}
 .tr_list{font-size: 12px; height: 24px; background-color: #FFF; border: 1px solid #FFF;}
-.tr_list a{color:blue;text-decoration:none;}
+.tr_list a{color:blue;}
 .tr_list a:hover{color:orange;}
 .inp{ width: 300px; height: 30px; border:1px solid #666; padding-left: 5px;}
 .sub{background: #06c; padding:0 15px; height:30px; text-align: center; color: #fff; line-height: 30px; cursor: pointer; border-radius: 3px }
@@ -131,33 +131,34 @@ a.title_text {
                       <td width="10%">订单状态</td>
 	                    <td width="5%">操作导航</td>
                 	</tr>
-                  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
-                    <td><?php echo ($vo["order_id"]); ?></td>  
-                    <td><?php echo ($vo["buyer_name"]); ?></td>  
-                    <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>  
-                    <td><?php echo ($vo["total_money"]); ?></td>  
-                    <td><?php echo ($vo["express_style"]); ?></td>  
-                    <td><?php echo ($vo["express_fee"]); ?></td>
-                    <td><?php echo ($vo["receiver"]); ?></td>
-                    <td><?php echo ($vo["phone"]); ?></td>
-                    <td><?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["street"]); ?></td>
-                    <?php if($vo["status"] == 0): ?><td>待付款 | <a href="/Admin/order/fee_change.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">更改费用</a></td>
-                    <?php elseif($vo["status"] == 1): ?>
-                      <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
-                    <?php elseif($vo["status"] == 2): ?>
+                  <tr class="tr_list">
+                    <td><?php echo ($order_info["order_id"]); ?></td>  
+                    <td><?php echo ($order_info["buyer_name"]); ?></td>  
+                    <td><?php echo (date("Y-m-d H:i:s",$order_info["addtime"])); ?></td>  
+                    <td><?php echo ($order_info["total_money"]); ?></td>  
+                    <td><?php echo ($order_info["express_style"]); ?></td>  
+                    <td><?php echo ($order_info["express_fee"]); ?></td>
+                    <td><?php echo ($order_info["receiver"]); ?></td>
+                    <td><?php echo ($order_info["phone"]); ?></td>
+                    <td><?php echo ($order_info["province"]); echo ($order_info["city"]); echo ($order_info["district"]); echo ($order_info["street"]); ?></td>
+                    <?php if($order_info["status"] == 0): ?><td>待付款 | <a style="text-decoration:none;cursor:pointer;">更改费用</a></td>
+                    <?php elseif($order_info["status"] == 1): ?>
+                      <td>待发货 | <a style="text-decoration:none;cursor:pointer;" onclick="sentOrder(this)" hover:>发货</a></td>
+                    <?php elseif($order_info["status"] == 2): ?>
                       <td>待收货</td>
-                    <?php elseif($vo["status"] == 3): ?>
+                    <?php elseif($order_info["status"] == 3): ?>
                       <td>待评价</td>
-                    <?php elseif($vo["status"] == 4): ?>
+                    <?php elseif($order_info["status"] == 4): ?>
                       <td>已评价</td>
-                    <?php elseif($vo["status"] == 9): ?>
+                    <?php elseif($order_info["status"] == 9): ?>
                       <td>订单已取消</td><?php endif; ?>
                     <td style="text-align:center;">
-                    <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">详情</a> |
                     <a href="/index.php/Admin/Order/edit?act=edit&id=<?php echo ($vo["goods_id"]); ?>" >编辑</a> |
+                    <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
                     <a href="/index.php/Admin/Order/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>
                     </td>  
-                  </tr><?php endforeach; endif; ?>
+                  </tr>
+                  </foreach>
                     <!-- 操作按钮 -->
                     <tr>
                         <td colspan="9" style="padding-top:20px;">

@@ -10,6 +10,16 @@ class OrderController extends Controller {
 		M('order')->where("order_id={$order_id}")->setField("status",1);	//改为已付款状态
 	}
 
+    /**
+     * 发货
+     */
+    public function sentOrder(){
+        $order_id = I("get.order_id");
+        $ret= M("order")->where("order_id={$order_id}")->setField("status",2);    //改为发货状态
+        if( $ret == 1) echo $ret;
+        else echo false;
+    }
+
 	/**
 	 * 取消订单
 	 */

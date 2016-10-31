@@ -20,15 +20,7 @@
 
 	<body>
 
-		<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-	<head>
-	</head>
-	<body>
-
-
-		<!--顶部导航条 -->
+				<!--顶部导航条 -->
 		<div class="am-container header">
 			<ul class="message-l">
 				<div class="topMessage">
@@ -78,16 +70,17 @@
 					<li><img src="/Public/images/logobig.png" /></li>
 				</div>
 				<div class="search-bar pr">
-					<a name="index_none_header_sysc" href="#"></a>
-					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+					<a name="key_word" href="/home/search.html"></a>
+					<form action="/home/search.html" method="get">
+						<input id="searchInput" name="key_word" type="text" placeholder="搜索" autocomplete="off">
 						<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
 					</form>
 				</div>
 			</div>
-	</body>
-
-</html>
+			<script>
+				
+			</script>
+	
 
 			<div class="clear"></div>
 			<div class="concent">

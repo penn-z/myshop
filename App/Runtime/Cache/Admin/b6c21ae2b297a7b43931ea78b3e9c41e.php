@@ -153,7 +153,7 @@ a.title_text {
                     <?php elseif($vo["status"] == 9): ?>
                       <td>订单已取消</td><?php endif; ?>
                     <td style="text-align:center;">
-                    <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">详情</a> |
+                    <a href="javascript:void(0)" onclick="delarticle()">详情</a> |
                     <a href="/index.php/Admin/Order/edit?act=edit&id=<?php echo ($vo["goods_id"]); ?>" >编辑</a> |
                     <a href="/index.php/Admin/Order/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>
                     </td>  

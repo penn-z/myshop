@@ -15,6 +15,8 @@
 .sel{ height: 30px; width: 80px; margin-left:10px; background:#d7d7d7}
 .tr_list_page{  font-size: 12px; height: 24px; background-color: #EBEBEB; border: 1px solid #FFF;}
 .tr_list{font-size: 12px; height: 24px; background-color: #FFF; border: 1px solid #FFF;}
+.tr_list a{color:blue;text-decoration:none;}
+.tr_list a:hover{color:orange;}
 .inp{ width: 300px; height: 30px; border:1px solid #666; padding-left: 5px;}
 .sub{background: #06c; padding:0 15px; height:30px; text-align: center; color: #fff; line-height: 30px; cursor: pointer; border-radius: 3px }
 a.tui{ color:#f00}
@@ -132,7 +134,7 @@ a.title_text {
 	                    <td width="5%">操作导航</td>
                 	</tr>
                   <foreach name='list' item='vo'>
-                    <tr class="tr_list">
+                  <tr class="tr_list">
                     <td>{$vo.order_id}</td>  
                     <td>{$vo.buyer_name}</td>  
                     <td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>  
@@ -143,9 +145,9 @@ a.title_text {
                     <td>{$vo.phone}</td>
                     <td>{$vo.province}{$vo.city}{$vo.district}{$vo.street}</td>
                     <if condition="$vo.status eq 0">
-                      <td>待付款 | <a style="text-decoration:none;cursor:pointer;">更改费用</a></td>
+                      <td>待付款 | <a href="/Admin/order/fee_change.html?order_id={$vo.order_id}" target="_blank">更改费用</a></td>
                     <elseif condition="$vo.status eq 1" />
-                      <td>待发货 | <a style="text-decoration:none;cursor:pointer;">发货</a></td>
+                      <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
                     <elseif condition="$vo.status eq 2" />
                       <td>待收货</td>
                     <elseif condition="$vo.status eq 3" />
@@ -156,8 +158,8 @@ a.title_text {
                       <td>订单已取消</td>
                     </if>
                     <td style="text-align:center;">
+                    <a href="/Admin/order/order_info.html?order_id={$vo.order_id}" target="_blank">详情</a> |
                     <a href="__URL__/edit?act=edit&id={$vo.goods_id}" >编辑</a> |
-                    <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
                     <a href="__URL__/showList?act=del&id={$vo.id}&p={$Think.get.p}" id="a_del" onclick="return delAlert()">删除</a>
                     </td>  
                   </tr>
@@ -186,7 +188,22 @@ a.title_text {
 <script type="text/javascript" src="__JS__/window.js"></script>
 <script language="javascript" src="__JS__/JWin.js"></script>
 <script type="text/javascript">
-
+/**
+ * 发货
+ */
+function sentOrder(obj){
+  var bool = window.confirm("确定发货吗？");
+  if( bool != true ) return;
+  var order_id = $(obj).parents("tr").children().eq(0).text();
+  $.get('/Api/Order/sentOrder',{order_id:order_id},function(ret){
+    if(ret == 1){
+      alert("发货成功!");
+      window.location.href="/Admin/order/showlist/p/{$Think.get.p}.html"; //跳转后依然跳到指定页码
+    }else{
+      alert("发货失败");
+    }
+  });
+}
 
 function delAlert(){
   var bool = window.confirm("你确定要删除订单吗？");

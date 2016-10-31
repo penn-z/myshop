@@ -136,7 +136,7 @@
 									
 										 <div class="dd-conent">										
 											<dd class="select-all selected"><a href="#">全部</a></dd>
-											<?php if(is_array($brand)): foreach($brand as $key=>$vo): ?><dd><a href="javascript:void(0)" onclick="selBrand(this)"><?php echo ($vo); ?></a></dd><?php endforeach; endif; ?>
+											<?php if(is_array($brand)): foreach($brand as $key=>$vo): ?><dd><a href="javascript:void(0)"><?php echo ($vo); ?></a></dd><?php endforeach; endif; ?>
 										 </div>
 						
 									</dl>
@@ -146,7 +146,7 @@
 										<dt class="am-badge am-round">种类</dt>
 										<div class="dd-conent">
 											<dd class="select-all selected"><a href="#">全部</a></dd>
-											<?php if(is_array($category)): foreach($category as $key=>$vo): ?><dd><a href="javascript:void(0)" onclick="selCat(this)"><i category_id="<?php echo ($category_id["$key"]); ?>"><?php echo ($vo); ?></i></a></dd><?php endforeach; endif; ?>
+											<?php if(is_array($category)): foreach($category as $key=>$vo): ?><dd><a href="javascript:void(0)" ><i category_id="<?php echo ($category_id["$key"]); ?>"><?php echo ($vo); ?></i></a></dd><?php endforeach; endif; ?>
 										</div>
 									</dl>
 								</li>
@@ -155,10 +155,7 @@
 										<dt class="am-badge am-round">选购热点</dt>
 										<div class="dd-conent">
 											<dd class="select-all selected"><a href="#">全部</a></dd>
-											<dd><a href="#">手剥松子</a></dd>
-											<dd><a href="#">薄壳松子</a></dd>
-											<dd><a href="#">进口零食</a></dd>
-											<dd><a href="#">有机零食</a></dd>
+											<?php if(is_array($hot_spot)): foreach($hot_spot as $key=>$vo): ?><dd><a href="javascript:void(0);"><?php echo ($vo); ?></a></dd><?php endforeach; endif; ?>
 										</div>
 									</dl>
 								</li>
@@ -168,10 +165,19 @@
                         </div>
 							<div class="search-content">
 								<div class="sort">
-									<li class="first"><a title="综合">综合排序</a></li>
-									<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales" onclick="setOrder(this)">销量从高到低</a></li>
-									<li><a title="价格" href="#">价格优先</a></li>
-									<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li>
+									<?php switch($order): case "price_desc": ?><li class="first"><a href="/home/search.html?order=common&key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
+										<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
+										<li><a title="价格" href="/home/search.html?order=price_asc&key_word=<?php echo ($_GET['key_word']); ?>">价格优先&nbsp;&darr;</a></li>
+										<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php break;?>
+									<?php case "price_asc": ?><li class="first"><a href="/home/search.html?order=common&key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
+										<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
+										<li><a title="价格" href="/home/search.html?order=price_desc&key_word=<?php echo ($_GET['key_word']); ?>">价格优先&nbsp;&uarr;</a></li>
+										<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php break;?>
+									<?php default: ?>
+										<li class="first"><a href="/home/search.html?order=common&key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
+										<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
+										<li><a title="价格" href="/home/search.html?order=price_asc&key_word=<?php echo ($_GET['key_word']); ?>">价格优先</a></li>
+										<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php endswitch;?>
 								</div>
 								<div class="clear"></div>
 								
@@ -192,7 +198,8 @@
 								<?php else: ?>
 								<?php if(is_array($goods_info)): foreach($goods_info as $key=>$goods): ?><li>
 										<div class="i-pic limit">
-											<img src="<?php echo ($goods["thumb"]); ?>" />											
+											<input type="hidden" value="<?php echo ($goods["rel_info"]); ?>"/>
+											<img src="<?php echo ($goods["thumb"]); ?>" />
 											<p class="title fl"><?php echo ($goods["goods_name"]); ?></p>
 											<p class="price fl">
 												<b>¥</b>
@@ -206,37 +213,7 @@
 								</ul>
 							</div>
 							<script>
-								/**
-								 * 排序规则
-								 */
-								function setOrder(obj){
-									var url_order = '<?php echo ($_GET['order']); ?>';	//当前url的order
-									var click_order = $(obj).attr("order");	//当前点击的order
-									
-								}
 
-								/**
-								 * 品牌
-								 */
-								function selBrand(obj){
-									var key_word = "<?php echo ($_GET['key_word']); ?>";
-									var brand = $(obj).text();	//获取当前点击的品牌
-									if( brand != '' ){	//单选品牌时
-										$(obj).attr("href","/home/search.html?key_word="+key_word+"&brand="+brand);
-									}
-								}
-
-								/**
-								 * 种类
-								 */
-								function selCat(obj){
-									var key_word = "<?php echo ($_GET['key_word']); ?>";
-									var category = $(obj).text();	//获取当前种类
-									if( category != '' ){
-										var category_id = $(obj).children("i").attr("category_id");
-										$(obj).attr("href",'/home/search.html?key_word='+key_word+"&category_id="+category_id);
-									}
-								} 
 							</script>
 							<div class="search-side">
 
