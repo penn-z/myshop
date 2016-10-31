@@ -14,6 +14,16 @@
     </div>
     
 	<div class="navMenu">
+		<h3 onclick="switchMenu(this);">商品分类管理</h3>
+		<ul style="display:none;">
+            <li><a target="weilian" href="/Admin/Category/showList">分类列表</a></li>
+            <li><a target="weilian" href="/Admin/Category/add">分类添加</a></li>
+            <li><a target="weilian" href="/Admin/Category/edit">分类编辑</a></li>
+		</ul>	
+		
+	</div>
+
+	<div class="navMenu">
 		<h3 onclick="switchMenu(this);">商品管理</h3>
 		<ul style="display:none;">
             <li><a target="weilian" href="/Admin/Goods/showList">商品列表</a></li>
@@ -22,6 +32,16 @@
 		</ul>	
 		
 	</div>
+
+	<div class="navMenu">
+		<h3 onclick="switchMenu(this);">订单管理</h3>
+		<ul style="display:none;">
+            <li><a target="weilian" href="/Admin/Order/showlist">订单列表</a></li>
+            <li><a target="weilian" href="/Admin/Order/edit">订单编辑</a></li>
+		</ul>	
+		
+	</div>
+
 	<div class="navMenu">
 		<h3 onclick="switchMenu(this);">会员管理</h3>
 		<ul style="display:none;">

@@ -1,0 +1,70 @@
+[ 2016-10-30T20:35:15+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='炭烧' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-30T20:35:15+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='奶油' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-10-30T20:35:16+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='原味' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-30T20:35:18+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='咸香' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-30T20:35:18+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='炭烧' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-10-30T20:35:18+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='奶油' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-10-30T20:35:19+08:00 ] 127.0.0.1 /Api/Goods/change_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_type ='奶油' AND goods_id ='7' ) LIMIT 1   [ RunTime:0.0001s ]
+
