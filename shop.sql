@@ -33,8 +33,11 @@ CREATE TABLE `think_address` (
   `post_address` varchar(200) COLLATE utf8_unicode_ci NOT NULL COMMENT '后置地址',
   `is_default` int(1) NOT NULL COMMENT '是否默认',
   `addtime` int(13) NOT NULL COMMENT '添加时间',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `user_id_2` (`user_id`),
+  KEY `user_id_3` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -378,7 +381,8 @@ CREATE TABLE `think_question` (
   `answer_2` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '问题2答案',
   `question_2` varchar(128) COLLATE utf8_unicode_ci NOT NULL COMMENT '问题2',
   `addtime` int(13) NOT NULL COMMENT '添加时间',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -411,7 +415,9 @@ CREATE TABLE `think_refund` (
   `path` text COLLATE utf8_unicode_ci NOT NULL COMMENT '退款凭证',
   `status` int(2) NOT NULL COMMENT '退款状态(0为正常，1为等待商家退款，2为退款成功)',
   `addtime` int(11) NOT NULL COMMENT '退款申请时间',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `order_id` (`order_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -447,7 +453,10 @@ CREATE TABLE `think_shopcart` (
   `is_order` int(1) NOT NULL COMMENT '是否在订单(0否,1是)',
   `addtime` int(11) NOT NULL COMMENT '添加时间',
   PRIMARY KEY (`cart_id`),
-  KEY `goods_cost` (`goods_cost`)
+  KEY `goods_cost` (`goods_cost`),
+  KEY `user_id` (`user_id`),
+  KEY `cart_id` (`cart_id`),
+  KEY `user_id_2` (`user_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=123 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -538,7 +547,8 @@ CREATE TABLE `think_user` (
   `iphone` varchar(11) COLLATE utf8_unicode_ci NOT NULL COMMENT '用户手机',
   `iemail` varchar(32) COLLATE utf8_unicode_ci NOT NULL COMMENT '用户邮箱',
   `addtime` int(13) NOT NULL COMMENT '注册时间',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `account` (`account`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -561,4 +571,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-31 20:56:52
+-- Dump completed on 2016-11-01 10:49:40

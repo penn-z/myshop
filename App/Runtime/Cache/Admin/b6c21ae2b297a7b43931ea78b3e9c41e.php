@@ -2,31 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>订单列表</title>
-<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
-<link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
-<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
+<title>订单详情</title>
+<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Admin/css/webmallDialog.css" rel="stylesheet" type="text/css" />
-
-<style type="text/css">
-#check,.checkall-box label {cursor:pointer;}
-.checkall-box {margin-left:20px;margin-top:10px;}
-.pilian{display:inline-block;cursor: pointer; background:#06c; border-radius:3px; height:20px;  text-align:center; padding:0 10px; margin-left:10px; color:#fff; line-height:20px;}
-.sel{ height: 30px; width: 80px; margin-left:10px; background:#d7d7d7}
-.tr_list_page{  font-size: 12px; height: 24px; background-color: #EBEBEB; border: 1px solid #FFF;}
-.tr_list{font-size: 12px; height: 24px; background-color: #FFF; border: 1px solid #FFF;}
-.tr_list a{color:blue;text-decoration:none;}
-.tr_list a:hover{color:orange;}
-.inp{ width: 300px; height: 30px; border:1px solid #666; padding-left: 5px;}
-.sub{background: #06c; padding:0 15px; height:30px; text-align: center; color: #fff; line-height: 30px; cursor: pointer; border-radius: 3px }
-a.tui{ color:#f00}
-.level-type {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 1px solid #ccc;padding: 5px;margin-right:20px }
-.form{ float:left; margin-bottom: 10px }
+<style>
 .add_title_img {
-
+   
     height: 35px;
     padding: 5px 5px;
-    float: left;
     position: relative;
 }
 .add_title_img #title_img {
@@ -46,14 +30,6 @@ a.title_text {
     line-height: 35px;
     padding-left: 15px;
 }
-.add_file {
-    height: 35px;
-    left: 20px;
-    opacity: 0;
-    position: absolute;
-    top: 15px;
-    width: 50px;
-}
 
 .eventlink{
   color: #fff;
@@ -63,322 +39,285 @@ a.title_text {
     line-height: 32px;
     margin-right: 10px;
     padding: 0 10px;
-    text-align: cente; border-radius:3px; background:#09C;
+    text-align: center; border-radius:3px; background:#09C;
   cursor:pointer
 }
-#face_img{
-    border: 2px solid #c1c1c1;
-    float: left;
-    height: 30px;
-    width: 50px;
+#title {width:450px;}
+#ad_img {position:relative;top:-5px; display:none;}
+#img-view {display:inline-block;border: 1px solid #CCC;position:relative;top: 7px;}
+#img-view img {width: 60px;height:32px;}
+#add_file {width: 70px;}
+#img-box img{
+    display:block;
+    float:left;
 }
-#face_img img {
-    height: 30px;
-    width: 50px;
+#img-box a{
+    display:block;
+    width:12px;
+    height:12px;
+    line-height:12px;
+    font-size: 12px;
+    color:orange;
+    text-align:center;
+    position:relative;
+    top:0px;
+    left:68px;
+    cursor: pointer;
+    border:1px orange solid; 
+    border-radius:50%;
 }
-.checkall-box{ float:left;}
-.pilian{float: left; margin-top:10px;}
+.type_content{
+    width:530px;
+    height:30px;
+    display:block;
+    margin-top:4px;
+}
 </style>
 </head>
-
 <body bgcolor="#F7F7F7">
 <div class="content">
-
-    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：订单管理-&gt;订单列表</div>
-
+  
+    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：订单管理-&gt;订单详情</div>
     <div class="m_content">
-
+      <div class="keywords_show"></div>
         <div class="real_c">
-          <?php if(isset($errno) && $errno != null): ?><p class="tip <?php echo ($errno["style"]); ?>"><?php echo ($errno["str"]); ?><span onclick="$(this.parentNode).slideUp();">X</span></p><?php endif; ?>
+            
+            <?php if($errno != null): ?><p class="tip <?php echo ($errno["style"]); ?>"><?php echo ($errno["str"]); ?><span onclick="$(this.parentNode).slideUp();">X</span></p><?php endif; ?>
+           
+
             <div class="s-space"></div>
-        	</div>
-          <form action="/index.php/Admin/Order/list" method="get" class="form" name="search" id="list-form">
-              <input type="hidden" value="" name="status">
-              <input type="hidden" value="" name="type">
-              <input type="hidden" value="" name="order_type">
-              <input type="hidden" value="" name="cate_id" id="cate_id">
-              <input type="text" class="inp" value="" name="keyword" placeholder="请输入搜索的昵称或者微信号" />
-              <input type="button" class="sub" value="搜索" onclick="list_form_sub()"/>
-          <div style="float:left;margin:0px 0px 10px 60px; ">
-      筛选类别:
-            <select onchange="do_select(this)"  class="level-type" id="level-type">
-                <option value="">--全部分类--</option>
-                <option value="<?php echo ($list["id"]); ?>" ></option>
+
+          <div>
+              
+            <form name="goods_add" method="post" action="/admin/goods/add">
+            <table border="0" cellpadding="0" cellspacing="0" id="add_table" width="100%">
+                <tr>
+                    <td class="left_td">订单号：</td>
+                    <td class="right_td"><div class="input" style="border:none;color:red;"><?php echo ($order_info["order_id"]); ?></div></td>
+                </tr>
+                <!-- <tr>
+                    <td class="left_td">订单原价：</td>
+                    <td class="right_td"><input type="text" name="goods_price" class="input" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="left_td">订单促销价：</td>
+                    <td class="right_td"><input type="text" name="goods_discount" class="input" value=""/></td>
+                </tr>
+                <tr>
+                    <td class="left_td">订单序列号：</td>
+                    <td class="right_td"><input type="text" name="goods_sn" class="input" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="left_td">订单库存：</td>
+                    <td class="right_td"><input type="text" name="goods_nums" class="input" value="" /></td>
+                </tr> -->
+                <tr >
+                    <td class="left_td">订单月销量：</td>
+                    <td class="right_td"><input type="text" name="month_sales" class="input" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="left_td">订单累计销量：</td>
+                    <td class="right_td"><input type="text" name="cumulative_sales" class="input" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="left_td">订单评价总数：</td>
+                    <td class="right_td"><input type="text" name="goods_evaluation" class="input" value="" /></td>
+                </tr>
+                
+                
+                <tr>
                
-            </select>
-             
-              排序条件:
-              <select onchange="do_select(this)" class="level-type"  id="level-type_order">
-                 
-                  <option value=""></option>
-             
-              </select>
-             
-          </div>
-        </form>
-				<table class="table_content">
-                	<form name="goodsForm" method="post" action="#">
-                	<tr class="tr_top">
-                      <td width="5%">订单号</td>
-                      <td width="3%">购物会员</td>
-                      <td width="5%">订单生成时间</td>
-                      <td width="3%">货品总额</td>
-	                    <td width="3%">快递</td>
-                      <td width="5%">运费</td>
-                      <td width="5%">收货人</td>
-                      <td width="5%">联系电话</td>
-	                    <td width="10%">收货地址</td>
-                      <td width="10%">订单状态</td>
-	                    <td width="5%">操作导航</td>
-                	</tr>
-                  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
-                    <td><?php echo ($vo["order_id"]); ?></td>  
-                    <td><?php echo ($vo["buyer_name"]); ?></td>  
-                    <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>  
-                    <td><?php echo ($vo["total_money"]); ?></td>  
-                    <td><?php echo ($vo["express_style"]); ?></td>  
-                    <td><?php echo ($vo["express_fee"]); ?></td>
-                    <td><?php echo ($vo["receiver"]); ?></td>
-                    <td><?php echo ($vo["phone"]); ?></td>
-                    <td><?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["street"]); ?></td>
-                    <?php if($vo["status"] == 0): ?><td>待付款 | <a href="/Admin/order/fee_change.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">更改费用</a></td>
-                    <?php elseif($vo["status"] == 1): ?>
-                      <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
-                    <?php elseif($vo["status"] == 2): ?>
-                      <td>待收货</td>
-                    <?php elseif($vo["status"] == 3): ?>
-                      <td>待评价</td>
-                    <?php elseif($vo["status"] == 4): ?>
-                      <td>已评价</td>
-                    <?php elseif($vo["status"] == 9): ?>
-                      <td>订单已取消</td><?php endif; ?>
-                    <td style="text-align:center;">
-                    <a href="javascript:void(0)" onclick="delarticle()">详情</a> |
-                    <a href="/index.php/Admin/Order/edit?act=edit&id=<?php echo ($vo["goods_id"]); ?>" >编辑</a> |
-                    <a href="/index.php/Admin/Order/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>
-                    </td>  
-                  </tr><?php endforeach; endif; ?>
-                    <!-- 操作按钮 -->
-                    <tr>
-                        <td colspan="9" style="padding-top:20px;">
-                                <!--<span class="checkall-box"><input type="checkbox" id="check" /><label for="check">全选</label> </span>-->
-                                <!--<span class="pilian" href="javascript:void(0)" onclick="pilian('del')">批量删除</span>-->
-                        </td>
-                    </tr>
-                        <tr><td>&nbsp;</td></tr>
-                        <tr><td class="page_menu" colspan="12" valign="bottom">
-                            <div style="padding:15px 50px 0px 0px;float:right;">
-                              <?php echo ($page); ?>
-                            </div>
-                        </td></tr>
-                    </form>
-                </table>
+                    <td class="left_td">订单<input style="width:40px;margin:1px;" type="text" name="type1" class="input" placeholder="规格名1">及信息：</td>
+                    
+                    <td class="right_td" id="goods_type">
+                        <div class="type_content">
+                            <input style="width:80px;" type="text" name="goods_sn[]" placeholder="订单货号" class="input" value="" />
+                            <input style="width:80px;" type="text" name="goods_type[]" class="input" placeholder="规格子类名" value="" />
+                            <input style="width:80px;" type="text" name="goods_price[]" placeholder="订单原价" class="input" value="" />
+                            <input style="width:80px;" type="text" name="goods_discount[]" placeholder="订单折扣价" class="input" value="" />
+                            <input style="width:80px;" type="text" name="goods_num[]" class="input" placeholder="库存数量" value="" />
+                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" />
+                        </div>
+                    </td>
+                    <td class="left_td"><img src="/Public/images/add.jpg" style="width:20px;height:20px;cursor:pointer;" id="style_add" />
+                    </td>
+                
+                </tr>
+               
+                <tr>
+                    <td class="left_td">订单<input style="width:40px;margin:1px;" type="text" name="type2" class="input" placeholder="规格名2">：</td>
+                    <td class="right_td" id="goods_package">
+                        <div id="type_content">
+                            <input type="text" name="type2_name[]" class="input" value=""  placeholder="规格子类名"/>
+                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" />
+                        </div>
+                        
+
+                    </td>
+                    <td>
+                    <img src="/Public/images/add.jpg" style="width:20px;height:20px;cursor:pointer;float:right;" id="package_add" />
+                    </td>
+                </tr>
+
+                <tr>
+          <td class="left_td">订单简介：</td>
+                    <td class="right_td">
+            <textarea  style="width:480px; height:80px" name="goods_brief" class="input" id="description" ></textarea>
+          </td>
+                </tr>
+
+                <tr>
+                    <td class="left_td">订单范畴：</td>
+                    <td class="right_td">
+            <select name="category_id" id="article_category" style="xbackground:#FFF;border:1px solid #CCC;">
+                            <option value="0" >--未分类--</option>
+                            <?php if(is_array($cat)): foreach($cat as $key=>$vo): ?><option value="<?php echo ($key); ?>"><?php echo ($vo); ?></option><?php endforeach; endif; ?>
+            </select>  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">订单来源名称：</td>
+                    <td class="right_td"><input type="text" name="goods_source" class="input" value="" id="srcname"/></td>
+                </tr>
+
+                <tr>
+                    <td class="left_td">选购热点：</td>
+                    <td class="right_td"><input type="text" name="hot_spot" class="input" value="" id="hot_sopt"/></td>
+                </tr>
+
+                <tr id="qr-upload-tr">
+                    <td class="left_td">订单缩略图片：</td>
+                    <td class="right_td" id="upload-td">
+                        <input type="file" id="img_src" style="display:block;width: 200px;" /> 
+                        
+                        <div id="img-box"></div>
+                    </td>
+                </tr>
+                
+                
+                <tr style=" clear:both">
+                    <td class="left_td">订单内容：</td>
+          <td class="right_td">
+            <!-- 加载编辑器的容器 -->
+            <textarea style="z-index: 1;" name="goods_description" id="content" type="text/plain">
+              
+            </textarea>
+          </td>
+                </tr>
+                
+               
+                <!-- 操作按钮 -->
+                <tr><td colspan="4" valign="bottom" align="center"><div class="formHandleBox" style="padding-left:100px;">
+                    <input type="hidden" name="act" value="add" />
+                    <a href="javascript:void(0)" onclick="form_submit(); return false;" class="eventlink">保存数据</a>
+                </div></td></tr>
+            </table>
+            </form>
             </div>
         </div>
     </div>
     <div class="b_border"></div>
+    
 </div>
+<script type="text/javascript" src="/Public/tools/UEditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/Public/tools/UEditor/ueditor.all.js"></script>
 <script type="text/javascript" src="/Public/Admin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/js/window.js"></script>
+<script language="javascript" src="/Public/Admin/js/Ajax.class.js"></script>
 <script language="javascript" src="/Public/Admin/js/JWin.js"></script>
-<script type="text/javascript">
-/**
- * 发货
- */
-function sentOrder(obj){
-  var bool = window.confirm("确定发货吗？");
-  if( bool != true ) return;
-  var order_id = $(obj).parents("tr").children().eq(0).text();
-  $.get('/Api/Order/sentOrder',{order_id:order_id},function(ret){
-    if(ret == 1){
-      alert("发货成功!");
-      window.location.href="/Admin/order/showlist/p/<?php echo ($_GET['p']); ?>.html"; //跳转后依然跳到指定页码
-    }else{
-      alert("发货失败");
-    }
-  });
-}
-
-function delAlert(){
-  var bool = window.confirm("你确定要删除订单吗？");
-  if( bool != true ) return false;
-  return true;
-}
-
-$(document).ready(function(){
-	$('#check').click(function(){
-		$('input[name^=id]').attr('checked',this.checked);
-	});
+<script language="javascript" src="/Public/Admin/js/XHRUploader.class.js"></script>
+<script language="javascript">
+var ue = UE.getEditor('content',{
+  textarea: 'content',
+  initialFrameWidth: 800,
+  initialFrameHeight: 400,
+  autoHeightEnabled: false,
+  autoFloatEnabled: false,
+    enterTag: 'br',
 });
 
-
-function list_form_sub(){
-
-    if(verificate()){
-         $('#list-form').submit();
+XHRUploader.init({
+    handlerUrl: '/admin/img/accept',
+    input: '_imgs[]'
+}).uploadFile('img_src', {
+    'partition' : 'date',
+    'space'     : 'article.image',
+    'thumb'     : 2,
+    'width'     : 0,
+    'height'    : 0
+},{
+    ready: function(ret){
+        //alert('zhengzai');
+    },
+    complete: function(ret){
+        //alert('wangcheng');
+        
+        var html = '<div id="add" style="float:left;"><a onclick="delPic(this)">X</a><img src="'+ret.data+'" width="80px" /><input type="hidden" name="thumb[]" value="'+ret.data+'" /></div>';
+        $('#img-box').append(html);
     }
-}
-
-function previewImg(input) {
-  if (input.files && input.files[0]) {
-    if(input.files[0].size<2097152) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        //加入到预览图
-        $('#thumb').attr('src', e.target.result);
-        $('#hid_img').val(e.target.result);
-      }
-      reader.readAsDataURL(input.files[0]);
-    }else{
-      input.value="";
-      PromptHide('图片大小不能超出2M');
-    }
-  }
-}
-
-
-$("#add_file").change(function(){
-  previewImg(this);
 });
 
-function verificate(){
-  var sel=$(".sel").val();
-  var tex=$(".inp").val();
-  if(tex==''){
-      return true;
-  }
-  return true;
+function delPic(data){
+    $(data).parents("#add").empty();
 }
 
-//批量修改图片
-function pilianimg(){
-  var d = 'img';
-  var hidimg = $('#hid_img').val();
-  var id = $('input:checkbox[name^=id]:checked').map(function(){
-    return $(this).val();
-  }).get().join(",");
-
-  if( ! id )
-  {
-    alert('请选择您要上传图片的项!');
-    return;
-  }
-
-  var bool = window.confirm("您确定要修改微信头像吗？");
-  if ( bool == true )
-  {
-    location.href = '/admin/gzh/ilist';
-  }
-}
-
-function do_select(d){
-    var cate_id=$("#level-type").val();
-    var order_num = $("#level-type_order").val();
-    $('input[name="cate_id"]').val(cate_id);
-    $('input[name="order_type"]').val(order_num);
-    $('#list-form').submit();
-}
-
-function pilian( d)
+function form_submit ()
 {
-	var id = $('input:checkbox[name^=id]:checked').map(function(){
-		return $(this).val();
-	}).get().join(",");
-
-	if( ! id )
-	{
-		if ( d == "del" )	alert('请选择要删除的项!');
-		if ( d == "pass" )	alert('请选择要恢复的项!');
-		return;
-	}
-	if ( d == "del" )	var bool = window.confirm("您确定要删除您选中的微信号吗？");
-	if ( d == "pass" )	var bool = window.confirm("您确定要恢复您选中的微信号吗？");
-	if ( bool == true )
-	{
-		location.href = '/admin/gzh/glist?status=0&ids='+id+'&ast='+d+'&p=';
-	}
-}
-
-function istui(d,gid)
-{
-   var act = $(d).attr('act');
-    $.post('/admin/gzh/change',{act:act,gid:gid,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#tui"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else{
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }
-    },'json')
-}
-
-function red(d,gid)
-{
-    var act = $(d).attr('act');
-    $.post('/Wldoadmins/gzh/change',{act:act,gid:gid,index:1,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#red"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else if(da.result == 1){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }else if(da.result == 2)
+  /*var _ele = document.goods_add.elements;
+  var prevNode = null;
+  for ( var i = 0; i < _ele.length; i++ )
+    {
+    prevNode = _ele[i].parentNode.previousSibling;
+        if ( prevNode == null ) continue;
+        if ( _ele[i].id == 'add_file' || _ele[i].id == 'thumb-text' )  continue;
+    while ( prevNode.nodeType != 1 )
+      prevNode = prevNode.previousSibling;
+    if ( _ele[i].value.trim() == '' )
         {
-          JWin.lock.work(2000);
-          JWin.tip.work(da.msg,'error',500,2000);
-        }
-    },'json')
+      JWin.lock.work(1000);
+      JWin.tip.work(prevNode.innerHTML.replace('：','')+'不能为空。','warn',200,1000);
+      return;
+    }
+  }   */
+
+  document.goods_add.submit();
 }
 
-function category(id)
-{
-    var category_id=$("#c"+id).val();
-    var cate=$("#c"+id).find("option:selected").text();
-   $.post('/admin/gzh/ajax_cate_update',{cate_id:category_id,id:id},function  (da) {
-    if(da.status==true)
-    {
-        JWin.lock.work(1000);
-        JWin.tip.work('ok','ok',200,1000);
-    }
-    else
-    {
-        JWin.lock.work(1000);
-        JWin.tip.work('error','error',200,1000);
-    }
-   },'json')
-//  }
+function viewImage( img_src )
+{   
+  if ( img_src == '' ) return;
+  
+    JWin.lock.work();
+  JWin.win.work('预览图','<div style="text-align:center;padding:10px;"><img src="'+img_src+'" border="0" width="100%"/></div>',{'width':'640px','text-align':'center'},function(){
+        JWin.lock.hide(0);
+        JWin.win.hide(0);
+    });
 }
 
-function delarticle(id,status){
-    var bool = window.confirm("您确定要进行该操作吗？");
+//动态添加订单种类
+$(document).ready(function(){
+    $("#style_add").click(function(){
+        $("#goods_type").append('<div id="type_content"><td class="right_td"><input style="width:80px;" type="text" name="goods_sn[]" placeholder="订单货号" class="input" value="" /><input style="width:80px;" type="text" name="goods_type[]" class="input" placeholder="规格子类名" value="" /><input style="width:80px;" type="text" name="goods_price[]" placeholder="订单原价" class="input" value="" /><input style="width:80px;" type="text" name="goods_discount[]" placeholder="订单折扣价" class="input" value="" /><input style="width:80px;" type="text" name="goods_num[]" class="input" placeholder="库存数量" value="" /><img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)"/></td></div>');
+    });
+})
 
-    if(bool==true){
-        $.post('/admin/gzh/delgzh',{id:id,status:status},function  (da) {
-            if(da.status==true){
-                $("#tr"+id).slideUp();
-                JWin.lock.work(1000);
-                if(status == 1){
-                    JWin.tip.work('恢复成功','ok',200,1000);
-                }else{
+//动态添加订单包装种类
+$(document).ready(function(){
+    $("#package_add").click(function(){
+        $("#goods_package").append('<div id="type_content"><td class="right_td"><input type="text" name="type2_name[]"" class="input" placeholder="规格子类名"/><img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)"/></td></div>');
+    });
+})
 
-                    JWin.tip.work('删除成功','ok',200,1000);
-                }
-            }else{
-                JWin.lock.work(1000);
-                if(status == 1){
-                    JWin.tip.work('恢复失败','ok',200,1000);
-                }else{
+function delType(obj){
+    var bool = window.confirm("确定要删除吗？");
+    if(bool != true) return;
+    $(obj).parents("#type_content").remove();
+}
 
-                    JWin.tip.work('删除失败','ok',200,1000);
-                }
-            }
-        },'json')
-    }
+function delPic(data){
+    var bool = confirm('要删除吗？');
+    if( bool!=true ) return; 
+    $(data).parents("#add").empty();
 }
 </script>
 </body>

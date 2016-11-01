@@ -180,6 +180,11 @@ a.title_text {
                     <td class="right_td"><input type="text" name="goods_source" class="input" value="" id="srcname"/></td>
                 </tr>
 
+                <tr>
+                    <td class="left_td">选购热点：</td>
+                    <td class="right_td"><input type="text" name="hot_spot" class="input" value="" id="hot_sopt"/></td>
+                </tr>
+
                 <tr id="qr-upload-tr">
                     <td class="left_td">商品缩略图片：</td>
                     <td class="right_td" id="upload-td">
