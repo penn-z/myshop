@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>公众号列表</title>
-<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/webmallDialog.css" rel="stylesheet" type="text/css" />
@@ -118,43 +117,39 @@ a.title_text {
           </div>
         </form>
 				<table class="table_content">
-                	<form name="goodsForm" method="post" action="#">
                 	<tr class="tr_top">
                       <td width="5%">ID</td>
 	                    <td width="10%">用户名称</td>
-	                    <td width="10%">注册时间</td>
-                      <td width="10%">注册邮箱</td>
 	                    <td width="10%">会员头像</td>
+                      <td width="10%">注册时间</td>
+                      <td width="10%">注册邮箱</td>
+                      <td width="5%">状态</td>
                       <td width="10%">操作导航</td>
                 	</tr>
 
                   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
                     <td><?php echo ($vo["id"]); ?></td>  
-                    <td><?php echo ($vo["name"]); ?></td>  
+                    <td><?php echo ($vo["account"]); ?></td>  
+                    <td>
+                      <img src='<?php echo ((isset($vo["header_img"]) && ($vo["header_img"] !== ""))?($vo["header_img"]):"/Public/images/getAvatar.do.jpg"); ?>' style="width:50px;height:50px"; onclick="viewImage(this.src)"/>
+                    </td>    
                     <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>  
                     <td><?php echo ($vo["email"]); ?></td>
-                    <td><img src='<?php echo ($vo["photo"]); ?>' style="height:30px";/></td>    
+                    <?php if(($vo["is_block"]) == "0"): ?><td style="color:green;">活动</td>
+                    <?php else: ?>
+                      <td style="color:orange;">冻结</td><?php endif; ?>
                     <td style="text-align:center;">
                     <a href="/Admin/Member/edit?act=edit&id=<?php echo ($vo["id"]); ?>" >编辑</a> |
-                    <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
-                    <a href="/Admin/Member/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>
-
+                    <a href="javascript:void(0)" id=<?php echo ($vo["id"]); ?> onclick="editAccount(this,'block',this.id)">冻结</a> |
+                    <a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>" onclick="editAccount(this,'unblock',this.id)">解封</a>
                     </td>  
                   </tr><?php endforeach; endif; ?>
-                    <!-- 操作按钮 -->
-                    <tr>
-                        <td colspan="9" style="padding-top:20px;">
-                                <!--<span class="checkall-box"><input type="checkbox" id="check" /><label for="check">全选</label> </span>-->
-                                <!--<span class="pilian" href="javascript:void(0)" onclick="pilian('del')">批量删除</span>-->
-                        </td>
-                    </tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td class="page_menu" colspan="12" valign="bottom">
                             <div style="padding:15px 50px 0px 0px;float:right;">
                               <?php echo ($page); ?>
                             </div>
                         </td></tr>
-                    </form>
                 </table>
             </div>
         </div>
@@ -165,186 +160,39 @@ a.title_text {
 <script type="text/javascript" src="/Public/Admin/js/window.js"></script>
 <script language="javascript" src="/Public/Admin/js/JWin.js"></script>
 <script type="text/javascript">
-function delAlert(){
-  var bool = window.confirm("你确定要删除该会员吗？");
-  if( bool != true ) return false;
-  return true;
+/**
+ * 缩略图
+ */
+function viewImage( img_src )
+{   
+    if ( img_src == '' ) return;
+    JWin.lock.work();
+    JWin.win.work('预览图','<div style="text-align:center;padding:10px;"><img src="'+img_src+'" border="0" width="200px"/></div>',{'width':'250px','text-align':'center'},function(){
+        JWin.lock.hide(0);
+        JWin.win.hide(0);
+    });
 }
-
-$(document).ready(function(){
-	$('#check').click(function(){
-		$('input[name^=id]').attr('checked',this.checked);
-	});
-});
-
-
-function list_form_sub(){
-
-    if(verificate()){
-         $('#list-form').submit();
-    }
-}
-
-function previewImg(input) {
-  if (input.files && input.files[0]) {
-    if(input.files[0].size<2097152) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        //加入到预览图
-        $('#thumb').attr('src', e.target.result);
-        $('#hid_img').val(e.target.result);
-      }
-      reader.readAsDataURL(input.files[0]);
-    }else{
-      input.value="";
-      PromptHide('图片大小不能超出2M');
-    }
+/**
+ * 封号、解封
+ * @param obj 点击对象
+ * @param string act: block | unblock
+ * @param string id 用户id
+ */
+function editAccount(obj,act,id){
+  if( act == 'block'){
+    var warn = "冻结";
+    var act_param = 1;
+  }else{
+    var warn = "解封";
+    var act_param = 0;
   }
-}
-
-
-$("#add_file").change(function(){
-  previewImg(this);
-});
-
-function verificate(){
-  var sel=$(".sel").val();
-  var tex=$(".inp").val();
-  if(tex==''){
-      return true;
-  }
-  return true;
-}
-
-//批量修改图片
-function pilianimg(){
-  var d = 'img';
-  var hidimg = $('#hid_img').val();
-  var id = $('input:checkbox[name^=id]:checked').map(function(){
-    return $(this).val();
-  }).get().join(",");
-
-  if( ! id )
-  {
-    alert('请选择您要上传图片的项!');
-    return;
-  }
-
-  var bool = window.confirm("您确定要修改微信头像吗？");
-  if ( bool == true )
-  {
-    location.href = '/admin/gzh/ilist';
-  }
-}
-
-function do_select(d){
-    var cate_id=$("#level-type").val();
-    var order_num = $("#level-type_order").val();
-    $('input[name="cate_id"]').val(cate_id);
-    $('input[name="order_type"]').val(order_num);
-    $('#list-form').submit();
-}
-
-function pilian( d)
-{
-	var id = $('input:checkbox[name^=id]:checked').map(function(){
-		return $(this).val();
-	}).get().join(",");
-
-	if( ! id )
-	{
-		if ( d == "del" )	alert('请选择要删除的项!');
-		if ( d == "pass" )	alert('请选择要恢复的项!');
-		return;
-	}
-	if ( d == "del" )	var bool = window.confirm("您确定要删除您选中的微信号吗？");
-	if ( d == "pass" )	var bool = window.confirm("您确定要恢复您选中的微信号吗？");
-	if ( bool == true )
-	{
-		location.href = '/admin/gzh/glist?status=0&ids='+id+'&ast='+d+'&p=';
-	}
-}
-
-function istui(d,gid)
-{
-   var act = $(d).attr('act');
-    $.post('/admin/gzh/change',{act:act,gid:gid,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#tui"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else{
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }
-    },'json')
-}
-
-function red(d,gid)
-{
-    var act = $(d).attr('act');
-    $.post('/Wldoadmins/gzh/change',{act:act,gid:gid,index:1,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#red"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else if(da.result == 1){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }else if(da.result == 2)
-        {
-          JWin.lock.work(2000);
-          JWin.tip.work(da.msg,'error',500,2000);
-        }
-    },'json')
-}
-
-function category(id)
-{
-    var category_id=$("#c"+id).val();
-    var cate=$("#c"+id).find("option:selected").text();
-   $.post('/admin/gzh/ajax_cate_update',{cate_id:category_id,id:id},function  (da) {
-    if(da.status==true)
-    {
-        JWin.lock.work(1000);
-        JWin.tip.work('ok','ok',200,1000);
-    }
-    else
-    {
-        JWin.lock.work(1000);
-        JWin.tip.work('error','error',200,1000);
-    }
-   },'json')
-//  }
-}
-
-function delarticle(id,status){
-    var bool = window.confirm("您确定要进行该操作吗？");
-
-    if(bool==true){
-        $.post('/admin/gzh/delgzh',{id:id,status:status},function  (da) {
-            if(da.status==true){
-                $("#tr"+id).slideUp();
-                JWin.lock.work(1000);
-                if(status == 1){
-                    JWin.tip.work('恢复成功','ok',200,1000);
-                }else{
-
-                    JWin.tip.work('删除成功','ok',200,1000);
-                }
-            }else{
-                JWin.lock.work(1000);
-                if(status == 1){
-                    JWin.tip.work('恢复失败','ok',200,1000);
-                }else{
-
-                    JWin.tip.work('删除失败','ok',200,1000);
-                }
-            }
-        },'json')
-    }
+  var bool = window.confirm("确定要进行"+warn+"吗？");
+  if(bool!=true) return;
+  $.get('/Api/User/freezeUser?action='+act_param,{id:id},function(ret){
+    if( ret==1 ) alert(warn+"成功！");
+    else alert(warn+"失败!");
+    window.location.href="/Admin/Member/showList/p/<?php echo ($_GET['p']); ?>";
+  });
 }
 </script>
 </body>

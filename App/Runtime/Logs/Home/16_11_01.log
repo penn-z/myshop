@@ -19,3 +19,147 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
 
+[ 2016-11-01T12:55:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+
+[ 2016-11-01T12:55:16+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-11-01T12:55:19+08:00 ] 127.0.0.1 /home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-11-01T12:55:25+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_user` WHERE `email` = 'penn' OR `account` = 'penn' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-01T12:55:26+08:00 ] 127.0.0.1 /home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-11-01T12:55:30+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2016-11-01T12:58:11+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+

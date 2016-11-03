@@ -1,4 +1,4 @@
-.hoverWindowBox {position:absolute;display:none;height:auto;width:300px;top:0px;left:0px;background-color:#EEEEEE;z-index: 6;}
+.hoverWindowBox {position:absolute;display:none;height:auto;width:300px;top:0px;left:0px;background-color:#EEEEEE;z-index: 99999;}
 .hoverWindowTitleBox {overflow:hidden;zoom: 1;background-color:#EEEEEE;height:32px;line-height:32px;cursor:move;border-bottom:1px solid #CCC;}
 .hoverWindowTileContent {float:left;cursor:move;height:32px;line-height:32px;background-color:#EEEEEE;color:#666666;margin-left:10px;}	
 .titleCloseButton {float:right;width:40px;text-align:center;cursor:pointer;color:#666666;font-weight:bold;}
@@ -10,7 +10,7 @@
 .tips_center {float:left; background-image:url(../imgs/gb_tips.png); background-repeat:repeat-x; height:51px; line-height:51px; background-position:-4px -161px; text-align:center; color:#666; font-size:14px; font-weight:600;}
 .tips_right {float:left; background-image:url(../imgs/gb_tips.png); background-repeat:no-repeat; height:51px; width:4px; background-position:0px 0px}
 
-.webssky_lock_div {position:absolute; left:0px; top:0px; z-index:4;}
+.webssky_lock_div {position:fixed; left:0px; top:0px; z-index:88888;}
 
 /*tip widget*/
 p.tip {position:relative;text-align: left;

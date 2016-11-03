@@ -202,7 +202,7 @@
 										break;
 								}
 							}
-							document.onload = programList();
+							document.onload = programList();	//页面加载完成后执行动作
 						</script>
 						<div class="order-infoaside">
 							<div class="order-logistics">
@@ -310,9 +310,23 @@
 													</div>
 												</li>
 												<li class="td td-operation">
-													<div class="item-operation">
-														退款/退货
-													</div>
+												<?php switch($_GET['status']): case "1": ?><div class="item-operation">
+														<?php if(($vo["status"]) == "0"): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($common["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($_GET['status']); ?>">退款</a>
+														<?php elseif($vo["status"] == 1): ?>
+															<a href="/home/MyDeal/refund.html?order_id=<?php echo ($common["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($_GET['status']); ?>" style="color:red;">等待退款中</a>
+														<?php else: ?>
+															<a style="color:green">退款成功</a><?php endif; ?>
+														</div><?php break;?>
+													<?php case "2": ?><div class="item-operation">
+														<?php if(($vo["status"]) == "0"): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($common["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$key"]["status"]); ?>">退款/退货</a>
+														<?php elseif($vo["status"] == 1): ?>
+															<a href="/home/MyDeal/refund.html?order_id=<?php echo ($common["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($_GET['status']); ?>" style="color:red;">等待退款/退货中</a>
+														<?php else: ?>
+															<a style="color:green;">退款/退货成功</a><?php endif; ?>
+														</div><?php break;?>
+													<?php case "3": ?><div class="item-operation">
+															<a href="/home/MyDeal/commentlist.html?order_id=<?php echo ($common["order_id"]); ?>">请评价商品</a>
+														</div><?php break; endswitch;?>
 												</li>
 											</ul><?php endforeach; endif; ?>
 										</div>
@@ -432,7 +446,7 @@
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
 						<li><a href="/home/MyDeal/order.html">订单管理</a></li>
-						<li> <a href="/home/MyDeal/change/html">退款售后</a></li>
+						<li> <a href="/home/MyDeal/change.html">退款售后</a></li>
 						<li> <a href="/home/MyDeal/comment.html">评价商品</a></li>
 					</ul>
 				</li>

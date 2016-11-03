@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>订单列表</title>
+<title>订单费用修改</title>
 <link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
@@ -84,7 +84,7 @@ a.title_text {
 <body bgcolor="#F7F7F7">
 <div class="content">
 
-    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：订单管理-&gt;订单列表</div>
+    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：订单管理-&gt;订单费用修改</div>
 
     <div class="m_content">
 
@@ -92,35 +92,11 @@ a.title_text {
           <?php if(isset($errno) && $errno != null): ?><p class="tip <?php echo ($errno["style"]); ?>"><?php echo ($errno["str"]); ?><span onclick="$(this.parentNode).slideUp();">X</span></p><?php endif; ?>
             <div class="s-space"></div>
         	</div>
-          <form action="/index.php/Admin/Order/list" method="get" class="form" name="search" id="list-form">
-              <input type="hidden" value="" name="status">
-              <input type="hidden" value="" name="type">
-              <input type="hidden" value="" name="order_type">
-              <input type="hidden" value="" name="cate_id" id="cate_id">
-              <input type="text" class="inp" value="" name="keyword" placeholder="请输入搜索的昵称或者微信号" />
-              <input type="button" class="sub" value="搜索" onclick="list_form_sub()"/>
-          <div style="float:left;margin:0px 0px 10px 60px; ">
-      筛选类别:
-            <select onchange="do_select(this)"  class="level-type" id="level-type">
-                <option value="">--全部分类--</option>
-                <option value="<?php echo ($list["id"]); ?>" ></option>
-               
-            </select>
-             
-              排序条件:
-              <select onchange="do_select(this)" class="level-type"  id="level-type_order">
-                 
-                  <option value=""></option>
-             
-              </select>
-             
-          </div>
-        </form>
+          
 				<table class="table_content">
                 	<form name="goodsForm" method="post" action="#">
                 	<tr class="tr_top">
                       <td width="5%">订单号</td>
-                      <td width="3%">购物会员</td>
                       <td width="5%">订单生成时间</td>
                       <td width="3%">货品总额</td>
 	                    <td width="3%">快递</td>
@@ -128,51 +104,26 @@ a.title_text {
                       <td width="5%">收货人</td>
                       <td width="5%">联系电话</td>
 	                    <td width="10%">收货地址</td>
-                      <td width="10%">订单状态</td>
-	                    <td width="5%">操作导航</td>
                 	</tr>
                   <tr class="tr_list">
                     <td><?php echo ($order_info["order_id"]); ?></td>  
-                    <td><?php echo ($order_info["buyer_name"]); ?></td>  
                     <td><?php echo (date("Y-m-d H:i:s",$order_info["addtime"])); ?></td>  
-                    <td><?php echo ($order_info["total_money"]); ?></td>  
+                    <td><a style="color:red;font-size:16px;"><?php echo ($order_info["total_money"]); ?></a></td>  
                     <td><?php echo ($order_info["express_style"]); ?></td>  
                     <td><?php echo ($order_info["express_fee"]); ?></td>
                     <td><?php echo ($order_info["receiver"]); ?></td>
                     <td><?php echo ($order_info["phone"]); ?></td>
                     <td><?php echo ($order_info["province"]); echo ($order_info["city"]); echo ($order_info["district"]); echo ($order_info["street"]); ?></td>
-                    <?php if($order_info["status"] == 0): ?><td>待付款 | <a style="text-decoration:none;cursor:pointer;">更改费用</a></td>
-                    <?php elseif($order_info["status"] == 1): ?>
-                      <td>待发货 | <a style="text-decoration:none;cursor:pointer;" onclick="sentOrder(this)" hover:>发货</a></td>
-                    <?php elseif($order_info["status"] == 2): ?>
-                      <td>待收货</td>
-                    <?php elseif($order_info["status"] == 3): ?>
-                      <td>待评价</td>
-                    <?php elseif($order_info["status"] == 4): ?>
-                      <td>已评价</td>
-                    <?php elseif($order_info["status"] == 9): ?>
-                      <td>订单已取消</td><?php endif; ?>
-                    <td style="text-align:center;">
-                    <a href="/index.php/Admin/Order/edit?act=edit&id=<?php echo ($vo["goods_id"]); ?>" >编辑</a> |
-                    <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
-                    <a href="/index.php/Admin/Order/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>
-                    </td>  
                   </tr>
-                  </foreach>
-                    <!-- 操作按钮 -->
-                    <tr>
-                        <td colspan="9" style="padding-top:20px;">
-                                <!--<span class="checkall-box"><input type="checkbox" id="check" /><label for="check">全选</label> </span>-->
-                                <!--<span class="pilian" href="javascript:void(0)" onclick="pilian('del')">批量删除</span>-->
-                        </td>
-                    </tr>
-                        <tr><td>&nbsp;</td></tr>
-                        <tr><td class="page_menu" colspan="12" valign="bottom">
-                            <div style="padding:15px 50px 0px 0px;float:right;">
-                              <?php echo ($page); ?>
-                            </div>
-                        </td></tr>
-                    </form>
+                  <tr>
+                    <td class="left_td">
+                      修改订单总额→
+                    </td>
+                    <td class="right_td">
+                      <input type="text" class="input" style="color:red;font-size:16px;"/>元
+                      <a href="javascript:void(0)" onclick="edit_money(this)" class="eventlink" style="height:30px;line-height:30px;float:none;">修改</a>
+                    </td>
+                  </tr>
                 </table>
             </div>
         </div>
@@ -180,207 +131,28 @@ a.title_text {
     <div class="b_border"></div>
 </div>
 <script type="text/javascript" src="/Public/Admin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/js/window.js"></script>
-<script language="javascript" src="/Public/Admin/js/JWin.js"></script>
+
 <script type="text/javascript">
 /**
- * 发货
+ * 修改费用
  */
-function sentOrder(obj){
-  var bool = window.confirm("确定发货吗？");
-  if( bool != true ) return;
-  var order_id = $(obj).parents("tr").children().eq(0).text();
-  $.get('/Api/Order/sentOrder',{order_id:order_id},function(ret){
-    if(ret == 1){
-      alert("发货成功!");
-      window.location.href="/Admin/order/showlist/p/<?php echo ($_GET['p']); ?>.html"; //跳转后依然跳到指定页码
-    }else{
-      alert("发货失败");
-    }
-  });
-}
-
-function delAlert(){
-  var bool = window.confirm("你确定要删除订单吗？");
-  if( bool != true ) return false;
-  return true;
-}
-
-$(document).ready(function(){
-	$('#check').click(function(){
-		$('input[name^=id]').attr('checked',this.checked);
-	});
-});
-
-
-function list_form_sub(){
-
-    if(verificate()){
-         $('#list-form').submit();
-    }
-}
-
-function previewImg(input) {
-  if (input.files && input.files[0]) {
-    if(input.files[0].size<2097152) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        //加入到预览图
-        $('#thumb').attr('src', e.target.result);
-        $('#hid_img').val(e.target.result);
-      }
-      reader.readAsDataURL(input.files[0]);
-    }else{
-      input.value="";
-      PromptHide('图片大小不能超出2M');
-    }
-  }
-}
-
-
-$("#add_file").change(function(){
-  previewImg(this);
-});
-
-function verificate(){
-  var sel=$(".sel").val();
-  var tex=$(".inp").val();
-  if(tex==''){
-      return true;
-  }
-  return true;
-}
-
-//批量修改图片
-function pilianimg(){
-  var d = 'img';
-  var hidimg = $('#hid_img').val();
-  var id = $('input:checkbox[name^=id]:checked').map(function(){
-    return $(this).val();
-  }).get().join(",");
-
-  if( ! id )
-  {
-    alert('请选择您要上传图片的项!');
+function edit_money(obj){
+  var money = $(obj).prev().val();
+  if(isNaN(money) || money<=1){
+    alert("请输入合法的价钱");
     return;
   }
-
-  var bool = window.confirm("您确定要修改微信头像吗？");
-  if ( bool == true )
-  {
-    location.href = '/admin/gzh/ilist';
-  }
+  var bool = window.confirm("您确认把订单总额从<?php echo ($order_info["total_money"]); ?>元改为"+money+"元吗？");
+  if(bool!=true) return;
+  var order_id = "<?php echo ($order_info["order_id"]); ?>";
+  $.get('/Api/Order/edit_money',{order_id:order_id,money:money},function(ret){
+    if(ret == 1){
+      alert("修改订单总价成功！");
+      window.location.href="<?php echo ($_SERVER['REQUEST_URI']); ?>";
+    } 
+  });
 }
-
-function do_select(d){
-    var cate_id=$("#level-type").val();
-    var order_num = $("#level-type_order").val();
-    $('input[name="cate_id"]').val(cate_id);
-    $('input[name="order_type"]').val(order_num);
-    $('#list-form').submit();
-}
-
-function pilian( d)
-{
-	var id = $('input:checkbox[name^=id]:checked').map(function(){
-		return $(this).val();
-	}).get().join(",");
-
-	if( ! id )
-	{
-		if ( d == "del" )	alert('请选择要删除的项!');
-		if ( d == "pass" )	alert('请选择要恢复的项!');
-		return;
-	}
-	if ( d == "del" )	var bool = window.confirm("您确定要删除您选中的微信号吗？");
-	if ( d == "pass" )	var bool = window.confirm("您确定要恢复您选中的微信号吗？");
-	if ( bool == true )
-	{
-		location.href = '/admin/gzh/glist?status=0&ids='+id+'&ast='+d+'&p=';
-	}
-}
-
-function istui(d,gid)
-{
-   var act = $(d).attr('act');
-    $.post('/admin/gzh/change',{act:act,gid:gid,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#tui"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else{
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }
-    },'json')
-}
-
-function red(d,gid)
-{
-    var act = $(d).attr('act');
-    $.post('/Wldoadmins/gzh/change',{act:act,gid:gid,index:1,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#red"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else if(da.result == 1){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }else if(da.result == 2)
-        {
-          JWin.lock.work(2000);
-          JWin.tip.work(da.msg,'error',500,2000);
-        }
-    },'json')
-}
-
-function category(id)
-{
-    var category_id=$("#c"+id).val();
-    var cate=$("#c"+id).find("option:selected").text();
-   $.post('/admin/gzh/ajax_cate_update',{cate_id:category_id,id:id},function  (da) {
-    if(da.status==true)
-    {
-        JWin.lock.work(1000);
-        JWin.tip.work('ok','ok',200,1000);
-    }
-    else
-    {
-        JWin.lock.work(1000);
-        JWin.tip.work('error','error',200,1000);
-    }
-   },'json')
-//  }
-}
-
-function delarticle(id,status){
-    var bool = window.confirm("您确定要进行该操作吗？");
-
-    if(bool==true){
-        $.post('/admin/gzh/delgzh',{id:id,status:status},function  (da) {
-            if(da.status==true){
-                $("#tr"+id).slideUp();
-                JWin.lock.work(1000);
-                if(status == 1){
-                    JWin.tip.work('恢复成功','ok',200,1000);
-                }else{
-
-                    JWin.tip.work('删除成功','ok',200,1000);
-                }
-            }else{
-                JWin.lock.work(1000);
-                if(status == 1){
-                    JWin.tip.work('恢复失败','ok',200,1000);
-                }else{
-
-                    JWin.tip.work('删除失败','ok',200,1000);
-                }
-            }
-        },'json')
-    }
-}
+                 
 </script>
 </body>
 </html>

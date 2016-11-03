@@ -58,6 +58,26 @@ class MyDealController extends CheckLoginController {
         $this->assign("evaluated_details",$evaluated_details);  //evaluated_details为三维数组
         $this->assign("Evaluated",$Evaluated);
 
+        //已成功退款
+        $already_refund = M('order')->where("user_id={$user_id} AND status=5")->select();
+        foreach($already_refund as $refund_single){
+            $order_id = $refund_single['order_id'];
+            $refund_detail = M("order_detail")->where("order_id={$order_id}")->select();
+            $refund_details[] = $refund_detail;
+        }
+        $this->assign("refund_details",$refund_details);  //refund_details为三维数组
+        $this->assign("already_refund",$already_refund);
+
+        //已关闭交易
+        $cancel_order = M('order')->where("user_id={$user_id} AND status=9")->select();
+        foreach($cancel_order as $cancel_single){
+            $order_id = $cancel_single['order_id'];
+            $cancel_detail = M("order_detail")->where("order_id={$order_id}")->select();
+            $cancel_details[] = $cancel_detail;
+        }
+        $this->assign("cancel_details",$cancel_details);  //cancel_details为三维数组
+        $this->assign("cancel_order",$cancel_order);
+
         //渲染模板
         $this->display("Person/order");
     }
@@ -70,18 +90,10 @@ class MyDealController extends CheckLoginController {
         $user_id = session('id');
         $common = M('order')->where("order_id={$order_id}")->find();    //订单共同信息
         $order_detail = M('order_detail')->where("order_id={$order_id}")->select(); //订单详细信息
-        /*echo "<pre>";
-        print_r($common);
-        print_r($order_detail);*/
+        
         $this->assign('common',$common);
         $this->assign('order_detail',$order_detail);
-        /*foreach($Nosent as $Nosent_single){
-            $order_id = $Nosent_single['order_id'];
-            $nosent_detail = M("order_detail")->where("order_id={$order_id}")->select();
-            $nosent_details[] = $nosent_detail;
-        }
-        $this->assign("nosent_details",$nosent_details);  //$details为三维数组
-        $this->assign("Nosent",$Nosent);*/
+        
 
         $this->display("Person/orderinfo");
     }

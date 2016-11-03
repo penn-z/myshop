@@ -67,11 +67,20 @@ a.title_text {
     border-radius:50%;
 }
 .type_content{
-    width:530px;
+    width:700px;
     height:30px;
     display:block;
     margin-top:4px;
 }
+.info_content{
+    width:120px;
+    margin-left:10px;
+    border:1px dashed grey;
+    float:left;
+   
+}
+
+.special_color{color:orange;}
 </style>
 </head>
 <body bgcolor="#F7F7F7">
@@ -93,123 +102,103 @@ a.title_text {
             <table border="0" cellpadding="0" cellspacing="0" id="add_table" width="100%">
                 <tr>
                     <td class="left_td">订单号：</td>
-                    <td class="right_td"><div class="input" style="border:none;color:red;"><?php echo ($order_info["order_id"]); ?></div></td>
-                </tr>
-                <!-- <tr>
-                    <td class="left_td">订单原价：</td>
-                    <td class="right_td"><input type="text" name="goods_price" class="input" value="" /></td>
-                </tr>
-                <tr>
-                    <td class="left_td">订单促销价：</td>
-                    <td class="right_td"><input type="text" name="goods_discount" class="input" value=""/></td>
-                </tr>
-                <tr>
-                    <td class="left_td">订单序列号：</td>
-                    <td class="right_td"><input type="text" name="goods_sn" class="input" value="" /></td>
-                </tr>
-                <tr>
-                    <td class="left_td">订单库存：</td>
-                    <td class="right_td"><input type="text" name="goods_nums" class="input" value="" /></td>
-                </tr> -->
-                <tr >
-                    <td class="left_td">订单月销量：</td>
-                    <td class="right_td"><input type="text" name="month_sales" class="input" value="" /></td>
-                </tr>
-                <tr>
-                    <td class="left_td">订单累计销量：</td>
-                    <td class="right_td"><input type="text" name="cumulative_sales" class="input" value="" /></td>
-                </tr>
-                <tr>
-                    <td class="left_td">订单评价总数：</td>
-                    <td class="right_td"><input type="text" name="goods_evaluation" class="input" value="" /></td>
+                    <td class="right_td"><div class="input" style="border:none;color:red;font-size:20px;"><?php echo ($order_info["order_id"]); ?></div></td>
                 </tr>
                 
-                
+                <?php if(is_array($order_detail)): foreach($order_detail as $key=>$single): if($single["status"] != 2): ?><tr >
+                    <td class="left_td">商品<a style="color:red;font-size:18px;"><?php echo ($key+1); ?></a>名称：</td>
+                    <td class="right_td"><?php echo ($single["goods_name"]); ?></td>
+                </tr>
                 <tr>
-               
-                    <td class="left_td">订单<input style="width:40px;margin:1px;" type="text" name="type1" class="input" placeholder="规格名1">及信息：</td>
-                    
+                    <td class="left_td">序列号：</td>
                     <td class="right_td" id="goods_type">
-                        <div class="type_content">
-                            <input style="width:80px;" type="text" name="goods_sn[]" placeholder="订单货号" class="input" value="" />
-                            <input style="width:80px;" type="text" name="goods_type[]" class="input" placeholder="规格子类名" value="" />
-                            <input style="width:80px;" type="text" name="goods_price[]" placeholder="订单原价" class="input" value="" />
-                            <input style="width:80px;" type="text" name="goods_discount[]" placeholder="订单折扣价" class="input" value="" />
-                            <input style="width:80px;" type="text" name="goods_num[]" class="input" placeholder="库存数量" value="" />
-                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" />
-                        </div>
-                    </td>
-                    <td class="left_td"><img src="/Public/images/add.jpg" style="width:20px;height:20px;cursor:pointer;" id="style_add" />
-                    </td>
-                
-                </tr>
-               
-                <tr>
-                    <td class="left_td">订单<input style="width:40px;margin:1px;" type="text" name="type2" class="input" placeholder="规格名2">：</td>
-                    <td class="right_td" id="goods_package">
-                        <div id="type_content">
-                            <input type="text" name="type2_name[]" class="input" value=""  placeholder="规格子类名"/>
-                            <img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)" />
-                        </div>
-                        
-
-                    </td>
-                    <td>
-                    <img src="/Public/images/add.jpg" style="width:20px;height:20px;cursor:pointer;float:right;" id="package_add" />
+                        <div class="input" style="border:none;"><?php echo ($single["goods_sn"]); ?></div>
                     </td>
                 </tr>
-
                 <tr>
-          <td class="left_td">订单简介：</td>
+                    <td class="left_td">单价：</td>
+                    <td class="right_td" id="goods_type">
+                        <div class="input" style="border:none;"><a class="special_color"><?php echo ($single["goods_price"]); ?></a>元</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">购买数量：</td>
+                    <td class="right_td" id="goods_type">
+                        <div class="input" style="border:none;">x<a class="special_color"><?php echo ($single["goods_num"]); ?></a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">该商品总额：</td>
+                    <td class="right_td" id="goods_type">
+                        <div class="input" style="border:none;"><a class="special_color"><?php echo ($single["this_total"]); ?></a>元</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">相关规格及图片：</td>
                     <td class="right_td">
-            <textarea  style="width:480px; height:80px" name="goods_brief" class="input" id="description" ></textarea>
-          </td>
+                      <div class="type_content">
+                        <div class="input info_content" >   
+                          <?php echo ($single["goods_type1"]); ?>:<a class="special_color"><?php echo ($single["goods_type"]); ?></a>
+                        </div>
+                        <div class="input info_content">
+                          <?php echo ($single["goods_type2"]); ?>:<a class="special_color"><?php echo ($single["goods_package"]); ?></a></div>
+                      </div>
+                      <img  style="display:block;width:200px;height:200px;margin-bottom:10px;" src="<?php echo ($single["goods_thumb"]); ?>" />
+                    </td>
+                </tr><?php endif; endforeach; endif; ?>
+
+                <tr>
+                  <td class="left_td">快递信息</td>
+                  <td class="right_td" style="width:400px;">
+                    <?php echo ($order_info["express_style"]); ?> 费用：<a class="special_color"><?php echo ($order_info["express_fee"]); ?></a>元
+
+                  </td>
+                </tr>
+                <?php if(($order_info["status"]) == "0"): ?><tr>
+
+                  </tr><?php endif; ?>
+
+                <tr>
+                  <td class="left_td">订单总费用</td>
+                  <td class="right_td">
+                    <a style="color:red;font-size:16px;"><?php echo ($order_info["total_money"]); ?></a>元
+                  </td>
+                </tr>
+
+                <?php if(($order_info["status"]) == "0"): ?><tr>
+                <td class="left_td">修改总费用→</td>
+                <td class="right_td">
+                  <input type="text" class="input" style="width:80px;color:red;font-size:16px;float:left;">元
+                  <a href="javascript:void(0)" onclick="edit_money(this)" class="eventlink" style="height:30px;line-height:30px;margin-left:20px;float:none;">修改</a>
+                </td>
+                </tr><?php endif; ?>
+
+                <tr>
+                  <td class="left_td">订单备注留言：</td>
+                            <td class="right_td">
+                    <div style="width:480px; height:80px;font-size:14px;border:dashed 1px grey;" name="goods_brief" class="input" id="description">
+                      <?php echo ($order_info["message"]); ?>
+                    </div>
+                  </td>
                 </tr>
 
                 <tr>
-                    <td class="left_td">订单范畴：</td>
+                    <td class="left_td">订单状态：</td>
                     <td class="right_td">
-            <select name="category_id" id="article_category" style="xbackground:#FFF;border:1px solid #CCC;">
-                            <option value="0" >--未分类--</option>
-                            <?php if(is_array($cat)): foreach($cat as $key=>$vo): ?><option value="<?php echo ($key); ?>"><?php echo ($vo); ?></option><?php endforeach; endif; ?>
-            </select>  
+                    <a style="color:red;font-size:16px;">
+                    <?php switch($order_info["status"]): case "0": ?>待付款<?php break;?>
+                    <?php case "1": ?>待发货<?php break;?>
+                    <?php case "2": ?>待收货<?php break;?>
+                    <?php case "3": ?>待评价<?php break;?>
+                    <?php case "4": ?>已评价<?php break;?>
+                    <?php case "9": ?>订单已取消<?php break; endswitch;?>
+                    </a>
                     </td>
                 </tr>
-                <tr>
-                    <td class="left_td">订单来源名称：</td>
-                    <td class="right_td"><input type="text" name="goods_source" class="input" value="" id="srcname"/></td>
-                </tr>
-
-                <tr>
-                    <td class="left_td">选购热点：</td>
-                    <td class="right_td"><input type="text" name="hot_spot" class="input" value="" id="hot_sopt"/></td>
-                </tr>
-
-                <tr id="qr-upload-tr">
-                    <td class="left_td">订单缩略图片：</td>
-                    <td class="right_td" id="upload-td">
-                        <input type="file" id="img_src" style="display:block;width: 200px;" /> 
-                        
-                        <div id="img-box"></div>
-                    </td>
-                </tr>
-                
-                
-                <tr style=" clear:both">
-                    <td class="left_td">订单内容：</td>
-          <td class="right_td">
-            <!-- 加载编辑器的容器 -->
-            <textarea style="z-index: 1;" name="goods_description" id="content" type="text/plain">
-              
-            </textarea>
-          </td>
-                </tr>
-                
-               
                 <!-- 操作按钮 -->
                 <tr><td colspan="4" valign="bottom" align="center"><div class="formHandleBox" style="padding-left:100px;">
                     <input type="hidden" name="act" value="add" />
-                    <a href="javascript:void(0)" onclick="form_submit(); return false;" class="eventlink">保存数据</a>
+                    <a href="javascript:window.history.go(-1);" class="eventlink">返回</a>
                 </div></td></tr>
             </table>
             </form>
@@ -219,105 +208,26 @@ a.title_text {
     <div class="b_border"></div>
     
 </div>
-<script type="text/javascript" src="/Public/tools/UEditor/ueditor.config.js"></script>
-<!-- 编辑器源码文件 -->
-<script type="text/javascript" src="/Public/tools/UEditor/ueditor.all.js"></script>
 <script type="text/javascript" src="/Public/Admin/js/jquery.min.js"></script>
-<script language="javascript" src="/Public/Admin/js/Ajax.class.js"></script>
-<script language="javascript" src="/Public/Admin/js/JWin.js"></script>
-<script language="javascript" src="/Public/Admin/js/XHRUploader.class.js"></script>
 <script language="javascript">
-var ue = UE.getEditor('content',{
-  textarea: 'content',
-  initialFrameWidth: 800,
-  initialFrameHeight: 400,
-  autoHeightEnabled: false,
-  autoFloatEnabled: false,
-    enterTag: 'br',
-});
-
-XHRUploader.init({
-    handlerUrl: '/admin/img/accept',
-    input: '_imgs[]'
-}).uploadFile('img_src', {
-    'partition' : 'date',
-    'space'     : 'article.image',
-    'thumb'     : 2,
-    'width'     : 0,
-    'height'    : 0
-},{
-    ready: function(ret){
-        //alert('zhengzai');
-    },
-    complete: function(ret){
-        //alert('wangcheng');
-        
-        var html = '<div id="add" style="float:left;"><a onclick="delPic(this)">X</a><img src="'+ret.data+'" width="80px" /><input type="hidden" name="thumb[]" value="'+ret.data+'" /></div>';
-        $('#img-box').append(html);
-    }
-});
-
-function delPic(data){
-    $(data).parents("#add").empty();
-}
-
-function form_submit ()
-{
-  /*var _ele = document.goods_add.elements;
-  var prevNode = null;
-  for ( var i = 0; i < _ele.length; i++ )
-    {
-    prevNode = _ele[i].parentNode.previousSibling;
-        if ( prevNode == null ) continue;
-        if ( _ele[i].id == 'add_file' || _ele[i].id == 'thumb-text' )  continue;
-    while ( prevNode.nodeType != 1 )
-      prevNode = prevNode.previousSibling;
-    if ( _ele[i].value.trim() == '' )
-        {
-      JWin.lock.work(1000);
-      JWin.tip.work(prevNode.innerHTML.replace('：','')+'不能为空。','warn',200,1000);
-      return;
-    }
-  }   */
-
-  document.goods_add.submit();
-}
-
-function viewImage( img_src )
-{   
-  if ( img_src == '' ) return;
-  
-    JWin.lock.work();
-  JWin.win.work('预览图','<div style="text-align:center;padding:10px;"><img src="'+img_src+'" border="0" width="100%"/></div>',{'width':'640px','text-align':'center'},function(){
-        JWin.lock.hide(0);
-        JWin.win.hide(0);
-    });
-}
-
-//动态添加订单种类
-$(document).ready(function(){
-    $("#style_add").click(function(){
-        $("#goods_type").append('<div id="type_content"><td class="right_td"><input style="width:80px;" type="text" name="goods_sn[]" placeholder="订单货号" class="input" value="" /><input style="width:80px;" type="text" name="goods_type[]" class="input" placeholder="规格子类名" value="" /><input style="width:80px;" type="text" name="goods_price[]" placeholder="订单原价" class="input" value="" /><input style="width:80px;" type="text" name="goods_discount[]" placeholder="订单折扣价" class="input" value="" /><input style="width:80px;" type="text" name="goods_num[]" class="input" placeholder="库存数量" value="" /><img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)"/></td></div>');
-    });
-})
-
-//动态添加订单包装种类
-$(document).ready(function(){
-    $("#package_add").click(function(){
-        $("#goods_package").append('<div id="type_content"><td class="right_td"><input type="text" name="type2_name[]"" class="input" placeholder="规格子类名"/><img src="/Public/images/minus sign.jpg" style="width:20px;height:20px;cursor:pointer;" onclick="delType(this)"/></td></div>');
-    });
-})
-
-function delType(obj){
-    var bool = window.confirm("确定要删除吗？");
-    if(bool != true) return;
-    $(obj).parents("#type_content").remove();
-}
-
-function delPic(data){
-    var bool = confirm('要删除吗？');
-    if( bool!=true ) return; 
-    $(data).parents("#add").empty();
+/**
+ * 修改费用
+ */
+function edit_money(obj){
+  var money = $(obj).prev().val();
+  if(isNaN(money) || money<=1){
+    alert("请输入合法的价钱");
+    return;
+  }
+  var bool = window.confirm("您确认把订单总额从<?php echo ($order_info["total_money"]); ?>元改为"+money+"元吗？");
+  if(bool!=true) return;
+  var order_id = "<?php echo ($order_info["order_id"]); ?>";
+  $.get('/Api/Order/edit_money',{order_id:order_id,money:money},function(ret){
+    if(ret == 1){
+      alert("修改订单总价成功！");
+      window.location.href="<?php echo ($_SERVER['REQUEST_URI']); ?>";
+    } 
+  });
 }
 </script>
 </body>

@@ -119,7 +119,7 @@
 										break;
 								}
 							}
-							document.onload = programList();
+							document.onload = programList();	//页面加载完成后执行动作
 						</script>
 						<div class="order-infoaside">
 							<div class="order-logistics">
@@ -228,9 +228,35 @@
 													</div>
 												</li>
 												<li class="td td-operation">
-													<div class="item-operation">
-														退款/退货
-													</div>
+												<switch name="Think.get.status">
+													<case value="1">
+														<div class="item-operation">
+														<eq name="vo.status" value="0">
+															<a href="/home/MyDeal/refund.html?order_id={$common.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Think.get.status}">退款</a>
+														<elseif condition="$vo.status eq 1" />
+															<a href="/home/MyDeal/refund.html?order_id={$common.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Think.get.status}" style="color:red;">等待退款中</a>
+														<else/>
+															<a style="color:green">退款成功</a>
+														</eq>
+														</div>
+													</case>
+													<case value="2">
+														<div class="item-operation">
+														<eq name="vo.status" value="0">
+															<a href="/home/MyDeal/refund.html?order_id={$common.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Senting.$key.status}">退款/退货</a>
+														<elseif condition="$vo.status eq 1" />
+															<a href="/home/MyDeal/refund.html?order_id={$common.order_id}&goods_sn={$vo.goods_sn}&goods_status={$vo.status}&status={$Think.get.status}" style="color:red;">等待退款/退货中</a>
+														<else/>
+															<a style="color:green;">退款/退货成功</a>
+														</eq>
+														</div>
+													</case>
+													<case value="3">
+														<div class="item-operation">
+															<a href="/home/MyDeal/commentlist.html?order_id={$common.order_id}">请评价商品</a>
+														</div>
+													</case>
+												</switch>
 												</li>
 											</ul>
 											</foreach>

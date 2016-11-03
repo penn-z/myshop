@@ -261,14 +261,28 @@
 								switch(status){
 									case 1:  	//待发货状态时进行退款
 										$("input").attr("disabled",true);	//禁止上传图片
-										$("#one").siblings("img").attr('src','<?php echo ($refund_info["path"]["0"]); ?>');
-										$("#two").siblings("img").attr('src','<?php echo ($refund_info["path"]["1"]); ?>');
-										$("#three").siblings("img").attr('src','<?php echo ($refund_info["path"]["2"]); ?>');
+										$("#one").siblings("img").attr('src','<?php echo ((isset($refund_info["path"]["0"]) && ($refund_info["path"]["0"] !== ""))?($refund_info["path"]["0"]):"/Public/images/image.jpg"); ?>');
+										$("#two").siblings("img").attr('src','<?php echo ((isset($refund_info["path"]["1"]) && ($refund_info["path"]["1"] !== ""))?($refund_info["path"]["1"]):"/Public/images/image.jpg"); ?>');
+										$("#three").siblings("img").attr('src','<?php echo ((isset($refund_info["path"]["2"]) && ($refund_info["path"]["2"] !== ""))?($refund_info["path"]["2"]):"/Public/images/image.jpg"); ?>');
 										$(".u-progress-bar-inner").css("width","49%");
 										$(".info-btn").find(".am-btn").attr("disabled",true);	//商家退款中，退款申请按钮不能活动
 										setTimeout(function(){
 											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
 										},1500);
+										break;
+									case 2:
+										$("input").attr("disabled",true);	//禁止上传图片
+										$("#one").siblings("img").attr('src','<?php echo ((isset($refund_info["path"]["0"]) && ($refund_info["path"]["0"] !== ""))?($refund_info["path"]["0"]):"/Public/images/image.jpg"); ?>');
+										$("#two").siblings("img").attr('src','<?php echo ((isset($refund_info["path"]["1"]) && ($refund_info["path"]["1"] !== ""))?($refund_info["path"]["1"]):"/Public/images/image.jpg"); ?>');
+										$("#three").siblings("img").attr('src','<?php echo ((isset($refund_info["path"]["2"]) && ($refund_info["path"]["2"] !== ""))?($refund_info["path"]["2"]):"/Public/images/image.jpg"); ?>');
+										$(".u-progress-bar-inner").css("width","101%");
+										$(".info-btn").find(".am-btn").attr("disabled",true);	//商家退款中，退款申请按钮不能活动
+										setTimeout(function(){
+											$(".step-2 .u-stage-icon-inner .bg").animate({opacity:1});
+											setTimeout(function(){
+												$(".step-3 .u-stage-icon-inner .bg").animate({opacity:1});
+											},600);
+										},950);
 										break;
 								}
 							}
@@ -329,6 +343,8 @@
 							 * 提交申请
 							 */
 							function sub(obj){
+								var bool = window.confirm("确定提交申请吗？");
+								if( bool != true ) return;
 								var father = $(obj).parents(".refund-main");	//父级div
 								var refund_type = father.find(".am-form-group").eq(0).find("select").val();	//退款类型
 								var refund_reason = father.find(".am-form-group").eq(1).find("select").val();//退款原因

@@ -45,8 +45,7 @@
 	<div class="navMenu">
 		<h3 onclick="switchMenu(this);">会员管理</h3>
 		<ul style="display:none;">
-            <li><a target="weilian" href="__MEMBER__/showList">会员列表</a></li>
-            <li><a target="weilian" href="__MEMBER__/edit">会员编辑</a></li>
+            <li><a target="weilian" href="/Admin/Member/showList">会员列表</a></li>
 		</ul>	
 	</div>
 	<div class="navMenu">

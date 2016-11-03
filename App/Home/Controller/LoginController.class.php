@@ -2,12 +2,17 @@
 namespace Home\Controller;
 use Think\Controller;
 class LoginController extends Controller {
+    /**
+     * 登录界面
+     */
     public function index(){
         session('is_login',null);   //进入登陆页面即注销登陆状态
-        session('id',null);
-        session('usernam',null);
+        session('id',null); //注销用户id
+        session('username',null); //注销账户名  
+        session('temp_order',null);  //注销临时订单的状态
     	$this->display('login');
     }
+
 
     public function login(){
 
@@ -20,6 +25,10 @@ class LoginController extends Controller {
         $data = $table->where($condition)->find();
 
         if( $data != false){
+            // 检测账户是否冻结状态，1为冻结
+            if( $data['is_block'] == 1){
+                echo '<script>alert("账户处于冻结状态，无法登录");window.location.href="/home/login.html";</script>';
+            }
             if( $data['password'] == md5($user['password']) ){
                 session('is_login',1);  //储存一个登陆状态session
                 session('id',$data['id']);  //储存一个唯一id 

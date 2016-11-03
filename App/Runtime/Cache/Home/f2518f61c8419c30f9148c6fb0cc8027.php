@@ -12,9 +12,13 @@
 		<link href="/Public/basic/css/demo.css" rel="stylesheet" type="text/css" />
 		<link type="text/css" href="/Public/css/optstyle.css" rel="stylesheet" />
 		<link type="text/css" href="/Public/css/style.css" rel="stylesheet" />
+		<link href="/Public/Admin/css/webmallDialog.css" rel="stylesheet" type="text/css" />
 
 		<script type="text/javascript" src="/Public/basic/js/jquery-1.7.min.js"></script>
 		<script type="text/javascript" src="/Public/basic/js/quick_links.js"></script>
+		<script type="text/javascript" src="/Public/Admin/js/JWin.js"></script>
+
+
 		<script type="text/javascript" src="/Public/AmazeUI-2.4.2/assets/js/amazeui.js"></script>
 
 		<script type="text/javascript" src="/Public/js/jquery.imagezoom.min.js"></script>
@@ -136,7 +140,7 @@
 					<section class="slider">
 						<div class="flexslider">
 							<ul class="slides">
-							<?php $__FOR_START_1222428666__=0;$__FOR_END_1222428666__=3;for($i=$__FOR_START_1222428666__;$i < $__FOR_END_1222428666__;$i+=1){ if(($i) == "0"): ?><li>
+							<?php $__FOR_START_1326650388__=0;$__FOR_END_1326650388__=3;for($i=$__FOR_START_1326650388__;$i < $__FOR_END_1326650388__;$i+=1){ if(($i) == "0"): ?><li>
 									<img src="<?php echo ($thumb["big"]["$i"]); ?>" title="pic" />
 								</li>
 								<?php else: ?>
@@ -169,7 +173,7 @@
 								<a href="<?php echo ($thumb["big"]["0"]); ?>"><img src="<?php echo ($thumb["big"]["0"]); ?>" alt="细节展示放大镜特效" rel="<?php echo ($thumb["big"]["0"]); ?>" class="jqzoom" /></a>
 							</div>
 							<ul class="tb-thumb" id="thumblist">
-							<?php $__FOR_START_42509640__=0;$__FOR_END_42509640__=3;for($i=$__FOR_START_42509640__;$i < $__FOR_END_42509640__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
+							<?php $__FOR_START_1272278011__=0;$__FOR_END_1272278011__=3;for($i=$__FOR_START_1272278011__;$i < $__FOR_END_1272278011__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
 									<div class="tb-pic tb-s40">
 										<a href="#"><img id="add_shopcart" src="<?php echo ($thumb["small"]["$i"]); ?>" mid="<?php echo ($thumb["mid"]["$i"]); ?>" big="<?php echo ($thumb["big"]["$i"]); ?>"></a>
 									</div>
@@ -465,6 +469,7 @@
 									window.location.href="/home/login";
 									exit();
 								}
+								// alert(ret);
 								window.location.href="/home/pay";
 							}
 						);
@@ -729,7 +734,7 @@
 														</div>
 													</div>
 													<div class="comment-pic">
-													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' onclick="viewImage(this.src)" style="cursor:pointer;" title="查看大图"/><?php endforeach; endif; ?>
 													</div>
 												</div>
 												<!-- 评论内容 -->
@@ -770,7 +775,7 @@
 														</div>
 													</div>
 													<div class="comment-pic">
-													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' onclick="viewImage(this.src)" style="cursor:pointer;" title="查看大图"/><?php endforeach; endif; ?>
 													</div>
 												</div>
 												<!-- 评论内容 -->
@@ -811,7 +816,7 @@
 														</div>
 													</div>
 													<div class="comment-pic">
-													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' onclick="viewImage(this.src)" style="cursor:pointer;" title="查看大图"/><?php endforeach; endif; ?>
 													</div>
 												</div>
 												<!-- 评论内容 -->
@@ -853,7 +858,7 @@
 														</div>
 													</div>
 													<div class="comment-pic">
-													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' /><?php endforeach; endif; ?>
+													<?php if(is_array($vo["picture"])): foreach($vo["picture"] as $key=>$path): ?><img src='<?php echo ($path); ?>' onclick="viewImage(this.src)" style="cursor:pointer;" title="查看大图"/><?php endforeach; endif; ?>
 													</div>
 												</div>
 												<!-- 评论内容 -->
@@ -897,6 +902,22 @@
 												arrayul[i].className='am-comments-list am-comments-list-flip to_hidden';
 											}
 										}
+									}
+
+									/**
+									 * 预览图
+									 */
+									function viewImage( img_src ){   
+									    if ( img_src == '' ) return;
+									    JWin.lock.work();
+									    JWin.win.work('预览图','<div style="text-align:center;padding:10px;"><img src="'+img_src+'" border="0" width="400px"/></div>',{'width':'500px','text-align':'center'},function(){
+									        JWin.lock.hide(0);
+									        JWin.win.hide(0);
+									    });
+									}
+
+									function locate(){
+										window.location.href="/home/pay/shopcart.html";
 									}
 								</script>
 
@@ -1113,8 +1134,8 @@
 							</div>
 
 						</div>
-						<div id="shopCart" class="item">
-							<a href="#">
+						<div id="shopCart" class="item" onclick="locate()">
+							<a href="javascript:void(0);">
 								<i id="end"></i><span class="message"></span>
 							</a>
 							<p>
@@ -1125,7 +1146,6 @@
 								<p class="cart_num">0</p><?php endif; ?>
 							
 						</div>
-						
 						<div id="asset" class="item">
 							<a href="#">
 								<span class="view"></span>

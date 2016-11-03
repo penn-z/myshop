@@ -265,13 +265,13 @@
 																</div>
 															</li>
 															<li class="td td-operation">
-															<?php if($vo["status"] == 0): ?><div class="item-operation">
-																	<a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$index"]["status"]); ?>">退款</a>
-																</div>
-															<?php else: ?>
 																<div class="item-operation">
-																	<a href="javascript:void(0);">等待商家退款中</a>
-																</div><?php endif; ?>
+																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$index"]["status"]); ?>">退款</a>
+																<?php elseif($vo["status"] == 1): ?>
+																	<a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$index"]["status"]); ?>" style="color:red;">等待退款中</a>
+																<?php else: ?>
+																	<a style="color:green;">退款成功</a><?php endif; ?>
+																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
 														
@@ -291,8 +291,10 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	提醒发货</div>
+															<?php if($Nosent[$index][remind_sent] == 0){ echo "<div class='am-btn am-btn-danger anniu' order_id='".$Nosent[$index][order_id]."' onclick='remindSent(this)'>
+																		提醒发货</div>"; }else{ echo '<div class="am-btn am-btn-danger anniu">
+																		已提醒发货
+																	</div>'; } ?>
 															</li>
 														</div>
 													</div>
@@ -339,8 +341,10 @@
 															<li class="td td-operation">
 																<div class="item-operation">
 																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Senting["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$index"]["status"]); ?>">退款/退货</a>
+																<?php elseif($vo["status"] == 1): ?>
+																	<a href="/home/MyDeal/refund.html?order_id=<?php echo ($Senting["$index"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$index"]["status"]); ?>" style="color:red;">等待退款/退货中</a>
 																<?php else: ?>
-																	<a href="javascript:void(0);">等待商家退货退款中</a><?php endif; ?>
+																	<a style="color:green;">退款/退货成功</a><?php endif; ?>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -440,129 +444,127 @@
 												</div><?php endforeach; endif; ?>
 											</div>
 
+											<!-- 退款成功 -->
+											<div class="order-status6">
+											<?php if(is_array($refund_details)): foreach($refund_details as $key=>$refund_detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($already_refund["$key"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$already_refund["$key"]["addtime"])); ?></span>
 
-											<!--交易失败-->
-											<div class="order-status0">
-												<div class="order-title">
-													<div class="dd-num">订单编号：<a href="javascript:;">1601430</a></div>
-													<span>成交时间：2015-12-20</span>
-													<!--    <em>店铺：小桔灯</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
-														<ul class="item-list">
+														<?php if(is_array($refund_detail)): foreach($refund_detail as $inKey=>$vo): ?><ul class="item-list">
 															<li class="td td-item">
 																<div class="item-pic">
 																	<a href="#" class="J_MakePoint">
-																		<img src="/Public/images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg">
+																		<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic J_ItemImg">
 																	</a>
 																</div>
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
-																			<p class="info-little">颜色：12#川南玛瑙
-																				<br/>包装：裸装 </p>
+																			<p><?php echo ($vo["goods_name"]); ?></p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
 																		</a>
 																	</div>
 																</div>
 															</li>
 															<li class="td td-price">
 																<div class="item-price">
-																	333.00
+																	<?php echo ($vo["goods_price"]); ?>
 																</div>
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>×</span>2
+																	<span>×</span><?php echo ($vo["goods_num"]); ?>
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	
+																	<a href="javascript:">退款成功</a>
 																</div>
 															</li>
-														</ul>
-
-														<ul class="item-list">
-															<li class="td td-item">
-																<div class="item-pic">
-																	<a href="#" class="J_MakePoint">
-																		<img src="/Public/images/62988.jpg_80x80.jpg" class="itempic J_ItemImg">
-																	</a>
-																</div>
-																<div class="item-info">
-																	<div class="item-basic-info">
-																		<a href="#">
-																			<p>礼盒袜子女秋冬 纯棉袜加厚 韩国可爱 </p>
-																			<p class="info-little">颜色分类：李清照
-																				<br/>尺码：均码</p>
-																		</a>
-																	</div>
-																</div>
-															</li>
-															<li class="td td-price">
-																<div class="item-price">
-																	333.00
-																</div>
-															</li>
-															<li class="td td-number">
-																<div class="item-number">
-																	<span>×</span>2
-																</div>
-															</li>
-															<li class="td td-operation">
-																<div class="item-operation">
-																	
-																</div>
-															</li>
-														</ul>
-
-														<ul class="item-list">
-															<li class="td td-item">
-																<div class="item-pic">
-																	<a href="#" class="J_MakePoint">
-																		<img src="/Public/images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg">
-																	</a>
-																</div>
-																<div class="item-info">
-																	<div class="item-basic-info">
-																		<a href="#">
-																			<p>美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
-																			<p class="info-little">颜色：12#川南玛瑙
-																				<br/>包装：裸装 </p>
-																		</a>
-																	</div>
-																</div>
-															</li>
-															<li class="td td-price">
-																<div class="item-price">
-																	333.00
-																</div>
-															</li>
-															<li class="td td-number">
-																<div class="item-number">
-																	<span>×</span>2
-																</div>
-															</li>
-															<li class="td td-operation">
-																<div class="item-operation">
-																	
-																</div>
-															</li>
-														</ul>
+														</ul><?php endforeach; endif; ?>
 													</div>
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																合计：676.00
-																<p>含运费：<span>10.00</span></p>
+																合计：<?php echo ($already_refund["$key"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($already_refund["$key"]["express_fee"]); ?></span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">交易关闭</p>
+																	<p class="Mystatus" style="color:red;">交易已关闭</p>
+																	<p class="order-info"><a href="orderinfo.html?order_id=<?php echo ($already_refund["$key"]["order_id"]); ?>&status=<?php echo ($already_refund["$key"]["status"]); ?>">订单详情</a></p>
+																</div>
+															</li>
+															<li class="td td-change">
+																<a href="/home/MyDeal/change.html">
+																	<div class="am-btn am-btn-secondary anniu">
+																		退款售后</div>
+																</a>
+															</li>
+														</div>
+													</div>
+												</div><?php endforeach; endif; ?>
+											</div>					
+
+											<!--交易失败-->
+											<div class="order-status0">
+											<?php if(is_array($cancel_details)): foreach($cancel_details as $key=>$cancel_detail): ?><div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($cancel_order["$key"]["order_id"]); ?></a></div>
+													<span>成交时间：<?php echo (date("Y-m-d H:i:s",$cancel_order["$key"]["addtime"])); ?></span>
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+													<?php if(is_array($cancel_detail)): foreach($cancel_detail as $index=>$vo): ?><ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="<?php echo ($vo["goods_thumb"]); ?>" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p><?php echo ($vo["goods_name"]); ?></p>
+																			<p class="info-little"><?php echo ($vo["goods_type1"]); ?>：<?php echo ($vo["goods_type"]); ?>
+																				<br/><?php echo ($vo["goods_type2"]); ?>：<?php echo ($vo["goods_package"]); ?> </p>
+																		</a>
+																	</div>
+																</div>
+															</li>
+															<li class="td td-price">
+																<div class="item-price">
+																	<?php echo ($vo["goods_price"]); ?>
+																</div>
+															</li>
+															<li class="td td-number">
+																<div class="item-number">
+																	<span>×</span><?php echo ($vo["goods_num"]); ?>
+																</div>
+															</li>
+															<li class="td td-operation">
+																<div class="item-operation">
+																	
+																</div>
+															</li>
+														</ul><?php endforeach; endif; ?>
+													</div>
+													<div class="order-right">
+														<li class="td td-amount">
+															<div class="item-amount">
+																合计：<?php echo ($cancel_order["$key"]["total_money"]); ?>
+																<p>含运费：<span><?php echo ($cancel_order["$key"]["express_fee"]); ?></span></p>
+															</div>
+														</li>
+														<div class="move-right">
+															<li class="td td-status">
+																<div class="item-status">
+																	<p class="Mystatus" style="color:red;">交易关闭</p>
 																</div>
 															</li>
 															<li class="td td-change">
@@ -571,7 +573,7 @@
 															</li>
 														</div>
 													</div>
-												</div>
+												</div><?php endforeach; endif; ?>
 											</div>
 
 											<!--交易成功-->
@@ -753,10 +755,30 @@
 											'/Api/Order/cancelOrder',
 											{order_id:order_id},
 											function(ret){
-												alert("订单已取消");
-												window.location.href="/home/MyDeal/order";
+												if(ret == 1){
+													alert("订单已取消");
+													window.location.href="/home/MyDeal/order";
+												}else{
+													alert("订单取消失败");
+												}
 											}
 										);
+									}
+
+									/**
+									 * 提醒发货
+									 */
+									function remindSent(obj){
+										var bool = window.confirm("确认提醒卖家发货吗？");
+										if( bool != true) return;
+										var order_id = $(obj).attr("order_id");
+										$.get('/Api/Order/remind',{order_id:order_id},function(ret){
+											if(ret==1){
+												alert("提醒发货成功");
+											}else{
+												alert("提醒发货失败");
+											}
+										});
 									}
 								</script>
 								<div class="am-tab-panel am-fade" id="tab3">
@@ -824,8 +846,10 @@
 															<li class="td td-operation">
 																<div class="item-operation">
 																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$key"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$key"]["status"]); ?>">退款</a>
+																<?php elseif($vo["status"] == 1): ?>
+																	<a href="/home/MyDeal/refund.html?order_id=<?php echo ($Nosent["$key"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Nosent["$key"]["status"]); ?>" style="color:red;">等待退款中</a>
 																<?php else: ?>
-																	<a href="javascript:void(0);">等待商家退款中</a><?php endif; ?>
+																	<a style="color:green;">退款成功</a><?php endif; ?>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -846,8 +870,11 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
-																	提醒发货</div>
+															
+															<?php if($Nosent[$key][remind_sent] == 0){ echo "<div class='am-btn am-btn-danger anniu' order_id='".$Nosent[$key][order_id]."' onclick='remindSent(this)'>
+																	提醒发货</div>"; }else{ echo '<div class="am-btn am-btn-danger anniu">
+																	已提醒发货
+																</div>'; } ?>
 															</li>
 														</div>
 													</div>
@@ -924,8 +951,10 @@
 															<li class="td td-operation">
 																<div class="item-operation">
 																<?php if($vo["status"] == 0): ?><a href="/home/MyDeal/refund.html?order_id=<?php echo ($Senting["$key"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$key"]["status"]); ?>">退款/退货</a>
+																<?php elseif($vo["status"] == 1): ?>
+																	<a href="/home/MyDeal/refund.html?order_id=<?php echo ($Senting["$key"]["order_id"]); ?>&goods_sn=<?php echo ($vo["goods_sn"]); ?>&goods_status=<?php echo ($vo["status"]); ?>&status=<?php echo ($Senting["$key"]["status"]); ?>" style="color:red;">等待退款/退货中</a>
 																<?php else: ?>
-																	<a href="javascript:void(0);">等待商家退货退款中</a><?php endif; ?>
+																	<a style="color:green;">退款退货成功</a><?php endif; ?>
 																</div>
 															</li>
 														</ul><?php endforeach; endif; ?>
@@ -957,7 +986,8 @@
 										</div>
 									</div><?php endforeach; endif; ?>
 								</div>
-
+								
+								<!-- 待评价 -->
 								<div class="am-tab-panel am-fade" id="tab5">
 									<div class="order-top">
 										<div class="th th-item">
@@ -985,7 +1015,6 @@
 									
 									<?php if(is_array($evaluate_details)): foreach($evaluate_details as $key=>$evaluate_detail): ?><div class="order-main">
 										<div class="order-list">
-											<!--待评价-->
 											<div class="order-status4">
 												<div class="order-title">
 													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($Evaluate["$key"]["order_id"]); ?></a></div>

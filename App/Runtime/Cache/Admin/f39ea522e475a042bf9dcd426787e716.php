@@ -129,6 +129,7 @@ a.title_text {
                       <td width="5%">联系电话</td>
 	                    <td width="10%">收货地址</td>
                       <td width="10%">订单状态</td>
+                      <td width="3%" >退款申请</td>
 	                    <td width="5%">操作导航</td>
                 	</tr>
                   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
@@ -143,28 +144,29 @@ a.title_text {
                     <td><?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["street"]); ?></td>
                     <?php if($vo["status"] == 0): ?><td>待付款 | <a href="/Admin/order/fee_change.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">更改费用</a></td>
                     <?php elseif($vo["status"] == 1): ?>
-                      <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
+                      <?php if(($vo["remind_sent"]) == "0"): ?><td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
+                      <?php else: ?>
+                        <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a> | <a style="color:red;">买家催货啦！</td><?php endif; ?>
                     <?php elseif($vo["status"] == 2): ?>
                       <td>待收货</td>
                     <?php elseif($vo["status"] == 3): ?>
                       <td>待评价</td>
                     <?php elseif($vo["status"] == 4): ?>
                       <td>已评价</td>
+                    <?php elseif($vo["status"] == 5): ?>
+                      <td><a style="color:red;">退款成功</a></td>
                     <?php elseif($vo["status"] == 9): ?>
                       <td>订单已取消</td><?php endif; ?>
+                    <td>
+                      <?php if(($vo["is_refund"]) == "0"): ?>无
+                      <?php else: ?>
+                        <a href="/Admin/order/showRefund?order_id=<?php echo ($vo["order_id"]); ?>" style="cursor:pointer;color:red;">有</a><?php endif; ?>
+                    </td>
                     <td style="text-align:center;">
-                    <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">详情</a> |
-                    <a href="/index.php/Admin/Order/edit?act=edit&id=<?php echo ($vo["goods_id"]); ?>" >编辑</a> |
-                    <a href="/index.php/Admin/Order/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>
+                    <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>">详情</a> |
+                    <a href="#" target="_blank">编辑</a>
                     </td>  
                   </tr><?php endforeach; endif; ?>
-                    <!-- 操作按钮 -->
-                    <tr>
-                        <td colspan="9" style="padding-top:20px;">
-                                <!--<span class="checkall-box"><input type="checkbox" id="check" /><label for="check">全选</label> </span>-->
-                                <!--<span class="pilian" href="javascript:void(0)" onclick="pilian('del')">批量删除</span>-->
-                        </td>
-                    </tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td class="page_menu" colspan="12" valign="bottom">
                             <div style="padding:15px 50px 0px 0px;float:right;">
@@ -250,90 +252,9 @@ function verificate(){
   return true;
 }
 
-//批量修改图片
-function pilianimg(){
-  var d = 'img';
-  var hidimg = $('#hid_img').val();
-  var id = $('input:checkbox[name^=id]:checked').map(function(){
-    return $(this).val();
-  }).get().join(",");
 
-  if( ! id )
-  {
-    alert('请选择您要上传图片的项!');
-    return;
-  }
 
-  var bool = window.confirm("您确定要修改微信头像吗？");
-  if ( bool == true )
-  {
-    location.href = '/admin/gzh/ilist';
-  }
-}
 
-function do_select(d){
-    var cate_id=$("#level-type").val();
-    var order_num = $("#level-type_order").val();
-    $('input[name="cate_id"]').val(cate_id);
-    $('input[name="order_type"]').val(order_num);
-    $('#list-form').submit();
-}
-
-function pilian( d)
-{
-	var id = $('input:checkbox[name^=id]:checked').map(function(){
-		return $(this).val();
-	}).get().join(",");
-
-	if( ! id )
-	{
-		if ( d == "del" )	alert('请选择要删除的项!');
-		if ( d == "pass" )	alert('请选择要恢复的项!');
-		return;
-	}
-	if ( d == "del" )	var bool = window.confirm("您确定要删除您选中的微信号吗？");
-	if ( d == "pass" )	var bool = window.confirm("您确定要恢复您选中的微信号吗？");
-	if ( bool == true )
-	{
-		location.href = '/admin/gzh/glist?status=0&ids='+id+'&ast='+d+'&p=';
-	}
-}
-
-function istui(d,gid)
-{
-   var act = $(d).attr('act');
-    $.post('/admin/gzh/change',{act:act,gid:gid,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#tui"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else{
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }
-    },'json')
-}
-
-function red(d,gid)
-{
-    var act = $(d).attr('act');
-    $.post('/Wldoadmins/gzh/change',{act:act,gid:gid,index:1,format:'json'},function  (da) {
-        if(da.result == 0 ){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作成功','ok',200,1000);
-          $("#red"+gid+' a').html(da.is)
-          if(act=='notui'){$(d).attr('act','tui');$(d).removeClass('tui')}else{$(d).attr('act','notui');$(d).addClass('tui')}
-        }else if(da.result == 1){
-          JWin.lock.work(1000);
-          JWin.tip.work('操作失败','error',200,1000);
-        }else if(da.result == 2)
-        {
-          JWin.lock.work(2000);
-          JWin.tip.work(da.msg,'error',500,2000);
-        }
-    },'json')
-}
 
 function category(id)
 {

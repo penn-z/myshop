@@ -21,11 +21,12 @@ class GoodsController extends Controller {
 	public function buyNow(){
 		if( session('is_login') != 1){
 			echo 1;
+			exit();
 		}
 
 		$data = I('post.');	//获取post过来的商品信息
-		//先查看选择的商品是否存在于数据库
 
+		//先查看选择的商品是否存在于数据库
    		$choice = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."'")->find();
    		//若不存在
    		if($choice==false){
@@ -46,8 +47,7 @@ class GoodsController extends Controller {
 	   		$order['addtime'] = time();
 	   		$order_ret = M('temporary_order')->add($order); 	//生成临时订单表
 
-   		}
-	   	else{	//存在于数据库时,此时按立即购买的话,会把该商品在购物车的商量改为立即购买的数量(模仿京东)
+   		}else{	//存在于数据库时,此时按立即购买的话,会把该商品在购物车的商量改为立即购买的数量(模仿京东)
 	   		$information = array('goods_num'=>$data['goods_num'],'is_order'=>1,'addtime'=>time());	//设置数量为立即购买数量,临时订单重新生成时间
 	   		$update_num = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."'")->setField($information);
 
@@ -91,6 +91,7 @@ class GoodsController extends Controller {
 		//未登陆无法加入购物车
 		if( session('is_login') != 1 ){
    			echo 1;
+   			exit();
    		}
 
    		$data = I('post.');	//获取post过来的商品信息
