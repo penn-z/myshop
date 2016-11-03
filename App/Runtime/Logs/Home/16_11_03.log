@@ -22219,3 +22219,281 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
 
+[ 2016-11-03T23:39:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-11-03T23:39:34+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-11-03T23:52:52+08:00 ] 127.0.0.1 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-11-03T23:52:56+08:00 ] 127.0.0.1 /home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-11-03T23:53:00+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` WHERE `email` = 'penn' OR `account` = 'penn' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-11-03T23:53:01+08:00 ] 127.0.0.1 /home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-11-03T23:53:03+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2016-11-03T23:53:05+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-11-03T23:53:42+08:00 ] 127.0.0.1 /home/MyDeal/orderinfo.html?order_id=147748457200049176&status=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order` WHERE ( order_id=147748457200049176 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-11-03T23:55:33+08:00 ] 127.0.0.1 /home/MyDeal/change.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `think_refund` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_refund` WHERE ( user_id=4 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 AND goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 AND goods_sn=1000003 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 AND goods_sn=1011 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 AND goods_sn=1000002 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 AND goods_sn=1000003 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2016-11-03T23:58:16+08:00 ] 127.0.0.1 /home/MyDeal/change.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `think_refund` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_refund` WHERE ( user_id=4 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 AND goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 AND goods_sn=1000003 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 AND goods_sn=1011 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 AND goods_sn=1000002 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 AND goods_sn=1000003 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
