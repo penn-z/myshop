@@ -151,18 +151,18 @@ a.title_text {
                       <eq name="vo.remind_sent" value="0">
                         <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
                       <else/>
-                        <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a> | <a style="color:red;">买家催货啦！</td>
+                        <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a> | <a style="color:red;">买家催货</a></td>
                       </eq>
                     <elseif condition="$vo.status eq 2" />
                       <td>待收货</td>
                     <elseif condition="$vo.status eq 3" />
-                      <td>待评价</td>
+                      <td><a style="color:green;">待评价</a></td>
                     <elseif condition="$vo.status eq 4" />
-                      <td>已评价</td>
+                      <td><a style="color:green;">已评价</a></td>
                     <elseif condition="$vo.status eq 5" />
                       <td><a style="color:red;">退款成功</a></td>
                     <elseif condition="$vo.status eq 9" />
-                      <td>订单已取消</td>
+                      <td><a style="color:red;">订单已取消</a></td>
                     </if>
                     <td>
                       <eq name="vo.is_refund" value="0">

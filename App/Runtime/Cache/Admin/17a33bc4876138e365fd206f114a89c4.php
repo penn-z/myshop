@@ -16,7 +16,7 @@
 .tr_list_page{  font-size: 12px; height: 24px; background-color: #EBEBEB; border: 1px solid #FFF;}
 .tr_list{font-size: 12px; height: 24px; background-color: #FFF; border: 1px solid #FFF;}
 .tr_list a{color:blue;text-decoration:none;}
-.tr_list a:hover{color:orange;}
+
 .inp{ width: 300px; height: 30px; border:1px solid #666; padding-left: 5px;}
 .sub{background: #06c; padding:0 15px; height:30px; text-align: center; color: #fff; line-height: 30px; cursor: pointer; border-radius: 3px }
 a.tui{ color:#f00}
@@ -57,13 +57,12 @@ a.title_text {
 
 .eventlink{
   color: #fff;
-    float: left;
     font-weight: 600;
     height: 32px;
     line-height: 32px;
     margin-right: 10px;
     padding: 0 10px;
-    text-align: cente; border-radius:3px; background:#09C;
+    text-align: center; border-radius:3px; background:#09C;
   cursor:pointer
 }
 #face_img{
@@ -78,13 +77,14 @@ a.title_text {
 }
 .checkall-box{ float:left;}
 .pilian{float: left; margin-top:10px;}
+.tr_list .reset{display:block;background:#00597F;color:#fff;width:60px;font-size:12px;margin:0px auto;}
 </style>
 </head>
 
 <body bgcolor="#F7F7F7">
 <div class="content">
 
-    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：订单管理-&gt;订单列表</div>
+    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：订单管理-&gt;退款列表</div>
 
     <div class="m_content">
 
@@ -121,51 +121,29 @@ a.title_text {
                 	<tr class="tr_top">
                       <td width="5%">订单号</td>
                       <td width="3%">购物会员</td>
-                      <td width="5%">订单生成时间</td>
-                      <td width="3%">货品总额</td>
-	                    <td width="3%">快递</td>
-                      <td width="5%">运费</td>
-                      <td width="5%">收货人</td>
-                      <td width="5%">联系电话</td>
-	                    <td width="10%">收货地址</td>
+                      <td width="10%">订单生成时间</td>
                       <td width="10%">订单状态</td>
-                      <td width="3%" >退款申请</td>
 	                    <td width="5%">操作导航</td>
                 	</tr>
                   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
                     <td><?php echo ($vo["order_id"]); ?></td>  
-                    <td><?php echo ($vo["buyer_name"]); ?></td>  
+                    <td><?php echo ($vo["account"]); ?></td>  
                     <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>  
-                    <td><?php echo ($vo["total_money"]); ?></td>  
-                    <td><?php echo ($vo["express_style"]); ?></td>  
-                    <td><?php echo ($vo["express_fee"]); ?></td>
-                    <td><?php echo ($vo["receiver"]); ?></td>
-                    <td><?php echo ($vo["phone"]); ?></td>
-                    <td><?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["street"]); ?></td>
-                    <?php if($vo["status"] == 0): ?><td>待付款 | <a href="/Admin/order/fee_change.html?order_id=<?php echo ($vo["order_id"]); ?>" target="_blank">更改费用</a></td>
+                    <?php if($vo["status"] == 0): ?><td>退款已取消</td>
+                      <td style="text-align:center;">
+                        <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>" class="eventlink reset" id="<?php echo ($vo["id"]); ?>" style="text-decoration: none;">查看详情</a>
+                      </td>
                     <?php elseif($vo["status"] == 1): ?>
-                      <?php if(($vo["remind_sent"]) == "0"): ?><td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a></td>
-                      <?php else: ?>
-                        <td>待发货 | <a style="cursor:pointer;" onclick="sentOrder(this)" >发货</a> | <a style="color:red;">买家催货</a></td><?php endif; ?>
+                      <td><a style="color:red;">请求退款中</a></td>
+                      <td style="text-align:center;">
+                        <a href="/Admin/order/showRefund?order_id=<?php echo ($vo["order_id"]); ?>" class="eventlink reset" id="<?php echo ($vo["id"]); ?>" style="text-decoration: none;">查看申请</a>
+                      </td>  
                     <?php elseif($vo["status"] == 2): ?>
-                      <td>待收货</td>
-                    <?php elseif($vo["status"] == 3): ?>
-                      <td><a style="color:green;">待评价</a></td>
-                    <?php elseif($vo["status"] == 4): ?>
-                      <td><a style="color:green;">已评价</a></td>
-                    <?php elseif($vo["status"] == 5): ?>
-                      <td><a style="color:red;">退款成功</a></td>
-                    <?php elseif($vo["status"] == 9): ?>
-                      <td><a style="color:red;">订单已取消</a></td><?php endif; ?>
-                    <td>
-                      <?php if(($vo["is_refund"]) == "0"): ?>无
-                      <?php else: ?>
-                        <a href="/Admin/order/showRefund?order_id=<?php echo ($vo["order_id"]); ?>" style="cursor:pointer;color:red;">有</a><?php endif; ?>
-                    </td>
-                    <td style="text-align:center;">
-                    <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>">详情</a> |
-                    <a href="#" target="_blank">编辑</a>
-                    </td>  
+                      <td><a style="color:green;">成功退款</a></td>
+                      <td style="text-align:center;">
+                        <a href="/Admin/order/order_info.html?order_id=<?php echo ($vo["order_id"]); ?>" class="eventlink reset" id="<?php echo ($vo["id"]); ?>" style="text-decoration: none;">查看详情</a>
+                      </td><?php endif; ?>
+                    
                   </tr><?php endforeach; endif; ?>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td class="page_menu" colspan="12" valign="bottom">

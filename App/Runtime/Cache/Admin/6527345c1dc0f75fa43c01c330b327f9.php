@@ -10,7 +10,7 @@
 <div class="left_menu">
 	<div class="menu_top">
 		<div class="m_t_left">Welcome</div>
-    	<a href="/admin/auth/exit" target="_parent" onclick="return window.confirm('你真的要退出管理吗？');"><div class="m_t_right">安全退出</div></a>
+    	<a href="/admin/auth/exit" target="_parent" onclick="!return window.confirm('你真的要退出管理吗？');"><div class="m_t_right">安全退出</div></a>
     </div>
     
 	<div class="navMenu">
@@ -37,7 +37,7 @@
 		<h3 onclick="switchMenu(this);">订单管理</h3>
 		<ul style="display:none;">
             <li><a target="weilian" href="/Admin/Order/showlist">订单列表</a></li>
-            <li><a target="weilian" href="/Admin/Order/edit">订单编辑</a></li>
+            <li><a target="weilian" href="/Admin/Order/showRefundList">退款列表</a></li>
 		</ul>	
 		
 	</div>

@@ -110,7 +110,8 @@ class GoodsController extends Controller {
 	   	else{	//存在于数据库时，添加该规格商品的数量即可
 	   		$update_num = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."'")->setInc('goods_num',$data['goods_num']);
 	   	}
-   		echo M('shopcart')->Count();	//返回购物车记录数
+	   	$user_id = session("id");	//用户id
+   		echo M('shopcart')->where("user_id={$user_id}")->Count();	//返回购物车记录数
 
 
 	}

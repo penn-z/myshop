@@ -79,5 +79,17 @@ class OrderController extends CheckLoginController {
     	$this->assign("order_detail",$order_detail);
     	$this->display("order_info");
     }
+
+    /**
+     * 退款列表
+     */
+    public function showRefundList(){
+        $list = M("refund")->select();
+        foreach($list as $key => $val){
+            $list[$key]['account'] = M("user")->where("id={$val['user_id']}")->getField("account");
+        }
+        $this->assign("list",$list);
+        $this->display("refund_list");
+    }
     
 }

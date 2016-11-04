@@ -19,4 +19,16 @@ class UserController extends Controller {
 		}
 	}
 
+	/**
+	 * 后台修改密码
+	 */
+	public function changeCode(){
+		$new_code = I("get.new_code");
+		$id = I("get.id");
+		$new_code = md5($new_code);	//md5加密
+		$ret = M("user")->where("id={$id}")->setField("password",$new_code);
+		if($ret===false) echo false;
+		else echo 1;
+	}
+
 }

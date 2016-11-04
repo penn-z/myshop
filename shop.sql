@@ -65,7 +65,7 @@ CREATE TABLE `think_admin` (
   `power` varchar(2) COLLATE utf8_unicode_ci NOT NULL COMMENT '管理员权限',
   `addtime` int(13) NOT NULL COMMENT '注册时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +74,7 @@ CREATE TABLE `think_admin` (
 
 LOCK TABLES `think_admin` WRITE;
 /*!40000 ALTER TABLE `think_admin` DISABLE KEYS */;
-INSERT INTO `think_admin` VALUES (1,'penn','e10adc3949ba59abbe56e057f20f883e','鹏','',1475205518),(2,'admin','e10adc3949ba59abbe56e057f20f883e','鹏','',1475205518);
+INSERT INTO `think_admin` VALUES (1,'penn','e10adc3949ba59abbe56e057f20f883e','鹏','',1475205518),(2,'admin','e10adc3949ba59abbe56e057f20f883e','鹏','',1475205518),(3,'xiaojamesl','3c2d0b004e2b0e6757b3e216e686f5df','黄小鹏','',1478263929);
 /*!40000 ALTER TABLE `think_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -467,7 +467,7 @@ CREATE TABLE `think_shopcart` (
   KEY `user_id` (`user_id`),
   KEY `cart_id` (`cart_id`),
   KEY `user_id_2` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=149 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=155 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -476,6 +476,7 @@ CREATE TABLE `think_shopcart` (
 
 LOCK TABLES `think_shopcart` WRITE;
 /*!40000 ALTER TABLE `think_shopcart` DISABLE KEYS */;
+INSERT INTO `think_shopcart` VALUES (149,4,7,'良品铺子 手剥松子218g 坚果炒货 巴西松子','1000001','口味','原味','包装','手袋单人份',3,56.90,0,1478227132),(150,4,30,'良品铺子碧根果奶香味190g坚果零食 干果炒货 山核桃','200000401','口味','奶香味','包装','大陆装',1,16.90,0,1478227151);
 /*!40000 ALTER TABLE `think_shopcart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -569,7 +570,7 @@ CREATE TABLE `think_user` (
 
 LOCK TABLES `think_user` WRITE;
 /*!40000 ALTER TABLE `think_user` DISABLE KEYS */;
-INSERT INTO `think_user` VALUES (4,'penn','202cb962ac59075b964b07152d234b70','penn_z@aliyun.com','黄鹏鹏','13512345678','鹏1','male',1474992000,'/Public/Uploads/Images/Person/id4/57ed34bfecfe7.jpg','12345678904','betwsne@gmail.com',0,1474871883),(5,'betwsne','e10adc3949ba59abbe56e057f20f883e','betwsne@gmail.com','','','','',-28800,'/Public/Uploads/Images/Person/id5/581b2806c20a6.jpg','','',0,1476620964);
+INSERT INTO `think_user` VALUES (4,'penn','202cb962ac59075b964b07152d234b70','penn_z@aliyun.com','黄鹏鹏','13512345678','鹏123','male',1474992000,'/Public/Uploads/Images/Person/id4/581c46ad2f604.jpg','13640391111','penn_z@aliyun.com',0,1474871883),(5,'betwsne','29515bb9a5d5e558e2b3ba71e3b6e037','betwsne@gmail.com','','','','',-28800,'/Public/Uploads/Images/Person/id5/581b2806c20a6.jpg','','',0,1476620964);
 /*!40000 ALTER TABLE `think_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -582,4 +583,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-03 23:13:32
+-- Dump completed on 2016-11-04 20:54:23

@@ -60,8 +60,8 @@ a.title_text {
     line-height: 32px;
     margin-right: 10px;
     padding: 0 10px;
-    text-align: cente; border-radius:3px; background:#09C;
-  cursor:pointer
+    text-align: center; border-radius:3px; background:#09C;
+    cursor:pointer
 }
 #face_img{
     border: 2px solid #c1c1c1;
@@ -75,6 +75,68 @@ a.title_text {
 }
 .checkall-box{ float:left;}
 .pilian{float: left; margin-top:10px;}
+.tr_list .ope{display:block;float:left;margin:6px 0 0 50px;}
+.tr_list .reset{float:left;background:#00597F;color:#fff;width:60px;font-size:12px;margin-left:10px;}
+.code_background{
+  position:fixed;
+  display:none;
+  width:98%;
+  height:100%;
+  background:#000;
+  opacity:0.8;
+  z-index:99;
+}
+.code_reset{
+  position:absolute;
+  left:42%;
+  top:32%;
+  width:300px;
+  height:150px;
+  border-radius:2%;
+  border-top:#00597F 20px solid;
+  background:#fff;
+  z-index:100;
+}
+.code_reset .wrap{
+  position:absolute;
+  width:300px;
+  height:20px;
+  bottom:2%;
+}
+.code_reset .wrap span{
+  display:block;
+  float:left;
+  margin-left:66px;
+  width:50px;
+  height:20px;
+  line-height:20px;
+  color:#fff;
+  font-size:16px;
+  font-weight:500;
+  text-align:center;
+  background:#00597F;
+  cursor:pointer;
+}
+.code_reset .word{
+  position:absolute;
+  top:40%;
+  left:20%;
+  width:50px;
+  height:26px;
+  line-height: 26px;
+  font-size:14px;
+}
+.code_reset .code_input{
+  position:absolute;
+  top:40%;
+  left:40%;
+  width:120px;
+  height:26px;
+  color:#000;
+  font-size:14px;
+  border:1px solid #0D87C5;
+  background:#EEEEEE;
+}
 </style>
 </head>
 
@@ -124,7 +186,7 @@ a.title_text {
                       <td width="10%">注册时间</td>
                       <td width="10%">注册邮箱</td>
                       <td width="5%">状态</td>
-                      <td width="10%">操作导航</td>
+                      <td width="15%">操作导航</td>
                 	</tr>
 
                   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
@@ -139,11 +201,25 @@ a.title_text {
                     <?php else: ?>
                       <td style="color:orange;">冻结</td><?php endif; ?>
                     <td style="text-align:center;">
+                    <span class="ope">
                     <a href="/Admin/Member/edit?act=edit&id=<?php echo ($vo["id"]); ?>" >编辑</a> |
                     <a href="javascript:void(0)" id=<?php echo ($vo["id"]); ?> onclick="editAccount(this,'block',this.id)">冻结</a> |
                     <a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>" onclick="editAccount(this,'unblock',this.id)">解封</a>
-                    </td>  
+                    </span>
+                    <a class="eventlink reset" id="<?php echo ($vo["id"]); ?>" onclick="reset_code(this.id)">重置密码</a>
+                    </td>
+                    
                   </tr><?php endforeach; endif; ?>
+                  <div class="code_background">
+                      <div class="code_reset">
+                        <div class="word">新密码:</div>
+                        <input type="password" class="code_input"/>
+                        <div class="wrap">
+                          <span onclick="save_code()">修改</span>
+                          <span onclick="cancel()">取消</span>
+                        </div>
+                      </div>
+                    </div>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td class="page_menu" colspan="12" valign="bottom">
                             <div style="padding:15px 50px 0px 0px;float:right;">
@@ -193,6 +269,47 @@ function editAccount(obj,act,id){
     else alert(warn+"失败!");
     window.location.href="/Admin/Member/showList/p/<?php echo ($_GET['p']); ?>";
   });
+}
+
+/**
+ * 重置密码
+ */
+function reset_code(id){
+  $(".code_background").find(".code_input").attr("id",id);
+  $(".code_background").show();
+}
+
+/**
+ * 取消重置密码
+ */
+function cancel(){
+  $(".code_background").find(".code_input").val("");
+  $(".code_background").hide();
+}
+
+/**
+ * 提交密码修改
+ */
+function save_code(){
+  var bool = window.confirm("确认要修改吗？");
+  if( bool!=true ) return;
+
+  var new_code = $(".code_background").find(".code_input").val();
+  if( new_code.replace(/(^\s*)|(\s*$)/g, "") == '' ){
+    alert("新密码不能有空格！～");
+    return;
+  }
+  var id = $(".code_background").find(".code_input").attr("id");
+  $.get('/Api/User/changeCode',{id:id,new_code:new_code},function(ret){
+    if(ret == 1){
+      alert("密码修改成功");
+    }else{
+      alert("密码修改失败");
+    }
+  });
+  $(".code_background").find("input").val("");
+  $(".code_background").hide();
+  window.location.href="/Admin/Member/showList/p/<?php echo ($_GET['p']); ?>"; //跳回本页（刷新状态）
 }
 </script>
 </body>
