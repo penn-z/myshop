@@ -17,14 +17,10 @@
 		<script type="text/javascript" src="/Public/basic/js/jquery-1.7.min.js"></script>
 		<script type="text/javascript" src="/Public/basic/js/quick_links.js"></script>
 		<script type="text/javascript" src="/Public/Admin/js/JWin.js"></script>
-
-
 		<script type="text/javascript" src="/Public/AmazeUI-2.4.2/assets/js/amazeui.js"></script>
-
 		<script type="text/javascript" src="/Public/js/jquery.imagezoom.min.js"></script>
 		<script type="text/javascript" src="/Public/js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="/Public/js/list.js"></script>
-		
 		<script src="/Public/js/jquery.fly.min.js"></script>
 		<style>
 		.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
@@ -532,21 +528,21 @@
 						<div class="am-tabs" data-am-tabs>
 							<ul class="am-avg-sm-3 am-tabs-nav am-nav am-nav-tabs">
 								<li class="am-active">
-									<a href="#">
+									<a href="javascript:">
 
 										<span class="index-needs-dt-txt">宝贝详情</span></a>
 
 								</li>
 
 								<li>
-									<a href="#">
+									<a href="javascript:">
 
 										<span class="index-needs-dt-txt">全部评价</span></a>
 
 								</li>
 
 								<li>
-									<a href="#">
+									<a href="javascript:">
 
 										<span class="index-needs-dt-txt">猜你喜欢</span></a>
 								</li>
@@ -657,7 +653,7 @@
 									<foreach name="comment" item="vo">
 										<li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="{$vo.header_img}" />
 												<!-- 评论者头像 -->
 											</a>
@@ -668,7 +664,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">{$vo.user_name} (匿名)</a>
+														<a href="javascript:" class="am-comment-author">{$vo.user_name} (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime="">{$vo.addtime|date="Y年m月d日 H:i",###}
@@ -684,7 +680,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item " >
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															{$vo.comment}
 														</div>
@@ -709,7 +705,7 @@
 									<if condition="$vo.comment_type eq '好评'">
 										<li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="{$vo.header_img}" />
 												<!-- 评论者头像 -->
 											</a>
@@ -720,7 +716,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">{$vo.user_name} (匿名)</a>
+														<a href="javascript:" class="am-comment-author">{$vo.user_name} (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime="">{$vo.addtime|date="Y年m月d日 H:i",###}
@@ -730,7 +726,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item ">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															{$vo.comment}
 														</div>
@@ -756,7 +752,7 @@
 									<if condition="$vo.comment_type eq '中评'">
 										<li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="{$vo.header_img}" />
 												<!-- 评论者头像 -->
 											</a>
@@ -767,7 +763,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">{$vo.user_name} (匿名)</a>
+														<a href="javascript:" class="am-comment-author">{$vo.user_name} (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime="">{$vo.addtime|date="Y年m月d日 H:i",###}
@@ -777,7 +773,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item " >
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															{$vo.comment}
 														</div>
@@ -804,7 +800,7 @@
 									<if condition="$vo.comment_type eq '差评'">
 										<li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="{$vo.header_img}" />
 												<!-- 评论者头像 -->
 											</a>
@@ -815,7 +811,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author">{$vo.user_name} (匿名)</a>
+														<a href="javascript:" class="am-comment-author">{$vo.user_name} (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime="">{$vo.addtime|date="Y年m月d日 H:i",###}
@@ -825,7 +821,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item " >
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															{$vo.comment}
 														</div>

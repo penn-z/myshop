@@ -23,17 +23,21 @@ class LoginController extends Controller {
             $pwd = md5($pwd);
             if( $data['password'] == $pwd ){
                 // $_SESSION = array();
+                $status = $Form->where("account='{$user}'")->getField("is_block");
+                if($status==1){
+                    echo '3';   //账户被冻结状态
+                }
                 session('UID',$data['id']);
                 session('UACCOUNT',$data['account']);
                 session('UNAME',$data['name']);
                 session('LOGINTIME',time());
-                echo '1';  
+                echo '1';   //登陆成功
             } 
             else{
-                echo '0';  
+                echo '0';   //密码不正确
             } 
         }else{
-            echo '2';
+            echo '2';   //账号不存在
         }
     }
 

@@ -1,0 +1,2110 @@
+[ 2016-11-05T09:47:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2016-11-05T09:47:40+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0008s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 45 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1144 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-11-05T09:48:26+08:00 ] 127.0.0.1 /home/pay/shopcart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+
+[ 2016-11-05T09:48:28+08:00 ] 127.0.0.1 /home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-11-05T09:48:30+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE `email` = 'penn' OR `account` = 'penn' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-11-05T09:48:32+08:00 ] 127.0.0.1 /home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2016-11-05T09:48:34+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE `email` = 'penn' OR `account` = 'penn' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-11-05T09:48:35+08:00 ] 127.0.0.1 /home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-11-05T09:48:38+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-11-05T09:48:41+08:00 ] 127.0.0.1 /home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2016-11-05T09:48:42+08:00 ] 127.0.0.1 /index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` WHERE `email` = 'penn' OR `account` = 'penn' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-11-05T09:48:43+08:00 ] 127.0.0.1 /home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-11-05T09:48:48+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-11-05T09:48:54+08:00 ] 127.0.0.1 /home/pay/shopcart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( user_id=4 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0006s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0003s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-11-05T09:48:56+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-11-05T09:48:59+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2016-11-05T09:49:27+08:00 ] 127.0.0.1 /home/MyDeal/commentlist.html?order_id=147670340800040188
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000137s ]
+
+[ 2016-11-05T09:49:39+08:00 ] 127.0.0.1 /home/information/information.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2016-11-05T09:49:50+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-11-05T09:49:51+08:00 ] 127.0.0.1 /home/MyDeal/change.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `think_refund` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_refund` WHERE ( user_id=4 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 AND goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 AND goods_sn=1000003 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 AND goods_sn=1011 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 AND goods_sn=1000002 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 AND goods_sn=1000003 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-11-05T09:50:01+08:00 ] 127.0.0.1 /home/MyDeal/refund.html?order_id=147815816200048276&goods_sn=200000302&goods_status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0007s ]
+SQL: SELECT `express_fee` FROM `think_order` WHERE ( order_id=147815816200048276 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_refund` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_refund` WHERE ( order_id=147815816200048276 AND goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: type1_name /var/www/shop/App/Runtime/Cache/Home/158d6d15c01943f80eb05d4f5478539b.php 第 160 行.
+NOTIC: [8] Undefined index: type2_name /var/www/shop/App/Runtime/Cache/Home/158d6d15c01943f80eb05d4f5478539b.php 第 161 行.
+NOTIC: [8] Undefined index: status /var/www/shop/App/Runtime/Cache/Home/158d6d15c01943f80eb05d4f5478539b.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000153s ]
+
+[ 2016-11-05T09:50:12+08:00 ] 127.0.0.1 /home/information/information.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-11-05T09:50:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-11-05T10:52:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-11-05T10:53:02+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2016-11-05T10:53:07+08:00 ] 127.0.0.1 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-11-05T10:53:08+08:00 ] 127.0.0.1 /home/pay/shopcart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( user_id=4 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0004s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000133s ]
+
+[ 2016-11-05T10:53:11+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2016-11-05T10:53:13+08:00 ] 127.0.0.1 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2016-11-05T10:53:16+08:00 ] 127.0.0.1 /home/introduction.html?id=30&sn=200000401
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=30 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=30 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=30 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=30 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=30 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=30 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [2] Division by zero /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 647 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-11-05T10:53:20+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-11-05T10:53:22+08:00 ] 127.0.0.1 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-11-05T10:53:26+08:00 ] 127.0.0.1 /home/introduction?id=29&sn=200000301
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 29 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=29 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=29 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=29 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=29 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=29 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=29 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [2] Division by zero /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 647 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-11-05T10:53:33+08:00 ] 127.0.0.1 /home/pay/shopcart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( user_id=4 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=29 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0005s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=29 )  [ RunTime:0.0002s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0002s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=30 )  [ RunTime:0.0001s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=29 )  [ RunTime:0.0001s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=29 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-11-05T10:53:39+08:00 ] 127.0.0.1 /home/pay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_address` WHERE ( user_id=4 ) ORDER BY is_default desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( user_id=4 AND is_order=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000302 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000401 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: single /var/www/shop/App/Runtime/Cache/Home/6ede099d38a78cedee8afe54e964b19d.php 第 746 行.
+NOTIC: [8] Undefined variable: single /var/www/shop/App/Runtime/Cache/Home/6ede099d38a78cedee8afe54e964b19d.php 第 750 行.
+NOTIC: [8] Undefined variable: single /var/www/shop/App/Runtime/Cache/Home/6ede099d38a78cedee8afe54e964b19d.php 第 754 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2016-11-05T10:54:08+08:00 ] 127.0.0.1 /home/pay/payment?order_id=147831444800042456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2016-11-05T10:54:12+08:00 ] 127.0.0.1 /home/pay/success?order_id=147831444800042456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_order` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2016-11-05T10:54:13+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-11-05T10:54:42+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-11-05T10:54:46+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-11-05T10:55:00+08:00 ] 127.0.0.1 /home/MyDeal/commentlist.html?order_id=147831444800042456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-11-05T10:55:32+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2016-11-05T10:55:42+08:00 ] 127.0.0.1 /home/pay/shopcart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( user_id=4 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0008s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0008s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=29 )  [ RunTime:0.0002s ]
+SQL: SELECT `type2_name` FROM `think_goods_type2` WHERE ( goods_id=29 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000133s ]
+
+[ 2016-11-05T10:55:46+08:00 ] 127.0.0.1 /home/pay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_address` WHERE ( user_id=4 ) ORDER BY is_default desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_shopcart` WHERE ( user_id=4 AND is_order=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0003s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `mid` FROM `think_thumb` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goods_price` FROM `think_goods_specify` WHERE ( goods_sn=200000301 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: single /var/www/shop/App/Runtime/Cache/Home/6ede099d38a78cedee8afe54e964b19d.php 第 746 行.
+NOTIC: [8] Undefined variable: single /var/www/shop/App/Runtime/Cache/Home/6ede099d38a78cedee8afe54e964b19d.php 第 750 行.
+NOTIC: [8] Undefined variable: single /var/www/shop/App/Runtime/Cache/Home/6ede099d38a78cedee8afe54e964b19d.php 第 754 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-11-05T10:56:19+08:00 ] 127.0.0.1 /home/pay/payment?order_id=147831457900045601
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-11-05T10:56:21+08:00 ] 127.0.0.1 /home/pay/success?order_id=147831457900045601
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2048] Declaration of Home\Controller\PayController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) /var/www/shop/App/Home/Controller/PayController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_order` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-11-05T10:56:22+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-11-05T10:56:42+08:00 ] 127.0.0.1 /home/person
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-11-05T10:56:56+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-11-05T10:57:01+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2016-11-05T10:57:05+08:00 ] 127.0.0.1 /home/MyDeal/commentlist.html?order_id=147831457900045601
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-11-05T10:57:44+08:00 ] 127.0.0.1 /home/MyDeal/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `think_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=0 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_order_detail` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677946000042462 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755303000041931 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675661700047651 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147686834100044939 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147735985800041151 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147815816200048276 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147677373800044612 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147670340800040188 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675653100047323 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147723015800046984 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147740627500048160 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748453300042521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748455400041710 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748457200049176 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147748459100041043 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147755080800048285 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831444800042456 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147831457900045601 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675667400041619 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147675658400046624 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order` WHERE ( user_id=4 AND status=9 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_order_detail` WHERE ( order_id=147727269300042380 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 294 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant order_id - assumed 'order_id' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+NOTIC: [8] Use of undefined constant remind_sent - assumed 'remind_sent' /var/www/shop/App/Runtime/Cache/Home/5678f98bea2e689ac709011707b2ca4d.php 第 874 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-11-05T17:03:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2016-11-05T19:12:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-11-05T19:25:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-11-05T19:25:35+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 45 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1144 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-11-05T19:35:40+08:00 ] 127.0.0.1 /home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-11-05T19:35:43+08:00 ] 127.0.0.1 /home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-11-05T19:41:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/cab9ec1f0b89a360204f3694ccc01daa.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-11-05T19:41:19+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 45 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1144 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-11-05T19:41:57+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 45 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1144 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-11-05T20:16:46+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 41 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2016-11-05T20:16:47+08:00 ] 127.0.0.1 /home/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+ERR: 无法加载控制器:Index.js.map
+
+[ 2016-11-05T20:17:40+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0004s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 41 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-11-05T20:19:44+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 41 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-11-05T20:21:31+08:00 ] 127.0.0.1 /home/introduction?id=7&sn=1000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 7 行.
+NOTIC: [8] Use of undefined constant int - assumed 'int' /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `think_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_goods` WHERE `goods_id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_specify` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_goods_specify` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_goods_type2` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_goods_type2` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_thumb` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_thumb` WHERE ( goods_sn=1000001 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: description /var/www/shop/App/Home/Controller/IntroductionController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `think_comment` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='好评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='中评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comment` WHERE ( goods_id=7 AND comment_type='差评' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_comment` WHERE ( goods_id=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `header_img` FROM `think_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: is_login /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 41 行.
+NOTIC: [8] Undefined variable: different_goods /var/www/shop/App/Runtime/Cache/Home/f2518f61c8419c30f9148c6fb0cc8027.php 第 1140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-11-05T20:21:32+08:00 ] 127.0.0.1 /home/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+ERR: 无法加载控制器:Index.js.map
+

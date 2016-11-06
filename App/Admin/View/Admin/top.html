@@ -13,7 +13,7 @@
     </div>
     
     <div class="top_menu">
-		<a href="/home/article/showList" target="_blank">网站首页</a> | 
+		<a href="/home.html" target="_blank">网站首页</a> | 
 		<a href="/admin/login" target="_parent" id="exit" onclick="return window.confirm('你真的要退出管理吗？');">安全退出</a> 
     </div>
 </div>

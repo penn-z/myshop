@@ -84,12 +84,21 @@ class OrderController extends CheckLoginController {
      * 退款列表
      */
     public function showRefundList(){
-        $list = M("refund")->select();
-        foreach($list as $key => $val){
-            $list[$key]['account'] = M("user")->where("id={$val['user_id']}")->getField("account");
+        $list = M('refund');
+        $count      = $list->where('1=1')->count();// 查询满足要求的总记录数
+        $Page       = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(10)
+        $Page->rollPage = 5;    //显示的页码数
+        unset($Page->parameter['act']);     //删除act动作，这样删除成功一次后就不会就带参数传递了
+        $show       = $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $result = $list->where('1=1')->order('addtime desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+
+        foreach($result as $key => $val){
+            $result[$key]['account'] = M("user")->where("id={$val['user_id']}")->getField("account");
         }
-        $this->assign("list",$list);
+        $this->assign("list",$result);
+        $this->assign("page",$show);
         $this->display("refund_list");
     }
-    
+
 }

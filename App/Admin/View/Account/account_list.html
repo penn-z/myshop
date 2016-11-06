@@ -1,12 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>管理员列表</title>
-<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
-<link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
-<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
-<link href="/Public/Admin/css/webmallDialog.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/page.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/main.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/page.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/webmallDialog.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
 #check,.checkall-box label {cursor:pointer;}
@@ -147,7 +147,9 @@ a.title_text {
 
     <div class="m_content">
       <div class="real_c">
-        <?php if($errno != null): ?><p class="tip <?php echo ($errno["style"]); ?>"><?php echo ($errno["str"]); ?><span onclick="$(this.parentNode).slideUp();">X</span></p><?php endif; ?>
+        <if condition="$errno neq null">
+          <p class="tip {$errno.style}">{$errno.str}<span onclick="$(this.parentNode).slideUp();">X</span></p>
+        </if>
 
         <div class="s-space"></div>
 
@@ -182,30 +184,38 @@ a.title_text {
               <td width="3%">状态</td>
               <td width="10%">操作导航</td>
         	</tr>
-          <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
-            <td><?php echo ($vo["id"]); ?></td>  
-            <td><?php echo ($vo["name"]); ?></td>  
-            <td><?php echo ($vo["account"]); ?></td>  
-            <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>
+          <foreach name='list' item='vo'>
+            <tr class="tr_list">
+            <td>{$vo.id}</td>  
+            <td>{$vo.name}</td>  
+            <td>{$vo.account}</td>  
+            <td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>
             <td>
-              <?php if(($vo["power"]) == "0"): ?>普通权限
-              <?php else: ?>
-                <a style="color:orange;text-decoration:none;">超级权限</a><?php endif; ?>
+              <eq name="vo.power" value="0">
+                普通权限
+              <else/>
+                <a style="color:orange;text-decoration:none;">超级权限</a>
+              </eq>
             </td>
             
             <td>
-              <?php if(($vo["is_block"]) == "0"): ?><a style="color:green;text-decoration:none;">正常</a>
-              <?php else: ?>
-                <a style="color:red;text-decoration:none;">冻结</a><?php endif; ?>
+              <eq name="vo.is_block" value="0">
+                <a style="color:green;text-decoration:none;">正常</a>
+              <else/>
+                <a style="color:red;text-decoration:none;">冻结</a>
+              </eq>
             </td> 
 
             <td style="text-align:center;">
-            <a href="/Admin/Account/edit?act=edit&id=<?php echo ($vo["id"]); ?>" >编辑</a> 
-            <?php if($vo["power"] == 0): ?>| <a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>" onclick="reset_code(this.id,'block')">冻结</a> 
-              | <a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>" onclick="reset_code(this.id,'unblock')">解封</a> 
-              | <a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>" onclick="reset_code(this.id,'delete')">删除</a><?php endif; ?>
+            <a href="/Admin/Account/edit?act=edit&id={$vo.id}" >编辑</a> 
+            <if condition="$vo.power eq 0">
+              | <a href="javascript:void(0)" id="{$vo.id}" onclick="reset_code(this.id,'block')">冻结</a> 
+              | <a href="javascript:void(0)" id="{$vo.id}" onclick="reset_code(this.id,'unblock')">解封</a> 
+              | <a href="javascript:void(0)" id="{$vo.id}" onclick="reset_code(this.id,'delete')">删除</a>
+            </if>
             </td> 
-          </tr><?php endforeach; endif; ?>
+          </tr>
+          </foreach>
           <div class="code_background">
             <div class="code_reset">
               <div class="word">超级管理员密码:</div>
@@ -220,7 +230,7 @@ a.title_text {
           <tr><td>&nbsp;</td></tr>
           <tr><td class="page_menu" colspan="12" valign="bottom">
               <div style="padding:15px 50px 0px 0px;float:right;">
-                <?php echo ($page); ?>
+                {$page}
               </div>
           </td></tr>
         </table>
@@ -228,9 +238,9 @@ a.title_text {
     </div>
   <div class="b_border"></div>
 </div>
-<script type="text/javascript" src="/Public/Admin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/js/window.js"></script>
-<script language="javascript" src="/Public/Admin/js/JWin.js"></script>
+<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+<script type="text/javascript" src="__JS__/window.js"></script>
+<script language="javascript" src="__JS__/JWin.js"></script>
 <script type="text/javascript">
 function delAlert(){
   var bool = window.confirm("你确定要删除管理员吗？");
@@ -290,7 +300,7 @@ function save_operata(){
     }
     $(".code_background").find("input").val("");
     $(".code_background").hide();
-    window.location.href="/Admin/Account/showList/p/<?php echo ($_GET['p']); ?>";
+    window.location.href="/Admin/Account/showList/p/{$Think.get.p}";
   });
 }
 </script>

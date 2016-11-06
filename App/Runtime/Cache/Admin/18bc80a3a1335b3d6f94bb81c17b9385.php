@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>公众号列表</title>
+<title>会员列表</title>
 <link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/webmallDialog.css" rel="stylesheet" type="text/css" />
@@ -211,15 +211,15 @@ a.title_text {
                     
                   </tr><?php endforeach; endif; ?>
                   <div class="code_background">
-                      <div class="code_reset">
-                        <div class="word">新密码:</div>
-                        <input type="password" class="code_input"/>
-                        <div class="wrap">
-                          <span onclick="save_code()">修改</span>
-                          <span onclick="cancel()">取消</span>
-                        </div>
+                    <div class="code_reset">
+                      <div class="word">新密码:</div>
+                      <input type="password" class="code_input"/>
+                      <div class="wrap">
+                        <span onclick="save_code()">修改</span>
+                        <span onclick="cancel()">取消</span>
                       </div>
                     </div>
+                  </div>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td class="page_menu" colspan="12" valign="bottom">
                             <div style="padding:15px 50px 0px 0px;float:right;">

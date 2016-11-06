@@ -17,14 +17,10 @@
 		<script type="text/javascript" src="/Public/basic/js/jquery-1.7.min.js"></script>
 		<script type="text/javascript" src="/Public/basic/js/quick_links.js"></script>
 		<script type="text/javascript" src="/Public/Admin/js/JWin.js"></script>
-
-
 		<script type="text/javascript" src="/Public/AmazeUI-2.4.2/assets/js/amazeui.js"></script>
-
 		<script type="text/javascript" src="/Public/js/jquery.imagezoom.min.js"></script>
 		<script type="text/javascript" src="/Public/js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="/Public/js/list.js"></script>
-		
 		<script src="/Public/js/jquery.fly.min.js"></script>
 		<style>
 		.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
@@ -140,7 +136,7 @@
 					<section class="slider">
 						<div class="flexslider">
 							<ul class="slides">
-							<?php $__FOR_START_370810664__=0;$__FOR_END_370810664__=3;for($i=$__FOR_START_370810664__;$i < $__FOR_END_370810664__;$i+=1){ if(($i) == "0"): ?><li>
+							<?php $__FOR_START_877231005__=0;$__FOR_END_877231005__=3;for($i=$__FOR_START_877231005__;$i < $__FOR_END_877231005__;$i+=1){ if(($i) == "0"): ?><li>
 									<img src="<?php echo ($thumb["big"]["$i"]); ?>" title="pic" />
 								</li>
 								<?php else: ?>
@@ -173,7 +169,7 @@
 								<a href="<?php echo ($thumb["big"]["0"]); ?>"><img src="<?php echo ($thumb["big"]["0"]); ?>" alt="细节展示放大镜特效" rel="<?php echo ($thumb["big"]["0"]); ?>" class="jqzoom" /></a>
 							</div>
 							<ul class="tb-thumb" id="thumblist">
-							<?php $__FOR_START_1976477485__=0;$__FOR_END_1976477485__=3;for($i=$__FOR_START_1976477485__;$i < $__FOR_END_1976477485__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
+							<?php $__FOR_START_1354713156__=0;$__FOR_END_1354713156__=3;for($i=$__FOR_START_1354713156__;$i < $__FOR_END_1354713156__;$i+=1){ if(($i) == "0"): ?><li class="tb-selected">
 									<div class="tb-pic tb-s40">
 										<a href="#"><img id="add_shopcart" src="<?php echo ($thumb["small"]["$i"]); ?>" mid="<?php echo ($thumb["mid"]["$i"]); ?>" big="<?php echo ($thumb["big"]["$i"]); ?>"></a>
 									</div>
@@ -576,21 +572,21 @@
 						<div class="am-tabs" data-am-tabs>
 							<ul class="am-avg-sm-3 am-tabs-nav am-nav am-nav-tabs">
 								<li class="am-active">
-									<a href="#">
+									<a href="javascript:">
 
 										<span class="index-needs-dt-txt">宝贝详情</span></a>
 
 								</li>
 
 								<li>
-									<a href="#">
+									<a href="javascript:">
 
 										<span class="index-needs-dt-txt">全部评价</span></a>
 
 								</li>
 
 								<li>
-									<a href="#">
+									<a href="javascript:">
 
 										<span class="index-needs-dt-txt">猜你喜欢</span></a>
 								</li>
@@ -700,7 +696,7 @@
 									<ul class="am-comments-list am-comments-list-flip">
 									<?php if(is_array($comment)): foreach($comment as $key=>$vo): ?><li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
@@ -711,7 +707,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
+														<a href="javascript:" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
@@ -725,7 +721,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item " >
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															<?php echo ($vo["comment"]); ?>
 														</div>
@@ -745,7 +741,7 @@
 									<ul class="am-comments-list am-comments-list-flip to_hidden">
 									<?php if(is_array($comment)): foreach($comment as $key=>$vo): if($vo["comment_type"] == '好评'): ?><li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
@@ -756,7 +752,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
+														<a href="javascript:" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
@@ -766,7 +762,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item ">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															<?php echo ($vo["comment"]); ?>
 														</div>
@@ -786,7 +782,7 @@
 									<ul class="am-comments-list am-comments-list-flip to_hidden" >
 									<?php if(is_array($comment)): foreach($comment as $key=>$vo): if($vo["comment_type"] == '中评'): ?><li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
@@ -797,7 +793,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
+														<a href="javascript:" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
@@ -807,7 +803,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item " >
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															<?php echo ($vo["comment"]); ?>
 														</div>
@@ -828,7 +824,7 @@
 									<ul class="am-comments-list am-comments-list-flip to_hidden">
 									<?php if(is_array($comment)): foreach($comment as $key=>$vo): if($vo["comment_type"] == '差评'): ?><li class="am-comment">
 											<!-- 评论容器 -->
-											<a href="">
+											<a href="javascript:">
 												<img class="am-comment-avatar" src="<?php echo ($vo["header_img"]); ?>" />
 												<!-- 评论者头像 -->
 											</a>
@@ -839,7 +835,7 @@
 													<!--<h3 class="am-comment-title">评论标题</h3>-->
 													<div class="am-comment-meta">
 														<!-- 评论元数据 -->
-														<a href="#link-to-user" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
+														<a href="javascript:" class="am-comment-author"><?php echo ($vo["user_name"]); ?> (匿名)</a>
 														<!-- 评论者 -->
 														评论于
 														<time datetime=""><?php echo (date("Y年m月d日 H:i",$vo["addtime"])); ?>
@@ -849,7 +845,7 @@
 												</header>
 
 												<div class="am-comment-bd">
-													<div class="tb-rev-item " data-id="255776406962">
+													<div class="tb-rev-item " >
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
 															<?php echo ($vo["comment"]); ?>
 														</div>

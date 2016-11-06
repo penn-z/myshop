@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>编辑管理员</title>
+<link href="__CSS__/page.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/main.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/webmallDialog.css" rel="stylesheet" type="text/css" />
+<style>
+.add_title_img {
+   
+    height: 35px;
+    padding: 5px 5px;
+    position: relative;
+}
+.add_title_img #title_img {
+    border: 2px solid #c1c1c1;
+    float: left;
+    height: 30px;
+    width: 50px;
+}
+.add_title_img #title_img img {
+    height: 30px;
+    width: 50px;
+}
+a.title_text {
+    color: #999;
+    float: left;
+    letter-spacing: 2px;
+    line-height: 35px;
+    padding-left: 15px;
+}
+
+.eventlink{
+	color: #fff;
+    float: left;
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    padding: 0 10px;
+    text-align: center; border-radius:3px; background:#09C;
+	cursor:pointer
+}
+#title {width:450px;}
+#ad_img {position:relative;top:-5px; display:none;}
+#img-view {display:inline-block;border: 1px solid #CCC;position:relative;top: 7px;}
+#img-view img {width: 60px;height:32px;}
+#add_file {width: 70px;}
+.code_background{
+  position:fixed;
+  top:34px;
+  left:10px;
+  display:none;
+  width:98%;
+  height:100%;
+  background:#000;
+  opacity:0.8;
+  z-index:99;
+}
+.code_reset{
+  position:absolute;
+  left:42%;
+  top:32%;
+  width:300px;
+  height:150px;
+  border-radius:2%;
+  border-top:#00597F 20px solid;
+  background:#fff;
+  z-index:100;
+}
+.code_reset .wrap{
+  position:absolute;
+  width:300px;
+  height:20px;
+  bottom:2%;
+}
+.code_reset .wrap span{
+  display:block;
+  float:left;
+  margin-left:66px;
+  width:50px;
+  height:20px;
+  line-height:20px;
+  color:#fff;
+  font-size:16px;
+  font-weight:500;
+  text-align:center;
+  background:#00597F;
+  cursor:pointer;
+}
+.code_reset .takeplace{
+    width:300px;
+    margin-top:30px;
+    float:left;
+}
+.code_reset .cont{
+    width:300px;
+    margin-top:10px;
+    float:left;
+}
+.code_reset .cont .word{
+  width:100px;
+  height:26px;
+  margin-left:10px;
+  line-height: 26px;
+  text-align:right;
+  font-size:14px;
+  float:left;
+}
+.code_reset .cont .code_input{
+  width:120px;
+  height:26px;
+  color:#000;
+  font-size:14px;
+  border:1px solid #0D87C5;
+  background:#EEEEEE;
+  float:left;
+}
+</style>
+</head>
+<body bgcolor="#F7F7F7">
+<div class="content">
+	
+    <div class="content_top">&nbsp;&nbsp;&nbsp;现在的位置为：管理员管理-&gt;管理员编辑</div>
+    <div class="m_content">
+    	<div class="keywords_show"></div>
+        <div class="real_c">
+            
+            <if condition="$errno neq null">
+                <p class="tip {$errno.style}">{$errno.str}<span onclick="$(this.parentNode).slideUp();">X</span></p>
+            </if>
+            <div class="s-space"></div>
+
+        	<div>
+            	
+            <form name="account_edit" method="post" 
+            action="/Admin/account/edit?act=update&id={$data.id}">
+            <table border="0" cellpadding="0" cellspacing="0" id="add_table" width="100%">
+                <tr>
+                    <td class="left_td">管理员ID：</td>
+                    <td class="right_td">{$data.id}</td>
+                </tr>
+
+                <tr>
+                    <td class="left_td">账户：</td>
+                    <td class="right_td">{$data.account|default=''}</td>
+                </tr>
+                
+                <tr>
+                    <td class="left_td">名称：</td>
+                    <td class="right_td"><input type="text" name="user[name]" class="input" value="{$data.name|default=''}" /></td> 
+                </tr>
+
+                <tr>
+                    <td class="left_td">注册时间：</td>
+                    <td class="right_td">
+                        {$data.addtime|date="Y年m月d日 H:i:s",###} 
+                    </td>
+                </tr>
+               
+                <!-- 操作按钮 -->
+                <tr><td colspan="4" valign="bottom" align="center"><div class="formHandleBox" style="padding-left:100px;">
+                    <!-- <input type="hidden" name="run" value="submit" /> -->
+                    <a onclick="form_submit(); return false;" class="eventlink">保存数据</a>
+                    <a href="javascript:void(0)" id="{$data.id}" onclick="reset_code(this.id)" class="eventlink">修改密码</a>
+                    <a href="javascript:window.history.go(-1);" class="eventlink">返回</a>
+                </div></td></tr>
+                <div class="code_background">
+                    <div class="code_reset">
+                      <div class="takeplace"></div>
+                      <div class="cont">
+                          <div class="word">原密码:</div>
+                          <input type="password" class="code_input"/>
+                      </div>
+                      <div class="cont">
+                          <div class="word">新密码:</div>
+                          <input type="password" class="code_input"/>
+                      </div>
+                      <div class="wrap">
+                        <span onclick="save_operata()">确定</span>
+                        <span onclick="cancel()">取消</span>
+                      </div>
+                    </div>
+                </div>
+            </table>
+            </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="b_border"></div>
+    
+</div>
+
+<script type="text/javascript" src="/Public/js/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+function form_submit ()
+{
+	document.account_edit.submit();
+}
+
+
+/**
+ * 冻结、解封、删除操作
+ * @param int id 账户id,string act 动作
+ */
+function reset_code(id){
+  $(".code_background").find(".wrap").attr("id",id);
+  $(".code_background").show();
+}
+
+/**
+ * 取消操作
+ */
+function cancel(){
+  $(".code_background").find(".code_input").val("");
+  $(".code_background").hide();
+}
+
+/**
+ * 提交操作修改
+ */
+function save_operata(){
+    var id = $(".code_background").find(".wrap").attr("id");
+    var old_code = $(".code_background").find("input").eq(0).val();
+    var new_code = $(".code_background").find("input").eq(1).val();
+    $.get("/Api/Admin/changeCode",{old_code:old_code,new_code:new_code,id:id},function(ret){
+        if(ret==1){
+            alert("密码修改成功");
+        }else if(ret==0){
+            alert("密码修改失败");
+        }else{
+            alert("原密码错误");
+        }
+    });
+    $(".code_background").find("input").each(function(){
+        $(this).val("");
+    });
+    $(".code_background").hide();
+    window.location.reload();
+}
+</script>
+</body>
+</html>

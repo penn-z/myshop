@@ -13,7 +13,7 @@
         <div class="scr-wrapper">
             <div class="scr-wrapper-top">
                 <div class="scr-wrapper-inner">
-                    <div class="msg error" id="error" style="display:block;padding: 10px 0px;overflow: hiddem;"></div>                    
+                    <div class="msg error" id="error" style="display:block;padding: 10px 0px;overflow: hidden;"></div>                    
                      
                     <!-- <div class="msg error">您的账户尚未激活，<br />请检查您的邮箱点击邮件中链接激活账户！ </div> -->
                     <form id="login-form" method="post" autocomplete="off">
@@ -146,9 +146,11 @@ function do_submit()
 			setTimeout(function(){
             window.location.href = '/admin/admin';
 			}, 1500);
-		}else{
+		}else if( ret == 2 ){
             tip.show('用户不存在!','err',-1);
             return;
+        }else{
+            tip.show('用户已经被冻结,无法登录！','err',-1);
         }
     });
 }
