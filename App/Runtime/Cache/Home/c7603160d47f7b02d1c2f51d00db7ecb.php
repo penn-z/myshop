@@ -9,10 +9,9 @@
 
 		<link href="/Public/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
 		<link href="/Public/AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
-
 		<link href="/Public/basic/css/demo.css" rel="stylesheet" type="text/css" />
-
 		<link href="/Public/css/seastyle.css" rel="stylesheet" type="text/css" />
+		<!-- <link href="/Public/css/page.css" rel="stylesheet" type="text/css"/> -->
 
 		<script type="text/javascript" src="/Public/basic/js/jquery-1.7.min.js"></script>
 		<script type="text/javascript" src="/Public/js/script.js"></script>
@@ -109,13 +108,13 @@
 					<div class="am-g am-g-fixed">
 						<div class="am-u-sm-12 am-u-md-12">
 	                  	<div class="theme-popover">														
-							<div class="searchAbout">
+							<!-- <div class="searchAbout">
 								<span class="font-pale">相关搜索：</span>
 								<a title="坚果" href="#">坚果</a>
 								<a title="瓜子" href="#">瓜子</a>
 								<a title="鸡腿" href="#">豆干</a>
 
-							</div>
+							</div> -->
 							<ul class="select">
 								<p class="title font-normal">
 									<span class="fl"><a style="color:red;"><?php echo ($_GET['key_word']); ?></a></span>
@@ -203,7 +202,7 @@
 											<p class="title fl"><?php echo ($goods["goods_name"]); ?></p>
 											<p class="price fl">
 												<b>¥</b>
-												<strong><?php echo ($goods["price_show"]); ?></strong>
+												<strong><?php echo ($goods["goods_discount"]); ?></strong>
 											</p>
 											<p class="number fl">
 												销量<span><?php echo ($goods["cumulative_sales"]); ?></span>
@@ -265,16 +264,31 @@
 							<div class="clear"></div>
 							<!--分页 -->
 							<ul class="am-pagination am-pagination-right">
-								<li class="am-disabled"><a href="#">&laquo;</a></li>
+								<?php echo ($page); ?>
+								
+								<!-- <li class="am-disabled"><a href="#">&laquo;</a></li>
 								<li class="am-active"><a href="#">1</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
 								<li><a href="#">4</a></li>
 								<li><a href="#">5</a></li>
-								<li><a href="#">&raquo;</a></li>
+								<li><a href="#">&raquo;</a></li> -->
 							</ul>
-
 						</div>
+						<script>
+							var div = $(".am-pagination").find("div");
+							div.parent().append( div.children());
+							div.remove();
+							
+							var p = '<?php echo ($_GET['p']); ?>';	//当前页码
+							$(".am-pagination").children().each(function(){
+								if( $(this).text() == p ){
+									$(this).wrap("<li class='am-active'></li>");
+								}else{
+									$(this).wrap("<li></li>");
+								}
+							});
+						</script>
 					</div>
 					<!--底部-->
 							<div class="footer">

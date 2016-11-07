@@ -5,7 +5,6 @@
 <title>订单列表</title>
 <link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
-<link href="/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 <link href="/Public/Admin/css/webmallDialog.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
