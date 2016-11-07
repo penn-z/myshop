@@ -219,7 +219,7 @@ JWin.win = {
 		var titleCloseButton = document.createElement('a');
 		titleCloseButton.className = 'titleCloseButton';
 		titleCloseButton.innerHTML = 'x';
-		titleCloseButton.title = 'ç‚¹å‡»å…³é—­';
+		titleCloseButton.title = '点击关闭­';
 		hTitleBox.appendChild(titleCloseButton);
 		
 		//content box
@@ -275,7 +275,12 @@ JWin.win = {
 		this.winBak.style.width = $(this.winBak).width() + 'px';
 		this.winBak.style.left = ($(window).width() - this.winBak.offsetWidth)/2+'px';
 		var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-		this.winBak.style.top  = top + ($(window).height() - this.winBak.offsetHeight)/2+'px';	
+		top = $('body').height();
+		var scrolltop = $(window).scrollTop();
+		//this.winBak.style.top  = top + this.winBak.offsetHeight+'px';	
+		//this.winBak.style.top = scrolltop / 2 + this.winBak.offsetHeight / 2 +  'px';
+		this.winBak.style.top = top + 'px';
+		//$(window).scrollTop(scrolltop / 2 - this.winBak.offsetHeight /2);
 	},
 	
 	show : function() {

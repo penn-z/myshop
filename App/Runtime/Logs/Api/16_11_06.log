@@ -385,3 +385,16 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
 
+[ 2016-11-06T11:13:00+08:00 ] 127.0.0.1 /Api/Goods/differentCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `think_shopcart` WHERE ( user_id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+

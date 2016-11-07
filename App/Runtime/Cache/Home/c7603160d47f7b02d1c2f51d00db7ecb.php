@@ -118,7 +118,7 @@
 							</div>
 							<ul class="select">
 								<p class="title font-normal">
-									<span class="fl"><?php echo ($_GET['key_word']); ?></span>
+									<span class="fl"><a style="color:red;"><?php echo ($_GET['key_word']); ?></a></span>
 									<span class="total fl">搜索到<strong class="num"><?php echo ($goods_num); ?></strong>件相关商品</span>
 								</p>
 								<div class="clear"></div>

@@ -1,0 +1,5 @@
+#忽略.gitignore文件
+.gitignore
+
+#忽略thinkphp产生的cache文件
+App/Runtime/Logs/*

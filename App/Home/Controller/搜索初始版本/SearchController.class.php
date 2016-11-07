@@ -22,14 +22,7 @@ class SearchController extends Controller {
     		}
     		/*-------综合、销量、评价排序----------*/
     		
-	    	$goods_info = M("goods")->field("think_goods.goods_id,think_goods.goods_name,think_goods.cumulative_sales,think_goods.goods_source,think_goods.category_id,think_goods.hot_spot")->where($map)->order($dec)->select();
-
-	    	/*------------------测试区，高能-------------------*/
-	    	$goods_info = M("goods")->join("think_goods_specify ON think_goods.goods_id=think_goods_specify.goods_id")->field("goods_id,goods_name,cumulative_sales,goods_source,category_id,hot_spot")->where($map)->order($dec)->select();
-	    	
-	    	/*------------------测试区，高能-------------------*/
-
-
+	    	$goods_info = M("goods")->field("goods_id,goods_name,cumulative_sales,goods_source,category_id,hot_spot")->where($map)->order($dec)->select();
 	    	$goods_num = M("goods")->where($map)->count();		//搜到的商品数量
 	    	$this->assign("goods_num",$goods_num);
 	    	
@@ -71,8 +64,6 @@ class SearchController extends Controller {
 		    	$hot_spot = array_unique($hot_spot);	//对选购热点进行去重复
 		    	$this->assign("hot_spot",$hot_spot);
 
-		    	// echo "<pre>";
-		    	// print_r($goods_info);
 		    	$this->assign("goods_info",$goods_info);
 	    	}
 	    	
