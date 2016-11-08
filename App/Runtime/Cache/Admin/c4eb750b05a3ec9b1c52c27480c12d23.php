@@ -175,6 +175,14 @@ a.title_text {
 						</select>  
                     </td>
                 </tr>
+        
+                <tr>
+                    <td class="left_td">子范畴：</td>
+                    <td class="right_td">
+                      <input type="text" name="second_cat" class="input" value="" />
+                    </td>
+                </tr>
+
                 <tr>
                     <td class="left_td">商品来源名称：</td>
                     <td class="right_td"><input type="text" name="goods_source" class="input" value="" id="srcname"/></td>
@@ -185,14 +193,7 @@ a.title_text {
                     <td class="right_td"><input type="text" name="hot_spot" class="input" value="" id="hot_sopt"/></td>
                 </tr>
 
-                <tr id="qr-upload-tr">
-                    <td class="left_td">商品缩略图片：</td>
-                    <td class="right_td" id="upload-td">
-                        <input type="file" id="img_src" style="display:block;width: 200px;" /> 
-                        
-                        <div id="img-box"></div>
-                    </td>
-                </tr>
+                
                 
                 
                 <tr style=" clear:both">
@@ -236,26 +237,7 @@ var ue = UE.getEditor('content',{
     enterTag: 'br',
 });
 
-XHRUploader.init({
-    handlerUrl: '/admin/img/accept',
-    input: '_imgs[]'
-}).uploadFile('img_src', {
-    'partition' : 'date',
-    'space'     : 'article.image',
-    'thumb'     : 2,
-    'width'     : 0,
-    'height'    : 0
-},{
-    ready: function(ret){
-        //alert('zhengzai');
-    },
-    complete: function(ret){
-        //alert('wangcheng');
-        
-        var html = '<div id="add" style="float:left;"><a onclick="delPic(this)">X</a><img src="'+ret.data+'" width="80px" /><input type="hidden" name="thumb[]" value="'+ret.data+'" /></div>';
-        $('#img-box').append(html);
-    }
-});
+
 
 function delPic(data){
     $(data).parents("#add").empty();

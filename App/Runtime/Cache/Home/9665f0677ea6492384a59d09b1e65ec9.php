@@ -283,6 +283,7 @@
 											$(obj).parents(".theme-signin-left").siblings(".theme-signin-right").find(".price-now").text(attr.goods_discount);
 											//修改右边库存
 											$(obj).parents(".theme-signin-left").siblings(".theme-signin-right").find(".stock").text(attr.goods_num);
+											$(obj).parents(".theme-signin-left").siblings(".theme-signin-right").find("img").attr("src",attr.thumb.big[0]);	//改变缩略图
 										},
 										'html'
 									);

@@ -1021,7 +1021,7 @@
 				<!--各类活动-->
 				<div class="row">
 					<li><a href="/home/introduction.html?id=30&sn=200000401"><img src="/Public/images/row1.jpg"/></a></li>
-					<li><a><img src="/Public/images/row2.jpg"/></a></li>
+					<li><a href="/home/introduction.html?id=34&sn=1000101"><img src="/Public/images/row2.jpg"/></a></li>
 					<li><a><img src="/Public/images/row3.jpg"/></a></li>
 					<li><a><img src="/Public/images/row4.jpg"/></a></li>
 				</div>

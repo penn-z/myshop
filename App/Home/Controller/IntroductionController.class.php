@@ -37,7 +37,7 @@ class IntroductionController extends Controller {
             $different_goods = M('shopcart')->where("user_id=".session('id'))->Count();    //统计购物车不同商品数量
             $this->assign("different_goods",$different_goods);
         }
-        $this->assign('description',$description);
+        // $this->assign('description',$description);
     	$this->assign('goods',$goods);
 
         $comment_model = M("comment");
@@ -59,8 +59,6 @@ class IntroductionController extends Controller {
             $comment[$key]['picture'] = unserialize($comment[$key]['picture']); //反序列化评价图片地址
             $comment[$key]['user_name'] = substr_replace($comment[$key]['user_name'],"***",1,2); //用户名设置为匿名
         }
-        // echo "<pre>";
-        // print_r($comment);
         $this->assign('comment',$comment);
 
         /* 好评内容 */
@@ -72,11 +70,6 @@ class IntroductionController extends Controller {
             $good_comment[$key]['user_name'] = substr_replace($good_comment[$key]['user_name'],"***",1,2); //用户名设置为匿名
         }
         $this->assign('good_comment',$good_comment);*/
-
-
-
-        // echo "<pre>";
-        // print_r($comment);
     	$this->display('introduction');
     }
 

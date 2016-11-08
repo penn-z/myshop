@@ -117,13 +117,13 @@
 								<eq name="i" value="0">
 								<li class="tb-selected">
 									<div class="tb-pic tb-s40">
-										<a href="#"><img id="add_shopcart" src="{$thumb.small.$i}" mid="{$thumb.mid.$i}" big="{$thumb.big.$i}"></a>
+										<a href="javascript:"><img id="add_shopcart" src="{$thumb.small.$i}" mid="{$thumb.mid.$i}" big="{$thumb.big.$i}"></a>
 									</div>
 								</li>
 								<else/>
 								<li>
 									<div class="tb-pic tb-s40">
-										<a href="#"><img src="{$thumb.small.$i}" mid="{$thumb.mid.$i}" big="{$thumb.big.$i}"></a>
+										<a href="javascript:"><img src="{$thumb.small.$i}" mid="{$thumb.mid.$i}" big="{$thumb.big.$i}"></a>
 									</div>
 								</li>
 								</eq>
@@ -240,6 +240,13 @@
 																	$(".sys_item_price").text(obj.goods_discount);
 																	$(".sys_item_mktprice").text(obj.goods_price);
 																	$(".stock").eq(0).text(obj.goods_num);
+																	var big_father = $(".item-inform");
+																	big_father.find(".tb-booth").find("a").attr("href",obj.thumb.big[0]);
+																	big_father.find(".tb-booth").find("img").attr("src",obj.thumb.big[0]).attr("rel",obj.thumb.big[0]);
+																	var test = big_father.find("ul").eq(0).find("li").each(function(index){
+																		$(this).find("img").attr("src",obj.thumb.small[index]).attr("mid",obj.thumb.mid[index]).attr("big",obj.thumb.big[index]);
+																	});
+
 																},
 																'html'
 															);
@@ -367,9 +374,9 @@
 								{"goods_type":type,"goods_package":package,"goods_num":num,"goods_id":goods_id,"goods_name":goods_name,"goods_cost":goods_price,"goods_type1":goods_type1,"goods_type2":goods_type2},
 								function(ret){
 									//未登陆无法加入购物车
-									if( ret == 1){
+									if( ret == 'no'){
 										window.location.href="/home/login";
-										exit(); 	
+										return;	
 									}
 									var different_goods = ret;
 

@@ -158,10 +158,20 @@ a.title_text {
                     </td>
                 </tr>
                 <tr>
+                    <td class="left_td">子范畴：</td>
+                    <td class="right_td">
+                      <input type="text" name="second_cat" class="input" value="<?php echo ($data["second_cat"]); ?>" />
+                    </td>
+                </tr>
+                <tr>
                     <td class="left_td">商品来源名称：</td>
                     <td class="right_td"><input type="text" name="name" class="input" value="<?php echo ($data["goods_source"]); ?>" id="srcname"/></td>
                 </tr>
                 
+                <tr>
+                    <td class="left_td">选购热点：</td>
+                    <td class="right_td"><input type="text" name="hot_spot" class="input" value="<?php echo ($data["hot_spot"]); ?>" id="hot_sopt"/></td>
+                </tr>
                 
               
                 <tr style="clear:both">

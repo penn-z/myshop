@@ -21,7 +21,7 @@ class GoodsController extends CheckLoginController {
         }
         
         $count      = $list->where('1=1')->count();// 查询满足要求的总记录数
-        $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(5)
+        $Page       = new \Think\Page($count,12);// 实例化分页类 传入总记录数和每页显示的记录数(12)
         $Page->rollPage = 5;    //显示的页码数
         unset($Page->parameter['act']);     //删除act动作，这样删除成功一次后就不会就带参数传递了
         $show       = $Page->show();// 分页显示输出
@@ -54,7 +54,7 @@ class GoodsController extends CheckLoginController {
                 $Form->goods_type = $data['type1'];     //规格1名称
                 $Form->goods_type2 = $data['type2'];    //规格2名称
 
-                $goods_id =   $Form->add();   //返回新建商品的ID
+                $goods_id = $Form->add();   //返回新建商品的ID
 
                 for( $i=0;$i<count($data['goods_sn']);$i++ ){
                     //数据插入attr表
@@ -72,17 +72,19 @@ class GoodsController extends CheckLoginController {
                     $specify['goods_num'] = $data['goods_num'][$i];
                     $spe_ret = M('goods_specify')->add($specify);   //成功添加后返回新创的id
 
-                    //数据插入type2表
-                    $type2['goods_id'] = $goods_id;
-                    $type2['type2_name'] = $data['type2_name'][$i];
-                    $type2_ret = M("goods_type2")->add($type2);  //成功添加后返回新创的id
-
                     //新建thumb数据表,创建各自sn的相册
                     $thumb['goods_id'] = $goods_id;
                     $thumb['goods_name'] = $data['goods_name'];
                     $thumb['goods_sn'] = $data['goods_sn'][$i];
                     $thumb['addtime'] = time();
                     $thumb_ret = M('thumb')->add($thumb);
+                }
+                //type2数据入表
+                for($j=0;$j<count($data['type2_name']);$j++){
+                    //数据插入type2表
+                    $type2['goods_id'] = $goods_id;
+                    $type2['type2_name'] = $data['type2_name'][$j];
+                    $type2_ret = M("goods_type2")->add($type2);  //成功添加后返回新创的id
                 }
 
                 $errno = null;
@@ -153,14 +155,14 @@ class GoodsController extends CheckLoginController {
                 $specify['goods_discount'] = $_data['goods_discount'][$i];
                 $specify['goods_num'] = $_data['goods_num'][$i];
                 
-                M("goods_specify")->where("id=".$_data['specify_id'][$i])->save($specify);
-
                 /*以防sn修改，故而也对thumb数据表的sn进行更新*/
                 //先获取原本goods_sn
                 $old_sn = M("goods_specify")->where("id=".$_data['specify_id'][$i])->getField("goods_sn");
                 $thumb['goods_sn'] = $_data['goods_sn'][$i];
                 $thumb['goods_name'] = $_data['goods_name'];
-                M("thumb")->where("goods_sn={$old_sn}")->save($thumb);
+
+                M("goods_specify")->where("id=".$_data['specify_id'][$i])->save($specify);  //更新specify表
+                M("thumb")->where("goods_sn={$old_sn}")->save($thumb);  //更新thumb表
             }
             for( $i=$old_spe_length;$i<$new_spe_length;$i++){   //对新添的goods_specify进行数据添加
                 $specify['goods_sn'] = $_data['goods_sn'][$i];
@@ -230,7 +232,5 @@ class GoodsController extends CheckLoginController {
             $delDir->delDir($thumb_path);  //删除对应文件夹及子文件
         }
         M($model)->where("id={$id}")->delete();
-            
     }
-
 }

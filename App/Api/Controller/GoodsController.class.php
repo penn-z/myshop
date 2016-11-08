@@ -14,6 +14,12 @@ class GoodsController extends Controller {
 			$goods_type = I('post.data');
 			$goods_id = I('post.goods_id');
 			$attr = M('goods_specify')->where("goods_type ='{$goods_type}' AND goods_id ='{$goods_id}'")->find();
+			$goods_sn = $attr['goods_sn'];
+			$thumb = M('thumb')->field("big,mid,small")->where("goods_sn={$goods_sn}")->find();	//获取缩略图地址
+			$thumb['big'] = unserialize($thumb['big']);
+	    	$thumb['mid'] = unserialize($thumb['mid']);
+	    	$thumb['small'] = unserialize($thumb['small']);
+	    	$attr['thumb'] = $thumb;	//缩略图地址放入$attr数组
 			$this->ajaxReturn($attr);
 	}
 	
@@ -89,10 +95,10 @@ class GoodsController extends Controller {
 	public function shopCart(){
 
 		//未登陆无法加入购物车
-		if( session('is_login') != 1 ){
-   			echo 1;
-   			exit();
-   		}
+		if( session('is_login') != 1){
+			echo 'no';
+			exit;
+		}
 
    		$data = I('post.');	//获取post过来的商品信息
    		
