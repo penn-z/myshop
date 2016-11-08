@@ -277,7 +277,7 @@
 						</div>
 						<script>
 							var div = $(".am-pagination").find("div");
-							div.parent().append( div.children());
+							div.parent().append( div.children() );
 							div.remove();
 							
 							var p = '<?php echo ($_GET['p']); ?>';	//当前页码
