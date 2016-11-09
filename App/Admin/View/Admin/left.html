@@ -18,7 +18,6 @@
 		<ul style="display:none;">
             <li><a target="weilian" href="/Admin/Category/showList">分类列表</a></li>
             <li><a target="weilian" href="/Admin/Category/add">分类添加</a></li>
-            <li><a target="weilian" href="/Admin/Category/edit">分类编辑</a></li>
 		</ul>	
 		
 	</div>
@@ -28,7 +27,6 @@
 		<ul style="display:none;">
             <li><a target="weilian" href="/Admin/Goods/showList">商品列表</a></li>
             <li><a target="weilian" href="/Admin/Goods/add">商品添加</a></li>
-            <li><a target="weilian" href="/Admin/Goods/edit">商品编辑</a></li>
 		</ul>	
 		
 	</div>

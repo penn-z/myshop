@@ -103,7 +103,7 @@
      <div class="option">
        <span class="info">您可以</span>
         <a href="/home/MyDeal/order.html" class="J_MakePoint">查看<span>已买到的宝贝</span></a>
-        <a href="/home/MyDeal/orderinfo.html" class="J_MakePoint">查看<span>交易详情</span></a>
+        <a href="/home/MyDeal/orderinfo.html?order_id=<?php echo ($_GET['order_id']); ?>" class="J_MakePoint">查看<span>交易详情</span></a>
      </div>
     </div>
   </div>

@@ -27,6 +27,13 @@ class GoodsController extends CheckLoginController {
         $show       = $Page->show();// 分页显示输出
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         $result = $list->where('1=1')->order('goods_id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        //获取缩略图
+        foreach($result as $key => $val){
+            $id = $val['goods_id'];
+            $thumb = M('thumb')->where("goods_id={$id}")->getField('small');
+            $thumb = unserialize($thumb);
+            $result[$key]['thumb'] = $thumb[0];
+        }
 
         $this->assign('page',$show);
         $this->assign('list',$result);

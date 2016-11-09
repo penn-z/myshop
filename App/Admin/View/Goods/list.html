@@ -120,7 +120,7 @@ a.title_text {
                 	<form name="goodsForm" method="post" action="#">
                 	<tr class="tr_top">
                       <td width="5%">商品ID</td>
-                      <td width="10%">商品序列号</td>
+                      <td width="5%">商品缩略图</td>
 	                    <td width="10%">商品名称</td>
 	                    <td width="10%">添加时间</td>
 	                    <td width="10%">操作导航</td>
@@ -128,7 +128,7 @@ a.title_text {
                   <foreach name='list' item='vo'>
                     <tr class="tr_list">
                     <td>{$vo.goods_id}</td>  
-                    <td>{$vo.goods_sn}</td>  
+                    <td><img src="{$vo.thumb}" /></td>  
                     <td>{$vo.goods_name}</td>  
                     <td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>  
                     <td style="text-align:center;">

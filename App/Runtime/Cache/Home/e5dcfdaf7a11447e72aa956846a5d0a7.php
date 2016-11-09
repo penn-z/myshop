@@ -72,9 +72,9 @@
 							</div>
 
 							<div class="search-bar pr">
-								<a name="index_none_header_sysc" href="#"></a>
-								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+								<a name="key_word" href="/home/search.html"></a>
+								<form action="/home/search.html" method="get">
+									<input id="searchInput" name="key_word" type="text" placeholder="搜索" autocomplete="off">
 									<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
 								</form>
 							</div>
@@ -90,7 +90,7 @@
 					   <div class="long-title"><span class="all-goods">全部分类</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">首页</a></li>
+								<li class="index"><a href="/home.html">首页</a></li>
                                 <li class="qc"><a href="#">闪购</a></li>
                                 <li class="qc"><a href="#">限时抢</a></li>
                                 <li class="qc"><a href="#">团购</a></li>
@@ -388,6 +388,16 @@
 												<li class="td td-change">
 													<div class="am-btn am-btn-success anniu">
 														删除订单</div>
+												</li>
+											<?php elseif($common["status"] == 0): ?>
+												<li class="td td-status">
+													<div class="item-status">
+														<p class="Mystatus">待付款</p>
+													</div>
+												</li>
+												<li class="td td-change">
+													<div class="am-btn am-btn-success anniu"><a href="/home/pay/payment.html?order_id=<?php echo ($common["order_id"]); ?>">
+														去付款</a></div>
 												</li><?php endif; ?>
 											</div>
 										</div>

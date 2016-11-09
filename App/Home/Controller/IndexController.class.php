@@ -3,6 +3,12 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
+    	$user_id = session('id');	//获取用户id
+    	if($user_id!=''&&$user_id!=null){
+	    	$user_info = M('user')->field('header_img,account')->where("id={$user_id}")->find();
+	    	$this->assign('user_info',$user_info);	//渲染头像
+    	}
+
     	$cat = M('goods_category')->field('id,category,description')->select();	//取出最大范畴
     	$cat_num = M('goods_category')->count();	//范畴的个数
     	$goods_info = array();	//定义数组储存商品详细信息
@@ -11,13 +17,14 @@ class IndexController extends Controller {
     		$cat[$key]['second'] = M('goods')->distinct(true)->field('second_cat')->where("category_id={$cat_id}")->select();	//第二范畴
     		$cat[$key]['brand'] = M('goods')->distinct(true)->field('goods_source')->where("category_id={$cat_id}")->select();	//商家品牌
     		$goods_info[$key] = M('goods')->field('goods_name,goods_id')->where("category_id={$cat_id}")->select();
+
     		$category[$key]['category'] = $val['category'];
     		$category[$key]['second'] = $cat[$key]['second'];
     		$category[$key]['description'] = $val['description'];
     	}
     	// echo "<pre>";
     	// print_r($category);
-    	$this->assign('category',$category);	//把范畴与第二范畴渲染
+    	$this->assign('category',$category);	//渲染范畴与第二范畴
 
     	foreach($goods_info as $key => $val){
     		foreach($val as $index => $single){

@@ -321,6 +321,16 @@
 													<div class="am-btn am-btn-success anniu">
 														删除订单</div>
 												</li>
+											<elseif condition="$common.status eq 0" />
+												<li class="td td-status">
+													<div class="item-status">
+														<p class="Mystatus">待付款</p>
+													</div>
+												</li>
+												<li class="td td-change">
+													<div class="am-btn am-btn-success anniu"><a href="/home/pay/payment.html?order_id={$common.order_id}">
+														去付款</a></div>
+												</li>
 											</if>
 											</div>
 										</div>

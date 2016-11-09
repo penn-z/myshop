@@ -600,6 +600,10 @@
 						function subOrder(){
 							//获取物流信息
 							var receiver = $("#holyshit268").find(".buy-user").text();
+							if(receiver==''){
+								alert("填写地址后才能购买");
+								return;
+							}
 							var phone = $("#holyshit268").find(".buy-phone").text();
 							var province = $("#holyshit268").find(".province").text();
 							var city = $("#holyshit268").find(".city").text();

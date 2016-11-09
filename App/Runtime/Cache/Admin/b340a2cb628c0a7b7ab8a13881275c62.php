@@ -101,7 +101,7 @@ a.title_text {
       筛选类别:
             <select onchange="do_select(this)"  class="level-type" id="level-type">
                 <option value="">--全部分类--</option>
-                <option value="<?=$val.id?>" ></option>
+                <option value="" ></option>
                
             </select>
              
@@ -127,7 +127,7 @@ a.title_text {
                     <td><?php echo ($vo["category"]); ?></td> 
                     <td><?php echo ($vo["description"]); ?></td> 
                     <td style="text-align:center;">
-                      <a href="/admin/category/edit.html?" >编辑</a> |
+                      <a href="/admin/category/edit.html?act=edit&id=<?php echo ($vo["id"]); ?>" >编辑</a> |
                       <!-- <a style="cursor:pointer;" >上传图片</a> | -->
                       <a href="javascript:void(0)" onclick="delarticle()">恢复</a> |
                       <a href="/admin/img/showList?act=del&id=<?php echo ($vo["id"]); ?>&p=<?php echo ($_GET['p']); ?>" id="a_del" onclick="return delAlert()">删除</a>

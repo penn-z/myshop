@@ -118,14 +118,14 @@ a.title_text {
                 	<form name="goodsForm" method="post" action="#">
                 	<tr class="tr_top">
                       <td width="5%">商品ID</td>
-                      <td width="10%">商品序列号</td>
+                      <td width="5%">商品缩略图</td>
 	                    <td width="10%">商品名称</td>
 	                    <td width="10%">添加时间</td>
 	                    <td width="10%">操作导航</td>
                 	</tr>
                   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="tr_list">
                     <td><?php echo ($vo["goods_id"]); ?></td>  
-                    <td><?php echo ($vo["goods_sn"]); ?></td>  
+                    <td><img src="<?php echo ($vo["thumb"]); ?>" /></td>  
                     <td><?php echo ($vo["goods_name"]); ?></td>  
                     <td><?php echo (date("Y-m-d H:i:s",$vo["addtime"])); ?></td>  
                     <td style="text-align:center;">
