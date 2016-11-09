@@ -117,7 +117,12 @@
 							</div> -->
 							<ul class="select">
 								<p class="title font-normal">
-									<span class="fl"><a style="color:red;"><?php echo ($_GET['key_word']); ?></a></span>
+									<span class="fl"><a style="color:red;">
+									<!-- 
+										先抓取关键词key_word,如果没有sec_cat搜索词时，则显示key_word，否则显示sec_cat。
+									 -->
+									<?php $key_word = $_GET['key_word'] ?>
+									<?php echo ((isset($_GET['sec_cat']) && ($_GET['sec_cat'] !== ""))?($_GET['sec_cat']):"$key_word"); ?></a></span>
 									<span class="total fl">搜索到<strong class="num"><?php echo ($goods_num); ?></strong>件相关商品</span>
 								</p>
 								<div class="clear"></div>
@@ -164,19 +169,20 @@
                         </div>
 							<div class="search-content">
 								<div class="sort">
-									<?php switch($order): case "price_desc": ?><li class="first"><a href="/home/search.html?order=common&key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
-										<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
-										<li><a title="价格" href="/home/search.html?order=price_asc&key_word=<?php echo ($_GET['key_word']); ?>">价格优先&nbsp;&darr;</a></li>
-										<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php break;?>
-									<?php case "price_asc": ?><li class="first"><a href="/home/search.html?order=common&key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
-										<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
-										<li><a title="价格" href="/home/search.html?order=price_desc&key_word=<?php echo ($_GET['key_word']); ?>">价格优先&nbsp;&uarr;</a></li>
-										<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php break;?>
+								<?php if(isset($_GET['sec_cat'])) $extra="sec_cat=".$_GET['sec_cat']."&"; ?>
+									<?php switch($order): case "price_desc": ?><li class="first"><a href="/home/search.html?order=common&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
+										<li><a title="销量" href="/home/search.html?order=sales&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
+										<li><a title="价格" href="/home/search.html?order=price_asc&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>">价格优先&nbsp;&darr;</a></li>
+										<li class="big"><a title="评价" href="/home/search.html?order=comment&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php break;?>
+									<?php case "price_asc": ?><li class="first"><a href="/home/search.html?order=common&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
+										<li><a title="销量" href="/home/search.html?order=sales&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
+										<li><a title="价格" href="/home/search.html?order=price_desc&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>">价格优先&nbsp;&uarr;</a></li>
+										<li class="big"><a title="评价" href="/home/search.html?order=comment&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php break;?>
 									<?php default: ?>
-										<li class="first"><a href="/home/search.html?order=common&key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
-										<li><a title="销量" href="/home/search.html?order=sales&key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
-										<li><a title="价格" href="/home/search.html?order=price_asc&key_word=<?php echo ($_GET['key_word']); ?>">价格优先</a></li>
-										<li class="big"><a title="评价" href="/home/search.html?order=comment&key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php endswitch;?>
+										<li class="first"><a href="/home/search.html?order=common&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>" title="综合">综合排序</a></li>
+										<li><a title="销量" href="/home/search.html?order=sales&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>" order="sales">销量从高到低</a></li>
+										<li><a title="价格" href="/home/search.html?order=price_asc&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>">价格优先</a></li>
+										<li class="big"><a title="评价" href="/home/search.html?order=comment&<?php echo ($extra); ?>key_word=<?php echo ($_GET['key_word']); ?>">评价为主</a></li><?php endswitch;?>
 								</div>
 								<div class="clear"></div>
 								
@@ -197,6 +203,7 @@
 								<?php else: ?>
 								<?php if(is_array($goods_info)): foreach($goods_info as $key=>$goods): ?><li>
 										<div class="i-pic limit">
+										<a href="/home/introduction.html?id=<?php echo ($goods["goods_id"]); ?>">
 											<input type="hidden" value="<?php echo ($goods["rel_info"]); ?>"/>
 											<img src="<?php echo ($goods["thumb"]); ?>" />
 											<p class="title fl"><?php echo ($goods["goods_name"]); ?></p>
@@ -207,6 +214,7 @@
 											<p class="number fl">
 												销量<span><?php echo ($goods["cumulative_sales"]); ?></span>
 											</p>
+										</a>
 										</div>
 									</li><?php endforeach; endif; endif; ?>
 								</ul>

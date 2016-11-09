@@ -26,7 +26,7 @@ class GoodsController extends CheckLoginController {
         unset($Page->parameter['act']);     //删除act动作，这样删除成功一次后就不会就带参数传递了
         $show       = $Page->show();// 分页显示输出
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-        $result = $list->where('1=1')->order('addtime')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $result = $list->where('1=1')->order('goods_id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 
         $this->assign('page',$show);
         $this->assign('list',$result);

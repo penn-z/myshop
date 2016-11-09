@@ -10,7 +10,13 @@ class SearchController extends Controller {
     	if($key_word == null || $key_word == ''){
     		$this->assign("error",1);	//表示未搜索到任何商品
     	}else{
-	    	$map['goods_name'] = array('LIKE',"%$key_word%");
+    		$sec_cat = I("get.sec_cat");
+    		if($sec_cat != null && $sec_cat != ''){
+    			$map['second_cat'] = array('LIKE',"$sec_cat");
+    		}else{
+    			$map['goods_name'] = array('LIKE',"%$key_word%");
+    		}
+	    	
 
 	    	/*-------综合、销量、评价排序----------*/
 	    	$order = I("get.order");	//获取排序方法
@@ -67,10 +73,14 @@ class SearchController extends Controller {
 
 		    	$hot_spot = array_unique($hot_spot);	//对选购热点进行去重复
 		    	$this->assign("hot_spot",$hot_spot);
-
+		    	// echo "<pre>";
+		    	// print_r($goods_info);
 		    	$this->assign("goods_info",$goods_info);	//渲染详细数据
 	    	}
     	}
+
+    	// $old_url = urlencode(urlencode($_SERVER['REQUEST_URI']));
+    	// $this->assign("old_url",$old_url);
         $this->display("search");
     }
 

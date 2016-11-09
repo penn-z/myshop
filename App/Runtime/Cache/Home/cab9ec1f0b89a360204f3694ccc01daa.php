@@ -125,16 +125,20 @@
 									
 									<div class="category" style="box-shadow:none ;margin-top: 2px;">
 										<ul class="category-list navTwo" id="js_climit_li">
+										<?php $__FOR_START_1551630149__=0;$__FOR_END_1551630149__=$cat_num;for($i=$__FOR_START_1551630149__;$i < $__FOR_END_1551630149__;$i+=2){ $j = $i + 1 ; ?>
 											<li>
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="/Public/images/cake.png"></i><a class="ml-22" title="点心">点心/蛋糕</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="/Public/images/cake.png"></i><a class="ml-22" title="点心"><?php echo ($cat["$i"]["category"]); ?>/<?php echo ($cat["$j"]["category"]); ?></a></h3>
 													<em>&gt;</em></div>
+
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="sort-side">
 																	<dl class="dl-sort">
+																		<?php echo ($i); ?>+<?php echo ($i+1); ?>
+																		<?php echo ($cat["$i"]["category"]); ?>+<?php echo ($cat["$i+1"]["category"]); ?>
 																		<dt><span title="蛋糕">蛋糕</span></dt>
 																		<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>
 																		<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>
@@ -175,8 +179,8 @@
 													</div>
 												</div>
 											<b class="arrow"></b>	
-											</li>
-											<li >
+											</li><?php } ?>
+											<!-- <li >
 												<div class="category-info">
 													<h3 class="category-name b-category-name"><i><img src="/Public/images/cookies.png"></i><a class="ml-22" title="饼干、膨化">饼干/膨化</a></h3>
 													<em>&gt;</em></div>
@@ -647,10 +651,10 @@
 													</div>
 												</div>
 
-											</li>
+											</li> -->
 											
                                  <!--比较多的导航	-->										
-											<li >
+											<!-- <li >
 												<div class="category-info">
 													<h3 class="category-name b-category-name"><i><img src="/Public/images/cookies.png"></i><a class="ml-22" title="饼干、膨化">饼干/膨化</a></h3>
 													<em>&gt;</em></div>
@@ -966,7 +970,7 @@
 													</div>
 												</div>
 												<b class="arrow"></b>
-											</li>
+											</li> -->
 										
 										</ul>
 									</div>
@@ -1019,12 +1023,12 @@
 
 					
 				<!--各类活动-->
-				<div class="row">
+				<!-- <div class="row">
 					<li><a href="/home/introduction.html?id=30&sn=200000401"><img src="/Public/images/row1.jpg"/></a></li>
 					<li><a href="/home/introduction.html?id=34&sn=1000101"><img src="/Public/images/row2.jpg"/></a></li>
 					<li><a><img src="/Public/images/row3.jpg"/></a></li>
 					<li><a><img src="/Public/images/row4.jpg"/></a></li>
-				</div>
+				</div> -->
 				<div class="clear"></div>	
 					<!--走马灯 -->
 

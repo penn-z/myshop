@@ -10,6 +10,10 @@ class LoginController extends Controller {
         session('id',null); //注销用户id
         session('username',null); //注销账户名  
         session('temp_order',null);  //注销临时订单的状态
+        // $old_url = urlencode(I('get.old_url'));
+        // $old_url = I('get.old_url');
+        // var_dump($old_url);
+        // $this->assign("old_url",$old_url);
     	$this->display('login');
     }
 
@@ -42,7 +46,10 @@ class LoginController extends Controller {
                     cookie('login_password',null);   //删除密码cookie
                     cookie('checked',null);
                 }
-                redirect("/home/",1,"正在跳转中...");
+                // $old_url = I('get.old_url');
+                // $old_url = urldecode($old_url);
+                // var_dump($old_url);
+                redirect('/home/',1,"正在跳转中...");
             } 
             else{
                 redirect('/home/login',2,'密码有误！正在跳回登陆页面...');
