@@ -36,7 +36,7 @@ class SearchController extends Controller {
 	    		
 	    	/*------------------分页-------------------*/
 	    	$count = M('goods')->where($map)->count("DISTINCT goods_id");	//符合搜索词的商品总数
-	    	$Page       = new \Think\Page($count,3);// 实例化分页类 传入总记录数和每页显示的记录数(3)
+	    	$Page       = new \Think\Page($count,12);// 实例化分页类 传入总记录数和每页显示的记录数(3)
 	        $Page->rollPage = 5;    //显示的页码数
 	        unset($Page->parameter['act']);     //删除act动作，这样删除成功一次后就不会就带参数传递了
 			$show       = $Page->show();// 分页显示输出

@@ -20,12 +20,7 @@
 
 	<body>
 		<!--头 -->
-		<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-		<header>
+				<header>
 			<article>
 				<div class="mt-logo">
 					<!--顶部导航条 -->
@@ -49,12 +44,24 @@
 								<div class="menu-hd MyShangcheng"><a href="/home/person" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h" style="color:orange;">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
 								<div class="menu-hd"><a href="/index.php/Home/Information/collection" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
 						</ul>
 						</div>
+						<script>
+							$(function(){
+								$.post(
+									'/Api/Goods/differentCart',
+									null,
+									function(ret){
+										$("#J_MiniCartNum").text(ret);
+									}
+								);
+								
+							});
+						</script>
 
 						<!--悬浮搜索框-->
 
@@ -64,9 +71,9 @@
 							</div>
 
 							<div class="search-bar pr">
-								<a name="index_none_header_sysc" href="#"></a>
-								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+								<a name="key_word" href="/home/search.html"></a>
+								<form action="/home/search.html" method="get">
+									<input id="searchInput" name="key_word" type="text" placeholder="搜索" autocomplete="off">
 									<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
 								</form>
 							</div>
@@ -82,7 +89,7 @@
 					   <div class="long-title"><span class="all-goods">全部分类</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">首页</a></li>
+								<li class="index"><a href="/home.html">首页</a></li>
                                 <li class="qc"><a href="#">闪购</a></li>
                                 <li class="qc"><a href="#">限时抢</a></li>
                                 <li class="qc"><a href="#">团购</a></li>
@@ -97,10 +104,6 @@
 			<b class="line"></b>
 		<!-- 导航条 -->
 
-		
-	</body>
-
-</html>
 		<!-- 头 -->
 		<div class="center">
 			<div class="col-main">
@@ -170,13 +173,7 @@
 
 				</div>
 				<!--底部-->
-				<!DOCTYPE html>
-<html>
-
-	<head>
-	</head>
-	<body>
-		<div class="footer">
+						<div class="footer">
 			<div class="footer-hd">
 				<p>
 					<a href="#">恒望科技</a>
@@ -199,20 +196,12 @@
 			</div>
 		</div>
 		
-	</body>
-
-</html>
+	
 				<!-- 底部 -->
 			</div>
 
 			<!-- 左边 -->
-			<!DOCTYPE html>
-<html>
-	<head>
-	</head>
-
-	<body>
-		<aside class="menu">
+					<aside class="menu">
 			<ul>
 				<li class="person active">
 					<a href="/home/person"><i class="am-icon-user"></i>个人中心</a>
@@ -229,9 +218,9 @@
 				<li class="person">
 					<p><i class="am-icon-balance-scale"></i>我的交易</p>
 					<ul>
-						<li><a href="/index.php/Home/Information/order">订单管理</a></li>
-						<li> <a href="/index.php/Home/Information/change">退款售后</a></li>
-						<li> <a href="/index.php/Home/Information/comment">评价商品</a></li>
+						<li><a href="/home/MyDeal/order.html">订单管理</a></li>
+						<li> <a href="/home/MyDeal/change.html">退款售后</a></li>
+						<li> <a href="/home/MyDeal/comment.html">评价商品</a></li>
 					</ul>
 				</li>
 				<li class="person">
@@ -264,9 +253,7 @@
 				</li>
 			</ul>
 		</aside>
-	</body>
 
-</html>
 			<!-- 左边 -->
 		</div>
 
