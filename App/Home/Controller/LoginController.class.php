@@ -46,6 +46,16 @@ class LoginController extends Controller {
                     cookie('login_password',null);   //删除密码cookie
                     cookie('checked',null);
                 }
+                //利用Memcache存储单点登录状态
+                S(array(
+                    'type' => 'memcache',
+                    'host' => '127.0.0.1',
+                    'port' => '11211',
+                    'prefix' => 'admin',
+                    'expire' => '86400'
+                    )
+                );
+                S('user_'.session('username'),session_id(),86400);
                 // $old_url = I('get.old_url');
                 // $old_url = urldecode($old_url);
                 // var_dump($old_url);

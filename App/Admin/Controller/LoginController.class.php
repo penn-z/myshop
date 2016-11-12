@@ -31,6 +31,18 @@ class LoginController extends Controller {
                 session('UACCOUNT',$data['account']);
                 session('UNAME',$data['name']);
                 session('LOGINTIME',time());
+                // 设置缓存初始化
+                S(array(
+                    'type'=>'memcache',
+                    'host'=>'127.0.0.1',
+                    'port'=>'11211',
+                    'prefix'=>'user',
+                    'expire'=>600)   //缓存时间
+                );
+                // 缓存登陆状态,以admin+UACCOUNT => session_id()的形式
+                $ssid = session_id();   //获取当前session_id
+                S("admin_".session('UACCOUNT'),$ssid,600);  //设置缓存
+
                 echo '1';   //登陆成功
             } 
             else{

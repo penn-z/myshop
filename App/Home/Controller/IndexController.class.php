@@ -1,14 +1,13 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexController extends CheckAuthController {
     public function index(){
     	$user_id = session('id');	//获取用户id
     	if($user_id!=''&&$user_id!=null){
 	    	$user_info = M('user')->field('header_img,account')->where("id={$user_id}")->find();
 	    	$this->assign('user_info',$user_info);	//渲染头像
     	}
-
     	$cat = M('goods_category')->field('id,category,description')->select();	//取出最大范畴
     	$cat_num = M('goods_category')->count();	//范畴的个数
     	$goods_info = array();	//定义数组储存商品详细信息
