@@ -6,9 +6,6 @@ class PersonController extends CheckLoginController {
     	$this->display();
     }
 
-    
-    
-
    	public function address(){
       
    		$this->display();
@@ -17,8 +14,6 @@ class PersonController extends CheckLoginController {
   	public function cardlist(){
   		$this->display();
   	}
-
-  	
 
   	public function change(){
   		$this->display();

@@ -29,7 +29,7 @@
 					<div class="clear"></div>
 						
 					<div class="login-form">
-				  		<form method="post" action="/index.php/Home/Login/login.html" id="login_form">
+				  		<form method="post" action="/index.php/Home/Login/login.html?redirectURL=<?php echo ($redirectURL); ?>" id="login_form">
 							<div class="user-name">
 							    <label for="user"><i class="am-icon-user"></i></label>
 							    <input type="text" name="user[str]" id="user" placeholder="邮箱/手机/用户名" value="<?php echo (cookie('login_account')); ?>" />

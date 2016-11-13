@@ -76,7 +76,8 @@ class PayController extends Controller {
     //购物车页面
     public function shopcart(){
         if(session('is_login') != 1){
-            redirect('/home/login',2,'还未登陆，正在跳转...');
+            $redirectURL = I('get.redirectURL');
+            redirect("/home/login.html?redirectURL={$redirectURL}",2,"还未登陆，正在跳转...");
         }
 
         $user_id = session('id');

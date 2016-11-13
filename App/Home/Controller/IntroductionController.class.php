@@ -5,11 +5,8 @@ class IntroductionController extends Controller {
     //商品详细页面
     public function index(){
     	$goods_id = I('get.id','',int);
-    	// $goods_sn = I('get.sn','',int);
     	$goods = M('goods')->find($goods_id);  //获取商品的共同属性
         $goods_sn = M('goods_specify')->where("goods_id={$goods_id}")->getField("goods_sn");
-    	// $goods['goods_package'] = unserialize($goods['goods_package']);     //先注释,可能有bug需要重新用
-    	// $goods['goods_type'] = unserialize($goods['goods_type']);           //先注释,可能有bug需要重新用
 
         //获取不同规格商品的特有属性
         $specify = M('goods_specify')->where("goods_id={$goods_id}")->select();
@@ -71,8 +68,9 @@ class IntroductionController extends Controller {
             $good_comment[$key]['user_name'] = substr_replace($good_comment[$key]['user_name'],"***",1,2); //用户名设置为匿名
         }
         $this->assign('good_comment',$good_comment);*/
-        // echo "<pre>";
-        // var_dump($_SERVER);
+        $redirectURL = $_SERVER['REQUEST_URI']; //获取当前页面的url，以便重定向使用
+        $redirectURL = urlencode($redirectURL);
+        $this->assign('redirectURL',$redirectURL);
     	$this->display('introduction');
     }
 

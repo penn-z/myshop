@@ -10,10 +10,8 @@ class LoginController extends Controller {
         session('id',null); //注销用户id
         session('username',null); //注销账户名  
         session('temp_order',null);  //注销临时订单的状态
-        // $old_url = urlencode(I('get.old_url'));
-        // $old_url = I('get.old_url');
-        // var_dump($old_url);
-        // $this->assign("old_url",$old_url);
+        $redirectURL = I('get.redirectURL');
+        $this->assign("redirectURL",$redirectURL);
     	$this->display('login');
     }
 
@@ -56,10 +54,11 @@ class LoginController extends Controller {
                     )
                 );
                 S('user_'.session('username'),session_id(),86400);
-                // $old_url = I('get.old_url');
-                // $old_url = urldecode($old_url);
-                // var_dump($old_url);
-                redirect('/home/',1,"正在跳转中...");
+                $redirectURL = I('get.redirectURL');
+                // $redirectURL = urldecode($redirectURL);
+                $redirectURL = htmlspecialchars_decode($redirectURL);   //把amp;转义为&，防止浏览器自动转义
+                // var_dump(urldecode($redirectURL));
+                redirect($redirectURL,1,"正在跳转中...");
             } 
             else{
                 redirect('/home/login',2,'密码有误！正在跳回登陆页面...');

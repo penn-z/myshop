@@ -26,7 +26,7 @@
 						<?php if(($_SESSION['is_login']) == "1"): ?><a href="#" target="_top" class="h">你好，<?php echo (session('username')); ?></a>
 							<a href="/home/login" target="_top" onclick="return confirm('确定注销吗？')"><span style="color:red">注销登陆</span></a>
 						<?php else: ?>
-							<a href="/home/login.html" target="_top" class="h">亲，请<span style="color:blue">登录<span></a>
+							<a href="/home/login.html?redirectURL=<?php echo ($redirectURL); ?>" target="_top" class="h">亲，请<span style="color:blue">登录<span></a>
 							<a href="/home/register.html" target="_top">免费<span style="color:blue">注册</a><?php endif; ?>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 					<div class="menu-hd MyShangcheng"><a href="/home/person" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 				</div>
 				<div class="topMessage mini-cart">
-					<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h" style="color:orange;"></strong></a></div>
+					<div class="menu-hd"><a id="mc-menu-hd" href="/home/pay/shopcart.html?redirectURL=<?php echo (urlencode($redirectURL)); ?>" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h" style="color:orange;"></strong></a></div>
 				</div>
 				<div class="topMessage favorite">
 					<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>

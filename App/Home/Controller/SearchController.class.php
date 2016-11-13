@@ -79,8 +79,14 @@ class SearchController extends CheckAuthController {
 	    	}
     	}
 
-    	// $old_url = urlencode(urlencode($_SERVER['REQUEST_URI']));
-    	// $this->assign("old_url",$old_url);
+    	if( session('?id') ){   //当用户在登录状态时，统计购物车商品数量
+    		$user_id = session('id');	//获取用户id
+            $different_goods = M('shopcart')->where("user_id=".$user_id)->Count();    //统计购物车不同商品数量
+            $this->assign("different_goods",$different_goods);
+        }
+
+    	$redirectURL = urlencode(urlencode($_SERVER['REQUEST_URI']));
+    	$this->assign("redirectURL",$redirectURL);
         $this->display("search");
     }
 

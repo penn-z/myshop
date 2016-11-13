@@ -3,11 +3,14 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends CheckAuthController {
     public function index(){
-    	$user_id = session('id');	//获取用户id
-    	if($user_id!=''&&$user_id!=null){
-	    	$user_info = M('user')->field('header_img,account')->where("id={$user_id}")->find();
+    	if( session('?id') ){   //当用户在登录状态时，统计购物车商品数量。并且渲染用户头像
+    		$user_id = session('id');	//获取用户id
+            $different_goods = M('shopcart')->where("user_id=".$user_id)->Count();    //统计购物车不同商品数量
+            $this->assign("different_goods",$different_goods);
+            $user_info = M('user')->field('header_img,account')->where("id={$user_id}")->find();
 	    	$this->assign('user_info',$user_info);	//渲染头像
-    	}
+        }
+    	
     	$cat = M('goods_category')->field('id,category,description')->select();	//取出最大范畴
     	$cat_num = M('goods_category')->count();	//范畴的个数
     	$goods_info = array();	//定义数组储存商品详细信息
@@ -21,8 +24,6 @@ class IndexController extends CheckAuthController {
     		$category[$key]['second'] = $cat[$key]['second'];
     		$category[$key]['description'] = $val['description'];
     	}
-    	// echo "<pre>";
-    	// print_r($category);
     	$this->assign('category',$category);	//渲染范畴与第二范畴
 
     	foreach($goods_info as $key => $val){
@@ -48,6 +49,9 @@ class IndexController extends CheckAuthController {
     	
     	$this->assign('cat',$cat);
     	$this->assign('cat_num',$cat_num);
+    	$redirectURL = '/home.html';	//获取当前页面url，以便重定向使用
+    	$redirectURL = urlencode($redirectURL);
+    	$this->assign('redirectURL',$redirectURL);
     	$this->display('home3');
     }
 }
