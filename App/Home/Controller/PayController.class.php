@@ -12,7 +12,7 @@ class PayController extends Controller {
             $address = M('address')->order('is_default desc')->where("user_id={$user_id}")->select(); //获取地址
             $cart = M('shopcart')->where("user_id={$user_id} AND is_order=1")->select();
             if( empty($cart) ){
-                $this->error('未选择需结算的商品...', '/home/pay/shopcart',1);
+                $this->error('未选择需结算的商品...', '/home/pay/shopcart.html',1);
             }
 
             foreach($cart as $key=>$val){
@@ -76,7 +76,7 @@ class PayController extends Controller {
     //购物车页面
     public function shopcart(){
         if(session('is_login') != 1){
-            $redirectURL = I('get.redirectURL');
+            $redirectURL = $_SERVER['REDIRECT_URL'];    //先存储要操作的页面
             redirect("/home/login.html?redirectURL={$redirectURL}",2,"还未登陆，正在跳转...");
         }
 
