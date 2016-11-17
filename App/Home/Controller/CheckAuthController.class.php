@@ -11,7 +11,7 @@ class CheckAuthController extends Controller{
    			'host' => '127.0.0.1',
    			'port' => '11211',
    			'prefix' => 'admin',
-   			'expire' => '600'
+   			'expire' => '3600'
    			)
 		);
 		$ssid = session_id();

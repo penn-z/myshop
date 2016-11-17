@@ -55,6 +55,7 @@ class LoginController extends Controller {
                 );
                 S('user_'.session('username'),session_id(),86400);
                 $redirectURL = I('get.redirectURL');
+                // var_dump(S('user_'.session('username')));
                 // $redirectURL = urldecode($redirectURL);
                 $redirectURL = htmlspecialchars_decode($redirectURL);   //把amp;转义为&，防止浏览器自动转义
                 // var_dump(urldecode($redirectURL));
