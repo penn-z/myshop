@@ -31,17 +31,16 @@ class GoodsController extends Controller {
 		}
 
 		$data = I('post.');	//获取post过来的商品信息
+		$data['user_id'] = session('id');	//获取进行该操作的用户id
 
 		//先查看选择的商品是否存在于数据库
-   		$choice = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."'")->find();
+   		$choice = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."' AND user_id={$data['user_id']}")->find();
    		//若不存在
    		if($choice==false){
    			$data['addtime'] = time();	//添加时间
-   			$data['user_id'] = session('id');
 	   		//获取该品种的序列号
 	   		$goods_sn = M("goods_specify")->where("goods_type ='".$data['goods_type']."' AND goods_id =".$data['goods_id'])->getField('goods_sn');
 	   		$data['goods_sn'] = $goods_sn;
-
 	   		$insert_id = M('shopcart')->add($data);	//插入数据
 
 	   		M('shopcart')->where("cart_id!={$insert_id}")->setField("is_order",0);	//其他商品改为非临时订单状态
@@ -101,12 +100,12 @@ class GoodsController extends Controller {
 		}
 
    		$data = I('post.');	//获取post过来的商品信息
+   		$data['user_id'] = session('id');	//获取进行该操作的用户id
    		
    		//先查看选择的商品是否存在于数据库
-   		$choice = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."'")->find();
+   		$choice = M('shopcart')->where("goods_type ='".$data['goods_type']."' AND goods_package ='".$data['goods_package']."' AND user_id={$data['user_id']}")->find();
    		if($choice==false){
    			$data['addtime'] = time();	//添加时间
-   			$data['user_id'] = session('id');
 	   		//获取该品种的序列号
 	   		$goods_sn = M("goods_specify")->where("goods_type ='".$data['goods_type']."' AND goods_id =".$data['goods_id'])->getField('goods_sn');
 	   		$data['goods_sn'] = $goods_sn;

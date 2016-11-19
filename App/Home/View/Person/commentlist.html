@@ -40,7 +40,7 @@
 							<!-- 商品评价 -->
 							<div class="comment-list">
 								<div class="item-pic">
-									<a href="#" class="J_MakePoint">
+									<a href="/home/introduction.html?id={$vo.goods_id}" target="_blank" class="J_MakePoint">
 										<img src="{$vo.goods_thumb}" class="itempic">
 									</a>
 								</div>
@@ -48,7 +48,7 @@
 								<div class="item-title">
 
 									<div class="item-name">
-										<a href="#">
+										<a href="/home/introduction.html?id={$vo.goods_id}" target="_blank">
 											<p class="item-basic-info">{$vo.goods_name}</p>
 										</a>
 									</div>
@@ -103,11 +103,21 @@
 				     	 */
 				     	function subComment(){
 				     		var num = $("input[name='goods_sn']").length;	//先取需要评论的商品个数
+				     		//先判断评论种类是否为空
+				     		var c_type = [];	//定义一个数组存储评论类型
+				     		for(var j=0; j<num; j++){
+				     			var obj = $("input[name='goods_sn']").eq(j);
+				     			c_type[j] = obj.parents(".comment-list").find(".item-opinion").find(".active").parent("li").text();	//获取评论的好坏
+				     			if(c_type[j] == ''){	//有商品的评论类型为null时
+				     				alert('第'+(j+1)+'个商品没有选择评论类型哦～～');
+				     				return;
+				     			}
+				     		}
 				     		//用for遍历长度，分别对每个评论内容进行数据库写入
 				     		for(var i=0;i<num;i++){
 				     			var obj = $("input[name='goods_sn']").eq(i);
 				     			var goods_sn = obj.val();	//获取该条被评论的商品sn
-				     			var comment_type = obj.parents(".comment-list").find(".item-opinion").find(".active").parent("li").text();	//获取评论的好坏
+				     			var comment_type = c_type[i];	//获取评论的好坏
 				     			var comment = obj.parents(".item-title").siblings(".item-comment").find("textarea").val();	//获取评论内容
 				     			var path_array = [];	//创建数组存储每个图片地址
 				     			obj.parents(".item-title").siblings(".filePic").find(".img-box").find("input[name='path']").each(function(){
