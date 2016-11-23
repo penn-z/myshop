@@ -76,7 +76,7 @@ class PayController extends Controller {
     //购物车页面
     public function shopcart(){
         if(session('is_login') != 1){
-            $redirectURL = $_SERVER['REDIRECT_URL'];    //先存储要操作的页面
+            $redirectURL = $_SERVER['REQUEST_URI'];    //先存储要操作的页面
             redirect("/home/login.html?redirectURL={$redirectURL}",2,"还未登陆，正在跳转...");
         }
 
