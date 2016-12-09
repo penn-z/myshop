@@ -12,8 +12,8 @@ class CheckLoginController extends Controller {
    			)
    		);
    		if( session("is_login") != 1 ){
-            $redirectURL = $_SERVER['REQUEST_URI'];  //先存储要操作的页面
-   			redirect("/home/login.html?redirectURL={$redirectURL}",2,'你还未登陆，正在跳转至登陆页面...');
+            $redirectURL = urlencode(urlencode($_SERVER['REQUEST_URI']));  //先存储要操作的页面,此处urlencode两次是因为用户可能直接复制带有第二参数status的页面地址打到另外一个浏览器进入，两次加密才能传递完整参数
+   			redirect("/home/login.html?redirectURL={$redirectURL}",2,"你还未登陆，正在跳转至登陆页面...");
    		}
 
    		$ssid = session_id();
