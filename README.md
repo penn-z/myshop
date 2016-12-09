@@ -31,6 +31,7 @@
 最后需要把数据导入MySQL数据库，在MySQL建立一个shop的数据库，把项目根目录下的shop.sql导入即可。
 ###使用方法
 进入首页的话，直接输入你配置好的虚拟主机地址即可。
+配置数据库密码：分别在App/HOME(Admin)(Api)/Conf/config.php中的DB_PWD => 处修改为MySQL服务器的密码。
 进入后台管理的话，xxx.xxxx.xxxx/admin/admin	后台管理员，超级管理员为account:penn password:123456
 
 ### 注意事项
