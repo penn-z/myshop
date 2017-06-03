@@ -10,7 +10,7 @@ class CheckAuthController extends Controller{
 			'type' => 'redis',
    			'host' => '127.0.0.1',
    			'port' => '6379',
-   			'prefix' => 'admin',
+   			'prefix' => 'user',
    			'expire' => '3600'
    			)
 		);

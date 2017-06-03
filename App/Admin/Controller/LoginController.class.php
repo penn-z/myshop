@@ -33,10 +33,10 @@ class LoginController extends Controller {
                 session('LOGINTIME',time());
                 // 设置缓存初始化
                 S(array(
-                    'type'=>'memcache',
+                    'type'=>'redis',
                     'host'=>'127.0.0.1',
-                    'port'=>'11211',
-                    'prefix'=>'user',
+                    'port'=>'6379',
+                    'prefix'=>'admin',
                     'expire'=>600)   //缓存时间
                 );
                 // 缓存登陆状态,以admin+UACCOUNT => session_id()的形式

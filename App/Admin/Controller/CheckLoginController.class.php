@@ -9,7 +9,7 @@ class CheckLoginController extends Controller {
             'type'=>'redis',
             'host'=>'127.0.0.1',
             'port'=>'6379',
-            'prefix'=>'user',
+            'prefix'=>'admin',
             'expire'=>600)   //缓存时间
         );
         if( !session('?UID') || session('UID') == ''
