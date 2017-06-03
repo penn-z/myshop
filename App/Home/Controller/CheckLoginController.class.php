@@ -4,9 +4,9 @@ use Think\Controller;
 class CheckLoginController extends Controller {
    public function _initialize(){
    		S(array(
-   			'type' => 'memcache',
+   			'type' => 'redis',
    			'host' => '127.0.0.1',
-   			'port' => '11211',
+   			'port' => '6379',
    			'prefix' => 'admin',
    			'expire' => '600'
    			)
@@ -17,7 +17,7 @@ class CheckLoginController extends Controller {
    		}
 
    		$ssid = session_id();
-   		$getOldSSid = S('user_'.session('username'));	//获取已存在于memcache中的登录状态
+   		$getOldSSid = S('user_'.session('username'));	//获取已存在于redis中的登录状态
    		if($ssid != $getOldSSid){		// 不匹对时,清除登录状态
    			session('username',null);
    			session('is_login',null);

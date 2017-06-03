@@ -6,9 +6,9 @@ class CheckLoginController extends Controller {
     public function _initialize(){
         // 设置缓存方式
         S(array(
-            'type'=>'memcache',
+            'type'=>'redis',
             'host'=>'127.0.0.1',
-            'port'=>'11211',
+            'port'=>'6379',
             'prefix'=>'user',
             'expire'=>600)   //缓存时间
         );

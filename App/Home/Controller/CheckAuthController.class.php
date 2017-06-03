@@ -7,9 +7,9 @@ class CheckAuthController extends Controller{
 	 */
 	public function _initialize(){
 		S(array(
-			'type' => 'memcache',
+			'type' => 'redis',
    			'host' => '127.0.0.1',
-   			'port' => '11211',
+   			'port' => '6379',
    			'prefix' => 'admin',
    			'expire' => '3600'
    			)

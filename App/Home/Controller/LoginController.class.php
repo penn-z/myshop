@@ -44,11 +44,11 @@ class LoginController extends Controller {
                     cookie('login_password',null);   //删除密码cookie
                     cookie('checked',null);
                 }
-                //利用Memcache存储单点登录状态
+                //利用redis存储单点登录状态
                 S(array(
-                    'type' => 'memcache',
+                    'type' => 'redis',
                     'host' => '127.0.0.1',
-                    'port' => '11211',
+                    'port' => '6379',
                     'prefix' => 'admin',
                     'expire' => '86400'
                     )
